@@ -3,6 +3,7 @@ $(function(){
     $('#header .titleArea h1').text('주문결제');
     $('#ec-jigsaw-title-orderProduct').text('주문내역');
     $('#ec-jigsaw-title-shippingInfo h2').text('배송정보');
+    $('#ec-jigsaw-title-payment h2').text('결제예정금액');
 
     //주문서페이지 헤더 스타일 추가
     if (window.location.pathname == '/order/orderform.html'){
@@ -21,6 +22,10 @@ $(function(){
     let orderInputParent = $('.address_form ').find('#oname').parent()
     let orderPerson = orderInputParent.prev();
     orderPerson.text('주문하시는 분');
+    //받으시는 분 텍스트변경
+    let orderPersonnew = $('.ec-shippingInfo-newAddress-name').find('th')
+    orderPersonnew.text('받으시는 분');
+
 
     //주문자 인풋 : 플레이스홀더 추가
     let orderInput = $('.address_form ').find('#oname');
@@ -32,16 +37,32 @@ $(function(){
     let emailTxt2 = `<span class="emailtxt">수신 가능한 이메일 주소를 입력해주세요.</span>`
     emailInput.append(emailTxt,emailTxt2)
 
-    //주문검색 -> 검색 텍스트 변경
+    //검색,조회버튼들 텍스트 변경
     $('#btn_search_ozipcode').text('검색');
+    $('#btn_search_rzipcode').text('검색');
+    $('#all_use_mileage').text('사용');
+    $('#btn_coupon_select').text('조회');
 
+    // 마일리지-쿠폰 순서변경
+    $(".discountDetail.mCouponSelect").insertAfter("#mileage_use_area");
+    $(".discountDetail.mCouponModify").insertAfter(".discountDetail.mCouponSelect");
 
-
+    //결제수단 텍스트
+    $('.ec-paymethod-newArea > label').empty();
+    $('.ec-paymethod-newArea > label').append('<span class="payTitle">결제수단 선택</span>');
 });
+
 
 $(function(){
     //요청사항 텍스트추가
     let message = $('.ec-shippingInfo-shippingMessage #omessage_select');
     let messageTitle = `<span class="messageTxt">요청사항</span>`
     message.before(messageTitle)
+});
+
+
+$(function() {
+    // 쿠폰 이름변경
+    let coupon = $('.mCouponSelect .heading');
+    coupon.text('쿠폰');
 });
