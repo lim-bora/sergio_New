@@ -1,0 +1,54 @@
+.xans-myshop-orderhistoryapplycancel .order { position:relative; }
+.xans-myshop-orderhistoryapplycancel .order__number { overflow:hidden; padding:16px 0 16px 0px; font-size:14px; background-color:#fff;border-bottom: 1px solid #EAEAEA; }
+.xans-myshop-orderhistoryapplycancel .order__number .date { font-family: 'Acumin Pro';font-weight: 500;font-size: 14px;}
+.xans-myshop-orderhistoryapplycancel .order__number .number{color: #747474;}
+.xans-myshop-orderhistoryapplycancel .ec-base-prdInfo .description .price{font-family: 'Acumin Pro';font-size: 14px;}
+
+.xans-myshop-orderhistoryapplycancel .ec-base-table.typeList .xans-myshop-products .multiDelivery{background-color:#fbfafa;vertical-align:middle;padding:10px 20px 10px 40px;}
+.xans-myshop-orderhistoryapplycancel .ec-base-table.typeList .xans-myshop-products .multiDelivery .inner{display: flex;align-items:center;}
+.xans-myshop-orderhistoryapplycancel .ec-base-table.typeList .xans-myshop-products .multiDelivery .address{flex:1;display: block;padding-right:20px;}
+.xans-myshop-orderhistoryapplycancel .ec-base-table.typeList .xans-myshop-products .multiDelivery .waybill{flex:none;display: inline-block;}
+
+/* Write */
+.xans-myshop-orderhistoryapplycancel textarea { width:100%; }
+.itemAddInfo input { width:100%; }
+
+.xans-myshop-orderhistoryapplycancel p.ec-base-help { margin:10px 0 0; }
+
+
+
+
+/*add*/
+.xans-myshop-main {top: 40px!important;}
+.xans-myshop-orderhistoryapplycancel .ec-base-prdInfo{border-bottom: 0;}
+.xans-myshop-orderhistoryapplycancel .ec-base-prdInfo .check{margin: 0 24px 0 0;}
+.xans-myshop-orderhistoryapplycancel .ec-base-prdInfo .thumbnail{width: 120px; height: auto;border: 0;}
+.xans-myshop-orderhistoryapplycancel .ec-base-prdInfo .prdBox{padding: 14px 0;}
+.xans-myshop-orderhistoryapplycancel input[type="checkbox"]{border: 1px solid #E0E0E0;border-radius: 2px;width: 16px;height: 16px;background-image: none;}
+.xans-myshop-orderhistoryapplycancel input[type="checkbox"]:checked{ border: 1px solid #000; background-size: 17px;}
+.ec-base-help .txtWarn{background: none!important;padding: 1px 0 1px!important;}
+.ec-base-help{background: none!important;padding: 1px 0 1px!important;}
+.ec-base-help span{font-size: 12px;color: #747474;}
+.xans-myshop-orderhistoryapplycancel .ec-base-prdInfo .prdFoot{ padding: 16px 0 16px;}
+.xans-myshop-orderhistoryapplycancel .ec-base-prdInfo .description{position: relative;}
+.xans-myshop-orderhistoryapplycancel .ec-base-prdInfo .description .quantity {position: absolute;bottom: 0; left: 0;padding: 0 0 0 0px;}
+.xans-myshop-orderhistoryapplycancel .ec-base-prdInfo .description .name a{font-weight: 500;margin-bottom: 8px; display: block;}
+[class^='btn'].sizeQty{border: 0; background-color: #000;border-radius: 2px;width: 56px;height: 32px!important;color: #fff; padding: 9px 16px!important;border: 1px solid #000;}
+.xans-myshop-orderhistoryapplycancel .ec-base-button{margin: 16px 0;}
+.xans-myshop-orderhistoryapplycancel .ec-base-button .gRight a{width: 113px;height: 36px;line-height: 34px;padding: 0px 5px;border-radius: 2px;}
+
+
+/*add2*/
+.typeWrite.topline{border-top: 1px solid #000;}
+.ec-base-table th{border-bottom: 0!important;}
+
+.cancelReason tbody, .cancelInfo tbody{padding: 16px 0;display: block;}
+.cancelReason tr, .cancelInfo tr{display: flex;flex-direction: column;}
+.cancelReason th, .cancelInfo th{padding: 8px 0!important;}
+.cancelReason td, .cancelInfo td{ padding: 10px 0px 16px!important;border-bottom: 0!important;color: #606060;}
+
+/*반품개별추가*/
+.cancelReason td #reason_select, .cancelReason td #reason_detail{width: 100% !important;height: 48px!important;line-height: 25px;}
+.cancelInfo th{color: #606060;}
+.cancelInfo td{color: #000;}
+.fullbtn{width: 100%;font-weight: 400;}

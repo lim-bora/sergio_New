@@ -1,0 +1,60 @@
+/** form_onetouch_style **/
+
+/* 원터치 주문서 셀렉트박스 화살표 삭제 ie11 - 정환 */
+select::-ms-expand {display:none;}
+#userStyle #header .titleArea h1 {background-color:#fff;color: #000;font-weight: 400;font-size: 24px;}
+#userStyle #mCafe24Order .txtEm,
+#userStyle #mCafe24Order .txtStrong {color:#111;}
+#userStyle #mCafe24Order .btnSubmit {background-color:#111 !important;border:1px solid #111 !important;}
+
+.headerOrder{max-width: 100% !important;  position: fixed!important;  z-index: 9999999!important;}
+.containerOrder{padding-top: 100px;}
+#header .header{display: none;}
+.titleArea{margin: 80px 0 32px!important;}
+#header .titleArea h1{background-color: #fff!important;color: #000!important;border: 0!important;font-size: 24px!important;font-weight: 400!important;}
+
+
+#mCafe24Order{background: #fff!important;}
+#mCafe24Order{width: 474px!important; border-left: 0!important;border-right: 0!important;}
+#mCafe24Order.typeHeader{padding-top: 0px!important;}
+#mCafe24Order .ec-base-fold{border-bottom: 0!important;}
+#mCafe24Order .ec-base-fold > .title{border-bottom: 1px solid #000!important;justify-content: center!important;padding: 16px 0!important; font-size: 14px!important;}
+#mCafe24Order .ec-base-fold > .title h2{font-size: 14px!important;font-weight: 400!important;}
+#mCafe24Order .ec-base-fold > .title:after{display: none!important;}
+#mCafe24Order .title h2{margin: 0 0px 0 0!important;}
+#mCafe24Order .orderArea .ec-base-prdInfo{margin: 0 0px 0px 0px!important;}
+#mCafe24Order .ec-base-prdInfo .thumbnail{width:120px!important;height: 160px!important;border: 0!important;}
+#mCafe24Order .ec-base-prdInfo .description .info{margin: 0 0 0px!important;}
+#mCafe24Order .ec-base-prdInfo .description .info li{margin-bottom: 8px!important;}
+#mCafe24Order .txtWarn{color: #000!important;}
+#mCafe24Order .icoRequired{width: 4px!important;height: 4px!important;background: #E73223!important;border-radius: 50%!important;vertical-align: top!important;margin: 0px 0 0!important;}
+#mCafe24Order .ec-base-tab li{background: #fff!important;border-left: 0!important;}
+#mCafe24Order .ec-base-tab li.selected{    border-bottom-color: #000!important;}
+#ec-jigsaw-tab-shippingInfo.ec-base-tab li a{font-size: 14px!important;font-weight: 500!important;color: #888888!important;}
+#ec-jigsaw-tab-shippingInfo.ec-base-tab li.selected a{color: #000!important;}
+
+#ec-jigsaw-area-billingInfo colgroup{display: none!important;}
+#ec-jigsaw-area-billingInfo .address_form tr{display: flex;flex-direction: column;}
+#ec-jigsaw-area-billingInfo .ec-base-table th, #ec-jigsaw-area-billingInfo .ec-base-table td{border-bottom: 0!important;}
+#mCafe24Order .ec-base-table.typeWrite tbody th{padding: 32px 0 16px!important;}
+#mCafe24Order .ec-base-table.typeWrite td{padding: 0px 0 0px!important;}
+#mCafe24Order .ec-base-table .ec-address{margin: 0px!important;}
+#mCafe24Order .ec-base-table .ec-address > li{padding: 0px 0px 8px!important;}
+#ec-jigsaw-area-billingInfo input{height: 48px!important;background-color: #fff!important;}
+#ec-jigsaw-area-billingInfo select{height: 48px!important; border: 1px solid #E1E1E1!important;}
+#ec-jigsaw-area-billingInfo #btn_search_ozipcode{height: 48px!important;width: 61px!important;margin: 0 0 0 0px!important;min-width: 61px!important;}
+#ozipcode1{width: calc(100% - 70px)!important;flex: none!important;}
+#orderer_zipcode_wrap{ justify-content: space-between; height: 48px!important;}
+.emailtxt{font-size: 12px;color: #747474;display: contents;line-height: 2;}
+
+#ec-shippingInfo-recentAddressText{padding: 0 0px 20px!important;}
+.ec-shippingInfo-shippingMessage{padding: 20px 0px 20px!important;}
+#mCafe24Order .segment.unique{border-top: 0!important;}
+.messageTxt{ font-weight: 500;margin-bottom: 8px; display: block;}
+
+
+@media all and (max-width:1024px) {
+    #mCafe24Order{width: 100%!important;}
+    #ec-jigsaw-area-billingInfo #btn_search_ozipcode{top: 0px!important;right: 0px!important;}
+    .emailtxt{display: block;line-height: 1;padding-top: 8px;}
+}

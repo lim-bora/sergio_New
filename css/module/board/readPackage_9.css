@@ -1,0 +1,31 @@
+.xans-board-title p.imgArea { margin:0 0 20px; }
+
+/* read */
+.xans-board-read-9 .ec-base-table .view .detail { padding: 24px 16px; word-break:break-all; line-height:normal;}
+.xans-board-read-9 .ec-base-table .view .detail ol,
+.xans-board-read-9 .ec-base-table .view .detail ul { margin:15px 0; padding:0 0 0 40px; }
+.xans-board-read-9 .ec-base-table .view .detail ol li { list-style:decimal; }
+.xans-board-read-9 .ec-base-table .view .detail ul li { list-style:disc; }
+.xans-board-read-9 .ec-base-table .attach a { color:#8f8f8f; }
+.xans-board-read-9 .ec-base-table .attach a:hover { text-decoration:underline; }
+
+.xans-board-read-9 .ec-base-button { margin:10px 0 40px; }
+
+
+.xans-board-read-9 .ec-base-table td{    border-bottom: 0;}
+.xans-board-read-9 tr td.consultR{position: relative;padding-right: 8px;color: #888888;}
+.xans-board-read-9 tr td.consultR::after{content: ''; display: block;background-color:#888888;width: 1px; height:8px;position: absolute;top: 8px;right: 0;}
+
+.xans-board-read-9 .listGo{background-color: #000;color: #fff;width: 100%!important; }
+.xans-board-read-9 .btnCommon{width: 49%!important;min-width:49%!important;}
+.xans-board-read-9 .ec-base-button.gBottom .gLeft [class^='btn'] {
+    margin: 0 0px 0 0!important;
+}
+
+.xans-board-read-9 .ec-base-button.gBottom [class^='btn']{flex: none}
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    .xans-board-read-9 .btnCommon{width: 48.5%!important;min-width:48.5%!important;}
+
+}

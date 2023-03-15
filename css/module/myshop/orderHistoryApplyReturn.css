@@ -1,0 +1,72 @@
+.xans-myshop-orderhistoryapplyreturn .order { position:relative; }
+.xans-myshop-orderhistoryapplyreturn .order__number { overflow:hidden; padding:16px 0 16px 0px; font-size:14px; background-color:#fff;border-bottom: 1px solid #EAEAEA;}
+.xans-myshop-orderhistoryapplyreturn .order__number .date { font-family: 'Acumin Pro';font-weight: 500;font-size: 14px;}
+.xans-myshop-orderhistoryapplyreturn .order__number .number{color: #747474;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-prdInfo .description .price{font-family: 'Acumin Pro';font-size: 14px;}
+
+.xans-myshop-orderhistoryapplyreturn .ec-base-table.typeList .xans-myshop-products .multiDelivery{background-color:#fbfafa;vertical-align:middle;padding:10px 20px 10px 40px;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-table.typeList .xans-myshop-products .multiDelivery .inner{display: flex;align-items:center;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-table.typeList .xans-myshop-products .multiDelivery .address{flex:1;display: block;padding-right:20px;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-table.typeList .xans-myshop-products .multiDelivery .waybill{flex:none;display: inline-block;}
+
+.xans-myshop-orderhistoryapplyreturn .direct { width:100%; }
+.xans-myshop-orderhistoryapplyreturn .direct .input { display:flex; }
+.xans-myshop-orderhistoryapplyreturn .direct #pickup_invoiceno { margin-left:10px; }
+
+.xans-myshop-orderhistoryapplyreturn textarea { width:100%; }
+.itemAddInfo input { width:100%; }
+
+.xans-myshop-orderhistoryapplyreturn p.ec-base-help { margin:10px 0 0; }
+
+/* INPUT */
+#pickup_phone1_1, #pickup_phone2_1 { width:86px; }
+#pickup_phone1_2, #pickup_phone1_3,
+#pickup_phone2_2, #pickup_phone2_3 { width:86px; }
+#delivery_info_offer_content { width:95%; }
+
+
+/*add*/
+.xans-myshop-main {top: 40px!important;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-prdInfo{border-bottom: 0;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-prdInfo .check{margin: 0 24px 0 0;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-prdInfo .thumbnail{width: 120px; height: auto;border: 0;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-prdInfo .prdBox{padding: 14px 0;}
+.xans-myshop-orderhistoryapplyreturn input[type="checkbox"]{border: 1px solid #E0E0E0;border-radius: 2px;width: 16px;height: 16px;background-image: none;}
+.xans-myshop-orderhistoryapplyreturn input[type="checkbox"]:checked{ border: 1px solid #000; background-size: 17px;}
+p.ec-base-help{background: none!important;padding: 1px 0 1px!important;}
+p.ec-base-help span{font-size: 12px;color: #747474;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-prdInfo .prdFoot{ padding: 16px 0 16px;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-prdInfo .description{position: relative;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-prdInfo .description .quantity {position: absolute;bottom: 0; left: 0;padding: 0 0 0 0px;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-prdInfo .description .name a{font-weight: 500;margin-bottom: 8px; display: block;}
+[class^='btn'].sizeQty{border: 0; background-color: #000;border-radius: 2px;width: 56px;height: 32px!important;color: #fff; padding: 9px 16px!important;border: 1px solid #000;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-button{margin: 16px 0;}
+.xans-myshop-orderhistoryapplyreturn .ec-base-button .gRight a{width: 113px;height: 36px;line-height: 34px;padding: 0px 5px;border-radius: 2px;}
+
+
+/*add2*/
+.typeWrite.topline{border-top: 1px solid #000;}
+.ec-base-table th{border-bottom: 0!important;}
+
+.returnReason tbody, .returnBack tbody, .returnApplication tbody,.returnPayment tbody,.returnInfo tbody{padding: 16px 0;display: block;}
+.returnReason tr, .returnBack tr, .returnApplication tr, .returnPayment tr, .returnInfo tr{display: flex;flex-direction: column;}
+.returnReason th, .returnBack th, .returnApplication th, .returnPayment th, .returnInfo th{padding: 8px 0!important;}
+.returnReason td, .returnBack td, .returnApplication td, .returnPayment td, .returnInfo td{ padding: 10px 0px 16px!important;border-bottom: 0!important;color: #606060;}
+
+/*반품개별추가*/
+.returnReason td #reason_select, .returnReason td #reason_detail{width: 100% !important;height: 48px!important;line-height: 25px;}
+.returnBack label,.returnApplication label{color:#606060; }
+.returnBack .txtInfo{ color: #747474;line-height: 18px;}
+.returnBack #pickup_csname, .returnBack #pickup_invoiceno{width: 50%!important;height: 48px;}
+.returnBack #pickup_check0{margin-top: 5px;}
+.returnApplication #pickup_name{width: 100%;height: 48px;}
+.returnApplication #pickup_zipcode1, .returnApplication #pickup_addr1, .returnApplication #pickup_addr2{height: 48px!important; width: 100%!important;margin-bottom: 8px;background-color: #fff;}
+.returnApplication #pickup_zipcode1{width: 403px!important;}
+.returnApplication #pickupPhone1{display: none;}
+.returnApplication #pickup_phone2_1,.returnApplication #pickup_phone2_2,.returnApplication #pickup_phone2_3{width: 33%;height: 48px;}
+.returnApplication .formGroup.code{ display: flex;flex-wrap: nowrap;justify-content: space-between;align-items: center;}
+.returnApplication #btn_search_rzipcode{width: 120px; height: 48px;border: 1px solid #e0e0e0;}
+#cs_shipfee_payment{display: none;}
+.returnInfo th{color: #606060;}
+.returnInfo td{color: #000;}
+.fullbtn{width: 100%;font-weight: 400;}

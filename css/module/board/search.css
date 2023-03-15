@@ -1,0 +1,21 @@
+.xans-board-search { margin:32px -5px 0; }
+.xans-board-search .form { display:flex; }
+.xans-board-search select, 
+.xans-board-search input[type="text"] {margin-right: 8px;}
+.xans-board-search #search { flex-grow: 1; height: 48px;}
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    .xans-board-search .form { flex-wrap:wrap; }
+    .xans-board-search .category { display:flex; flex-wrap:wrap; }
+}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    .xans-board-search select, 
+    .xans-board-search input[type="text"],
+    .xans-board-search #search_key { width:110px; }
+    /*.ec-base-button.gBottom:not(.displaynone) + #boardSearchForm { margin:-60px 0 0; }*/
+    
+    .xans-board-search .category { margin:0 0 10px 0; }
+}

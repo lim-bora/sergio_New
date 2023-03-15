@@ -1,0 +1,25 @@
+.xans-myshop-couponserial .couponSerial { text-align:center; border-top-color:#000; }
+.xans-myshop-couponlist .couponList .ec-base-table,
+.xans-myshop-couponlist .couponList .ec-base-prdEmpty { border-top:0; }
+.xans-myshop-couponlist .couponList .ec-base-prdEmpty { padding-top:6px; }
+
+.myshopArea .subtitleH4{font-weight: 500;font-size: 14px;text-align: center;padding-bottom: 16px;}
+.xans-myshop-couponserial .couponSerial .btnSubmitFix{background: #fff;border: 1px solid #000;color: #000;font-weight: 400;font-size: 14px;height: 48px;padding-top: 15px;}
+.xans-myshop-couponserial .couponSerial .txtInfo{text-align:left;color: #747474;font-size: 12px;}
+.xans-myshop-couponlist .ec-base-table th{background-color: #fff;}
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    .xans-myshop-couponserial .couponSerial { margin:0 0 34px; padding:24px 0px; }
+    .xans-myshop-couponserial .couponSerial #coupon_code { width: calc( 100% - 76px ); height: 48px; border: 1px solid #eaeaea; font-size: 14px;}
+    .xans-myshop-couponserial .couponSerial .btnSubmitFix { margin:0 0 0 6px; min-width: 61px!important;}
+    /*.xans-myshop-couponserial .couponSerial #coupon_code + .btnSubmitFix { width:100%; margin:10px 0 0; }*/
+}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    .xans-myshop-couponserial .couponSerial { margin:0 0 50px; padding:24px 0; }
+    .xans-myshop-couponserial .couponSerial #coupon_code { width: calc( 100% - 76px );height: 48px;border: 1px solid #eaeaea; font-size: 14px;}
+    .xans-myshop-couponserial .couponSerial .btnSubmitFix { margin:0 0 0 6px; min-width: 61px!important;}
+    .myshopArea .pc_margin_myshop{margin-left: 200px;}
+}

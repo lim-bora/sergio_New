@@ -1,0 +1,39 @@
+.xans-myshop-orderhistorylistitem .order { position:relative; }
+.xans-myshop-orderhistorylistitem .order__number { overflow:hidden; padding:16px 0 16px 0px; font-size:13px; background-color:#fff;  }
+.xans-myshop-orderhistorylistitem .order__number a{color: #747474;font-weight:normal;font-size: 14px;}
+.xans-myshop-orderhistorylistitem .order:first-child .order__number { margin-top:0; }
+.xans-myshop-orderhistorylistitem .order__number .date { font-weight:normal;font-size: 14px;margin-right: 8px;}
+.xans-myshop-orderhistorylistitem .btnDetail { position:absolute; top:19px; right:19px; }
+.xans-myshop-orderhistorylistitem .request { position:relative; overflow:hidden; padding:25px 0 0; text-align:right; }
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail {display:flex;flex-direction:row-reverse;padding:0 0 18px 0;line-height:26px;font-size:13px;}
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .gRight {float:right;text-align:right;}
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail strong {font-weight:400;}
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail{display: none;}
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title:before {content:" = ";line-height:26px;font-size:13px;color:#000;padding:0 5px;font-family:Arial, sans-serif !important;}
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title > strong {margin-right:5px;}
+.xans-myshop-orderhistorylistitem .ec-base-button .gRight a{height: 36px; line-height: 35px; min-width: 84px;border-radius: 2px;}
+[class^='btn'].sizeS.btnRe{width: 84px;height: 36px;font-size: 14px;padding:10px 16px;margin-left: 8px;}
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    .xans-myshop-orderhistorylistitem .order__number { margin:50px 0 0; }
+    .xans-myshop-orderhistorylistitem .request { padding:25px 16px; }
+
+	.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail {display:block;padding:18px 16px;line-height:26px;font-size:12px;border-top:1px solid #e5e5e5;display: none;}
+	.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title {font-size:14px;margin-bottom:10px;}
+	.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title:before {display:none;}
+	.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title .gRight strong {font-weight:700;}
+	.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .contents {word-break:keep-all;}
+	.xans-myshop-orderhistorylistitem .ec-base-button[class*="gMColumn"]{margin: 20px 0 20px 50%;justify-content: flex-end;}
+	.xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot{padding: 16px 0px;}
+	.xans-myshop-orderhistorylistitem .ec-base-button .gRight{width: auto;}
+	.xans-myshop-orderhistorylistitem .ec-base-button .gRight a{width: 65px;}
+	.xans-myshop-orderhistoryhead .period{margin: 10px 20% 10px 0;}
+	.ec-base-button[class*="gMColumn"] [class^='btn']{margin: 0 0 0 11px}
+}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    .xans-myshop-orderhistorylistitem .order__number { margin:60px 0 0; }
+
+}
+

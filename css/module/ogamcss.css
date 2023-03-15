@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* 국문 폰트 시스템 */
+.kor-H1, .kor-H2, .kor-H3, .kor-H4, .kor-H5, .kor-H6,
+.kor-Sub1, .kor-Sub2, .kor-Body1, .kor-Body2, .kor-Btn, .kor-Cap, .kor-Over {
+    font-family: "Noto Sans KR", sans-serif;
+}
+.kor-H1, .kor-H2, .kor-H3, .kor-H4, .kor-H5,
+.kor-Sub1, .kor-Body1, .kor-Body2, .kor-Cap, .kor-Over {
+    font-weight: 400;
+}
+.kor-H6, .kor-Sub2, .kor-Btn {
+    font-weight: 500;
+}
+.kor-H1 { font-size: 96px; line-height: 98px; }
+.kor-H2 { font-size: 60px; line-height: 62px; }
+.kor-H3 { font-size: 48px; line-height: 50px; }
+.kor-H4 { font-size: 34px; line-height: 36px; }
+.kor-H5 { font-size: 24px; line-height: 26px; }
+.kor-H6 { font-size: 20px; line-height: 22px; }
+.kor-Sub1, .kor-Body1 { font-size: 16px; line-height: 18px; }
+.kor-Sub2, .kor-Btn { font-size: 14px; line-height: 16px; }
+.kor-Body2 { font-size: 14px; line-height: 20px; }
+.kor-Cap, .kor-Over { font-size: 12px; line-height: 14px; }
+
+
+/* 영문 폰트 시스템 */
+.eng-H1, .eng-H2, .eng-H3, .eng-H4, .eng-H5, .eng-H6,
+.eng-Sub1, .eng-Sub2, .eng-Body1, .eng-Body2, .eng-Btn, .eng-Cap, .eng-Over {
+    font-family: "Acumin Pro", sans-serif;
+}
+.eng-H1, .eng-H2 {
+    font-weight: 300;
+}
+.eng-H3, .eng-H4, .eng-H5, .eng-Sub1, .eng-Body1, .eng-Body2, .eng-Cap, .eng-Over {
+    font-weight: 400;
+}
+.eng-H6, .eng-Sub2, .eng-Btn {
+    font-weight: 500;
+}
+.eng-H1 { font-size: 96px; line-height: 98px; }
+.eng-H2 { font-size: 60px; line-height: 62px; }
+.eng-H3 { font-size: 48px; line-height: 50px; }
+.eng-H4 { font-size: 34px; line-height: 36px; }
+.eng-H5 { font-size: 24px; line-height: 26px; }
+.eng-H6 { font-size: 20px; line-height: 22px; }
+.eng-Sub1, .eng-Body1 { font-size: 16px; line-height: 18px; }
+.eng-Sub2, .eng-Btn { font-size: 14px; line-height: 16px; }
+.eng-Body2 { font-size: 14px; line-height: 16px; }
+.eng-Cap { font-size: 12px; line-height: 14px; }
+.eng-Over { font-size: 10px; line-height: 12px; }
+
+input::placeholder {color:#888; font-weight: 400;}
+.layout_hidden {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    min-width: initial !important;
+    min-height: initial !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}

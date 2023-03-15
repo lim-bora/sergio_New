@@ -1,0 +1,41 @@
+#container > #contents {max-width: 474px;}
+
+.xans-member-joincomplete { line-height:150%; text-align:center;}
+.xans-member-joincomplete .joinComplete .desc { font-size:24px; line-height:26px; font-weight:400; color:#000000; }
+
+.ec-base-step {margin: 32px 0 0 !important;}
+
+.xans-member-joincomplete .joinComplete .ec-base-box { padding: 48px 0 8px; }
+.xans-member-joincomplete .joinComplete .ec-base-box .information { padding:0; }
+.xans-member-joincomplete .joinComplete .ec-base-box .information .description { border:none; }
+.xans-member-joincomplete .joinComplete .ec-base-box .ec-base-desc {width: 100%;}
+.xans-member-joincomplete .joinComplete .ec-base-box .ec-base-desc dt,
+.xans-member-joincomplete .joinComplete .ec-base-box .ec-base-desc dd { padding:0 0 32px; margin:0; line-height:20px; min-height:20px; }
+.xans-member-joincomplete .joinComplete .ec-base-box .ec-base-desc dt { width:70px; font-size: 14px; line-height: 20px; color: #606060;}
+.xans-member-joincomplete .joinComplete .ec-base-box .ec-base-desc dd { overflow: hidden; text-align: right; }
+.xans-member-joincomplete .joinComplete .ec-base-box .ec-base-desc span { display:inline-block; font-size: 14px; color: #000; line-height: 20px; }
+
+.xans-member-joincomplete .joinComplete .memberSpecial { font-size:14px; line-height:20px; color:#888888; padding: 16px 0;}
+.xans-member-joincomplete .joinComplete .memberSpecial ul { margin: 15px 0 0; }
+.xans-member-joincomplete .joinComplete .memberSpecial ul li { margin: 5px 0 0;text-align:left; }
+.xans-member-joincomplete .joinComplete .memberSpecial strong{ color:#000000 }
+.xans-member-joincomplete .joinComplete .memberSpecial strong.price{ color:#6d6d6d }
+
+.xans-member-joincomplete .joinComplete .memberAge { margin:20px 0 0; line-height:1.5; }
+.xans-member-joincomplete .joinComplete .memberAge strong { color:#f26323; }
+
+.xans-member-joincomplete .joinComplete .memberEmail { margin-top:20px; color: #000000; line-height:1.5; }
+.xans-member-joincomplete .joinComplete .memberAge { margin-top:20px; color:#6d6d6d; line-height:1.5; }
+.xans-member-joincomplete .joinComplete .memberAge strong{ color:#000000; }
+
+.xans-member-joincomplete .ec-base-button.gBottom {margin-top:8px !important;}
+.xans-member-joincomplete .ec-base-button.gBottom button,
+.xans-member-joincomplete .ec-base-button.gBottom a {flex:1;height:48px;padding:0;line-height:48px;font-size:14px;font-weight: 400;border-radius: 2px;}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    #contents > .section {width: 100% !important;}
+    #container > #contents .titleArea {margin: 80px 0 0;}
+
+    .xans-member-joincomplete .joinComplete .memberSpecial ul li { text-align:center; }
+}

@@ -1,0 +1,19 @@
+#container #contents {max-width: 474px;}
+.findpw-help {font-size: 14px; line-height: 20px; color: #888;}
+
+.xans-member-findpasswdmethod .ec-base-desc.gVer li {display: flex; align-items: center; margin-top: 32px}
+.xans-member-findpasswdmethod .ec-base-desc.gVer .term { margin: 0; padding: 0; line-height: 20px; color: #606060;}
+.xans-member-findpasswdmethod .ec-base-desc.gVer .desc {margin: 0; text-align: right;}
+.xans-member-findpasswdmethod .ec-base-desc.gVer .desc input[type=radio] {display: none;}
+.xans-member-findpasswdmethod .ec-base-desc.gVer input[type=radio] + label {margin: 0;}
+.xans-member-findpasswdmethod .gBottom {flex-direction: column-reverse; gap: 8px;}
+.xans-member-findpasswdmethod .gBottom a {margin: 0 !important; border-color: #000; font-weight: 400; border-radius: 2px;}
+
+
+@media (min-width: 1025px) {
+    #container #contents .titleArea {margin: 80px 0 16px; width:100%;}
+}
+
+@media (max-width: 767px) {
+    #container #contents .titleArea {margin: 40px 0 16px;}
+}

@@ -1,0 +1,35 @@
+#contents > .section .xans-board-title .titleArea {margin: 80px 0 0; padding-bottom: 16px; border-bottom: 1px solid #000;}
+.xans-board-title .titleArea h2 { font-size: 14px; line-height: 16px; font-weight: 500;}
+.section .xans-board-title .titleArea h2 font {color: #000 !important;}
+.xans-board-title p.imgArea { margin:0 0 20px; }
+
+.ec-base-box + #BoardDelForm .ec-base-table { border-top: 0; }
+.xans-board-read .ec-base-table .head { padding: 24px 16px; border-bottom:1px solid #eaeaea; }
+.xans-board-read .ec-base-table .head h3 {font-size: 14px; line-height: 20px; font-weight: 500; }
+.xans-board-read .ec-base-table .description {margin: 3px 0 0; }
+.xans-board-read .ec-base-table .description .name { display: none;}
+.xans-board-read .ec-base-table .etcArea li { display:inline-block; vertical-align:middle; color:#888888; }
+.xans-board-read .ec-base-table .etcArea li a { text-decoration:none; }
+.xans-board-read .ec-base-table .etcArea .txtNum { font-size: 12px; line-height: 14px; color: #888888; }
+.xans-board-read .ec-base-table .detail { padding:24px 16px; word-break:break-all; background-color: #F9F9F9; border-bottom: 1px solid #EAEAEA;  }
+.xans-board-read .ec-base-table .detail ol,
+.xans-board-read .ec-base-table .detail ul { margin:15px 0; padding:0 0 0 40px; }
+.xans-board-read .ec-base-table .detail ol li { list-style:decimal; }
+.xans-board-read .ec-base-table .detail ul li { list-style:disc; }
+.xans-board-read .ec-base-table .detail img { max-width: 100%; }
+.xans-board-read .ec-base-table .attach { position: relative; padding: 20px 0; margin: 0 20px; text-align: right;}
+.xans-board-read .ec-base-table .attach a { padding:0 0 0 12px; color:#6d6d6d; }
+.xans-board-read .ec-base-table .attach a:hover { text-decoration:underline; }
+.xans-board-read .ec-base-table .attach a:first-child { padding-left: 20px; background: url("//img.echosting.cafe24.com/skin/skin/board/icon-file.svg") no-repeat 0 0; background-size: 14px auto; }
+
+.xans-board-product .ec-base-box.typeProduct { margin:0 0 40px; }
+.xans-board-product .information h3 { margin:0 0 2px; padding:0 120px 0 0; font-size:14px; }
+.xans-board-product #sPrdCommonImg { position:absolute; top:0; right:0; width:100px; text-align:right; }
+.xans-board-product .information .button { margin:15px 0 0; }
+.ec-base-button .btnBlack { width: calc((100% - 40px)/2); display: block; margin: 0 auto; box-sizing: border-box;}
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    #contents > .section .xans-board-title .titleArea {margin: 44px 0 0; }
+    .xans-board-read .ec-base-table .attach {margin: 0 16px; }
+}

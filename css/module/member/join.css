@@ -1,0 +1,106 @@
+#container > #contents {max-width: 474px;}
+#container > #contents .titleArea--middle {margin: 32px 0 16px; padding: 0; text-align: center;background:none;}
+.titleArea--middle h3 {font-size: 14px; line-height: 16px; font-weight: 500;}
+
+.xans-member-join .required { display:block; margin: -13px 0 0; line-height:1; text-align:right; color:var(--font-color-base); }
+.xans-member-join .icoRequired { vertical-align:middle; margin-top:-8.5px; }
+
+.xans-member-join .ec-base-table .error { color:var(--font-color-warn); }
+
+.xans-member-join .verify { position:relative; display:inline-block; vertical-align:top; }
+.xans-member-join .verify .time { position:absolute; top:10px; right:15px; color:var(--font-color-warn); }
+.xans-member-join .verify #verify_sms_number { padding:2px 50px 2px 4px; box-sizing:border-box; }
+.xans-member-join .verify #verify_sms_number:disabled { padding-right:4px; }
+
+.xans-member-join .ec-base-table tr {display: flex; flex-direction: column;}
+.xans-member-join .ec-base-table td {border: none;}
+.xans-member-join .ec-base-table td input[type=radio] + label {margin: 0 16px 0 8px;}
+.xans-member-join .ec-base-table.typeWrite td {padding: 16px 0 0;}
+.xans-member-join .ec-base-table.typeWrite td label {color: #606060;}
+.xans-member-join .ec-base-table.typeWrite th {border: none; background-color: #FFF;}
+.xans-member-join .ec-base-table.typeWrite td input[type="text"],
+.xans-member-join .ec-base-table.typeWrite td input[type="password"],
+.xans-member-join .ec-base-table.typeWrite td select {width: 100%; height: 48px; font-size: 14px;}
+.xans-member-join .ec-base-table td div.txtInfo {color: #747474; font-size: 12px; line-height: 14px; font-weight: 400; margin-top: 8px;}
+.xans-member-join .ec-base-table .txtInfo {color: #747474; }
+.xans-member-join .ec-base-table ul.txtInfo li {line-height: 18px; }
+.xans-member-join .ec-base-table.typeWrite td.formGroup {display: flex; flex-wrap: wrap; font-size: 0; padding-right: 0;}
+.xans-member-join #phone1, .xans-member-join #phone2, .xans-member-join #phone3,
+.xans-member-join #mobile1, .xans-member-join #mobile2, .xans-member-join #mobile3 {flex-basis: 0; flex-grow: 1; color: #888;}
+.xans-member-join #phone1, .xans-member-join #phone2, .xans-member-join #phone3,
+.xans-member-join #mobile1, .xans-member-join #mobile2, .xans-member-join #mobile3,
+.xans-member-join .ec-base-table.typeWrite .formGroup.date {gap: 8px; font-size: 14px;}
+.xans-member-join .ec-base-table.typeWrite .formGroup.date div {flex-basis: 0; flex-grow: 1; position: relative;}
+.xans-member-join .ec-base-table.typeWrite .formGroup.date > div > span {position: absolute; right: 16px; top:14px; color: #888;}
+.xans-member-join #birth_year, .xans-member-join #birth_month, .xans-member-join #birth_day {width: 100% !important; margin: 0;}
+.xans-member-join .ec-base-table.typeWrite .formMultiple .formGroup {display: flex;}
+.xans-member-join .ec-base-table.typeWrite .ec-address .btnBasic,
+.xans-member-join .ec-base-table.typeWrite .formMultiple .formGroup .btnNormal {height: 48px; padding: 0 19px; line-height: 48px; border: 1px solid #000;}
+.xans-member-join .ec-base-table.typeWrite .formMultiple li {display: flex;}
+.xans-member-join .ec-base-table.typeWrite .formMultiple li input {flex: auto;}
+.xans-member-join .ec-base-table.typeWrite .ec-address .ec-address-zipcode .ec-base-label {margin: 0;}
+.xans-member-join .ec-base-table.typeWrite .formMultiple dt { margin:0; }
+.xans-member-join .ec-base-table.typeWrite .formMultiple dt:first-child { margin-bottom:16px; }
+
+#foreignerPersonWrap p:nth-child(2) {display: flex; align-items: center;}
+.xans-member-join input[type="checkbox"] {width: 16px; height: 16px; background-size: 16px 16px; border-radius: 2px;}
+.xans-member-join input[type="checkbox"]:checked {border:1px solid #000; background-size: 16px 16px; border-radius: 2px;}
+
+
+.xans-member-join .ec-base-table.typeWrite table .interest { margin-top:10px; }
+.xans-member-join .ec-base-table.typeWrite table .interest label { line-height:26px; }
+
+.xans-member-join .eTooltip { position:relative; display:inline-block; }
+.xans-member-join .ec-base-tooltip.typeUpper { left:20px !important; bottom:28px !important; width:260px; }
+.xans-member-join .ec-base-tooltip.typeUpper .edge { left:20%; }
+.xans-member-join .ec-base-tooltip.typeUpper:before,
+.xans-member-join .ec-base-tooltip.typeUpper:after { left:55px; }
+
+#realNameAuth p span { display:inline-block; width:80px; }
+
+.xans-member-join #btn_verify_mobile_confirm { margin-left:15px; }
+.ec-base-table.typeWrite .accountInfo {border-top: 1px solid #000; padding: 24px 0 0 !important;}
+.ec-base-table.typeWrite .accountInfo dt {margin-bottom: 16px !important; line-height: 16px; font-weight: 500;}
+.ec-base-table.typeWrite .accountInfo dd:not(:last-child) {margin-bottom: 32px !important;}
+.ec-base-table.typeWrite .accountInfo select {color: #888;}
+.ec-base-table.typeWrite .accountInfo span.txtInfo {display:block; margin: 8px 0 0 !important; line-height: 14px;}
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    .xans-member-join input,
+    .xans-member-join select,
+    .xans-member-join .eTooltip,
+    .xans-member-join #nameContents,
+    .xans-member-join #authWrap { width:100%; }
+}
+
+/********************* PC *********************/
+@media all and (min-width:1025px) {
+    #contents > .section {width: 100% !important;}
+    #container > #contents .titleArea {margin: 80px 0 0;}
+
+    .xans-member-join select,
+    .xans-member-join input[type="text"],
+    .xans-member-join input[type="password"] { width:290px; }
+    
+    .xans-member-join #hint,
+    .xans-member-join #hint_answer { width:450px; }
+    
+    .xans-member-join #mobile1,
+    .xans-member-join #mobile2,
+    .xans-member-join #mobile3,
+    .xans-member-join #phone1,
+    .xans-member-join #phone2, 
+    .xans-member-join #phone3,
+    .xans-member-join #birth_year,
+    .xans-member-join #marry_year,
+    .xans-member-join #partner_year,
+    .xans-member-join #birth_month,
+    .xans-member-join #marry_month,
+    .xans-member-join #partner_month,
+    .xans-member-join #birth_day,
+    .xans-member-join #marry_day,
+    .xans-member-join #partner_day { width:86px; }
+}
+
+
