@@ -12,7 +12,7 @@ select::-ms-expand {display:none;}
 #header .header{display: none;}
 .titleArea{margin: 80px 0 32px!important;}
 #header .titleArea h1{background-color: #fff!important;color: #000!important;border: 0!important;font-size: 24px!important;font-weight: 400!important;}
-
+#mCafe24Order .orderArea .totalPrice .title{background-color: #fff!important;padding: 11px 0!important;}
 
 #mCafe24Order{background: #fff!important;margin: 0 auto!important;}
 #mCafe24Order{width: 474px!important; border-left: 0!important;border-right: 0!important;}
@@ -49,7 +49,7 @@ select::-ms-expand {display:none;}
 
 #ec-shippingInfo-recentAddressText{padding: 0 0px 32px!important;}
 .ec-shippingInfo-shippingMessage{padding: 20px 0px 20px!important;}
-#mCafe24Order .segment.unique{border-top: 0!important;}
+#mCafe24Order .segment.unique{border-top: 0!important;padding: 0px 0px 16px!important;}
 .messageTxt{ font-weight: 500;margin-bottom: 8px; display: block;}
 #mCafe24Order .recentShipArea .recent .address{font-size: 14px!important; color: #949494!important;}
 #ec-shop-deliveryInfoCell, #ec-shop-deliveryInfoTel{font-size: 14px!important; color: #949494!important;}
@@ -98,6 +98,7 @@ select::-ms-expand {display:none;}
 #mCafe24Order .discountDetail .ec-base-help{background-color: #fff!important;padding: 13px 0px!important;}
 #mCafe24Order .discountDetail .ec-base-help li:not(.ec-order-expand){    opacity: 1!important;height: auto!important;padding-top: 0px!important;}
 #mCafe24Order .mCouponSelect .summary,#mileage_use_area .summary{float: left!important;}
+#mileage_use_area .summary{ padding-left: 8px;}
 #mCafe24Order .discountDetail .ec-base-help li{color: #747474!important;font-size: 12px!important;}
 #mCafe24Order .discountDetail .control .inputTypeText{color: #000!important;}
 #mCafe24Order .discountDetail .heading{font-size: 14px!important;}
@@ -110,18 +111,41 @@ select::-ms-expand {display:none;}
 
 #mCafe24Order .payMethod > li.ec-paymethod-newArea .inner{display:flex!important;flex-wrap: wrap;gap: 8px;justify-content: space-between; flex-direction: row!important;}
 #mCafe24Order .payMethod > li.ec-paymethod-newArea .inner span{width: 49% !important;}
-#ec-jigsaw-area-paymethod .segment{padding: 20px 0px 16px!important;}
+#ec-jigsaw-area-paymethod .segment{padding: 20px 0px 0px!important;}
 #mCafe24Order .payMethod > li .inner > .ec-base-label > label{border-bottom: 1px solid #EBEBEB!important;padding: 9px 25px 9px!important;}
-#mCafe24Order .payMethod > li .inner > .ec-base-label > input:checked ~ label{border: 1px solid #000!important;color: #000!important;}
+#mCafe24Order .payMethod > li .inner > .ec-base-label > input:checked ~ label{border: 1px solid #000!important;color: #000!important;font-weight: 400!important;}
 #mCafe24Order .payMethod > li .inner > .ec-base-label:last-child{    border-bottom: 0!important;}
 #mCafe24Order .payMethod > li > input, .ec-paymethod-recentArea{display: none!important;}
 #mCafe24Order .payMethod > li .inner{opacity: 1!important;height: auto!important;}
 #mCafe24Order .payMethod > li > label{    padding: 0 0 16px 0!important;}
 .payTitle{color: #000!important;}
 .helpArea{display: none;}
-/*#mCafe24Order input:not(:disabled):checked[type="checkbox"]{background-image: none!important;}*/
+#mCafe24Order .receiptWrap{border-bottom: 0!important;}
+#set_main_address0[type="checkbox"],#save_paymethod[type="checkbox"]{border: 1px solid #E0E0E0!important;border-radius: 2px;width: 16px!important; height: 16px!important;background-image: none!important;margin-top: 4px!important;}
+#set_main_address0[type="checkbox"]:checked,#save_paymethod[type="checkbox"]:checked{    background: url(/SkinImg/img/checkbox_on.svg) no-repeat center!important;border: 1px solid #000!important;  background-size: 17px!important;}
+#ec-jigsaw-area-benefit{display: none!important;}
+#total_order_sale_price_view{display: none!important;}
+#orderFixItem.ec-base-button.gFull [class*="btn"]{background-color: #000!important;font-size: 14px!important;}
+.mileageUse{float: left;font-size: 15px;color: #383838;margin-top: 8px;padding-right: 10px;position: relative;}
+.mileageUse:after{position:absolute;content:"/";top:3px;right:0;font-size: 12px;color: #122E45;}
+
+.cardPromotion{margin-bottom: 56px;}
+.cardPromotion > span{padding-bottom: 16px;display: block;}
+.cardPromotion ul{border: 1px solid #EAEAEA; height: auto;padding: 16px;}
+.cardPromotion ul li{font-weight: 400;font-size: 12px;line-height: 18px;color: #122E45;padding: 2px 0;display: flex;color: #122E45;}
+.cardPromotion ul li span{padding-left: 8px;color: #888;position: relative;}
+.cardPromotion ul li span:after{position: absolute;right: -8px;top: 6px;content: '';width: 4px;height: 4px;border-top: 1px solid #888;border-right: 1px solid #888;transform: rotate(45deg);}
+.cardPromotion ul p{font-weight: 400;font-size: 12px;color: #888;padding-top: 6px;}
 
 
+#mCafe24Order .orderArea .totalPrice .totalAdd{display: flex; flex-direction: row; justify-content: space-between;}
+#mCafe24Order .orderArea .totalPrice .totalAdd h3{color: #606060;font-size: 14px;font-weight: 400!important;}
+#mCafe24Order .orderArea .totalPrice .totalAdd .totalprice{color: #000000;font-size: 14px;}
+
+
+
+#mCafe24Order input[type="radio"]{background: url(/web/upload/free_design/chk_box.png)no-repeat 0 0!important;width: 16px!important; height: 16px!important;background-size: 16px!important;}
+#mCafe24Order input:not(:disabled):checked[type="radio"]{background: url(/web/upload/free_design/orderRadioChecked.png) no-repeat 0 0!important;width: 16px!important; height: 16px!important;background-size: 16px!important;}
 
 @media all and (max-width:1024px) {
     #mCafe24Order{margin: 0 auto!important;}
@@ -130,8 +154,11 @@ select::-ms-expand {display:none;}
     #ec-jigsaw-area-billingInfo #btn_search_ozipcode{top: 0px!important;right: 0px!important;}
     .emailtxt{display: block;line-height: 1;padding-top: 8px;}
     #ec-shippingInfo-newAddress #btn_search_rzipcode{top: 0px!important;right: 0px!important;}
+    #mCafe24Order .discountDetail .ec-base-help li{margin:2px 0!important;}
 }
 @media all and (max-width:767px) {
     #mCafe24Order{width: 98%!important;margin: 0 auto!important;}
     .containerOrder #titleArea.titleArea{display: none!important;}
+    #header .titleArea{display: block!important; margin-top: 0px!important;}
+    #mCafe24Order .payMethod > li.ec-paymethod-newArea .inner span{ width: 48% !important;}
 }

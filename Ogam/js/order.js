@@ -11,10 +11,6 @@ $(function(){
         $('#container').addClass('containerOrder');
     }
 
-
-
-
-
 });
 
 $(function(){
@@ -65,4 +61,40 @@ $(function() {
     // 쿠폰 이름변경
     let coupon = $('.mCouponSelect .heading');
     coupon.text('쿠폰');
+
+    //결제하기 텍스트 변경
+    let payBtn = $('#btn_payment');
+    payBtn.text('결제하기');
+
 });
+$(function() {
+    //사용가능한 마일리지
+    let mileage = $('#ec-jigsaw-area-discount').find('#mileage_use_area');
+    let summary = mileage.find('.summary');
+    let mileageUseBox = `<span class="mileageUse">사용가능한 마일리지 </span>`
+    summary.before(mileageUseBox);
+    let mileageUse = CAFE24.SHOP_FRONT_ORDERFORM_DATA.mileage.fMemberAvailMileage + '원'
+    $('.mileageUse').append(mileageUse);
+    console.log(mileageUse)
+
+    //마일리지문구 수정
+    let mileageHelp = mileage.find('.ec-base-help')
+    let helplimitNew = `<li class="mileage_max_limit">1회 구매 시, 최대 상품구매 합계액의 50%까지 사용가능 합니다.</li>`
+    mileageHelp.prepend(helplimitNew)
+
+    //마일리지문구 가리기
+    $('#mileage_max_limit').css('display','none');
+    let txtNone = $('#mileage_max_unlimit').next();
+    txtNone.css('display','none');
+});
+$(function() {
+    //상단 총 금액 추가
+    let totalPrice = $('#ec-jigsaw-area-orderProduct').find('.totalPrice');
+    let totalAdd = `<div class="totalAdd"></div>`
+    totalPrice.prepend(totalAdd);
+    let totalH3 = `<h3>총 금액</h3>`
+    let totalprice = `<span class="totalprice"></span>`;
+    $('.totalAdd').append(totalH3,totalprice);
+    $('.totalprice').append(CAFE24.SHOP_FRONT_ORDERFORM_DATA.order.fBasicProductTotalPrice + '원')
+});
+
