@@ -98,3 +98,16 @@ $(function() {
     $('.totalprice').append(CAFE24.SHOP_FRONT_ORDERFORM_DATA.order.fBasicProductTotalPrice + '원')
 });
 
+$(function() {
+    //비회원 비밀번호섹션 텍스트 변경
+    let passTxt = $('#mCafe24Order .pannelArea .ec-base-table tr:nth-child(1)').find('th');
+    passTxt.text('주문조회 비밀번호');
+    let passTxt2 = $('#mCafe24Order .pannelArea .ec-base-table tr:nth-child(2)').find('th');
+    passTxt2.text('주문조회 비밀번호 확인');
+
+    //비회워 주문약관 텍스트
+    let allAgreeTitle = `<h2 class="allAgreeTitle">비회원주문 이용약관</h2>`
+    $('#all_agreement_checkbox').prepend(allAgreeTitle)
+    $('.allAgreeTitle').addClass('titleLine')
+
+});

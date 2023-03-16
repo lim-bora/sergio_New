@@ -18,11 +18,16 @@ select::-ms-expand {display:none;}
 #mCafe24Order{width: 474px!important; border-left: 0!important;border-right: 0!important;}
 #mCafe24Order.typeHeader{padding-top: 0px!important;}
 #mCafe24Order .ec-base-fold{border-bottom: 0!important;}
-#mCafe24Order .ec-base-fold > .title{border-bottom: 1px solid #000!important;justify-content: center!important;padding: 16px 0!important; font-size: 14px!important;}
+#mCafe24Order .ec-base-fold > .title{border-bottom: 1px solid #000!important;justify-content: center!important;padding: 16px 0!important; font-size: 14px!important;position: relative;}
+#mCafe24Order .ec-base-fold > #ec-jigsaw-title-billingInfo:before,
+#mCafe24Order .ec-base-fold > #ec-jigsaw-title-shippingInfo:before{content:'필수입력사항'; display: block;position: absolute;top: 50%;right: 0;transform: translateY(-50%);color: #888888;font-size: 12px;}
 #mCafe24Order .ec-base-fold > .title h2{font-size: 14px!important;font-weight: 400!important;}
-#mCafe24Order .ec-base-fold > .title:after{display: none!important;}
+#ec-jigsaw-title-payment:after, #ec-jigsaw-title-paymethod:after, #ec-jigsaw-title-orderProduct:after{display: none!important;}
+#mCafe24Order .ec-base-fold > #ec-jigsaw-title-billingInfo:after,
+#mCafe24Order .ec-base-fold > #ec-jigsaw-title-shippingInfo:after{content:''; display: block!important;position: absolute;top: 43%!important;right: 71px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: red;border-radius: 50%;border: 0!important;}
+
 #mCafe24Order .title h2{margin: 0 0px 0 0!important;}
-#mCafe24Order .orderArea .ec-base-prdInfo{margin: 0 0px 0px 0px!important;}
+#mCafe24Order .orderArea .ec-base-prdInfo{margin: 0 0px 0px 0px!important;border-bottom: 1px solid #EAEAEA!important;}
 #mCafe24Order .ec-base-prdInfo .thumbnail{width:120px!important;height: 160px!important;border: 0!important;}
 #mCafe24Order .ec-base-prdInfo .description .info{margin: 0 0 0px!important;}
 #mCafe24Order .ec-base-prdInfo .description .info li{margin-bottom: 8px!important;}
@@ -32,6 +37,7 @@ select::-ms-expand {display:none;}
 #mCafe24Order .ec-base-tab li.selected{    border-bottom-color: #000!important;}
 #ec-jigsaw-tab-shippingInfo.ec-base-tab li a{font-size: 14px!important;font-weight: 500!important;color: #888888!important;}
 #ec-jigsaw-tab-shippingInfo.ec-base-tab li.selected a{color: #000!important;}
+#mCafe24Order .segment .paymentList .discountName .ico_accumulate{display: none!important;}
 
 #ec-jigsaw-area-billingInfo colgroup{display: none!important;}
 #ec-jigsaw-area-billingInfo .address_form tr{display: flex;flex-direction: column;}
@@ -49,14 +55,14 @@ select::-ms-expand {display:none;}
 
 #ec-shippingInfo-recentAddressText{padding: 0 0px 32px!important;}
 .ec-shippingInfo-shippingMessage{padding: 20px 0px 20px!important;}
-#mCafe24Order .segment.unique{border-top: 0!important;padding: 0px 0px 16px!important;}
-.messageTxt{ font-weight: 500;margin-bottom: 8px; display: block;}
+#mCafe24Order .segment.unique{border-top: 0!important;padding: 0px 0px 0px!important;}
+.messageTxt{ color: #383838;margin-bottom: 8px; display: block;}
 #mCafe24Order .recentShipArea .recent .address{font-size: 14px!important; color: #949494!important;}
 #ec-shop-deliveryInfoCell, #ec-shop-deliveryInfoTel{font-size: 14px!important; color: #949494!important;}
 #ec-shop-deliveryInfoName{font-size: 14px!important; font-weight: 700!important;}
 #omessage_select{ border: 1px solid #EAEAEA!important; color: #888!important;height: 48px!important;}
 #ec-shippingInfo-showRecentAddressList{ border: 1px solid #EAEAEA!important; color: #000!important; height: 36px!important; padding: 0 15px!important;}
-#mCafe24Order .segment.ec-shippingInfo-sameaddr{padding: 0 0px 0px!important;}
+#mCafe24Order .segment.ec-shippingInfo-sameaddr{padding: 10px 0px 0px!important;}
 #mCafe24Order input[type="radio"] + label{font-size: 14px!important;color: #606060;}
 #ec-shippingInfo-newAddress colgroup{display: none;}
 .ec-shippingInfo-newAddress-name, #ec-receiver-address, .ec-shippingInfo-receiverPhone , .ec-shippingInfo-receiverCell {display: flex;flex-direction: column;}
@@ -66,6 +72,7 @@ select::-ms-expand {display:none;}
 #btn_search_rzipcode{width: 70px!important;margin: 0 0 0 0px!important;}
 #receiver_zipcode_wrap{ justify-content: space-between; height: 48px!important;}
 #mCafe24Order .segment.ec-shippingInfo-newAddress-setMain{ padding: 0 0px 20px!important;}
+#ec-shippingInfo-newAddress .ec-base-table{padding-bottom: 32px!important;}
 
 #mCafe24Order #ec-jigsaw-area-payment .segment{padding: 16px 0px 0px!important;}
 #mCafe24Order #ec-jigsaw-area-payment .ec-base-table th, #ec-jigsaw-area-payment .ec-base-table td{border-bottom: 0!important;}
@@ -121,8 +128,8 @@ select::-ms-expand {display:none;}
 .payTitle{color: #000!important;}
 .helpArea{display: none;}
 #mCafe24Order .receiptWrap{border-bottom: 0!important;}
-#set_main_address0[type="checkbox"],#save_paymethod[type="checkbox"]{border: 1px solid #E0E0E0!important;border-radius: 2px;width: 16px!important; height: 16px!important;background-image: none!important;margin-top: 4px!important;}
-#set_main_address0[type="checkbox"]:checked,#save_paymethod[type="checkbox"]:checked{    background: url(/SkinImg/img/checkbox_on.svg) no-repeat center!important;border: 1px solid #000!important;  background-size: 17px!important;}
+#allAgree[type="checkbox"],#mallAgree[type="checkbox"],#personAgree[type="checkbox"],#set_main_address0[type="checkbox"],#save_paymethod[type="checkbox"]{border: 1px solid #E0E0E0!important;border-radius: 2px;width: 16px!important; height: 16px!important;background-image: none!important;margin-top: 4px!important;}
+#allAgree[type="checkbox"]:checked,#mallAgree[type="checkbox"]:checked,#personAgree[type="checkbox"]:checked,#set_main_address0[type="checkbox"]:checked,#save_paymethod[type="checkbox"]:checked{    background: url(/SkinImg/img/checkbox_on.svg) no-repeat center!important;border: 1px solid #000!important;  background-size: 17px!important;}
 #ec-jigsaw-area-benefit{display: none!important;}
 #total_order_sale_price_view{display: none!important;}
 #orderFixItem.ec-base-button.gFull [class*="btn"]{background-color: #000!important;font-size: 14px!important;}
@@ -137,15 +144,29 @@ select::-ms-expand {display:none;}
 .cardPromotion ul li span:after{position: absolute;right: -8px;top: 6px;content: '';width: 4px;height: 4px;border-top: 1px solid #888;border-right: 1px solid #888;transform: rotate(45deg);}
 .cardPromotion ul p{font-weight: 400;font-size: 12px;color: #888;padding-top: 6px;}
 
-
 #mCafe24Order .orderArea .totalPrice .totalAdd{display: flex; flex-direction: row; justify-content: space-between;}
 #mCafe24Order .orderArea .totalPrice .totalAdd h3{color: #606060;font-size: 14px;font-weight: 400!important;}
 #mCafe24Order .orderArea .totalPrice .totalAdd .totalprice{color: #000000;font-size: 14px;}
 
-
-
 #mCafe24Order input[type="radio"]{background: url(/web/upload/free_design/chk_box.png)no-repeat 0 0!important;width: 16px!important; height: 16px!important;background-size: 16px!important;}
 #mCafe24Order input:not(:disabled):checked[type="radio"]{background: url(/web/upload/free_design/orderRadioChecked.png) no-repeat 0 0!important;width: 16px!important; height: 16px!important;background-size: 16px!important;}
+
+/*비회원구매*/
+#mCafe24Order .pannelArea{background: #fff!important;}
+#mCafe24Order .pannelArea .title{display: none!important;}
+#mCafe24Order .pannelArea .title h2{font-weight: 500!important;  font-size: 14px!important;}
+#mCafe24Order .pannelArea .ec-base-table colgroup{display: none!important;}
+#mCafe24Order .pannelArea .ec-base-table tr{display: flex; flex-direction: column;}
+#mCafe24Order .pannelArea .ec-base-table td{border-bottom:0!important; }
+#mCafe24Order .pannelArea .ec-base-help{color: #008FE0!important;background: none!important;padding-left: 0!important;}
+#mCafe24Order .pannelArea input{height: 48px!important;}
+#mCafe24Order .ec-orderform-NoMemberPasswdRow{ margin-top: 0px!important;}
+#order_password, #order_password_confirm{border-top: 0!important;}
+
+#mCafe24Order .agreeArea .allAgree, #mCafe24Order .agreeArea .agreement{ margin: 0 0px!important; }
+#allAgree[type="checkbox"]{margin-top: 8px!important;}
+.titleLine{ border-bottom: 1px solid #000!important;justify-content: center;padding: 16px 0;font-size: 14px;text-align: center;font-weight: 400;}
+
 
 @media all and (max-width:1024px) {
     #mCafe24Order{margin: 0 auto!important;}
