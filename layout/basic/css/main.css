@@ -13,6 +13,39 @@
 /* 스마트배너 */
 .xans-smart-banner-admin {margin:0 auto 120px;}
 
+/* 배너매니저 반응형처리 */
+.pc_main01{display:block!important;}
+.mo_main01{display:none!important;}
+
+/* 하프카테고리배너 */
+.half_Cate{margin-top: 10px;}
+.half_Cate .half{display: flex;flex-direction: row;gap: 10px;}
+.half_Cate .half a{position: relative;}
+.half_Cate .half span.cateTxt{position: absolute;bottom:32px; left:50%; transform: translateX(-50%); color: #fff;font-size: 24px;font-weight: 400;font-family: 'Acumin Pro';}
+
+/* 중간 풀배너01 */
+.full_landingBanner{margin-top: 10px;}
+.full_landingBanner .txtSection{max-width: 1440px; margin: 0 auto; width: 100%;padding: 64px 0;text-align: center}
+.full_landingBanner .txtSection h2{font-family: 'Acumin Pro';font-weight: 400;font-size: 24px;color: #000000;}
+.full_landingBanner .txtSection span{display:block; margin: 16px 0 32px; font-weight: 400;font-size: 14px;line-height: 24px;color: #747474;}
+.full_landingBanner .txtSection a.landingBtn{width: 167.5px;height: 48px;background-color: #000;color: #fff;border-radius: 2px;font-size: 14px;font-weight: 400;text-align: center;display: block;line-height: 47px; margin: 0 auto;}
+
+/* 중간 풀배너02 */
+.full_landingBanner.full02 .main01{position: relative;}
+.full_landingBanner.full02 .txtSection h2{padding:0 0 24px;font-family: 'Acumin Pro';font-weight: 400;font-size: 34px;color: #fff;}
+.full_landingBanner.full02 .txtSection{padding:0;position: absolute; bottom:32px; left:50%; transform: translateX(-50%); color: #fff;font-size: 24px;font-weight: 400;font-family: 'Acumin Pro';}
+.full_landingBanner.full02 a.landingBtn{width: 167.5px;height: 48px;background-color: transparent;border:1px solid #fff; color: #fff;border-radius: 2px;font-size: 14px;font-weight: 400;text-align: center;display: block;line-height: 47px; margin: 0 auto;}
+
+/* 이미지+텍스트영역 */
+.sideBanner{margin-top: 10px;}
+.sideBanner .left{margin-bottom: 10px;}
+.sideBanner .sideSection{display: flex;flex-direction: row;}
+.sideBanner .sideSection .sideImg{width: calc( 100% - 723px );}
+.sideBanner .sideSection .txtBox{width: 723px;}
+
+
+
+
 /* 이미지&텍스트갤러리 */
 .main_image_text_gallery {margin:0 auto 120px;width:92%;padding:0;}
 .main_image_text_gallery .main_title {margin-bottom:40px;}
@@ -142,6 +175,9 @@
 
 
 @media all and (max-width:1024px) {
+	/* 배너매니저 반응형처리 */
+	.pc_main01{display:none!important;}
+	.mo_main01{display:block!important;}
 
 	/* 스마트배너 */
 	.xans-smart-banner-admin {margin:0 auto 80px;}
@@ -162,6 +198,22 @@
 	.mainvisual .swiper-pagination-bullet {width:7px; height:7px;}
 	.mainvisual .swiper-pagination-bullet-active {width:30px;}
 	.mainvisual .swiper-pagination.swiper-pagination-main_visual {bottom:10px;}
+
+	/* 하프카테고리배너 */
+	.half_Cate .half{flex-direction: column;}
+
+	/* 중간 풀배너01 */
+	.full_landingBanner .txtSection{width: 92%;padding: 32px 0;}
+	.full_landingBanner .txtSection h2{font-size: 16px;}
+	.full_landingBanner .txtSection span{margin: 16px 0;}
+
+	/* 중간 풀배너02 */
+	.full_landingBanner.full02 .txtSection h2{padding:0 0 16px;font-weight: 500;font-size: 20px;}
+	.full_landingBanner.full02 .txtSection{width: 92%;padding: 0px 0;bottom: 24px;}
+	.full_landingBanner.full02 a.landingBtn{width: 122px;height: 42px;font-size: 12px;line-height: 41px; }
+
+
+
 
 	/* 이미지&텍스트갤러리 */
 	.main_image_text_gallery {margin:0 auto 80px;}
