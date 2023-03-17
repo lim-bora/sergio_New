@@ -1,3 +1,4 @@
+<!--@layout(/layout/basic/layout.html)-->
 <!doctype html>
 <html lang="ko">
 <head>
@@ -7,6 +8,7 @@
     <title>주문완료</title>
 	<!--@css(/layout/basic/css/form_onetouch.css)-->
     <!--@css(/css/module/order/ec_orderform/form_onetouch.css)-->
+    <!--@css(/Ogam/css/order_Result.css)-->
     <!-- 사용자 스타일 수정이 필요한 경우, 신규 CSS 파일을 추가하여 #userStyle #mCafe24Order { } 셀렉터로 처리 가능합니다. -->
 
     <!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
@@ -31,9 +33,10 @@
             <a href="/myshop/index.html" module="Layout_statelogon" class="btnMy">마이쇼핑</a>
         </div>
     </div>
-    <div class="titleArea">
-        <h1>주문완료</h1>
-    </div>
+<!--    <div class="titleArea">-->
+<!--        <h1>주문완료</h1>-->
+<!--        <span style="color: #888888;">고객님의 주문이 정상적으로 완료되었습니다.</span>-->
+<!--    </div>-->
 </header>
 
 <div id="mCafe24Order" class="typeHeader" module="Order_result" unroll="1">
@@ -41,9 +44,13 @@
         $product_weight_display=F
     -->
 
+        <div class="titleArea">
+            <h1>주문완료</h1>
+            <span style="color: #888888;padding-top: 16px;display: block; padding-bottom: 36px;">고객님의 주문이 정상적으로 완료되었습니다.</span>
+        </div>
     <!-- [주문완료정보] -->
     <div class="resultArea">
-        <p class="message"><strong>고객님의 주문이<br />정상적으로 완료되었습니다.</strong></p>
+<!--        <p class="message"><strong>고객님의 주문이<br />정상적으로 완료되었습니다.</strong></p>-->
         <div class="resultInfo">
             <div class="ec-base-table gCellNarrow">
                 <table border="1">
@@ -54,11 +61,11 @@
                     </colgroup>
                     <tbody>
                     <tr>
-                        <th scope="row">주문번호</th>
+                        <th scope="row" style="font-size: 14px;color: #747474;">주문번호</th>
                         <td class="right"><span class="txtEm">{$order_id}</span></td>
                     </tr>
                     <tr>
-                        <th scope="row">결제금액</th>
+                        <th scope="row" style="font-size: 14px;color: #747474;">결제금액</th>
                         <td class="right">
                                     <span class="txtEm">
                                         {$result_order_price_front_head}{$result_order_price_front}{$result_order_price_front_tail}
@@ -82,13 +89,14 @@
                 <div class="ec-base-table typeView">
                     <table border="1">
                         <caption>결제수단</caption>
-                        <colgroup>
-                            <col style="width:94px">
-                            <col style="width:auto">
-                        </colgroup>
+<!--                        <colgroup>-->
+<!--                            <col style="width:94px">-->
+<!--                            <col style="width:auto">-->
+<!--                        </colgroup>-->
                         <tbody>
-                        <tr>
-                            <th scope="row">결제수단</th>
+                        <tr class="paySection">
+                            <h3>결제수단</h3>
+                            <th scope="row" style="width: 25%;">결제수단</th>
                             <td>
                                 {$paymethod_name}
                                 <div class="methodDetail">{$paymethod_detail}</div>
@@ -125,14 +133,15 @@
                                     <col style="width:94px">
                                     <col style="width:auto">
                                 </colgroup>
-                                <tbody>
+                                <tbody style="padding: 24px 0 40px;display: block;">
+                                <h3>배송지</h3>
                                 <tr>
                                     <th scope="row">받는사람</th>
                                     <td>{$rname}({$o_email})</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">주소</th>
-                                    <td>
+                                    <th scope="row" style="width: 20%;">주소</th>
+                                    <td style="text-align: right;">
                                         {$rzipcode} {$raddr}
                                         <div class="{$receive_info_display|display}">
                                             {$store_name}에서 수령예정
@@ -185,7 +194,7 @@
                                                                     <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
                                                                 </ul>
                                                             </li>
-                                                            <li class="quantity">수량: {$product_quantity}개</li>
+                                                            <li class="quantity">{$product_quantity}개</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -204,7 +213,7 @@
                                                                     <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
                                                                 </ul>
                                                             </li>
-                                                            <li class="quantity">수량: {$product_quantity}개</li>
+                                                            <li class="quantity">{$product_quantity}개</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -291,7 +300,7 @@
                                                                     <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
                                                                 </ul>
                                                             </li>
-                                                            <li class="quantity">수량: {$product_quantity}개</li>
+                                                            <li class="quantity">{$product_quantity}개</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -310,7 +319,7 @@
                                                                     <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
                                                                 </ul>
                                                             </li>
-                                                            <li class="quantity">수량: {$product_quantity}개</li>
+                                                            <li class="quantity">{$product_quantity}개</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -338,13 +347,17 @@
 
                 <div class="{$normal_display|display}" nspace="normal">
                     <div module="Order_normalresultlist">
-
+                        <h3>주문 상품</h3>
                         <div class="ec-base-prdInfo">
                             <div class="prdBox">
                                 <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$product_image}" alt="" width="90" height="90"></a></div>
                                 <div class="description">
                                     <strong class="prdName" title="상품명">{$set_product_icon} {$product_name_link}</strong>
                                     <ul class="info">
+                                        <li>
+                                            <span id="{$product_purchase_price_div_id}">{$product_purchase_price_front_head}{$product_purchase_price_front}{$product_purchase_price_front_tail} </span>
+                                            <span class="{$product_purchase_ref_display|display}">({$product_purchase_price_back_head}{$product_purchase_price_back}{$product_purchase_price_back_tail})</span>
+                                        </li>
                                         <li class="{$card_installment_display|display}">무이자할부 상품</li>
                                         <li title="유효기간" class="{$expiration_date_display|display}">{$expiration_date} 내 사용</li>
                                         <li title="옵션">
@@ -354,11 +367,7 @@
                                                 <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
                                             </ul>
                                         </li>
-                                        <li>수량: {$product_quantity}개</li>
-                                        <li>
-                                            <span id="{$product_purchase_price_div_id}">상품구매금액: {$product_purchase_price_front_head}{$product_purchase_price_front}{$product_purchase_price_front_tail} </span>
-                                            <span class="{$product_purchase_ref_display|display}">({$product_purchase_price_back_head}{$product_purchase_price_back}{$product_purchase_price_back_tail})</span>
-                                        </li>
+                                        <li>{$product_quantity}개</li>
                                         <li id="{$product_discount_price_div_id}" class="{$product_discount_price_display|display}">
                                             할인금액: <span class="txtWarn">-{$product_discount_price_front_head}<span id="{$product_discount_price_front_id}">{$product_discount_price_front}</span>{$product_sale_price_front_tail} </span>
                                             <span class="txtWarn {$product_discount_price_ref_display|display}">({$product_discount_price_back_head}{$product_discount_price_back}{$product_discount_price_back_tail})</span></span>
@@ -376,6 +385,10 @@
                                 <div class="description">
                                     <strong class="prdName" title="상품명">{$set_product_icon} {$product_name_link}</strong>
                                     <ul class="info">
+                                        <li>
+                                            <span id="{$product_purchase_price_div_id}">{$product_purchase_price_front_head}{$product_purchase_price_front}{$product_purchase_price_front_tail} </span>
+                                            <span class="{$product_purchase_ref_display|display}">({$product_purchase_price_back_head}{$product_purchase_price_back}{$product_purchase_price_back_tail})</span>
+                                        </li>
                                         <li class="{$card_installment_display|display}">무이자할부 상품</li>
                                         <li title="유효기간" class="{$expiration_date_display|display}">{$expiration_date} 내 사용</li>
                                         <li title="옵션">
@@ -385,11 +398,7 @@
                                                 <li><strong>{$product_name}</strong>{$option_str} ({$qty}개)</li>
                                             </ul>
                                         </li>
-                                        <li>수량: {$product_quantity}개</li>
-                                        <li>
-                                            <span id="{$product_purchase_price_div_id}">상품구매금액: {$product_purchase_price_front_head}{$product_purchase_price_front}{$product_purchase_price_front_tail} </span>
-                                            <span class="{$product_purchase_ref_display|display}">({$product_purchase_price_back_head}{$product_purchase_price_back}{$product_purchase_price_back_tail})</span>
-                                        </li>
+                                        <li>{$product_quantity}개</li>
                                         <li id="{$product_discount_price_div_id}" class="{$product_discount_price_display|display}">
                                             할인금액: <span class="txtWarn">-{$product_discount_price_front_head}<span id="{$product_discount_price_front_id}">{$product_discount_price_front}</span>{$product_sale_price_front_tail} </span>
                                             <span class="txtWarn {$product_discount_price_ref_display|display}">({$product_discount_price_back_head}{$product_discount_price_back}{$product_discount_price_back_tail})</span></span>
@@ -731,7 +740,7 @@
     </div>
 
     <!-- [결제정보] -->
-    <div class="pannelArea">
+    <div class="pannelArea" style="border-bottom: 1px solid #eaeaea;padding-bottom: 40px;">
         <div class="title">
             <h2>결제정보</h2>
         </div>
@@ -744,23 +753,32 @@
                             <col style="width:140px">
                             <col style="width:auto">
                         </colgroup>
-                        <tbody>
+                        <tbody class="pannelSection">
+                        <h3>결제정보</h3>
                         <tr>
                             <th scope="row">주문상품</th>
                             <td class="right">{$price_unit_head}{$total_product_base_price}{$price_unit_tail}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">배송비</th>
+                            <td class="right">+{$price_unit_head}{$total_basic_ship_fee}{$price_unit_tail}</td>
+                        </tr>
+                        <tr class="{$total_local_ship_fee_display|display}">
+                            <th scope="row">지역별 배송비</th>
+                            <td class="right">+{$price_unit_head}{$total_local_ship_fee}{$price_unit_tail}</td>
                         </tr>
                         <tr class="{$total_vat_display|display}">
                             <th scope="row">부가세</th>
                             <td class="right">+{$price_unit_head}{$total_vat_price}{$price_unit_tail}</td>
                         </tr>
                         <tr class="ec-order-expandwrap {$total_sale_display|display}">
-                            <th scope="row"><strong class="ec-order-expand">할인/부가결제</strong></th>
+                            <th scope="row">할인/부가결제</th>
                             <td class="right">-{$price_unit_head}{$total_sale_price_front}{$price_unit_tail}</td>
                         </tr>
                         <tr class="discountArea">
                             <td colspan="2">
                                 <div class="ec-base-box {$total_benefit_display|display}">
-                                    <strong class="heading">자동 할인</strong>
+<!--                                    <strong class="heading">자동 할인</strong>-->
                                     <div class="ec-base-table gCellNarrow">
                                         <table border="1">
                                             <caption>상세내역</caption>
@@ -824,7 +842,7 @@
                                     </div>
                                 </div>
                                 <div class="ec-base-box {$coupon_display|display}">
-                                    <strong class="heading">쿠폰 할인</strong>
+<!--                                    <strong class="heading">쿠폰 할인</strong>-->
                                     <div class="ec-base-table gCellNarrow">
                                         <table border="1">
                                             <caption>상세내역</caption>
@@ -842,7 +860,7 @@
                                     </div>
                                 </div>
                                 <div class="ec-base-box {$total_addpay_summary_display|display}">
-                                    <strong class="heading">부가결제</strong>
+<!--                                    <strong class="heading">부가결제</strong>-->
                                     <div class="ec-base-table gCellNarrow">
                                         <table border="1">
                                             <caption>상세내역</caption>
@@ -864,14 +882,6 @@
                                     </div>
                                 </div>
                             </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">배송비</th>
-                            <td class="right">+{$price_unit_head}{$total_basic_ship_fee}{$price_unit_tail}</td>
-                        </tr>
-                        <tr class="{$total_local_ship_fee_display|display}">
-                            <th scope="row">지역별 배송비</th>
-                            <td class="right">+{$price_unit_head}{$total_local_ship_fee}{$price_unit_tail}</td>
                         </tr>
                         </tbody>
                     </table>
@@ -918,12 +928,12 @@
     </div>
 
     <!-- [적립 혜택] -->
-    <div class="pannelArea {$total_mileage_summary_display|display}">
+    <div class="pannelArea {$total_mileage_summary_display|display}" style="padding: 40px 0;">
         <div class="title">
             <h2>적립 혜택</h2>
         </div>
         <div class="contents">
-            <div class="segment">
+            <div class="segment" style="padding: 4px 0;">
                 <div class="ec-base-table gCellNarrow">
                     <table border="1">
                         <caption>적립 혜택 상세</caption>
@@ -931,7 +941,8 @@
                             <col style="width:160px">
                             <col style="width:auto">
                         </colgroup>
-                        <tbody>
+                        <tbody class="pannelSection">
+                        <h3>적립혜택</h3>
                         <tr class="{$total_product_mileage_display|display}">
                             <th scope="row">상품별 {$mileage_name}</th>
                             <td class="right">{$price_unit_head}{$total_product_mileage_price}{$mileage_unit}</td>
@@ -959,9 +970,9 @@
         </div>
     </div>
 
-    <div class="ec-base-button gColumn">
-        <a href="/myshop/order/list.html" class="btnEm">주문확인하기</a>
+    <div class="ec-base-button gColumn resultBtn">
         <a href="/" class="btnSubmit">쇼핑계속하기</a>
+        <a href="/myshop/order/list.html" class="btnEm">주문확인하기</a>
     </div>
 </div>
 </body>

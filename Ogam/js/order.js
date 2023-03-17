@@ -106,7 +106,7 @@ $(function() {
     passTxt2.text('주문조회 비밀번호 확인');
 
     //비회워 주문약관 텍스트
-    let allAgreeTitle = `<h2 class="allAgreeTitle">비회원주문 이용약관</h2>`
+    let allAgreeTitle = `<h2 class="allAgreeTitle">이용약관</h2>`
     $('#all_agreement_checkbox').prepend(allAgreeTitle)
     $('.allAgreeTitle').addClass('titleLine')
 

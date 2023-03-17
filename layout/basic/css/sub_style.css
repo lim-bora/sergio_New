@@ -489,7 +489,7 @@ div.ec-base-help ul {margin:0;}
 .xans-order-basketpackage .ec-base-prdInfo .btnDelete {top:33px;}
 .xans-order-basketpackage .ec-base-prdInfo .prdBox {padding:10px 0 0;}
 .xans-order-basketpackage .ec-base-prdInfo .thumbnail {width:120px;height:auto;border:0;}
-.xans-order-basketpackage .ec-base-prdInfo .description .prdName img {max-height:30px;}
+.xans-order-basketpackage .ec-base-prdInfo .description .prdName img {max-height:30px;display: none;}
 .xans-order-basketpackage .ec-base-prdInfo .optionGroup {margin:10px 0 0 0px;padding:16px 0px;width:100%;background-color:#fff;font-size:14px;border-top: 1px solid #EAEAEA;border-bottom: 1px solid #EAEAEA;}
 .xans-order-basketpackage .ec-base-prdInfo .optionGroup .name {position:relative;padding: 0 0 0 0px;display: flex;justify-content: space-between; align-items: center;}
 /*.xans-order-basketpackage .ec-base-prdInfo .optionGroup .name:before { content:''; position:absolute; width:6px; height:6px; top:7px; left:0; background:url('/SkinImg/img/ico_option_modify.svg') no-repeat 0 0;}*/

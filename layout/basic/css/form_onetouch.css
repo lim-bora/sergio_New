@@ -128,8 +128,8 @@ select::-ms-expand {display:none;}
 .payTitle{color: #000!important;}
 .helpArea{display: none;}
 #mCafe24Order .receiptWrap{border-bottom: 0!important;}
-#allAgree[type="checkbox"],#mallAgree[type="checkbox"],#personAgree[type="checkbox"],#set_main_address0[type="checkbox"],#save_paymethod[type="checkbox"]{border: 1px solid #E0E0E0!important;border-radius: 2px;width: 16px!important; height: 16px!important;background-image: none!important;margin-top: 4px!important;}
-#allAgree[type="checkbox"]:checked,#mallAgree[type="checkbox"]:checked,#personAgree[type="checkbox"]:checked,#set_main_address0[type="checkbox"]:checked,#save_paymethod[type="checkbox"]:checked{    background: url(/SkinImg/img/checkbox_on.svg) no-repeat center!important;border: 1px solid #000!important;  background-size: 17px!important;}
+#chk_purchase_agreement0[type="checkbox"],#allAgree[type="checkbox"],#mallAgree[type="checkbox"],#personAgree[type="checkbox"],#set_main_address0[type="checkbox"],#save_paymethod[type="checkbox"]{border: 1px solid #E0E0E0!important;border-radius: 2px;width: 16px!important; height: 16px!important;background-image: none!important;margin-top: 4px!important;}
+#chk_purchase_agreement0[type="checkbox"]:checked, #allAgree[type="checkbox"]:checked,#mallAgree[type="checkbox"]:checked,#personAgree[type="checkbox"]:checked,#set_main_address0[type="checkbox"]:checked,#save_paymethod[type="checkbox"]:checked{    background: url(/SkinImg/img/checkbox_on.svg) no-repeat center!important;border: 1px solid #000!important;  background-size: 17px!important;}
 #ec-jigsaw-area-benefit{display: none!important;}
 #total_order_sale_price_view{display: none!important;}
 #orderFixItem.ec-base-button.gFull [class*="btn"]{background-color: #000!important;font-size: 14px!important;}
