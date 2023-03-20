@@ -40,8 +40,25 @@
 .sideBanner{margin-top: 10px;}
 .sideBanner .left{margin-bottom: 10px;}
 .sideBanner .sideSection{display: flex;flex-direction: row;}
-.sideBanner .sideSection .sideImg{width: calc( 100% - 723px );}
-.sideBanner .sideSection .txtBox{width: 723px;}
+.sideBanner .sideSection .sideImg{width: 65%;}
+.sideBanner .sideSection .txtBox{width: 35%;position: relative;}
+.sideBanner .sideSection .txtBox .pois{position: absolute;top: 50%;transform: translateY(-50%);}
+.sideBanner .sideSection .txtBox .pois.left{left: 17%;text-align: left;margin-left: -10px;}
+.sideBanner .sideSection .txtBox .pois.right{right: 17%;text-align: right; margin-right: -10px;}
+.sideBanner .sideSection .txtBox .pois h2{font-weight: 400;font-size: 24px;padding-bottom: 24px;}
+.sideBanner .sideSection .txtBox .pois a{width: 167.5px;height: 48px;background-color: transparent;border:1px solid #000; color: #000;border-radius: 2px;font-size: 14px;font-weight: 400;text-align: center;display: block;line-height: 47px; }
+.sideBanner .sideSection .txtBox .pois.right a{ float: right;}
+/* 이미지+텍스트영역 슬라이드 mo */
+.sideSectionSwiper{margin-left: 4%;}
+.sideSectionSwiper .swiper-wrapper a img{width: 100%;}
+.sideSectionSwiper .swiper-wrapper a span{display: block;padding: 24px 0;font-family: 'Acumin Pro';}
+
+/* 하단 풀배너03 */
+.full_landingBanner.full03 .main01{position: relative;}
+.full_landingBanner.full03 .txtSection{position: absolute;top: 50%;left: 50%; transform: translate(-50%,-50%);width: 235px;padding: 60px 0;background-color: rgba(255,255,255,0.75);}
+.full_landingBanner.full03 .txtSection h2{font-size: 26px;font-weight: 400;font-family: 'Acumin Pro';}
+.full_landingBanner.full03 .txtSection a{margin-top: 20px;font-weight: 300;font-size: 16px;display: block;}
+
 
 
 
@@ -212,7 +229,10 @@
 	.full_landingBanner.full02 .txtSection{width: 92%;padding: 0px 0;bottom: 24px;}
 	.full_landingBanner.full02 a.landingBtn{width: 122px;height: 42px;font-size: 12px;line-height: 41px; }
 
-
+	/* 하단 풀배너03 */
+	.full_landingBanner.full03 .txtSection{padding: 30px 0;width: 148px;}
+	.full_landingBanner.full03 .txtSection h2{font-size: 16px;}
+	.full_landingBanner.full03 .txtSection a{font-size: 13px;}
 
 
 	/* 이미지&텍스트갤러리 */
