@@ -156,4 +156,30 @@ $(window).resize(function(){
 
 $(function() {
     $('#totalProducts .option_product td .product').not('span').css('display','none');
+
+
+
+    $('.xans-product-detaildesign tr[data-name="판매가"]').insertBefore('#span_product_price_sale span');
 });
+
+
+$(document).ready(function(){
+    //아코디언
+    let toggle_detail = $(".detailToggle .box div")
+    toggle_detail.hide();
+    $("ul li > p").click(function(){
+        $(this).next('div').stop().slideToggle(300);
+        $(this).children('span').addClass('rotate');
+        $(this).parent("li").siblings().children("div").slideUp(300);
+        $(this).parent("li").siblings().find(".arrow").removeClass('rotate');
+    });
+    // $("ul li > p").eq(0).trigger("click");
+});
+//아코디언 해상도 크기에따라 위치변경
+$(window).resize(function(){
+    if (window.innerWidth < 1024) {  // 다바이스 크기가 1024이하일때
+        $('.detailToggle').insertAfter('#prdDetail')
+    }else{
+        $('.detailToggle').insertAfter('#fixedActionButton')
+    }
+}).resize();

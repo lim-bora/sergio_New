@@ -529,25 +529,25 @@ $default_option = yes
                     <!-- 옵션선택 또는 세트상품 선택시 상품이 추가되는 영역입니다. 쇼핑몰 화면에는 아래와 같은 마크업구조로 표시됩니다. 삭제시 기능이 정상동작 하지 않습니다. -->
                     <tbody>
                         <!-- tr>
-<td>
-<p class="product">
-$상품명<br />
-<span>$옵션</span>
-</p>
-</td>
-<td>
-<span class="quantity">
-<input type="text" class="quantity_opt" />
-<a href="javascript:;" class="up eProductQuantityUpClass"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif" alt="수량증가" ></a>
-<a href="javascript:;" class="down eProductQuantityDownClass"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif" alt="수량감소" ></a>
-</span>
-<a href="#none"><img src="//img.echosting.cafe24.com/design/skin/default/product/btn_price_delete.gif" alt="삭제" class="option_box_del" ></a>
-</td>
-<td class="right">
-<span>$가격</span>
-<span class="mileage">(<img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/product/ico_pay_point.gif" > <span class="mileage_price">$적립금</span>)</span>
-</td>
-</tr -->
+                        <td>
+                            <p class="product">
+                                $상품명<br />
+                                <span>$옵션</span>
+                            </p>
+                        </td>
+                        <td>
+                            <span class="quantity">
+                            <input type="text" class="quantity_opt" />
+                            <a href="javascript:;" class="up eProductQuantityUpClass"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif" alt="수량증가" ></a>
+                            <a href="javascript:;" class="down eProductQuantityDownClass"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif" alt="수량감소" ></a>
+                            </span>
+                            <a href="#none"><img src="//img.echosting.cafe24.com/design/skin/default/product/btn_price_delete.gif" alt="삭제" class="option_box_del" ></a>
+                            </td>
+                            <td class="right">
+                            <span>$가격</span>
+                            <span class="mileage">(<img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/product/ico_pay_point.gif" > <span class="mileage_price">$적립금</span>)</span>
+                        </td>
+                        </tr -->
                     </tbody>
 
                     <!-- // 옵션선택 또는 세트상품 선택시 상품이 추가되는 영역입니다. 쇼핑몰 화면에는 아래와 같은 마크업구조로 표시됩니다. 삭제시 기능이 정상동작 하지 않습니다. -->
@@ -587,6 +587,25 @@ $상품명<br />
                     <button type="button" class="btnNormal sizeM {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWishSoldout">WISH LIST</button>
                 </div>
             </div>
+
+            <div class="detailToggle">
+                <ul class="box">
+                    <li class="d_info">
+                         <p class="d_tab">상세설명<span class="arrow"></span></p>
+                         <div><span>{$simple_desc}</span></div>
+                    </li>
+                    <li class="d_size">
+                        <p class="d_tab">사이즈 정보<span class="arrow"></span></p>
+                        <div><span>사이즈 정보</span></div>
+                    </li>
+                    <li class="d_delivery">
+                        <p class="d_tab">배송 및 반품<span class="arrow"></span></p>
+                        <div><span>배송 및 반품</span></div>
+                    </li>
+                </ul>
+            </div>
+
+
         </div>
     </div>
     <div class="eventArea {$common_event_a|display}">
@@ -601,23 +620,23 @@ $상품명<br />
     <div id="detail" class="cboth"></div>
     <div class="detail_tab">
         <ul class="cboth title_detail">
-            <li class="tab_open"><a href="#detail">상세정보</a></li>
+<!--            <li class="tab_open"><a href="#detail">상세정보</a></li>-->
             <!--<li><a href="#review">상품후기 <span>{$review_count}</span></a></li>-->
             <!--브이리뷰 (vreview) 스크립트 / 수정할 경우 연락 부탁드립니다 (dev@vreview.tv)-->
-            <li><a href="#review">상품후기 (<span class="vreview-review-count">0</span>)</a></li>
-            <li><a href="#qna">상품문의 <span>{$qna_count}</span></a></li>
-            <li><a href="#guide">배송/교환/환불 안내</a></li>
+<!--            <li><a href="#review">상품후기 (<span class="vreview-review-count">0</span>)</a></li>-->
+<!--            <li><a href="#qna">상품문의 <span>{$qna_count}</span></a></li>-->
+<!--            <li><a href="#guide">배송/교환/환불 안내</a></li>-->
         </ul><!-- //title_detail -->
     </div><!-- //detail_tab -->
 
     <div id="tabProduct" class="tabProduct display_tablet_only">
         <ul>
-            <li class="selected"><a href="#prdDetail" target="_self">상세정보</a></li>
-            <li><a href="#prdInfo">구매안내</a></li>
+<!--            <li class="selected"><a href="#prdDetail" target="_self">상세정보</a></li>-->
+<!--            <li><a href="#prdInfo">구매안내</a></li>-->
             <!--브이리뷰 (vreview) 스크립트 / 수정할 경우 연락 부탁드립니다 (dev@vreview.tv)-->
             <!--<li class="{$review_display|display}"><a href="#prdReview" name="use_review_mobile">상품후기 <span>{$review_count}</span></a></li>-->
             <li class="{$review_display|display}"><a href="#prdReview" name="use_review_mobile">상품후기 (<span class="vreview-review-count">0</span>)</a></li>
-            <li class="{$qna_display|display}"><a href="#prdQnA" name="use_qna_mobile">상품문의 <span>{$qna_count}</span></a></li>
+<!--            <li class="{$qna_display|display}"><a href="#prdQnA" name="use_qna_mobile">상품문의 <span>{$qna_count}</span></a></li>-->
         </ul>
     </div>
 
@@ -665,12 +684,12 @@ $상품명<br />
         <div id="review" class="pdt150 cboth"></div>
         <div class="detail_tab">
             <ul class="cboth title_detail">
-                <li><a href="#detail">상세정보</a></li>
+<!--                <li><a href="#detail">상세정보</a></li>-->
                 <!--브이리뷰 (vreview) 스크립트 / 수정할 경우 연락 부탁드립니다 (dev@vreview.tv)-->
                 <!--<li class="tab_open"><a href="#review">상품후기 <span>{$review_count}</span></a></li>-->
-                <li class="tab_open"><a href="#review">상품후기 (<span class="vreview-review-count">0</span>)</a></li>
-                <li><a href="#qna">상품문의 <span>{$qna_count}</span></a></li>
-                <li><a href="#guide">배송/교환/환불 안내</a></li>
+<!--                <li class="tab_open"><a href="#review">상품후기 (<span class="vreview-review-count">0</span>)</a></li>-->
+<!--                <li><a href="#qna">상품문의 <span>{$qna_count}</span></a></li>-->
+<!--                <li><a href="#guide">배송/교환/환불 안내</a></li>-->
             </ul><!-- //title_detail -->
         </div><!-- //detail_tab -->
 
@@ -757,12 +776,12 @@ $상품명<br />
         <div id="qna" class="pdt150 cboth"></div>
         <div class="detail_tab">
             <ul class="cboth title_detail">
-                <li><a href="#detail">상세정보</a></li>
+<!--                <li><a href="#detail">상세정보</a></li>-->
                 <!--브이리뷰 (vreview) 스크립트 / 수정할 경우 연락 부탁드립니다 (dev@vreview.tv)-->
                 <!--<li><a href="#review">상품후기 <span>{$review_count}</span></a></li>-->
-                <li><a href="#review">상품후기 (<span class="vreview-review-count">0</span>)</a></li>
-                <li class="tab_open"><a href="#qna">상품문의 <span>{$qna_count}</span></a></li>
-                <li><a href="#guide">배송/교환/환불 안내</a></li>
+<!--                <li><a href="#review">상품후기 (<span class="vreview-review-count">0</span>)</a></li>-->
+<!--                <li class="tab_open"><a href="#qna">상품문의 <span>{$qna_count}</span></a></li>-->
+<!--                <li><a href="#guide">배송/교환/환불 안내</a></li>-->
             </ul><!-- //title_detail -->
         </div><!-- //detail_tab -->
 
@@ -846,12 +865,12 @@ $상품명<br />
         <div id="guide" class="pdt150 cboth"></div>
         <div class="detail_tab">
             <ul class="cboth title_detail">
-                <li><a href="#detail">상세정보</a></li>
+<!--                <li><a href="#detail">상세정보</a></li>-->
                 <!--브이리뷰 (vreview) 스크립트 / 수정할 경우 연락 부탁드립니다 (dev@vreview.tv)-->
                 <!--<li><a href="#review">상품후기 <span>{$review_count}</span></a></li>-->
-                <li><a href="#review">상품후기 (<span class="vreview-review-count">0</span>)</a></li>
-                <li><a href="#qna">상품문의 <span>{$qna_count}</span></a></li>
-                <li class="tab_open"><a href="#guide">배송/교환/환불 안내</a></li>
+<!--                <li><a href="#review">상품후기 (<span class="vreview-review-count">0</span>)</a></li>-->
+<!--                <li><a href="#qna">상품문의 <span>{$qna_count}</span></a></li>-->
+<!--                <li class="tab_open"><a href="#guide">배송/교환/환불 안내</a></li>-->
             </ul><!-- //title_detail -->
         </div><!-- //detail_tab -->
 
