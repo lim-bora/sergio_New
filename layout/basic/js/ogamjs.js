@@ -14,6 +14,7 @@ $(function () {
     // 아이디찾기 페이지 휴대폰번호 인증 우선 체크
     let isClicked = true;
     changeRadioBtnState();
+    foreignerDisplay();
 
     function changeRadioBtnState() {
         if (isClicked)
@@ -27,18 +28,27 @@ $(function () {
         $('.xans-member-findpasswd #ssn_view').css('display','none');
         $('.xans-member-findid #mobile_view').css('display','inline')
         $('.xans-member-findpasswd #mobile_view').css('display','inline')
-
-        // 회원가입 : 외국인 가입 항목
-        // if($('#foreignerAuth').css('display') === 'none' ) {
-        //     $('#nameTitle').parent().removeClass('layout_hidden');
-        // } else {
-        //     $('#nameTitle').parent().addClass('layout_hidden');
-        // }
     }
-
     $('#searchType').on('change', function() {
         changeRadioBtnState();
     });
+
+
+    // 회원가입 : 외국인 회원가입 이름 필드 비노출 함수
+    function foreignerDisplay() {
+        let foreForm = $('.xans-member-join .ec-base-table #foreignerAuth');
+        if(foreForm.css('display') === 'none') {
+            $('.xans-member-join .ec-base-table th#nameTitle').parent().removeClass('layout_hidden');
+            console.log("외국인 안보임");
+        } else {
+            $('.xans-member-join .ec-base-table th#nameTitle').parent().addClass('layout_hidden');
+            console.log("외국인 보임");
+        }
+    }
+    $("input[name='member_type']").on('change', function (){
+        foreignerDisplay();
+    });
+
 
     // 쇼핑큐레이션 js 영역
     let searchFilter = $('tr.xans-product-searchfilterlist th.title');
