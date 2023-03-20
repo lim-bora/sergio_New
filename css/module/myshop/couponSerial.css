@@ -1,7 +1,7 @@
 .xans-myshop-couponserial .couponSerial { text-align:center; border-top-color:#000; }
 .xans-myshop-couponlist .couponList .ec-base-table,
 .xans-myshop-couponlist .couponList .ec-base-prdEmpty { border-top:0; }
-.xans-myshop-couponlist .couponList .ec-base-prdEmpty { padding-top:6px; }
+.xans-myshop-couponlist .couponList .ec-base-prdEmpty { padding-top:50px; }
 
 .myshopArea .subtitleH4{font-weight: 500;font-size: 14px;text-align: center;padding-bottom: 16px;}
 .xans-myshop-couponserial .couponSerial .btnSubmitFix{background: #fff;border: 1px solid #000;color: #000;font-weight: 400;font-size: 14px;height: 48px;padding-top: 15px;}

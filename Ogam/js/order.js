@@ -43,6 +43,11 @@ $(function(){
     $(".discountDetail.mCouponSelect").insertAfter("#mileage_use_area");
     $(".discountDetail.mCouponModify").insertAfter(".discountDetail.mCouponSelect");
 
+    // 주문내역상품 가격맨위로 순서변경
+    // $(".ec-base-prdInfo .proPrice").insertAfter("li[title = '옵션']")
+    // $(".xans-order-normallist .proPrice").insertAfter(".xans-order-normallist .prdName");
+    // $(".xans-order-normallist .prdName").after("..proPrice");
+
     //결제수단 텍스트
     $('.ec-paymethod-newArea > label').empty();
     $('.ec-paymethod-newArea > label').append('<span class="payTitle">결제수단 선택</span>');

@@ -11,8 +11,10 @@ select::-ms-expand {display:none;}
 .containerOrder{padding-top: 100px;}
 #header .header{display: none;}
 .titleArea{margin: 80px 0 32px!important;}
-#header .titleArea h1{background-color: #fff!important;color: #000!important;border: 0!important;font-size: 24px!important;font-weight: 400!important;}
+#header .titleArea h1{background-color: #fff!important;color: #000!important;border: 0!important;font-size: 24px!important;font-weight: 400!important;display: none!important;}
 #mCafe24Order .orderArea .totalPrice .title{background-color: #fff!important;padding: 11px 0!important;}
+#mCafe24Order > h2{font-weight: 400;
+    font-size: 24px;text-align: center;padding: 80px 0 32px;}
 
 #mCafe24Order{background: #fff!important;margin: 0 auto!important;}
 #mCafe24Order{width: 474px!important; border-left: 0!important;border-right: 0!important;}
@@ -29,6 +31,7 @@ select::-ms-expand {display:none;}
 #mCafe24Order .title h2{margin: 0 0px 0 0!important;}
 #mCafe24Order .orderArea .ec-base-prdInfo{margin: 0 0px 0px 0px!important;border-bottom: 1px solid #EAEAEA!important;}
 #mCafe24Order .ec-base-prdInfo .thumbnail{width:120px!important;height: 160px!important;border: 0!important;}
+#mCafe24Order .ec-base-prdInfo .description{display: flex!important;flex-direction: column;}
 #mCafe24Order .ec-base-prdInfo .description .info{margin: 0 0 0px!important;}
 #mCafe24Order .ec-base-prdInfo .description .info li{margin-bottom: 8px!important;}
 #mCafe24Order .txtWarn{color: #000!important;}
@@ -38,6 +41,10 @@ select::-ms-expand {display:none;}
 #ec-jigsaw-tab-shippingInfo.ec-base-tab li a{font-size: 14px!important;font-weight: 500!important;color: #888888!important;}
 #ec-jigsaw-tab-shippingInfo.ec-base-tab li.selected a{color: #000!important;}
 #mCafe24Order .segment .paymentList .discountName .ico_accumulate{display: none!important;}
+#ec-jigsaw-area-orderProduct .ec-base-prdInfo .description .info{ order:3;display: flex!important;flex-direction: column; }
+#ec-jigsaw-area-orderProduct .ec-base-prdInfo .description .proPrice{ order:2;margin-bottom: 8px; }
+#ec-jigsaw-area-orderProduct .ec-base-prdInfo .description .info li:nth-of-type(4){order:3;}
+#ec-jigsaw-area-orderProduct .ec-base-prdInfo .description .info li:nth-of-type(3){order:4;}
 
 #ec-jigsaw-area-billingInfo colgroup{display: none!important;}
 #ec-jigsaw-area-billingInfo .address_form tr{display: flex;flex-direction: column;}
@@ -168,6 +175,10 @@ select::-ms-expand {display:none;}
 .titleLine{ border-bottom: 1px solid #000!important;justify-content: center;padding: 16px 0;font-size: 14px;text-align: center;font-weight: 400;}
 
 
+li:nth-of-type(1){ order:1; }
+li:nth-of-type(2){ order:3; }
+li:nth-of-type(3){ order:2; }
+
 @media all and (max-width:1024px) {
     #mCafe24Order{margin: 0 auto!important;}
     .containerOrder #titleArea.titleArea{display: none!important;}
@@ -179,6 +190,7 @@ select::-ms-expand {display:none;}
 }
 @media all and (max-width:767px) {
     #mCafe24Order{width: 98%!important;margin: 0 auto!important;}
+    #mCafe24Order > h2{padding: 40px 0 32px;}
     .containerOrder #titleArea.titleArea{display: none!important;}
     #header .titleArea{display: block!important; margin-top: 0px!important;}
     #mCafe24Order .payMethod > li.ec-paymethod-newArea .inner span{ width: 48% !important;}

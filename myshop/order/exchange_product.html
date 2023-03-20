@@ -10,16 +10,16 @@
                 <div class="description">
                     <strong class="prdName">{$product_name_link}</strong>
                     <div class="price">{$product_price_front_head}{$product_price_front}{$product_price_front_tail}<div class="ref {$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</div></div>
-
+                    <div class="quantity">
+                    <span class="ec-base-qty">
+                        <a href="javascript:;" class="down" onclick="{$out_shortcut}">수량감소</a>
+                        {$form.quantity}
+                        <a href="javascript:;" class="up" onclick="{$add_shortcut}">수량증가</a>
+                    </span>
+                    </div>
                 </div>
 
-<!--                <div class="quantity">-->
-<!--                    <span class="ec-base-qty">-->
-<!--                        <a href="javascript:;" class="down" onclick="{$out_shortcut}">수량감소</a>-->
-<!--                        {$form.quantity}-->
-<!--                        <a href="javascript:;" class="up" onclick="{$add_shortcut}">수량증가</a>-->
-<!--                    </span>-->
-<!--                </div>-->
+
             </div>
             <ul class="optionGroup" module="Myshop_optionAll">
                 <li class="{$option_list_display|display}" style="height: inherit;line-height: 35px;">
