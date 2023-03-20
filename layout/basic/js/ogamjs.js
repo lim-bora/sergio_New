@@ -39,10 +39,8 @@ $(function () {
         let foreForm = $('.xans-member-join .ec-base-table #foreignerAuth');
         if(foreForm.css('display') === 'none') {
             $('.xans-member-join .ec-base-table th#nameTitle').parent().removeClass('layout_hidden');
-            console.log("외국인 안보임");
         } else {
             $('.xans-member-join .ec-base-table th#nameTitle').parent().addClass('layout_hidden');
-            console.log("외국인 보임");
         }
     }
     $("input[name='member_type']").on('change', function (){

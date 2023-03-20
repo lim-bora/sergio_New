@@ -23,7 +23,7 @@
 .xans-member-edit .verify #verify_sms_number { padding:2px 50px 2px 4px; box-sizing:border-box; }
 .xans-member-edit .verify #verify_sms_number:disabled { padding-right:4px; }
 
-.xans-member-edit .layerLeave { width:600px; display:none; }
+.xans-member-edit .layerLeave { display:none; }
 .xans-member-edit .layerLeave h4 { margin:20px 0 10px; }
 .xans-member-edit .layerLeave select,
 .xans-member-edit .layerLeave textarea { width:100%; box-sizing:border-box; }
@@ -45,6 +45,21 @@
 .xans-member-edit .ec-base-table.typeWrite .formGroup.date > div {flex-basis: 0; flex-grow: 1;position: relative;}
 .xans-member-edit .ec-base-table.typeWrite .formGroup.date > div > span {position: absolute; color: #888; top: 14px; right: 16px; }
 .xans-member-edit a.func_del {display: block; margin-top: 16px; color: #888; text-decoration: underline;}
+
+/* 회원 탈퇴 팝업 */
+#eLeaveLayer {padding: 24px 32px; max-width: 407px; border-color: #E0E0E0;}
+#eLeaveLayer.ec-base-layer > .content {padding: 0;}
+#eLeaveLayer .ec-base-box.typeMember {padding: 0 !important; border: none;}
+#eLeaveLayer .ec-base-box.typeMember .information {display: flex; flex-direction: column; padding: 0 0 24px 0; border-bottom: 1px solid #000; margin-bottom: 24px;}
+#eLeaveLayer .ec-base-box.typeMember .information > .title {padding: 0; text-align: left;}
+#eLeaveLayer .ec-base-box.typeMember .information .description {border: none; font-size: 14px; line-height: 20px;}
+p#eLeaveLayerMileage {display: inline-block;}
+.xans-member-edit #eLeaveLayer.layerLeave h4 {margin: 0 0 8px 0; font-size: 14px; line-height: 20px; font-weight: 500;}
+.xans-member-edit #eLeaveLayer .ec-base-table {border-top: none;}
+.xans-member-edit #eLeaveLayer .ec-base-button {margin: 16px 0 0 0; display: flex; width: 100%; flex-direction: row-reverse; gap: 8px;}
+.xans-member-edit #eLeaveLayer .ec-base-button > a {flex:1; margin: 0 !important; height: 48px; line-height: 48px; font-weight: 400; border-color: #000; border-radius: 2px;}
+.xans-member-edit #eLeaveLayer .ec-base-button:after {display: none;}
+.xans-member-edit #eLeaveLayer .ec-base-table.typeWrite tr {padding: 0;}
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
@@ -80,5 +95,5 @@
     .xans-member-edit #partner_month,
     .xans-member-edit #birth_day,
     .xans-member-edit #marry_day,
-    .xans-member-edit #partner_day { width:86px; }   
+    .xans-member-edit #partner_day { width:86px; }
 }

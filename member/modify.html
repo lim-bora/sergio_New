@@ -192,11 +192,11 @@
                 <td class="formMultiple">{$form.address}</td>
             </tr>
             <tr class="{$display_phone|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_phone|display}" alt="필수" />일반전화</th>
+                <th scope="row">일반전화<img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_phone|display}" alt="필수" /></th>
                 <td class="formGroup code">{$form.phone}</td>
             </tr>
             <tr class="{$display_mobile|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_cell|display}" alt="필수" />휴대전화</th>
+                <th scope="row">휴대전화<img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_cell|display}" alt="필수" /></th>
                 <td class="formGroup code">
                     {$form.mobile}<button type="button" class="btnNormal {$display_verify_mobile|display}" id="{$btn_action_verify_mobile}" onclick="{$action_verify_mobile}">인증번호받기</button>
                     <p class="txtInfo {$bDisplayMobileVerifyInfoDefault|display}" id="{$result_send_verify_mobile_fail}"></p>
@@ -247,7 +247,7 @@
     </div>
 
     <div class="titleArea titleArea--middle {$display_add_title|display}">
-        <h3>추가정보</h3>
+        <h3>추가정보(선택)</h3>
     </div>
     <div class="ec-base-table typeWrite {$display_add_title|display}">
         <table border="1" >
@@ -514,17 +514,14 @@
 
     <div class="layerLeave ec-base-layer typeModal" id="{$leave_layer_id}">
        <!--@css(/layout/basic/css/ec-base-layer.css)-->
-        <div class="header">
-            <h3>회원탈퇴</h3>
-        </div>
         <div class="content">
             <div class="ec-base-box typeMember">
                 <div class="information">
-                    <strong class="title">혜택 내역</strong>
+                    <h4 class="title">혜택내역</h4>
                     <div class="description">
                         <ul>
-                            <li id="{$leave_layer_text_id}">탈퇴시 보유하고 있는 적립금은 모두 삭제됩니다.</li>
-                            <li>현재 적립금 : <strong id="{$leave_layer_mileage}" class="txtEm">0</strong></li>
+                            <li>탈퇴하면 마일리지가 삭제됩니다.</li>
+                            <li>현재 마일리지 : <p id="{$leave_layer_mileage}" class="txtEm">0</p></li>
                             <li id="{$leave_layer_deposit_id}">현재 예치금 : <strong id="{$leave_layer_deposit}" class="txtEm">0</strong></li>
                         </ul>
                     </div>
@@ -540,7 +537,6 @@
                     </colgroup>
                     <tbody>
                         <tr>
-                            <th scope="row">선택</th>
                             <td>{$form.leave_reason}</td>
                         </tr>
                         <tr id="{$leave_layer_etc_reason_id}">
