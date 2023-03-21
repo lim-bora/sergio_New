@@ -1,0 +1,152 @@
+#heritageMain{position: relative;}
+.pc{display: block;}
+.mo{display: none;}
+#heritageMain .txtBox{    position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); text-align: center;}
+#heritageMain .txtBox p, #heritageSection .txtBox h3{color: #fff;}
+#heritageMain .pc .txtBox img{ width: 62px;  height: 67px;}
+#heritageMain .pc .txtBox p{font-family: 'Acumin Pro';font-size: 18px;padding-top: 24px;}
+#heritageMain .pc .txtBox h3{font-size: 36px;font-weight: 700;padding-top: 10px;color: #fff;}
+
+.scroll-downs {position: absolute;right: 0;bottom: 70px;left: 0;margin: auto;width :34px;height: 55px;}
+.mousey {width: 3px;padding: 10px 15px;height: 35px;border: 2px solid #fff;border-radius: 25px;opacity: 0.75;box-sizing: content-box;}
+.scroller {width: 3px;height: 10px;border-radius: 25%;background-color: #fff;animation-name: scroll;animation-duration: 2.2s;animation-timing-function: cubic-bezier(.15,.41,.69,.94);animation-iteration-count: infinite;}
+@keyframes scroll { 0% { opacity: 0; } 10% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(15px); opacity: 0;} }
+
+
+.middleSection{padding-top: 200px}
+.middleSection .txtBox{display: block;max-width: 1440px;margin: 80px auto 146px;}
+.middleSection .txtBox h3{font-weight: 500;font-size: 26px;line-height: 40px;letter-spacing: -0.02em;}
+.middleSection .txtBox p{font-weight: 400;font-size: 16px;line-height: 26px;padding-top: 16px;}
+
+.blackSection{background-color: #101010;width: 100%;display: flex;flex-direction: row; justify-content: space-between; align-items: center;}
+.blackSection .crossBox{padding: 486px 0;display: flex;flex-direction: row; align-items: center;width: 55%;}
+.blackSection .crossBox span{color: #fff;text-align: center;font-size: 26px;line-height: 36px;}
+.blackSection .crossBox span img{width: 62px;height: 67px;}
+.blackSection .txtBox{width: 42%;text-align: left;}
+.blackSection .txtBox p{color: #fff;font-size: 16px;line-height: 26px;padding-left: 80px;}
+.blackSection .crossBox > span.brand{position: relative;}
+.blackSection .crossBox > span.brand01 span{
+    display: block;
+    position: absolute;
+    width: 35vw;
+    height: 35vw;
+    left: 13vw;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.blackSection .crossBox span.brand02 span{
+    display: block;
+    position: absolute;
+    width: 35vw;
+    height: 35vw;
+    left: 9vw;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.girdSection{max-width: 1440px;margin: 0 auto;padding-top: 118px;}
+.girdSection .imgBox{display: flex;flex-direction: row;flex-wrap: nowrap;gap: 10px;}
+.girdSection .imgBox .big{width: 55%;}
+.girdSection .imgBox .big img{object-fit: cover;  height: 100%;}
+.girdSection .imgBox .small{width:45%;display: block;}
+.girdSection .imgBox .small img:nth-child(1){margin-bottom: 10px;}
+.girdSection .txtBox{text-align: center;padding: 40px 0 118px;}
+.girdSection .txtBox p{font-size: 16px;line-height: 26px;}
+
+
+.halfSection{width: 100%;margin: 0 auto;display: flex;flex-direction: row;flex-wrap: nowrap;align-items: center;background-color: #122E45;}
+.halfSection img{width:50%;}
+.halfSection .txtBox{width:50%;text-align: left;padding-left: 80px;}
+.halfSection .txtBox p{font-size: 16px;line-height: 26px;color: #fff;font-weight: 400;}
+
+@media all and (min-width:1920px) {
+    .blackSection .crossBox > span.brand01 span {
+        width: 32vw;
+        height: 32vw;
+        left: 14vw;
+    }
+
+    .blackSection .crossBox span.brand02 span {
+        width: 32vw;
+        height: 32vw;
+        left: 8vw;
+    }
+}
+@media all and (max-width:1500px) {
+    .middleSection{padding-top: 150px}
+    .middleSection .txtBox{width: 92%}
+    .girdSection{width: 92%;}
+    .halfSection .txtBox{padding-left: 2%;}
+}
+
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    .pc{display: none;}
+    .mo{display: block;}
+
+    #heritageMain .txtBox{top: 45%;}
+    #heritageMain .mo .txtBox img{ width: 47px;  height: 50px;}
+    #heritageMain .mo .txtBox p{font-family: 'Acumin Pro';font-size: 14px;padding-top: 24px;}
+    #heritageMain .mo .txtBox h3{font-size: 26px;font-weight: 700;padding-top: 10px;color: #fff;}
+
+    .scroll-downs {bottom: 80px;width: 28px;height: 40.44px;}
+    .mousey{padding: 8px 12px;height: 28px;}
+
+    .middleSection{padding-top: 88px}
+    .middleSection .txtBox{display: block;width:92%;margin: 48px auto 174px;}
+    .middleSection .txtBox h3{font-size: 20px;line-height: 30px;letter-spacing: -0.02em;}
+    .middleSection .txtBox p{font-size: 14px;line-height: 24px;}
+
+    .blackSection{flex-direction: column;padding: 240px 0 176px;}
+    .blackSection .crossBox{width: 100%;  padding: 100px 0;}
+    .blackSection .crossBox span{font-size: 18px;line-height: 28px;}
+    .blackSection .txtBox{width: 100%;text-align: center; padding-top: 48px;margin-top: 130px;}
+    .blackSection .txtBox p{font-size: 14px;line-height: 24px; padding-left: 0px;}
+    .blackSection .crossBox > span.brand01 span{
+        display: block;
+        position: absolute;
+        width: 60vw;
+        height: 60vw;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin-left: 22px;
+    }
+    .blackSection .crossBox span.brand02 span{
+        display: block;
+        position: absolute;
+        width: 60vw;
+        height: 60vw;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin-left: -22px;
+    }
+
+    .girdSection{width: 92%;padding-top: 40px;}
+    .girdSection .imgBox{flex-direction: column;}
+    .girdSection .imgBox .big{width: 100%;}
+    .girdSection .imgBox .small{width:100%;}
+    .girdSection .txtBox{padding: 32px 0 100px;}
+    .girdSection .txtBox p{font-size: 14px;line-height: 24px;}
+
+    .halfSection{flex-direction: column;}
+    .halfSection img{width:100%;}
+    .halfSection .txtBox{padding: 40px 0 166px;width: 92%;}
+    .halfSection .txtBox p{font-size: 16px;line-height: 26px;}
+}
+@media all and (max-width:756px) {
+    .blackSection .crossBox span{font-size: 12px;line-height: 16px;}
+    .blackSection {padding: 58px 0;}
+    .blackSection .txtBox{margin-top: 0;}
+    .blackSection .crossBox span img{width: 22.21px;height: 24px;}
+}
