@@ -22,14 +22,15 @@ $(function () {
         else
             $("#check_method2").prop('checked', false);
 
-        $('.xans-member-findid #email_view').css('display','none');
-        $('.xans-member-findid #ssn_view').css('display','none');
-        $('.xans-member-findpasswd #email_view').css('display','none');
-        $('.xans-member-findpasswd #ssn_view').css('display','none');
-        $('.xans-member-findid #mobile_view').css('display','inline')
-        $('.xans-member-findpasswd #mobile_view').css('display','inline')
+        $('.xans-member-findid #email_view').css('display', 'none');
+        $('.xans-member-findid #ssn_view').css('display', 'none');
+        $('.xans-member-findpasswd #email_view').css('display', 'none');
+        $('.xans-member-findpasswd #ssn_view').css('display', 'none');
+        $('.xans-member-findid #mobile_view').css('display', 'inline')
+        $('.xans-member-findpasswd #mobile_view').css('display', 'inline')
     }
-    $('#searchType').on('change', function() {
+
+    $('#searchType').on('change', function () {
         changeRadioBtnState();
     });
 
@@ -37,42 +38,57 @@ $(function () {
     // 회원가입 : 외국인 회원가입 이름 필드 비노출 함수
     function foreignerDisplay() {
         let foreForm = $('.xans-member-join .ec-base-table #foreignerAuth');
-        if(foreForm.css('display') === 'none') {
+        if (foreForm.css('display') === 'none') {
             $('.xans-member-join .ec-base-table th#nameTitle').parent().removeClass('layout_hidden');
         } else {
             $('.xans-member-join .ec-base-table th#nameTitle').parent().addClass('layout_hidden');
         }
     }
-    $("input[name='member_type']").on('change', function (){
+
+    $("input[name='member_type']").on('change', function () {
         foreignerDisplay();
     });
 
 
     // 쇼핑큐레이션 js 영역
     let searchFilter = $('tr.xans-product-searchfilterlist th.title');
-    searchFilter.on('click',function () {
+    searchFilter.on('click', function () {
         $(this).parent().children('td').stop().slideToggle();
         $(this).toggleClass('arrowUp')
-        $(this).parent().siblings().children('td').css('display','none');
+        $(this).parent().siblings().children('td').css('display', 'none');
         $(this).parent().siblings().children('th.title').removeClass('arrowUp');
 
-        $('.menuCategory.menu').css('display','none');
+        $('.menuCategory.menu').css('display', 'none');
         $('p.cateTitle').removeClass('arrowUp');
     });
 
-    $('.xans-product-normalmenu .filterBtn').on('click', function (){
-        $('#searchContent').css('display','block');
-        // $('body').addClass('ofHidden')
+    // 쇼핑큐레이션 : MO 필터 버튼 클릭 시 노출
+    $('.filterBtn').on('click', function () {
+        $('#searchContent').css('display', 'block');
+        $('body').addClass('ofHidden');
     });
     $('#searchContent .closeFilter').on('click', function () {
-        $('#searchContent').css('display','none');
-        // $('body').removeClass('ofHidden')
+        $('#searchContent').css('display', 'none');
+        $('body').removeClass('ofHidden');
     });
 
-    $('p.cateTitle').on('click',function () {
-        $('.menuCategory.menu').stop().slideToggle();
+    // 쇼핑큐레이션 : 항목 클릭 시 슬라이드 다운
+    $('p.cateTitle').on('click', function () {
+        $('.menuCategory.menu').stop().slideToggle({
+            start: function () {
+                $(this).css({
+                    display: "flex"
+                })
+            }
+        });
         $(this).toggleClass('arrowUp');
-        $('tr.xans-product-searchfilterlist td').css('display','none');
+        $('tr.xans-product-searchfilterlist td').css('display', 'none');
         $('tr.xans-product-searchfilterlist th.title').removeClass('arrowUp');
     });
+
+    // 통합검색 : 판매가 스타일 조정
+    let searchSalePrice = $('.xans-search-result .prdList .spec > li[data-name="할인판매가"]');
+    if(searchSalePrice.length > 0) {
+        searchSalePrice.parent().find('li[data-name="판매가"] > span').addClass('active');
+    }
 });

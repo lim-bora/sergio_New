@@ -41,8 +41,8 @@ select {border: none !important;}
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
     .xans-product-normalmenu .sort {display: flex; justify-content: space-between; margin-top: 40px;}
-    .xans-product-normalmenu .filterBtn {font-size: 13px; cursor: pointer;}
-    .xans-product-normalmenu .filterBtn svg {margin-left: 10px; margin-bottom: -3px;}
+    .filterBtn {font-size: 13px; cursor: pointer;}
+    .filterBtn svg {margin-left: 10px; margin-bottom: -3px;}
 }
 
 

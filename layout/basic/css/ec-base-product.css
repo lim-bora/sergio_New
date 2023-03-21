@@ -30,7 +30,7 @@
 
 .ec-base-product .prdList .description { margin:20px 20px 0 0; padding: 0; font-size:12px; line-height:18px; text-align:left; white-space:normal; }
 .ec-base-product .prdList .description .name {  font-weight:normal;}
-.ec-base-product .prdList .description .name a { display:block; max-width:100%; color:#000; font-size:14px; line-height: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.ec-base-product .prdList .description .name a { display:block; max-width:100%; color:#000; font-size:14px; line-height: 20px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .ec-base-product .prdList .description span.grid { display:block; }
 
 /* grid */

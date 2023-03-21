@@ -71,16 +71,9 @@
 .searchOption .desc { margin:7px 0 0; color:#919399; font-size:11px; }
 
 .xans-search-result .prdList .spec > li {position: relative;}
-.xans-search-result .prdList .spec > li > span > span {display: inline-block;
-  color: #FFF !important;
-  background-color: #122E45;
-  width: 40px;
-  height: 18px;
-  font-weight: 600;
-  text-align: center;
-  line-height: 18px;
-  position: absolute;
-  right: -107px;}
+.xans-search-result .prdList .spec > li[data-name="판매가"] > span.active {color: #AEAEAE !important; text-decoration: line-through;}
+#searchContent tr .check li input[type=checkbox] {visibility: hidden; width: 0; height: 0; margin: 0;}
+#searchContent tr .check li input[type=checkbox]:checked {visibility: visible; background: url('/svg/icon-check.svg') no-repeat; width: 14px; height: 14px; margin: 0 4px 0 0; border: none;}
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
@@ -89,6 +82,11 @@
     .xans-product-searchdata .searchField .keywordArea .list { overflow:auto; width:100%; white-space:nowrap; }
     .xans-product-searchdata .searchField .keywordArea .list li { margin:0 10px 0 0; }
 	.xans-product-searchdata .searchField .keywordArea .list li a { font-size:13px; }
+    .xans-search-result .prdList .spec > li > span > span {
+      font-weight: 600;
+      display: inline-block;
+      margin-left: 6px;
+    }
 }
 
 /********************* PC *********************/
@@ -96,6 +94,7 @@
     .xans-product-searchdata .searchField .keywordArea { max-width:600px; margin:25px auto 0; text-align:center; }
     .xans-product-searchdata .searchField .keywordArea .heading { display:inline-block; margin: 0 10px 0 0; color:#000; font-size:14px; font-weight:bold; }
     .xans-product-searchdata .searchField .keywordArea .list li a { font-size:14px; }
+    .xans-search-result .prdList .spec > li > span > span {display: inline-block; font-weight: 600; line-height: 18px; position: absolute; left: 131px; }
 }
 
 /* 상세검색 사이드바(#searchSidebar), PC 고정형(#searchSticky)  */
@@ -188,7 +187,6 @@
   #searchContent .searchArea tbody { display: flex;}
   #searchContent th { font-size:14px; line-height: 20px; font-weight: 400; color:#000; text-align:left; text-transform:uppercase; vertical-align:top;}
   #searchContent tr {display: flex; flex-direction: column;}
-  #searchContent tr:last-child {display: none;}
   #searchContent tr td { display: none;}
   #searchContent tr:first-child th,
   #searchContent tr:first-child td { border-top:0; }
@@ -208,13 +206,13 @@
   #searchContent .btnAllExtend.open { background-image:url("//img.echosting.cafe24.com/skin/base/product/btn_all_extend_open.png"); }
 
 /* 체크박스 */
-  #searchContent tr .check li { display:inline-block; margin:7px 5px; word-break:break-all; word-wrap:break-word; vertical-align:top; }
-  #searchContent tr .check li label { display:inline-block; height:23px; padding:0 7px; line-height:24px; color:#525252; cursor:pointer; vertical-align:top; }
+  #searchContent tr .check li { display:inline-block; word-break:break-all; word-wrap:break-word; vertical-align:top; }
+  #searchContent tr .check li label { display:inline-block; font-size:12px; line-height:14px; color:#000; cursor:pointer; vertical-align:top; margin:0;}
   #searchContent tr .check li.disabled label { color:#d7d7d8; cursor:default; }
 
 /* 컬러칩 */
   #searchContent tr .colorChip .xans-product-filterform { font-size:0; line-height:0; }
-  #searchContent tr .colorChip li { position:relative; display:inline-block; margin:7px 5px; text-align:center; vertical-align:middle; }
+  #searchContent tr .colorChip li { position:relative; display:inline-block; vertical-align:middle; }
   #searchContent tr .colorChip li .circle { display:inline-block; width:23px; height:23px; outline:0; cursor:pointer; background-image:url("//img.echosting.cafe24.com/skin/base/product/bg_colorchip_circle_23.png"); background-repeat:no-repeat; background-position:0 0; }
   #searchContent tr .colorChip li.selected .icoColorCheck { position:absolute; top:50%; left:50%; display:block; width:13px; height:10px; margin:-5px 0 0 -6px; background:url("//img.echosting.cafe24.com/skin/base/product/ico_color_selected2.png") no-repeat 0 0; }
   #searchContent tr .colorChip li.disabled .circle { opacity:0.1; filter:alpha(opacity=10); cursor:default; }
@@ -228,12 +226,11 @@
 
 /* 가격 */
   #searchContent tr .button.full .xans-product-filterform { font-size:0; line-height:0; }
-  #searchContent tr .button.full li { display:inline-block; margin:7px 5px; }
-  #searchContent tr .button.full li button { display:inline-block; padding:0 7px; outline:0; font-size:12px; line-height:23px; color:#525252; word-break:break-all; word-wrap:break-word; letter-spacing:-0.06em; background:transparent; }
+  #searchContent tr .button.full li button { display:inline-block; padding:0; outline:0; font-size:12px; line-height:14px; color:#000; word-break:break-all; word-wrap:break-word; background:transparent; }
   #searchContent tr .button.full li.disabled button { border-color:#d7d7d8; color:#d7d7d8; cursor:default; }
-  #searchContent tr .button.full li.selected button { color:#508bed; }
-  #searchContent .button.full .content { width:450px; }
-  #searchContent tr.selected .button.full .content { width:806px; }
+  #searchContent tr .button.full li.selected button { padding-left: 18px;
+    position: relative;
+    background: url('/svg/icon-check.svg') no-repeat; }
   #searchContent tr.selected .button .priceInput { display:inline-block; position:static; }
 
   #searchContent tr .button .priceInput { position:absolute; right:83px; top:0; margin:7px 0 7px 12px; line-height:22px; }
@@ -274,7 +271,6 @@
 
 /* 쇼핑큐레이션 220303 */
 #searchContent .searchArea th {background-color:#fff;border-right:0;vertical-align:middle;}
-#searchContent tr .check li label {margin:0 15px 0 0;}
 #searchContent tr .colorChip .content {width:auto;margin:0;}
 #searchContent tr .colorChip li .circle {background:none;border:1px solid #eee;}
 .xans-product-searchdata .xans-product-searchconditiondata .btnRefresh:after {display:none;top:4px;}
@@ -284,7 +280,7 @@
 #searchContent .menuCategory.menu {display: none;}
 
 @media screen and (max-width:1024px) {
-    #searchContent {position: fixed; width: 100%; height: 100vh; top: 0; right: 0; background: #FFF; z-index: 1004; padding: 32px 16px; box-sizing: border-box;}
+    #searchContent {position: fixed; width: 100%; height: 100vh; top: 0; right: 0; background: #FFF; z-index: 1004; padding: 32px 16px 158px; box-sizing: border-box; overflow-y: scroll;}
     #searchContent .searchHeader { padding: 8px 0 32px 0; position:relative; border-bottom: 1px solid #eaeaea; text-align: center;}
     #searchContent .searchHeader h3 {display:inline-block;font-size: 16px; line-height: 18px; font-weight: 400;}
     #searchContent .closeFilter {display: inline-block; position: absolute; right: 0; cursor: pointer;}
@@ -292,7 +288,7 @@
     #searchContent .searchArea tbody { flex-direction: column; }
     #searchContent .searchArea tr {border-bottom: 1px solid #eaeaea;}
 	#searchContent .searchArea th {display:flex;padding:24px 0;border:0;justify-content: space-between;}
-    #searchContent.xans-product-searchdata .xans-product-searchconditiondata {width:100%; overflow: auto; white-space: nowrap; position: fixed; bottom: 104px;}
+    #searchContent.xans-product-searchdata .xans-product-searchconditiondata {width:100%; overflow: auto; white-space: nowrap; position: fixed; bottom: 80px; left: 0; padding: 24px 16px; background-color: #FFF;}
     #searchContent tr .content {flex-direction: column; gap: 24px; padding: 8px 16px 32px;}
 	#searchContent tr .priceSlide .slider {width:96%;margin:7px 0px 5px 5px;}
 	#searchContent tr .priceSlide .value {width:100%;margin:0;}
@@ -307,14 +303,17 @@
 	#searchContent {display:none;}
 	#shoppQbtn {border:1px solid #d6d6d6 !important;}
     .normalpackage_box {margin: 0 !important;}
-    .normalpackage_box .searchBtn {width: calc(100% - 32px);display: flex; gap:8px; position: fixed; bottom: 32px; box-sizing: border-box; background-color: #FFF;}
-    .normalpackage_box .searchBtn > div, .normalpackage_box .searchBtn > button {flex: 1;}
-    .normalpackage_box .searchBtn .btnRefresh {height:48px; border: 1px solid #000; color: #000 !important; font-size: 14px; line-height: 20px; border-radius: 2px;}
-    .normalpackage_box .searchBtn .btnBlack {height:48px; background-color:#000; color:#FFF; font-size: 14px; line-height: 20px; border-radius: 2px;}
+    .searchBtn {width: 100%; display: flex; gap:8px; position: fixed; left:0; bottom: 0; padding: 0 16px 32px; box-sizing: border-box; background-color: #FFF;}
+    .searchBtn > div, .searchBtn > button {flex: 1;}
+    .searchBtn .btnRefresh {height:48px; border: 1px solid #000; color: #000 !important; font-size: 14px; line-height: 20px; border-radius: 2px;}
+    .searchBtn .btnBlack {height:48px; background-color:#000; color:#FFF; font-size: 14px; line-height: 20px; border-radius: 2px;}
 
     .cateFilter {border-bottom: 1px solid #eaeaea;}
     .cateTitle {display: flex; justify-content: space-between; padding: 24px 0;}
-    .menuCategory.menu {padding: 8px 16px 32px; }
+    .menuCategory.menu {flex-direction: column; padding: 8px 16px 32px; gap:24px;}
+
+    .filterBtn {font-size: 13px; cursor: pointer;}
+    .filterBtn svg {margin-left: 10px; margin-bottom: -3px;}
 }
 
 @media screen and (min-width:1025px) {
@@ -324,6 +323,7 @@
   #searchContent tr .button li:hover button {color: #888888;}
   #searchContent .searchArea tbody { flex-direction: row; gap: 30px; }
   #searchContent tr .content {width:auto; flex-direction: column; gap:16px; flex-wrap: wrap; height: 104px; align-content: flex-start;}
+  #searchContent tr .button.full li { display:inline-block; width: 160px;}
   .xans-product-normalmenu {margin-left: auto !important;}
 
   /* 카테고리 */
@@ -331,5 +331,7 @@
   .menuCategory.menu {display: flex; gap: 16px; position: absolute; top: 40px; width: 100%; height: 184px; z-index: 2; padding: 40px 0; box-sizing:border-box; background-color: #FFF; flex-direction: column; align-content: flex-start; flex-wrap: wrap;}
   .menuCategory.menu li {width: 160px; height: 14px; margin-right: 120px;}
   .menuCategory.menu li a {display:block; height: 14px; font-size: 12px; line-height: 14px;}
+
+  #searchContent tr .check li label:hover {color: #888888;}
 }
 

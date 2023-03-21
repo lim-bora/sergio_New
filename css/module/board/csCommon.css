@@ -14,8 +14,6 @@
 
 #contents .ec-base-paginate.typeList {display:flex; align-items:center; justify-content:center; margin-top: 32px; }
 
-.fr-view strong:not([class]) {display:block; font-weight: 500 !important; line-height: 20px; padding-bottom: 16px; margin-top: 32px; text-align: center; border-bottom: 1px solid #000; color: #000 !important; }
-
 @media screen and (max-width:1024px) {
     #contents > .section .titleArea {margin: 44px 0 32px;}
 }
