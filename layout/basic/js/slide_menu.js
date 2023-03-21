@@ -139,7 +139,7 @@ $(function(){
             methods.close();
         } else {
             if (!iCateNo) return;
-            $('#aside #slideCateList li').removeClass('selected');
+            // $('#aside #slideCateList li').removeClass('selected');
             methods.close();
             methods.show(this.parentNode, iCateNo);
         }
@@ -156,16 +156,28 @@ $(function(){
     });
 
 	/* 모바일 슬라이드바 카테고리 */
-    // document.querySelector("#aside ul a.view").removeAttribute('href');
-    $('#aside ul a.view').on('click', function(e){
-		$(this).parent().find('li').removeClass('selected');
-		$('#slideCateList .categoryList li').removeClass('selected');
+    $('#aside #slide_add_category > li > a.view').on('click', function(e) {
 		$(this).parent().toggleClass('selected');
 		$(this).parent().siblings().removeClass('selected');
 		if (!$(this).parent('li').hasClass('noChild')){
 			e.preventDefault();
 		}
     });
+    $('#aside .sub_cate01 > li > a.view').on('click', function(e) {
+        if (!$(this).parent('li').hasClass('noChild')){
+            $(this).parent().addClass('selected');
+            e.preventDefault();
+            if($(this).parent().hasClass('selected')){
+                $(this).unbind();
+                $(this).parent().prepend('<div class="back"></div>');
+            }
+        }
+    });
+    // $('.sub_cate01 .back').on('click',function(e) {
+    //     e.preventDefault();
+    //     console.log('백 버튼');
+    //
+    // });
 
 	/* 슬라이드 고객센터 토글 */
     jQuery('#aside .navigation-menu__board .icoCategory').click(function() {

@@ -67,3 +67,23 @@ input::placeholder {color:#888; font-weight: 400;}
     margin: 0 !important;
     border: none !important;
 }
+
+/* 탑 버튼 */
+.btnGoTop { position: fixed; right: 60px; bottom: 30px; background-color: #000; width: 60px; height: 60px; border-radius: 50px; cursor: pointer; display: flex; z-index: 999; opacity: 0; transition: 0.5s ease;}
+.btnGoTop.on {opacity: 1;}
+.btnGoTop svg {margin: 0 auto;}
+
+@media all and (max-width:1024px) {
+    .btnGoTop {right: 20px; bottom: 30px; width: 40px; height: 40px;}
+    .btnGoTop svg {width: 21px;}
+}
+
+/* 탑 버튼 */
+.btnGoTop { position: fixed; right: 60px; bottom: 30px; background-color: #000; width: 60px; height: 60px; border-radius: 50px; cursor: pointer; display: flex; z-index: 999; opacity: 0; transition: 0.5s ease;}
+.btnGoTop.on {opacity: 1;}
+.btnGoTop svg {margin: 0 auto;}
+
+@media all and (max-width:1024px) {
+    .btnGoTop {right: 20px; bottom: 30px; width: 40px; height: 40px;}
+    .btnGoTop svg {width: 21px;}
+}

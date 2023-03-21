@@ -91,4 +91,20 @@ $(function () {
     if(searchSalePrice.length > 0) {
         searchSalePrice.parent().find('li[data-name="판매가"] > span').addClass('active');
     }
+
+    // 탑 버튼
+    $(window).scroll(function(){
+
+        if( $(this).scrollTop() > 100 ){
+            $(".btnGoTop").addClass("on");
+        }
+        else{
+            $(".btnGoTop").removeClass("on");
+        }
+
+    });
+
+    $(".btnGoTop").click(function(){
+        window.scrollTo({top : 0, behavior: 'smooth'});
+    });
 });
