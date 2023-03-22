@@ -205,7 +205,6 @@ body.activeAside #header .top_nav {display: none !important;}
 #footer .inner .bt_wrap2 .bt_sns .title {font-size:14px;font-weight:700;color:#1a1a1a;}
 #footer .inner .bt_wrap2 .bt_sns a {margin-left:8px;font-size:0;display:block;}
 #footer .inner .bt_wrap2 .bt_sns a:last-child {padding-right:0;}
-#footer .inner .bt_wrap2 .bt_sns a svg {height:20px;}
 
 /* 상품 더보기 */
 .main_image_text_gallery_more,
@@ -271,7 +270,7 @@ body.activeAside #header .top_nav {display: none !important;}
 	/* 상단 메뉴 */
 	#header .inner .top_nav_box {height:50px;display:flex;align-items:center;justify-content:space-between;}
 	#header .inner .top_nav_box .top_logo {display:flex;align-items:center;margin:0;height:auto;overflow:hidden;}
-	#header .inner .top_nav_box .top_logo img {max-width:200px;max-height:24px;}
+	#header .inner .top_nav_box .top_logo img {content:url(/web/upload/logo/logo-MO.png);}
 	#header .inner .top_nav_box .top_logo a {font-size:25px;white-space:nowrap;text-overflow:ellipsis;width:100%;overflow:hidden;}
 	#header .inner .top_nav_box div[data-ez-module='menu-main/1'] {display:none;}
 	#header .inner .top_nav_box .top_nav {display:flex;flex-basis:auto;position:static;}
@@ -310,7 +309,6 @@ body.activeAside #header .top_nav {display: none !important;}
 	#footer .inner .bt_wrap2 .bt_sns {margin:0 0 16px 0; justify-content: flex-start;}
 	#footer .inner .bt_wrap2 .bt_sns a {margin:0 8px 0 0;font-size:0;display:block;}
 	#footer .inner .bt_wrap2 .bt_sns a:first-child {margin-left:-10px;}
-	#footer .inner .bt_wrap2 .bt_sns a svg {height:20px;}
 
 	/* 상품 더보기 */
 	.main_image_text_gallery_more .main_image_text_gallery_more_btn,

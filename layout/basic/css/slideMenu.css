@@ -171,7 +171,7 @@ body.expand {position:relative;height:100%; min-height:100%; overflow:hidden !im
 
 
 #aside #slide_add_category .sub_cate01 li.selected { position: absolute; width: 100%; height: calc(100% - 120px); background-color: #FFF; top: 0; z-index: 1002; }
-#aside #slide_add_category .sub_cate01 div.back {position: absolute; background: url('/svg/icon-chevron-left.svg') center no-repeat; width: 24px; height: 24px; top:44px; left: 16px; z-index: 1003;}
+#aside #slide_add_category .sub_cate01 .menuBack {position: absolute; background: url('/svg/icon-chevron-left.svg') center no-repeat; width: 24px; height: 24px; top:44px; left: 16px; z-index: 1003;}
 #aside .navigation-menu__category #slide_add_category li.selected .sub_cate01 li.selected a.view {font-size: 18px;}
 #aside .navigation-menu__category #slide_add_category li.selected .sub_cate01 li.selected .sub_cate02 a.view {font-size: 14px;}
 #aside #slide_add_category .sub_cate01 li.selected a.view {padding: 22px 0; margin-top: 32px;}

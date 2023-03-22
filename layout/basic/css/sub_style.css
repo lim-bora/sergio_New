@@ -114,13 +114,13 @@
 .xans-member-login .login__util div:nth-child(3) {width:152px;height:56px;margin:0 auto;border:1px solid #d6d6d6; box-sizing:border-box;}
 .xans-member-login .login__util div:nth-child(3) a {display:block;width:100%;height:100%;font-size:16px;font-weight:700;color:#1a1a1a;line-height:56px;}
 .xans-member-login .login__sns {max-width:400px;margin:40px auto 0 auto;display:none;}
-.xans-member-login .login__sns .sns_h {margin:0 0 24px;font-size:16px;font-weight:700;text-align:center;}
-.xans-member-login .login__sns .wrap_sns_log {display:flex;justify-content: space-between;flex-wrap:wrap;width:100%;}
-.xans-member-login .login__sns .wrap_sns_log a {width:calc(50% - 4px);height:56px;padding:0 24px;margin:0 0 8px 0 !important;font-size:14px;font-weight:400;color:#1a1a1a;background-color:#fff;text-align:right;border:1px solid #e3e3e3;box-sizing:border-box;line-height:1.5;display:flex;align-items:center;justify-content:flex-end;}
-.xans-member-login .login__sns .btnKakao {background:url('/SkinImg/img/icon_sns_kakao.svg') no-repeat center left 24px;}
-.xans-member-login .login__sns .btnNaver {background:url('/SkinImg/img/icon_sns_naver.svg') no-repeat center left 24px;}
-.xans-member-login .login__sns .btnFacebook {background:url('/SkinImg/img/icon_sns_facebook.svg') no-repeat center left 24px;}
-.xans-member-login .login__sns .btnLine {background:url('/SkinImg/img/icon_sns_line.svg') no-repeat center left 24px;}
+.xans-member-login .login__sns .sns_h {margin:0 0 16px;font-size:14px;line-height:20px; font-weight:400;text-align:center;color:#747474;}
+.xans-member-login .login__sns .wrap_sns_log {display:flex;justify-content: center;flex-direction:row-reverse;flex-wrap:wrap;width:100%;gap:12px;}
+.xans-member-login .login__sns .wrap_sns_log a {width: 40px; height: 40px; font-size: 0; border-radius: 50px; background-size: 40px 40px; margin: 0;}
+.xans-member-login .login__sns .btnKakao {background:url('/SkinImg/img/icon_sns_kakao.svg') no-repeat center; }
+.xans-member-login .login__sns .btnNaver {background:url('/SkinImg/img/icon_sns_naver.svg') no-repeat center; }
+.xans-member-login .login__sns .btnFacebook {background:url('/SkinImg/img/icon_sns_facebook.svg') no-repeat center; }
+.xans-member-login .login__sns .btnLine {background:url('/SkinImg/img/icon_sns_line.svg') no-repeat center;}
 .xans-member-login .login__sns .btnGoogle {background:url('/SkinImg/img/icon_sns_google.svg') no-repeat center left 24px;}
 .xans-member-login .login__sns .btnApple {background:url('/SkinImg/img/icon_sns_apple.svg') no-repeat center left 24px;}
 .xans-member-login .login__sns .yahoojp {background:url('/SkinImg/img/icon_sns_yahoo.png') no-repeat center left 24px;}
@@ -592,7 +592,7 @@ div.ec-base-help ul {margin:0;}
 
 @media all and (min-width:1025px) {
 	.myshopArea .pc_margin_myshop{margin-left: 200px!important;}
-	.ec-base-product .prdList .spec .discountRate {font-weight: 600; line-height: 18px; position: absolute; left: 131px;}
+	.ec-base-product .prdList .spec .discountRate {font-weight: 600; line-height: 18px; margin-left: 8px;}
 }
 
 @media all and (max-width:1680px) {
@@ -646,13 +646,13 @@ div.ec-base-help ul {margin:0;}
 	.xans-member-login .wrap_security {max-width:100%;}
 	.xans-member-login .login__button {width:100%;max-width:100%;}
 	.xans-member-login .login__sns .wrap_sns_log a {padding: 0 16px;}
-	.xans-member-login .login__sns .btnKakao {background:url('/SkinImg/img/icon_sns_kakao.svg') no-repeat center left 16px;}
-	.xans-member-login .login__sns .btnNaver {background:url('/SkinImg/img/icon_sns_naver.svg') no-repeat center left 16px;}
-	.xans-member-login .login__sns .btnFacebook {background:url('/SkinImg/img/icon_sns_facebook.svg') no-repeat center left 16px;}
-	.xans-member-login .login__sns .btnLine {background:url('/SkinImg/img/icon_sns_line.svg') no-repeat center left 16px;}
-	.xans-member-login .login__sns .btnGoogle {background:url('/SkinImg/img/icon_sns_google.svg') no-repeat center left 16px;}
-	.xans-member-login .login__sns .btnApple {background:url('/SkinImg/img/icon_sns_apple.svg') no-repeat center left 16px;}
-	.xans-member-login .login__sns .yahoojp {background:url('/SkinImg/img/icon_sns_yahoo.png') no-repeat center left 16px;}
+	.xans-member-login .login__sns .btnKakao {background:url('/SkinImg/img/icon_sns_kakao.svg') no-repeat center ;}
+	.xans-member-login .login__sns .btnNaver {background:url('/SkinImg/img/icon_sns_naver.svg') no-repeat center ;}
+	.xans-member-login .login__sns .btnFacebook {background:url('/SkinImg/img/icon_sns_facebook.svg') no-repeat center ;}
+	.xans-member-login .login__sns .btnLine {background:url('/SkinImg/img/icon_sns_line.svg') no-repeat center;}
+	.xans-member-login .login__sns .btnGoogle {background:url('/SkinImg/img/icon_sns_google.svg') no-repeat center ;}
+	.xans-member-login .login__sns .btnApple {background:url('/SkinImg/img/icon_sns_apple.svg') no-repeat center ;}
+	.xans-member-login .login__sns .yahoojp {background:url('/SkinImg/img/icon_sns_yahoo.png') no-repeat center ;}
 	.xans-member-login .login__security {font-size:14px;}
 	.xans-member-login .login .wrap_security .wrap_find div {font-size:12px;}
 	.xans-member-login .login__security .secret {height:18px;}

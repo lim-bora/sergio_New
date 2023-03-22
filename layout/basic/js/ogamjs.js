@@ -86,6 +86,12 @@ $(function () {
         $('tr.xans-product-searchfilterlist th.title').removeClass('arrowUp');
     });
 
+    // 쇼핑큐레이션 : 가격 항목 selected 클래스 제어
+    $('#searchContent tr .button.full li button').on('click', function () {
+        $(this).parent().siblings().removeClass('selected');
+    });
+
+
     // 통합검색 : 판매가 스타일 조정
     let searchSalePrice = $('.xans-search-result .prdList .spec > li[data-name="할인판매가"]');
     if(searchSalePrice.length > 0) {

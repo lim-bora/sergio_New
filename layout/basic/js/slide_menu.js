@@ -169,14 +169,14 @@ $(function(){
             e.preventDefault();
             if($(this).parent().hasClass('selected')){
                 $(this).unbind();
-                $(this).parent().prepend('<div class="back"></div>');
+                $(this).parent().prepend('<button class="menuBack"></button>');
             }
         }
     });
-    // $('.sub_cate01 .back').on('click',function(e) {
-    //     e.preventDefault();
-    //     console.log('백 버튼');
-    //
+중
+    // $('.menuBack').on('click', function() {
+    //     console.log("hi");
+    //     $(this).parent().removeClass('selected');
     // });
 
 	/* 슬라이드 고객센터 토글 */
