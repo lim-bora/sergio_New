@@ -11,6 +11,18 @@ $(function(){
         $('#container').addClass('containerOrder');
     }
 
+    //주문정보 접혀진현상 제거
+    let dd = $('.billingNshipping');
+    dd.children(":first").removeClass('ec-base-fold');
+
+    //이용약관 체크박스 디자인만 삽입
+    let chk = $('#chk_purchase_agreement1').find('span');
+    let checkBox = `<input type="checkbox" id="save_paymethod" name="save_paymethod" value="" checked="checked">`
+    chk.prepend(checkBox);
+
+    let chkk = $('#agreeMsg');
+    chkk.prepend(checkBox);
+
 });
 
 $(function(){
