@@ -12,9 +12,12 @@
 .main_title.ez-align-left {text-align:left;justify-content:flex-start;}
 .main_title.ez-align-center {text-align:center;justify-content:center;}
 .main_title.ez-align-right {text-align:right;justify-content:flex-end;}
-.mainbanne01 .txtBox{position: absolute;bottom:100px;left: 50%; transform: translateX(-50%);text-align: center;}
+
+/* 메인키비주얼 텍스트 */
+.mainbanne01 .txtBox{position: absolute;bottom:100px;left: 50%; transform: translateX(-50%);text-align: center; width: 92%;}
 .mainbanne01 .txtBox h3{font-weight: 500;font-size: 54px;line-height: 64px;color: #FFFFFF;}
-.mainbanne01 .txtBox p{font-weight: 300;font-size: 18px;line-height: 28px;color: #FFFFFF;padding: 16px 0 32px;}
+.mainbanne01 .txtBox .mainBannerSub{padding: 16px 0 32px;}
+.mainbanne01 .txtBox .mainBannerSub p{font-weight: 300;font-size: 18px;line-height: 28px;color: #FFFFFF;}
 .mainbanne01 .txtBox span{width: 233px;height: 48px;border: 1px solid #FFFFFF;border-radius: 2px;color: #fff;line-height: 48px;text-align: center;display: block; margin: 0 auto;}
 
 
@@ -29,19 +32,19 @@
 .half_Cate{margin-top: 10px;}
 .half_Cate .half{display: flex;flex-direction: row;gap: 10px;}
 .half_Cate .half a{position: relative;}
-.half_Cate .half span.cateTxt{position: absolute;bottom:32px; left:50%; transform: translateX(-50%); color: #fff;font-size: 28px;font-weight: 400;}
+.half_Cate .half span.cateTxt{position: absolute;bottom:32px; left:50%; transform: translateX(-50%); color: #fff;font-size: 28px;line-height: 30px;font-weight: 400;}
 
 /* 중간 풀배너01 */
 .full_landingBanner{margin-top: 10px;}
 .full_landingBanner .txtSection{max-width: 1440px; margin: 0 auto; width: 100%;padding: 64px 0;text-align: center}
-.full_landingBanner .txtSection h2{font-weight: 500;font-size: 34px;color: #000000;}
-.full_landingBanner .txtSection span{display:block; margin: 16px 0 32px; font-weight: 400;font-size: 16px;line-height: 24px;color: #747474;}
+.full_landingBanner .txtSection h2{font-weight: 500;font-size: 34px;color: #000000;line-height: 44px;}
+.full_landingBanner .txtSection span{display:block; margin: 16px 0 32px; font-weight: 400;font-size: 16px;line-height: 26px;color: #747474;}
 .full_landingBanner .txtSection a.landingBtn{width: 233px;height: 48px;background-color: #fff;color: #000;border:1px solid #000; border-radius: 2px;font-size: 14px;font-weight: 400;text-align: center;display: block;line-height: 47px; margin: 0 auto;}
 
 /* 중간 풀배너02 */
 .full_landingBanner.full02 .main01{position: relative;}
-.full_landingBanner.full02 .txtSection h2{padding:0 0 24px;font-weight: 500;font-size: 34px;color: #fff;}
-.full_landingBanner.full02 .txtSection{padding:0;position: absolute; bottom:32px; left:50%; transform: translateX(-50%); color: #fff;font-size: 24px;font-weight: 400;font-family: 'Acumin Pro';}
+.full_landingBanner.full02 .txtSection h2{padding:0 0 24px;font-weight: 400;font-size: 34px;color: #fff;}
+.full_landingBanner.full02 .txtSection{padding:0;position: absolute; bottom:48px; left:50%; transform: translateX(-50%); color: #fff;font-size: 24px;font-weight: 400;}
 .full_landingBanner.full02 a.landingBtn{width: 233px;height: 48px;background-color: transparent;border:1px solid #fff; color: #fff;border-radius: 2px;font-size: 14px;font-weight: 400;text-align: center;display: block;line-height: 47px; margin: 0 auto;}
 
 /* 이미지+텍스트영역 */
@@ -206,6 +209,13 @@
 	.pc_main01{display:none!important;}
 	.mo_main01{display:block!important;}
 
+	/*!* 메인키비주얼 텍스트 *!*/
+	/*.mainbanne01 .txtBox{bottom:80px;    width: 88%;}*/
+	/*.mainbanne01 .txtBox h3{font-size: 32px;line-height: 42px;}*/
+	/*.mainbanne01 .txtBox .mainBannerSub{padding: 8px 0 24px;}*/
+	/*.mainbanne01 .txtBox .mainBannerSub p{font-weight: 400;font-size: 14px;line-height: 20px;}*/
+	/*.mainbanne01 .txtBox span{width: 160px;height: 36px; line-height: 36px;}*/
+
 	/* 스마트배너 */
 	.xans-smart-banner-admin {margin:0 auto 80px;}
 
@@ -231,8 +241,8 @@
 
 	/* 중간 풀배너01 */
 	.full_landingBanner .txtSection{width: 92%;padding: 32px 0;}
-	.full_landingBanner .txtSection h2{font-size: 22px;}
-	.full_landingBanner .txtSection span{margin: 16px 0;font-size: 14px;}
+	.full_landingBanner .txtSection h2{font-size: 22px;line-height: 32px;}
+	.full_landingBanner .txtSection span{margin: 16px 0;font-size: 14px;line-height: 20px;}
 	.full_landingBanner .txtSection a.landingBtn{width: 160px;height: 36px;line-height: 35px;}
 
 	/* 중간 풀배너02 */
@@ -313,6 +323,13 @@
 
 @media all and (max-width:767px) {
 
+	/* 메인키비주얼 텍스트 */
+	.mainbanne01 .txtBox{bottom:80px;    width: 88%;}
+	.mainbanne01 .txtBox h3{font-size: 32px;line-height: 42px;}
+	.mainbanne01 .txtBox .mainBannerSub{padding: 8px 0 24px;}
+	.mainbanne01 .txtBox .mainBannerSub p{font-weight: 400;font-size: 14px;line-height: 20px;}
+	.mainbanne01 .txtBox span{width: 160px;height: 36px; line-height: 36px;}
+
 	/* 메인 타이틀 */
 	.main_title .main_title_txt02 {margin-top:8px;}
 
@@ -342,7 +359,7 @@
 	/* 메인 지도 */
 	.main_map {margin:0 auto 50px;}
 
-	.half_Cate .half span.cateTxt{font-size: 18px;}
+	.half_Cate .half span.cateTxt{font-size: 18px;bottom: 16px;line-height: 20px;}
 }
 
 @media all and (max-width:480px) {

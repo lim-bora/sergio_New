@@ -55,10 +55,10 @@ $(function() {
     */
     let pcMaintxt = $('.pc_main01 .mainBannerTxt');
     let moMaintxt = $('.mo_main01 .mainBannerTxt');
-    let pcSubtxt = $('.pc_main01 p');
-    let moSubtxt = $('.mo_main01 p');
+    let pcSubtxt = $('.pc_main01 .mainBannerSub');
+    let moSubtxt = $('.mo_main01 .mainBannerSub');
 
-    // 메인배너 타이틀
+    //////////////////////////// 메인배너 타이틀///////////////////////////
     //pc 타이틀
     pcMaintxt.eq(1).text('NEW YEAR SALE'); /*첫번째 배너 텍스트*/
     $('.pc_main01 a:last-child').find('h3').text('NEW YEAR SALE'); /*첫번째 배너 텍스트*/
@@ -73,24 +73,20 @@ $(function() {
     moMaintxt.eq(3).text('test test test'); /*세번째 배너 텍스트*/
     moMaintxt.eq(0).text('test test test'); /*세번째 배너 텍스트*/
 
-    // 메인배너 서브설명글
+    /////////////////////////// 메인배너 서브설명글///////////////////////////
     //pc 서브글
-    pcSubtxt.eq(1).text("세르지오 타키니의 봄 컬렉션은 민감하게 반응하는 트렌트를 지향하기 위해 새로운 균형을 고민했습니다.\n" +
-        "DAMARINDO 라인에서는 편안함과 세련미를 동시에 약속하는 아이템을 선보입니다.");
-    $('.pc_main01 a:last-child').find('p').text("세르지오 타키니의 봄 컬렉션은 민감하게 반응하는 트렌트를 지향하기 위해 새로운 균형을 고민했습니다.\n" +
-        "DAMARINDO 라인에서는 편안함과 세련미를 동시에 약속하는 아이템을 선보입니다.");
-    pcSubtxt.eq(2).text("세르지오 타키니의 봄 컬렉션~~");
-    pcSubtxt.eq(3).text("세르지오 타키니 테스트~~");
-    pcSubtxt.eq(0).text("세르지오 타키니 테스트~~");
+    pcSubtxt.eq(1).html("<p>세르지오 타키니의 봄 컬렉션은 민감하게 반응하는 트렌트를 지향하기 위해 새로운 균형을 고민했습니다.<br>DAMARINDO 라인에서는 편안함과 세련미를 동시에 약속하는 아이템을 선보입니다.</p>");
+    $('.pc_main01 a:last-child').find('p').html("<p>세르지오 타키니의 봄 컬렉션은 민감하게 반응하는 트렌트를 지향하기 위해 새로운 균형을 고민했습니다.<br>DAMARINDO 라인에서는 편안함과 세련미를 동시에 약속하는 아이템을 선보입니다.</p>");
+    pcSubtxt.eq(2).html("<p>세르지오 타키니의 봄 컬렉션~~");
+    pcSubtxt.eq(3).html("<p>세르지오 타키니 테스트~~");
+    pcSubtxt.eq(0).html("<p>세르지오 타키니 테스트~~");
 
     //mo 서브글
-    moSubtxt.eq(1).text("세르지오 타키니의 봄 컬렉션은 민감하게 반응하는\n트렌트를 지향하기 위해 새로운 균형을 고민했습니다.\n" +
-        "DAMARINDO 라인에서는 편안함과 세련미를\n동시에 약속하는 아이템을 선보입니다.");
-    $('.mo_main01 a:last-child').find('p').text("세르지오 타키니의 봄 컬렉션은 민감하게 반응하는\n트렌트를 지향하기 위해 새로운 균형을 고민했습니다.\n" +
-        "DAMARINDO 라인에서는 편안함과 세련미를\n동시에 약속하는 아이템을 선보입니다.");
-    moSubtxt.eq(2).text("세르지오 타키니의 봄 컬렉션~~");
-    moSubtxt.eq(3).text("세르지오 타키니 테스트~~");
-    moSubtxt.eq(0).text("세르지오 타키니 테스트~~");
+    moSubtxt.eq(1).html("<p>세르지오 타키니의 봄 컬렉션은 민감하게 반응하는<br>트렌트를 지향하기 위해 새로운 균형을 고민했습니다.<br>DAMARINDO 라인에서는 편안함과 세련미를<br>동시에 약속하는 아이템을 선보입니다.</p>");
+    $('.mo_main01 a:last-child').find('p').html("<p>세르지오 타키니의 봄 컬렉션은 민감하게 반응하는<br>트렌트를 지향하기 위해 새로운 균형을 고민했습니다.<br>DAMARINDO 라인에서는 편안함과 세련미를<br>동시에 약속하는 아이템을 선보입니다.</p>");
+    moSubtxt.eq(2).html("<p>세르지오 타키니의 봄 컬렉션~~");
+    moSubtxt.eq(3).html("<p>세르지오 타키니 테스트~~");
+    moSubtxt.eq(0).html("<p>세르지오 타키니 테스트~~");
 
 
 

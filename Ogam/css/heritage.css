@@ -14,15 +14,15 @@
 
 
 .middleSection{padding-top: 200px}
-.middleSection .txtBox{display: block;max-width: 1440px;margin: 80px auto 146px;}
+.middleSection .txtBox{display: block;max-width: 1440px;margin: 80px auto 186px;}
 .middleSection .txtBox h3{font-weight: 500;font-size: 26px;line-height: 40px;letter-spacing: -0.02em;}
 .middleSection .txtBox p{font-weight: 400;font-size: 16px;line-height: 26px;padding-top: 16px;}
 
 .blackSection{background-color: #101010;width: 100%;display: flex;flex-direction: row; justify-content: space-between; align-items: center;}
-.blackSection .crossBox{padding: 486px 0;display: flex;flex-direction: row; align-items: center;width: 55%;}
+.blackSection .crossBox{padding: 486px 0;display: flex;flex-direction: row; align-items: center;width: 48%;}
 .blackSection .crossBox span{color: #fff;text-align: center;font-size: 26px;line-height: 36px;}
 .blackSection .crossBox span img{width: 62px;height: 67px;}
-.blackSection .txtBox{width: 42%;text-align: left;}
+.blackSection .txtBox{width: 46%;text-align: left;}
 .blackSection .txtBox p{color: #fff;font-size: 16px;line-height: 26px;padding-left: 80px;}
 .blackSection .crossBox > span.brand{position: relative;}
 .blackSection .crossBox > span.brand01 span{
@@ -41,7 +41,7 @@
     position: absolute;
     width: 35vw;
     height: 35vw;
-    left: 9vw;
+    left: 5vw;
     top: 50%;
     transform: translate(-50%,-50%);
     border: 1px solid #fff;
@@ -63,6 +63,7 @@
 .halfSection .txtBox{width:50%;text-align: left;padding-left: 80px;}
 .halfSection .txtBox p{font-size: 16px;line-height: 26px;color: #fff;font-weight: 400;}
 
+/********************* PC / Small *********************/
 @media all and (min-width:1920px) {
     .blackSection .crossBox > span.brand01 span {
         width: 32vw;
@@ -73,16 +74,17 @@
     .blackSection .crossBox span.brand02 span {
         width: 32vw;
         height: 32vw;
-        left: 8vw;
+        left: 5vw;
     }
 }
+/********************* PC / Small *********************/
 @media all and (max-width:1500px) {
     .middleSection{padding-top: 150px}
     .middleSection .txtBox{width: 92%}
     .girdSection{width: 92%;}
     .halfSection .txtBox{padding-left: 2%;}
+    .blackSection .txtBox p{ padding-left: 60px;}
 }
-
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
@@ -98,21 +100,22 @@
     .mousey{padding: 8px 12px;height: 28px;}
 
     .middleSection{padding-top: 88px}
-    .middleSection .txtBox{display: block;width:92%;margin: 48px auto 174px;}
+    .middleSection .txtBox{display: block;width:92%;margin: 48px auto 196px;}
     .middleSection .txtBox h3{font-size: 20px;line-height: 30px;letter-spacing: -0.02em;}
     .middleSection .txtBox p{font-size: 14px;line-height: 24px;}
 
     .blackSection{flex-direction: column;padding: 240px 0 176px;}
     .blackSection .crossBox{width: 100%;  padding: 100px 0;}
-    .blackSection .crossBox span{font-size: 18px;line-height: 28px;}
+    /*.blackSection .crossBox span{font-size: 18px;line-height: 28px;}*/
     .blackSection .txtBox{width: 100%;text-align: center; padding-top: 48px;margin-top: 130px;}
-    .blackSection .txtBox p{font-size: 14px;line-height: 24px; padding-left: 0px;}
+    .blackSection .txtBox p{/*font-size: 14px;line-height: 24px; padding-left: 0px;*/    padding-left: 0px;}
+    .blackSection .crossBox span img{width: 45px;height: 50px;}
     .blackSection .crossBox > span.brand01 span{
         display: block;
         position: absolute;
         width: 60vw;
         height: 60vw;
-        left: 50%;
+        left: 60%;
         top: 50%;
         transform: translate(-50%,-50%);
         border: 1px solid #fff;
@@ -124,7 +127,7 @@
         position: absolute;
         width: 60vw;
         height: 60vw;
-        left: 50%;
+        left: 40%;
         top: 50%;
         transform: translate(-50%,-50%);
         border: 1px solid #fff;
@@ -146,7 +149,32 @@
 }
 @media all and (max-width:756px) {
     .blackSection .crossBox span{font-size: 12px;line-height: 16px;}
-    .blackSection {padding: 58px 0;}
+    .blackSection {padding: 80px 0;}
     .blackSection .txtBox{margin-top: 0;}
+    .blackSection .txtBox p{font-size: 14px;line-height: 24px; padding-left: 0px;}
     .blackSection .crossBox span img{width: 22.21px;height: 24px;}
+    .blackSection .crossBox > span.brand01 span{
+        display: block;
+        position: absolute;
+        width: 61vw;
+        height: 61vw;
+        left: 55%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin-left: 22px;
+    }
+    .blackSection .crossBox span.brand02 span{
+        display: block;
+        position: absolute;
+        width: 61vw;
+        height: 61vw;
+        left: 45%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin-left: -22px;
+    }
 }
