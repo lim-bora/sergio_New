@@ -255,3 +255,13 @@ setResizePopup();
 $( window ).on('load', function() {
     setResizePopup();
 });
+
+
+// $(window).on('load', function() {
+//     let introClose = $('.theme01').find('.introClose');
+//
+//     introClose.click( function() {
+//         $('.introBanner').css('display','none');
+//         console.log('ee')
+//     } );
+// });

@@ -108,3 +108,11 @@ $(function () {
         window.scrollTo({top : 0, behavior: 'smooth'});
     });
 });
+
+
+//인트로 닫기버튼
+function introClose(){
+    $('.introBanner').css('display','none');
+    $('.introClose').css('display','none');
+    console.log('ee')
+}
