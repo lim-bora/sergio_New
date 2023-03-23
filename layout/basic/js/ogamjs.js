@@ -113,6 +113,14 @@ $(function () {
     $(".btnGoTop").click(function(){
         window.scrollTo({top : 0, behavior: 'smooth'});
     });
+
+    // 매장찾기
+    $('.storeGuide').on('click', function () {
+       $('.store_popup').addClass('active');
+    });
+    $('.close_popup').on('click', function() {
+       $('.store_popup').removeClass('active');
+    });
 });
 
 

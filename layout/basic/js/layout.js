@@ -421,13 +421,20 @@ jQuery(document).ready(function() {
 /* 상단 카테고리 */
 function top_category(){
 	/* 상단카테고리 */
-	jQuery('#header .top_category li').mouseenter(function(e) {
+	jQuery('#header .top_category > ul > li').mouseenter(function(e) {
 		var $this = jQuery(this).addClass('on');
+		var subChild = $(this).children('.sub_cate01');
+
 		$(this).children('.sub_cate01').addClass('active');
+		if(subChild.hasClass('active') ) {
+			$('.dimmed_for_header').addClass('fixed');
+			console.log("hi");
+		}
 		$('body').removeClass('searchExpand');
 	}).mouseleave(function(e) {
 		jQuery(this).removeClass('on');
 		$(this).children('.sub_cate01').removeClass('active');
+		$('.dimmed_for_header').removeClass('fixed');
 	});
 
 	/* 상단카테고리 중분류체크 */

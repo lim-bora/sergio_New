@@ -65,7 +65,11 @@ $(function(){
 
 
     let salePrice = $('.ec-base-product .prdList .spec > li[data-name="할인판매가"]');
+    $('.ec-base-product .prdList .spec > li[data-name="할인판매가"] > span > span').addClass('discountRate');
     if(salePrice.length > 0) {
         salePrice.parent().find('li[data-name="판매가"] > span').addClass('active');
+        salePrice.find('.discountRate').appendTo('$(this).parent()');
     }
+
+
 });

@@ -174,10 +174,10 @@ $(function(){
         }
     });
 
-    // $('.menuBack').on('click', function() {
-    //     console.log("hi");
-    //     $(this).parent().removeClass('selected');
-    // });
+    $('.menuBack').on('click', function() {
+        console.log("hi");
+        $(this).parent().removeClass('selected');
+    });
 
 	/* 슬라이드 고객센터 토글 */
     jQuery('#aside .navigation-menu__board .icoCategory').click(function() {

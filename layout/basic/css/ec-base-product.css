@@ -5,7 +5,7 @@
 .ec-base-product img { vertical-align:middle; }
 .ec-base-product a[href^='/product/detail.html'] > img { border:1px solid #ececec; }
 
-.ec-base-product .prdList { margin:0 -5px 0; text-align: left; font-size:0; line-height:0; }
+.ec-base-product .prdList { margin:0 -4px 0; text-align: left; font-size:0; line-height:0; }
 .ec-base-product .prdList > li { display:inline-block; margin:0 0 18px; color:#757575; vertical-align:top; }
 .ec-base-product .prdList .prdList__item{margin: 0 5px;}
 .ec-base-product .prdList .chk { position:absolute; top:-10px; left:0; right:0; display:block; margin:0 0 10px; }

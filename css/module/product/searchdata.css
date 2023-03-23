@@ -8,13 +8,13 @@
 .xans-product-searchdata .searchField fieldset .autoDrop li.selected a { text-decoration:none; color:#fff; background:#a1a4ae; }
 .xans-product-searchdata .searchField fieldset .btnSearchOption { margin:0 0 0 7px; padding:3px 14px 3px 0; vertical-align:middle; color:#2e2e2e; font-size:12px; letter-spacing:-1px; outline:0; background:url("//img.echosting.cafe24.com/skin/base/common/ico_arrow2.gif") no-repeat 100% 50%; }
 .xans-product-searchdata .searchField .keyword { border:0; width:100%; height:54px; padding:18px 64px 18px 8px; outline:0; font-size:14px; background:#fff; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-.xans-product-searchdata .searchField .btnSearch { position:absolute; bottom:12px; right:0; outline:0; }
+.xans-product-searchdata .searchField .btnSearch { position:absolute; width: 24px; bottom:12px; right:0; outline:0; }
 .xans-product-searchdata .searchField .keywordArea .list { display:inline-block; }
 .xans-product-searchdata .searchField .keywordArea .list li { display:inline; margin:0 0 0 8px; }
 .xans-product-searchdata .searchField .keywordArea .list li a { display:inline-block; padding: 6px 10px; word-break:break-all; word-wrap:break-word; color:#545454; background:#f4f4f4; }
 .xans-product-searchdata .searchField .btnDelete {display:none;position:absolute;bottom:0px;right:40px;cursor:pointer;font-size:0;width:20px;height:54px;background: url('//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_delete.png') no-repeat 0 center;background-size:20px;}
 
-.xans-product-searchdata .searchOrder select {border: none; font-size: 14px;}
+.xans-product-searchdata .searchOrder select {border: none; font-size: 14px; line-height: 16px; height: 16px;}
 
 #searchContent.xans-product-searchdata .xans-product-searchconditiondata { border-top:0; }
 .xans-product-searchdata .xans-product-searchconditiondata .list { display:flex; gap:8px; }
@@ -32,8 +32,8 @@
 .xans-product-searchdata .xans-product-categoryhashtag .list li { display:inline-block; margin:4px 10px 2px 0; }
 .xans-product-searchdata .xans-product-categoryhashtag .list li a { display:inline-block; word-break:break-all; word-wrap:break-word; text-decoration:underline; color:#525252; font-size:11px; line-height:14px; }
 
-.xans-product-searchdata .searchResult { padding:32px 0 0; overflow:hidden; text-align:right; line-height:38px; }
-.xans-product-searchdata .searchResult .record { float:left; color:#000; }
+.xans-product-searchdata .searchResult { padding:30px 0 0; overflow:hidden; text-align:right;}
+.xans-product-searchdata .searchResult .record { float:left; color:#000; font-size: 14px; line-height: 16px;}
 .xans-product-searchdata .searchResult .record strong { display:inline-block; margin-left:8px; }
 .xans-product-searchdata .searchResult .xans-product-searchorderby { display:inline; margin:0 4px 0 0; }
 .xans-product-searchdata .searchResult .xans-product-searchorderby::after{content:'';     display: inline-block;
@@ -312,12 +312,18 @@
     .cateTitle {display: flex; justify-content: space-between; padding: 24px 0;}
     .menuCategory.menu {flex-direction: column; padding: 8px 16px 32px; gap:24px;}
 
-    .filterBtn {font-size: 13px; cursor: pointer;}
+    .filterBtn {font-size: 14px; cursor: pointer;}
+    .xans-product-searchdata .filterBtn {order: 1; width: 50%; text-align: left;}
     .filterBtn svg {margin-left: 10px; margin-bottom: -3px;}
+
+    .xans-product-searchdata .searchResult .record {order: 3; margin-top: 32px;}
+    .searchResult .sort {order: 2; width: 50%;}
+    .xans-product-searchdata .searchResult {padding:0 !important; display: flex; flex-wrap: wrap;}
 }
 
+
 @media screen and (min-width:1025px) {
-  #searchContent {display: flex !important; align-items: center; gap:30px; position: relative; height: 40px; margin-top: 100px; padding-right: 110px;}
+  #searchContent {display: flex !important; align-items: center; gap:30px; position: relative; height: 40px; margin-top: 46px; padding-right: 110px;}
   #searchContent tr td { position: absolute; top: 40px; left:0; width: 100%; padding: 40px 0; background-color: #FFF; z-index: 2;}
   #searchContent tr .button li { width:104px; margin-right: 120px; word-break:break-all; word-wrap:break-word; vertical-align:top; }
   #searchContent tr .button li:hover button {color: #888888;}
