@@ -1,13 +1,14 @@
-$(function() {
-    let topBtn = $('.topBanner .btnClose').find('img');
-    topBtn.click( function() {
-        console.log('ㅅㄷㄴㅅ');
-        $('.topBanner a').style.pointerEvents="none"
-        $('.topbanner').addClass('close');
-    });
-});
+// $(function() {
+//     let topBtn = $('.topBanner .btnClose').find('img');
+//     topBtn.click( function() {
+//         console.log('ㅅㄷㄴㅅ');
+//         $('.topBanner a').style.pointerEvents="none"
+//         $('.topbanner').addClass('close');
+//     });
+// });
 function closeTop(){
-    $('.topbanner').css('display','none');
+   $(document).find('.topBannerBox').addClass('close');
+    console.log('ㅅㄷㄴㅅ');
 }
 
 $(function() {

@@ -1,7 +1,7 @@
 .topBannerBox{position: relative;}
-.topBannerBox span.btnClose{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%); max-width: 1440px;display: block;width: 100%; height: auto;padding: 5px 0;pointer-events: none;}
-.topBannerBox span.btnClose img{width: 24px;height: 24px;float: right;cursor: pointer;
-    z-index: 10;pointer-events: none;}
+.topBannerBox > div{    height: 100%;}
+.topBannerBox span.btnClose{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%); max-width: 1440px;display: block;width: 100%; height: auto;padding: 5px 0;}
+.topBannerBox span.btnClose img{width: 24px;height: 24px;float: right;cursor: pointer;z-index: 10;}
 .topBannerBox.close{display: none;transition: 0.3s}
 
 

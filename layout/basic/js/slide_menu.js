@@ -173,7 +173,7 @@ $(function(){
             }
         }
     });
-중
+
     // $('.menuBack').on('click', function() {
     //     console.log("hi");
     //     $(this).parent().removeClass('selected');
