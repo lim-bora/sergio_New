@@ -1,3 +1,14 @@
+$(function() {
+    let topBtn = $('.topBanner .btnClose').find('img');
+    topBtn.click( function() {
+        console.log('ㅅㄷㄴㅅ');
+        $('.topBanner a').style.pointerEvents="none"
+        $('.topbanner').addClass('close');
+    });
+});
+function closeTop(){
+    $('.topbanner').css('display','none');
+}
 
 $(function() {
     //메인배너 슬라이드 스와이프
@@ -87,8 +98,5 @@ $(function() {
     moSubtxt.eq(2).html("<p>세르지오 타키니의 봄 컬렉션~~");
     moSubtxt.eq(3).html("<p>세르지오 타키니 테스트~~");
     moSubtxt.eq(0).html("<p>세르지오 타키니 테스트~~");
-
-
-
 
 });
