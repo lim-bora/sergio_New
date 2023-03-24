@@ -93,6 +93,26 @@
 			</div><!-- //top_mypage -->
 		</div><!-- //top_nav_box -->
 	</div><!-- //inner -->
+
+	<div module="Layout_SearchHeader" data-ez="module-1t9i9od-1">
+		<!--
+            $product_page=/product/detail.html
+            $category_page=/product/list.html
+        -->
+		<div class="title displaynone">SEARCH</div>
+		<fieldset>
+			<legend>검색</legend>
+			{$form.keyword}<button type="button" class="btnDelete">삭제</button><button type="button" class="btnSearch" onclick="{$action_search_submit}"><!--@import(/svg/icon-search.html)--> 검색</button><ul class="autoDrop" id="{$search_auto_id}"></ul>
+		</fieldset>
+		<div class="hotkeyword" module="search_hotkeyword">
+			<p>RECOMMEND KEYWORDS</p>
+			<ul>
+				<li><a href="{$hot_keyword_url}">{$hot_keyword_name}</a></li>
+				<li><a href="{$hot_keyword_url}">{$hot_keyword_name}</a></li>
+			</ul>
+		</div>
+		<button type="button" class="btnClose displaynone"><i aria-hidden="true" class="icon icoClose"></i>닫기</button>
+	</div>
 </header>
 <div class="dimmed_for_header" data-ez="module-086jy12-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
 

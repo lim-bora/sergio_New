@@ -114,6 +114,21 @@ $(function () {
         window.scrollTo({top : 0, behavior: 'smooth'});
     });
 
+    // PLP js 영역
+    let salePrice = $('.ec-base-product .prdList .spec > li[data-name="할인판매가"]');
+    $('.ec-base-product .prdList .spec > li[data-name="할인판매가"] > span > span').addClass('discountRate');
+    if(salePrice.length > 0) {
+        salePrice.parent().find('li[data-name="판매가"] > span').addClass('active');
+    }
+
+    // 할인율 위치 이동
+    salePrice.each(function () {
+        let discountRate = $(this).find('.discountRate');
+        if($(this).length > 0) {
+            $(this).parent().find('li[data-name="판매가"]').append(discountRate);
+        }
+    });
+
     // 매장찾기
     $('.storeGuide').on('click', function () {
        $('.store_popup').addClass('active');
@@ -128,5 +143,4 @@ $(function () {
 function introClose(){
     $('.introBanner').css('display','none');
     $('.introClose').css('display','none');
-    console.log('ee')
 }

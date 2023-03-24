@@ -428,7 +428,6 @@ function top_category(){
 		$(this).children('.sub_cate01').addClass('active');
 		if(subChild.hasClass('active') ) {
 			$('.dimmed_for_header').addClass('fixed');
-			console.log("hi");
 		}
 		$('body').removeClass('searchExpand');
 	}).mouseleave(function(e) {
