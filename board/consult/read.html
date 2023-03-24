@@ -1,7 +1,7 @@
 <!--@layout(/layout/basic/layout.html)-->
 <div class="section myshopArea" module="board_ReadPackage_9">
     <div class="pc_margin_myshop">
-        <h4 class="subtitleH4" style="border-bottom: 1px solid #000;padding-top: 40px;">1:1문의</h4>
+        <h4 class="subtitleH4" style="border-bottom: 1px solid #000;padding-top: 40px;">1:1 문의</h4>
     <!--@css(/css/module/board/readPackage_9.css)-->
 <!--    <div module="board_title_9">-->
 <!--        <div class="path">-->
@@ -80,7 +80,7 @@
 <!--                    </tr>-->
                     <tr class="view">
                         <td colspan="2">
-                            <div class="detail">{$reply_content}</div>
+                            <div class="detail" style="padding-bottom: 16px;padding-top: 8px;">{$reply_content}</div>
                         </td>
                     </tr>
                 </tbody>
@@ -94,8 +94,8 @@
 
         <div class="ec-base-button gBottom gBreak">
             <span class="gLeft" style="width: 100%;display: flex;flex-wrap: wrap;gap: 8px;">
-                <a href="/board/consult/modify.html{$param_modify}" class="btnNormalFix btnCommon sizeM {$modify_button_auth|display}">수정</a>
-                <a href="#none" onclick="{$action_delete}" class="btnNormalFix btnCommon sizeM {$delete_button_auth|display}">삭제</a>
+                <a href="/board/consult/modify.html{$param_modify}" class="btnNormalFix btnCommon sizeM {$modify_button_auth|display}" style="border:1px solid #000;">수정</a>
+                <a href="#none" onclick="{$action_delete}" class="btnNormalFix btnCommon sizeM {$delete_button_auth|display}" style="border:1px solid #000;">삭제</a>
                 <a href="{$link_board_list}" class="btnNormalFix sizeM listGo">목록</a>
             </span>
 			<span class="gRight gBreak {$config.is_admin|display}"><a href="/board/consult/reply.html{$param_reply}" class="btnSubmitFix sizeM {$reply_button_auth|display}">답변</a></span>

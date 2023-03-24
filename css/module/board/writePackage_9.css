@@ -11,7 +11,7 @@ ul.info li { padding: 0 0 0 9px;}
 
 #myshopMain {top: 40px;}
 .xans-board-write-9 input{height: 48px!important;}
-.xans-board-write-9 td { color:#7d7d7d; }
+.xans-board-write-9 td { color:#000; }
 .xans-board-write-9 label { color:#000; }
 .xans-board-write-9 [id^="delfile"] { margin-left:20px; }
 .xans-board-write-9 tr{display: flex; flex-direction: column;}
@@ -26,6 +26,11 @@ ul.info li { padding: 0 0 0 9px;}
 .gLeft a{width: 100%;background-color: #000!important;color:#fff!important;}
 .gRight{width: 100%;display: flex; flex-direction: row;justify-content: space-between;}
 .gRight a{flex: none!important;width: 49%; margin: 0 0 0 0px!important;border: 1px solid #000!important;; color: #000!important;;background-color: #fff!important;font-weight: 400!important;}
+
+/*.xans-board-write-9 .ec-base-button .gRight >*{flex-grow: 1!important;min-width: 0!important;}*/
+/*.xans-board-write-9 .ec-base-button .gRight > span, .xans-board-write-9 .ec-base-button gRight > a{flex: 1;}*/
+/*.xans-board-write-9 .ec-base-button .gRight span:not(.displaynone) + .gRight > a{width: 50%;}*/
+
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
 	.xans-board-write-9 .ec-base-table input[type="text"],

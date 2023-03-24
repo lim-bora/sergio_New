@@ -1,5 +1,5 @@
 .xans-myshop-orderhistoryhead .period { display:inline-block; font-size:0; vertical-align:middle; }
-.xans-myshop-orderhistoryhead .period .btnNormal { margin:0 8px 0 0px;  width: 66px;color: #747474;}
+.xans-myshop-orderhistoryhead .period .btnNormal { margin:0 8px 0 0px;  width: 66px;color: #747474; padding: 13px 17px;border-radius: 2px;}
 .xans-myshop-orderhistoryhead .period .btnNormal:hover,
 .xans-myshop-orderhistoryhead .period .btnNormal.selected { position:relative; z-index:1; color: #000;}
 .xans-myshop-orderhistoryhead #history_end_date { margin-left:10px; }

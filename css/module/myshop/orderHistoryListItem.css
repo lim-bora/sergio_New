@@ -13,7 +13,8 @@
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title > strong {margin-right:5px;}
 .xans-myshop-orderhistorylistitem .ec-base-button .gRight a{height: 36px; line-height: 35px; min-width: 84px;border-radius: 2px;}
 [class^='btn'].sizeS.btnRe{width: 84px;height: 36px;font-size: 14px;padding:10px 16px;margin-left: 8px;}
-.xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot{ border-top: 0!important;   border-bottom: 0!important;}
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot{ border-top: 0!important;border-bottom: 0!important; padding: 16px 0 5px!important;}
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo a[class^='btn'].sizeS{ font-size: 12px; border: 1px solid #E0E0E0;width: 65px;height: 30px;padding: 0;line-height: 29px;border-radius: 2px;}
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
     .xans-myshop-orderhistorylistitem .order__number { margin:50px 0 0; }

@@ -60,8 +60,8 @@
 .xans-myshop-orderhistorydetail .ec-base-fold.theme1.gBottomLine > .title{border-bottom: 0;}
 .xans-myshop-orderhistorydetail .ec-base-fold.theme1.gBottomLine > .title h3{font-size: 14px; font-weight: normal;padding: 0 0 20px;}
 .xans-myshop-orderhistorydetail .ec-base-fold.theme1 > .title:after{display: none;}
-.xans-myshop-orderhistorydetail .ec-base-table th { border-bottom:none; background-color:#fff; padding: 4px 0px;color: #747474;}
-.xans-myshop-orderhistorydetail .ec-base-table td { border-bottom:none; padding: 4px 0px;text-align: right;}
+.xans-myshop-orderhistorydetail .ec-base-table th { border-bottom:none; background-color:#fff; padding: 0px 0px 16px;color: #747474;}
+.xans-myshop-orderhistorydetail .ec-base-table td { border-bottom:none; padding: 0px 0px 16px;text-align: right;}
 .xans-myshop-orderhistorydetail .ec-base-table td strong{font-weight: 400;font-size: 14px; color: #000;}
 .xans-myshop-orderhistorydetail .ec-base-table td span.gSpace20{margin-right: 5px;}
 .xans-myshop-orderhistorydetail .ec-base-table td span.gSpace20 strong{font-weight: 400;}
@@ -79,6 +79,15 @@
 .xans-myshop-orderhistorydetail .ec-base-desc.typeDot .term:before{display: none;}
 .xans-myshop-orderhistorydetail .ec-base-desc li{margin-bottom: 16px;}
 
+.xans-myshop-orderhistorydetail .ec-base-layer .header{margin: 0 32px;padding: 24px 0;border-bottom: 1px solid #000;}
+.xans-myshop-orderhistorydetail .ec-base-layer .btnClose{right: 20px;top: 20px;width: 10px;height: 10px;}
+.xans-myshop-orderhistorydetail .ec-base-layer > .content{padding: 24px 32px 0;}
+.xans-myshop-orderhistorydetail .ec-base-box{ border: 0;padding:0; }
+.xans-myshop-orderhistorydetail .ec-base-box strong{ font-size: 14px;font-weight: 500;}
+.xans-myshop-orderhistorydetail .ec-base-box p{ font-size: 14px;font-weight: 400;margin-top: 8px;}
+.xans-myshop-orderhistorydetail .xans-myshop-reasonexchange{margin: 0 0 0px;}
+.xans-myshop-orderhistorydetail .xans-myshop-reasonexchange .titleArea--middle{ margin: 24px 0 16px;}
+.xans-myshop-orderhistorydetail .ec-base-button{display: none;}
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
@@ -87,11 +96,15 @@
     .xans-myshop-orderhistorydetail .totalDetail { top:50% !important; left:0 !important; }
     .xans-myshop-orderhistorydetail .ec-base-fold.theme1.gBottomLine > .title{ padding: 0 0px;}
     .xans-myshop-orderhistorydetail .ec-base-button .gRight a{width: 100%;    margin-left: 0px; }
+    .xans-myshop-orderhistorydetail .xans-myshop-reasonexchange .titleArea--middle{ background: #fff; padding: 0;}
+    .xans-myshop-orderhistorydetail .ec-base-layer .header{ margin: 0 16px;}
+    .xans-myshop-orderhistorydetail .ec-base-layer > .content{padding: 24px 16px 0;}
+    .xans-myshop-orderhistorydetail .ec-base-layer .btnClose{right: 0px;top: 20px;width: 8px;height: 8px;}
 }
 /********************* PC *********************/
 @media all and (min-width:1025px) {
     .colOrder { width:190px; }
     .xans-myshop-orderhistorydetail .customer { padding:24px 0; }
     .xans-myshop-orderhistorydetail .totalDetail { position:absolute !important; top:auto !important; left:auto !important; width:360px; }
-    .csDetail .ec-base-layer { width:500px; }
+    .csDetail .ec-base-layer { width:407px; }
 }

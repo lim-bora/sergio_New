@@ -3,6 +3,7 @@
     <div class="pc_margin_myshop">
         <h4 class="subtitleH4" style="border-bottom: 1px solid #000;padding-top: 40px;">1:1문의</h4>
     <!--@css(/css/module/board/writePackage_9.css)-->
+        <!--@js(/Ogam/js/board.js)-->
 <!--    <div module="board_title_9">-->
 <!--        <div class="path">-->
 <!--            <span>현재 위치</span>-->
@@ -79,13 +80,14 @@
         </div>
 
         <div class="ec-base-button gBottom">
-            <span class="gLeft">
-                <span class="{$config.is_admin|display}"><a href="#none" class="btnNormalFix sizeM" onclick="{$action_comment_admin}">관리자 답변보기</a>&nbsp;&nbsp;</span>
-                <a href="{$link_board_list}" class="btnNormalFix sizeM">목록</a>
-            </span>
+<!--            <span class="gLeft">-->
+<!--                -->
+<!--            </span>-->
             <span class="gRight">
+                <a href="#none" onclick="{$action_write}" class="btnSubmitFix sizeM" style="background-color: #000!important;color: #fff!important;">등록</a>
+                <span class="{$config.is_admin|display}"><a href="#none" class="btnNormalFix sizeM" onclick="{$action_comment_admin}">관리자 답변보기</a></span>
+<!--                <a href="{$link_board_list}" class="btnNormalFix sizeM">목록</a>-->
                 <a href="{$link_board_list}" class="btnNormalFix sizeM">취소</a>
-                <a href="#none" onclick="{$action_write}" class="btnSubmitFix sizeM">등록</a>
             </span>
         </div>
     </div>
