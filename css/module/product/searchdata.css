@@ -94,7 +94,6 @@
     .xans-product-searchdata .searchField .keywordArea { max-width:600px; margin:25px auto 0; text-align:center; }
     .xans-product-searchdata .searchField .keywordArea .heading { display:inline-block; margin: 0 10px 0 0; color:#000; font-size:14px; font-weight:bold; }
     .xans-product-searchdata .searchField .keywordArea .list li a { font-size:14px; }
-    .xans-search-result .prdList .spec > li > span > span {display: inline-block; font-weight: 600; line-height: 18px; position: absolute; left: 131px; }
 }
 
 /* 상세검색 사이드바(#searchSidebar), PC 고정형(#searchSticky)  */

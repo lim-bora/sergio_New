@@ -2,11 +2,10 @@
 
 /* 상품진열 */
 .ec-base-product .prdList .description {margin:24px 0 0 0; padding: 0 8px;}
-.ec-base-product .prdList > li {margin:0 0 60px 0;}
+.ec-base-product .prdList > li {margin:0 0 60px 0; font-weight: 700;}
 .ec-base-product .prdList .spec { font-family:'Acumin Pro', sans-serif; display:flex; gap:8px; margin-top: 8px; flex-wrap: nowrap;}
 .ec-base-product .prdList .spec > li .title {padding:0;margin:0;border:0;}
-.ec-base-product .prdList .spec > li[data-name="할인판매가"] {position: relative;}
-.ec-base-product .prdList .spec > li[data-name="판매가"] > span.active { color: #AEAEAE !important; text-decoration: line-through;}
+.ec-base-product .prdList .spec > li[data-name="판매가"] > span.active { color: #AEAEAE !important; text-decoration: line-through; font-weight: 400 !important;}
 
 	/* 상품진열 5단 슬라이드 */
 .ec-base-product ul.grid5_slide {display:flex;padding:0;margin:0;height:auto;}
@@ -610,6 +609,7 @@ div.ec-base-help ul {margin:0;}
 	/* 상품진열 일반형3단 */
 	.ec-base-product .prdList > li {margin:0 0 35px 0;}
 	.ec-base-product .prdList .description {padding: 0 !important;}
+	.ec-base-product .prdList .spec {gap: 6px;}
 	.ec-base-product .prdList .spec .discountRate {font-weight: 700; display: inline-block; margin-left: 6px;}
 	.ec-base-product .prdList .spec > li[data-name="판매가"] > span.active { font-size: 12px !important; line-height: 14px;}
 	.ec-base-product ul.grid3 > li {width:100%;box-sizing:border-box;}

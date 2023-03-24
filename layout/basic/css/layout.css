@@ -126,7 +126,7 @@ body.activeAside #header .top_nav {display: none !important;}
 }
 
 /* 상단검색 레이어 */
-.xans-layout-searchheader { z-index:1001; position:fixed; left:0; right:0; top:100px; padding:16px; background:#fff; opacity:0; visibility:hidden;transform: translate3d(0,-100%,0);height:auto;box-sizing: border-box;}
+.xans-layout-searchheader { z-index:1001; position:absolute; left:0; right:0; top:100px; padding:16px; background:#fff; opacity:0; visibility:hidden;transform: translate3d(0,-100%,0);height:auto;box-sizing: border-box;}
 .searchExpand .xans-layout-searchheader { opacity: 1; visibility: visible; transform: translateZ(0); }
 .searchExpand .dimmed { display:block; }
 .xans-layout-searchheader .title {font-weight:700;color:#3a3a3a;margin:103px 0 54px; display:block; font-size:30px; text-align:center;}
@@ -233,6 +233,8 @@ body.activeAside #header .top_nav {display: none !important;}
 	body.searchExpand #header .btnClose  {display: block; height: 20px;}
 	body.searchExpand #header .top_nav {display: none !important;}
 
+	.xans-layout-searchheader { position:fixed; }
+
     /* responsive class */
 	.RW { display:none !important; }
     .RTMB { display:block !important; }
@@ -272,7 +274,8 @@ body.activeAside #header .top_nav {display: none !important;}
 	/* 상단 메뉴 */
 	#header .inner .top_nav_box {height:50px;display:flex;align-items:center;justify-content:space-between;}
 	#header .inner .top_nav_box .top_logo {display:flex;align-items:center;margin:0;height:auto;overflow:hidden;}
-	#header .inner .top_nav_box .top_logo img {content:url(/web/upload/logo/logo-MO.png);}
+	/*#header .inner .top_nav_box .top_logo img {content:url(/web/upload/logo/logo-MO.png);}*/
+	#header .inner .top_nav_box .top_logo img {max-width: 114px;}
 	#header .inner .top_nav_box .top_logo a {font-size:25px;white-space:nowrap;text-overflow:ellipsis;width:100%;overflow:hidden;}
 	#header .inner .top_nav_box div[data-ez-module='menu-main/1'] {display:none;}
 	#header .inner .top_nav_box .top_nav {display:flex;flex-basis:auto;position:static;}
