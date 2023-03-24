@@ -9,7 +9,7 @@
 .xans-member-findid .ec-base-button.gBottom button,
 .xans-member-findid .ec-base-button.gBottom a {height:48px;padding:0;line-height:48px;font-size:14px;font-weight: 400;border-radius: 2px;}
 
-.xans-member-findid .gBlank10 {display: flex; align-items: center;}
+.xans-member-findid .gBlank10 {display: flex; align-items: center; margin-bottom: 16px;}
 input#check_method2 {order: 1;}
 label[for=check_method2] {order: 2;}
 input#check_method1 {order: 3;}

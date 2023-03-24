@@ -44,11 +44,11 @@ function fixedHeader() { // 210804 서정환 수정
     var header = document.getElementById("header");
 	var fixed_margin = document.getElementById("contents");
 	var scrollY = window.pageYOffset || document.documentElement.scrollTop;
-	var header_height = document.getElementById("header").scrollHeight+'px';
+	// var header_height = document.getElementById("header").scrollHeight+'px';
 
 	if(scrollY > header.offsetTop) {
         header.classList.add("fixed");
-		fixed_margin.style.marginTop  = header_height;
+		// fixed_margin.style.marginTop  = header_height;
     } else {
         header.classList.remove("fixed");
 		fixed_margin.style.marginTop  = '0px';
@@ -63,12 +63,15 @@ function handleNav() {
     btnNavs.forEach( function(btnNav) {
         btnNav.addEventListener('click', function(){
             document.body.classList.add('activeAside');
+			$('.store_popup').removeClass('active');
+
         });
     });
     btnClose.addEventListener('click', function(){
         document.body.classList.remove('activeAside');
         document.body.classList.remove('searchExpand');
 		$('#slideCateList li').removeClass('selected');
+		$('body').removeClass('ofHidden');
     });
     // handleDimmed(dimmed, document.body, 'expand');
 }
@@ -80,6 +83,7 @@ function searchLayer() {
     btnSearchs.forEach( function(btnSearch) {
         btnSearch.addEventListener('click', function(){
             document.body.classList.add('searchExpand');
+			document.body.classList.remove('activeAside');
             var input = document.querySelector('#keyword');
             //input.focus();
         });

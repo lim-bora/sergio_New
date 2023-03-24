@@ -169,14 +169,14 @@ $(function(){
             e.preventDefault();
             if($(this).parent().hasClass('selected')){
                 $(this).unbind();
-                $(this).parent().prepend('<button class="menuBack"></button>');
+                $('#aside .menuBack').show();
             }
         }
     });
 
-    $('.menuBack').on('click', function() {
-        console.log("hi");
-        $(this).parent().removeClass('selected');
+    $('#aside .menuBack').on('click', function() {
+        $(this).hide();
+        $('.sub_cate01 li').removeClass('selected');
     });
 
 	/* 슬라이드 고객센터 토글 */

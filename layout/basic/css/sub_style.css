@@ -154,7 +154,7 @@
 /* 비밀번호찾기 */
 .xans-member-findpasswd .ec-base-box.typeMember {padding:0;border:0;}
 .xans-member-findpasswd .ec-base-box.typeMember .content {width:100%;}
-.xans-member-findpasswd .ec-base-desc.gVer .desc {margin:5px 0 20px;}
+.xans-member-findpasswd .ec-base-desc.gVer .desc {margin:0 0 32px;}
 
 /* 비밀번호찾기 2단계 */
 .xans-member-findpasswdmethod {max-width:400px;}
@@ -215,7 +215,7 @@
 .xans-member-join .required {font-size:12px; line-height:14px; color:#888888;}
 .xans-member-join .icoRequired {margin-right:4px; margin-left: 4px;}
 .xans-member-join .ec-base-table {border-top:1px solid #000000;}
-.xans-member-join .ec-base-table.typeWrite th[scope*="row"] {padding:24px 0 0;font-weight:500;font-size:14px;line-height:16px;color:#000;}
+.xans-member-join .ec-base-table.typeWrite th[scope*="row"] {padding:32px 0 0;font-weight:500;font-size:14px;line-height:16px;color:#000;}
 .xans-member-join .ec-base-table.typeWrite .ec-address select {width:410px;}
 .xans-member-join .ec-base-table.typeWrite .ec-address .ec-address-zipcode input[type="text"] {width:160px;}
 .xans-member-join .ec-base-table .gFlow {display:block;margin:0;}

@@ -7,6 +7,7 @@ $(function () {
     $("input#email1").attr("placeholder", "이메일을 입력해주세요.");
     $("input#member_id").attr("placeholder", "아이디를 입력해주세요.");
     $("input#member_passwd").attr("placeholder", "비밀번호를 입력해주세요.");
+    $("input#passwd").attr("placeholder", "비밀번호를 입력해주세요.");
     $("input#user_passwd_confirm").attr("placeholder", "비밀번호를 입력해주세요.");
     $("input#bank_account_owner").attr("placeholder", "예금주를 입력해주세요.");
     $("input#bank_account_no").attr("placeholder", "계좌번호를 입력해주세요.");
@@ -48,6 +49,7 @@ $(function () {
     $("input[name='member_type']").on('change', function () {
         foreignerDisplay();
     });
+    $('#postBtn').text('검색');
 
 
     // 쇼핑큐레이션 js 영역
@@ -145,6 +147,12 @@ $(function () {
     $('.close_map').on('click', function() {
         $('.store_map_MO').hide();
     });
+
+    // 아이디찾기, 비밀번호 찾기 js
+    $(".xans-member-findid #searchType option[value='indibuis']").remove();
+    $(".xans-member-findid #searchType option[value='corp']").remove();
+    $(".xans-member-findpasswd  #searchType option[value='indibuis']").remove();
+    $(".xans-member-findpasswd  #searchType option[value='corp']").remove();
 });
 
 

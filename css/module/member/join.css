@@ -1,5 +1,5 @@
 #container > #contents {max-width: 474px;}
-#container > #contents .titleArea--middle {margin: 32px 0 16px; padding: 0; text-align: center;background:none;}
+#container > #contents .titleArea--middle {margin: 56px 0 16px; padding: 0; text-align: center;background:none;}
 .titleArea--middle h3 {font-size: 14px; line-height: 16px; font-weight: 500;}
 
 .xans-member-join .required { display:block; margin: -13px 0 0; line-height:1; text-align:right; color:var(--font-color-base); }
@@ -35,7 +35,7 @@
 .xans-member-join #birth_year, .xans-member-join #birth_month, .xans-member-join #birth_day {width: 100% !important; margin: 0;}
 .xans-member-join .ec-base-table.typeWrite .formMultiple .formGroup {display: flex;}
 .xans-member-join .ec-base-table.typeWrite .ec-address .btnBasic,
-.xans-member-join .ec-base-table.typeWrite .formMultiple .formGroup .btnNormal {height: 48px; padding: 0 19px; line-height: 48px; border: 1px solid #000;}
+.xans-member-join .ec-base-table.typeWrite .formMultiple .formGroup .btnNormal {height: 48px; padding: 0 19px; line-height: 48px; border: 1px solid #000; border-radius: 2px;}
 .xans-member-join .ec-base-table.typeWrite .formMultiple li {display: flex;}
 .xans-member-join .ec-base-table.typeWrite .formMultiple li input {flex: auto;}
 .xans-member-join .ec-base-table.typeWrite .ec-address .ec-address-zipcode .ec-base-label {margin: 0;}

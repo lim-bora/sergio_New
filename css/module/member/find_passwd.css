@@ -5,7 +5,7 @@
 .xans-member-findpasswd .required { display:block; margin: -12px 0 0; line-height:1; text-align:right; color:#888888; font-size: 12px; }
 .xans-member-findpasswd .icoRequired {margin-right: 4px;margin-left: 4px;vertical-align: middle;margin-top: -8px;}
 .xans-member-findpasswd .ec-base-field.code {display: flex; margin: 0; font-size: 0; gap: 4px;}
-.xans-member-findpasswd .ec-base-button.gBottom {margin: 24px 0 0;}
+.xans-member-findpasswd .ec-base-button.gBottom {margin:0;}
 .xans-member-findpasswd .ec-base-button.gBottom button,
 .xans-member-findpasswd .ec-base-button.gBottom a {height:48px;padding:0;line-height:48px;font-size:14px;font-weight: 400;border-radius: 2px;}
 

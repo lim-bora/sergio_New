@@ -13,9 +13,11 @@
             <legend>비밀번호 찾기 1단계 정보 입력</legend>
             <div class="titleArea--middle">
                 <h3>회원정보</h3>
+<!--                <p class="required"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수">필수입력사항</p>-->
             </div>
             <ul class="ec-base-desc gVer">
-                <li><strong class="term">회원유형</strong><div class="desc">{$form.searchType}<span class="check gBlank10">{$form.check_method}</span></div></li>
+                <li><strong class="term">회원유형</strong><div class="desc">{$form.searchType}</div></li>
+                <li><strong class="term">임시 비밀번호 발급</strong><span class="check gBlank10">{$form.check_method}</span></li>
                 <li class="gBlank20 {$display_id|display}"><strong class="term">아이디</strong><div class="desc">{$form.member_id}</div></li>
                 <li id="name_view" class="name"><strong class="term" id="name_lable">이름</strong><div class="desc">{$form.name}</div></li>
                 <li id="ssn_view" class="ssn_no">

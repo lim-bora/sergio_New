@@ -8,7 +8,6 @@
 // });
 function closeTop(){
    $(document).find('.topBannerBox').addClass('close');
-    console.log('ㅅㄷㄴㅅ');
 }
 
 $(function() {
