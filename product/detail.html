@@ -69,11 +69,12 @@ $swipe = yes
         </div>
 
         <div class="infoArea" data-ez-role="ez-discount-tag">
-            <div class="headingArea">
+            <div class="headingArea" module="product_action">
                 <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
                 <p class="info_material">{$summary_desc}</p>
                 <h1>{$name}</h1>
                 <span class="delivery {$delvtype_display|display}">(해외배송 가능상품)</span>
+                <button type="button" class="btnNormal actionWish {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWish"><img src="/web/upload/free_design/heart.png"></button>
             </div>
             <div class="topLogo {$supply_link_display|display}">
                 <span>{$supply_top_logo}</span>
@@ -470,7 +471,7 @@ $use_per_add_option = yes
                     <colgroup>
                         <col style="width:auto;">
                         <col style="width:100px;">
-                        <col style="width:50px;">
+                        <col style="width:120px;">
                     </colgroup>
                     <thead>
                         <tr>
@@ -565,7 +566,7 @@ $default_option = yes
                     <span class="sub_sold {$soldout_display|display}">SOLD OUT</span>
                     <a href="#none" class="btnSubmit sizeL {$buy_display|display}" onclick="{$action_buy}"><span id="{$btn_buy_mobile_id}">바로 구매</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span><span id="{$btn_regular_delivery_id}" class="{$btn_regular_delivery|display}">REGULAR DELIVERY</span></a>
                     <button type="button" class="btnNormal sizeL actionCart {$basket_display|display}" onclick="{$action_basket}" id="actionCart">쇼핑백에 담기</button>
-                    <button type="button" class="btnNormal sizeL actionWish {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWish">WISH LIST</button>
+<!--                    <button type="button" class="btnNormal sizeL actionWish {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWish">WISH LIST</button>-->
                 </div>
                 <div class="ec-base-button soldout {$action_soldout_display|display}">
                     <button type="button" class="btnSubmit gFull sizeL {$soldout_display|display}">SOLD OUT</button>
@@ -579,8 +580,8 @@ $default_option = yes
             </div>
             <div module="product_action" class="ec-base-button gFixed" id="orderFixArea">
                 <div class="ec-base-button gColumn {$action_display|display}">
-                    <a href="#none" class="btnSubmit sizeM {$buy_display|display}" onclick="{$action_buy}"><span id="{$btn_buy_mobile_id}">바로 구매</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span><span id="{$btn_regular_delivery_id}" class="{$btn_regular_delivery|display}">REGULAR DELIVERY</span></a>
-                    <button type="button" class="btnNormal sizeM actionCart {$basket_display|display}" onclick="{$action_basket}">쇼핑백에 담기</button>
+                    <a href="#none" class="btnSubmit sizeM {$buy_display|display}" onclick="{$action_buy}"><span id="{$btn_buy_mobile_id}">구매하기</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span><span id="{$btn_regular_delivery_id}" class="{$btn_regular_delivery|display}">REGULAR DELIVERY</span></a>
+<!--                    <button type="button" class="btnNormal sizeM actionCart {$basket_display|display}" onclick="{$action_basket}">쇼핑백에 담기</button>-->
                 </div>
                 <div class="ec-base-button gColumn {$action_soldout_display|display}">
                     <button type="button" class="btnSubmit sizeM {$soldout_display|display}">SOLD OUT</button>

@@ -155,10 +155,8 @@ $(window).resize(function(){
 }).resize();
 
 $(function() {
+    //할인율 위치변경
     $('#totalProducts .option_product td .product').not('span').css('display','none');
-
-
-
     $('.xans-product-detaildesign tr[data-name="판매가"]').insertBefore('#span_product_price_sale span');
 });
 
@@ -169,11 +167,9 @@ $(document).ready(function(){
     toggle_detail.hide();
     $("ul li > p").click(function(){
         $(this).next('div').stop().slideToggle(300);
-        $(this).children('span').addClass('rotate');
+        $(this).find("span").toggleClass('rotate');
         $(this).parent("li").siblings().children("div").slideUp(300);
-        $(this).parent("li").siblings().find(".arrow").removeClass('rotate');
     });
-    // $("ul li > p").eq(0).trigger("click");
 });
 //아코디언 해상도 크기에따라 위치변경
 $(window).resize(function(){
@@ -183,3 +179,4 @@ $(window).resize(function(){
         $('.detailToggle').insertAfter('#fixedActionButton')
     }
 }).resize();
+
