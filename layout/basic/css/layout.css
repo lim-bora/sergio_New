@@ -275,7 +275,7 @@ body.activeAside #header .top_nav {display: none !important;}
 	#header .inner .top_nav_box {height:50px;display:flex;align-items:center;justify-content:space-between;}
 	#header .inner .top_nav_box .top_logo {display:flex;align-items:center;margin:0;height:auto;overflow:hidden;}
 	/*#header .inner .top_nav_box .top_logo img {content:url(/web/upload/logo/logo-MO.png);}*/
-	#header .inner .top_nav_box .top_logo img {max-width: 114px;}
+	#header .inner .top_nav_box .top_logo img {max-width: 138px;}
 	#header .inner .top_nav_box .top_logo a {font-size:25px;white-space:nowrap;text-overflow:ellipsis;width:100%;overflow:hidden;}
 	#header .inner .top_nav_box div[data-ez-module='menu-main/1'] {display:none;}
 	#header .inner .top_nav_box .top_nav {display:flex;flex-basis:auto;position:static;}

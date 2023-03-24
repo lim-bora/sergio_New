@@ -73,17 +73,50 @@ input::placeholder {color:#888; font-weight: 400;}
 .btnGoTop.on {opacity: 1;}
 .btnGoTop svg {margin: 0 auto;}
 
-/* 매장찾기 */
-.storeGuide a {cursor: pointer;}
-.store_popup { display:none; width:100%; max-width: 956px; height: 524px; background-color: #FFF; border: 1px solid #e0e0e0; padding: 24px 32px; box-sizing: border-box;}
-.store_popup.active {display:block; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;}
-.popup_title { display: flex; justify-content: space-between; padding-bottom: 16px; border-bottom: 1px solid #000;}
-.popup_title h4 {line-height: 20px; font-weight: 500;}
-.store_info { height:360px; margin: 16px 0; display: flex; border-bottom: 1px solid #e0e0e0; gap: 10px;}
-.store_info > div {flex: 1; height: 100%; background-color: skyblue;}
-.close_popup {display:block; width: 233px; height: 48px; margin: 0 auto; background-color: #000; color: #FFF; font-size: 14px; line-height: 20px; font-weight: 400;}
-
 @media all and (max-width:1024px) {
     .btnGoTop {right: 20px; bottom: 30px; width: 40px; height: 40px;}
     .btnGoTop svg {width: 21px;}
+}
+
+/* 매장찾기 */
+.storeGuide a {cursor: pointer;}
+.store_popup { display:none; width:100%; background-color: #FFF; box-sizing: border-box;}
+.store_popup.active {display:block; position: fixed;  z-index: 9999;}
+.popup_title { display: flex; align-items: center; padding-bottom: 16px; border-bottom: 1px solid #000;}
+.popup_title h4 {line-height: 20px; font-weight: 500;}
+.store_info > div {height: 100%;}
+.store_list {overflow-y: scroll;}
+.store_list li {padding-bottom: 16px; border-bottom: 1px solid #E0E0E0; cursor: pointer;}
+.store_list li:not(:last-child) {margin-bottom:16px; }
+.store_list p { display:block;  font-size: 12px; line-height: 14px;}
+.store_list p:not(.store_name) {color: #747474; margin-top: 8px;}
+.store_list p.store_name {color: #000;}
+.close_popup,
+.close_map {display:block; width: 233px; height: 48px; margin: 0 auto; background-color: #000; color: #FFF; font-size: 14px; line-height: 20px; font-weight: 400;}
+
+@media all and (min-width:1025px) {
+    .store_popup {max-width: 956px; height: 524px; border: 1px solid #e0e0e0; padding: 24px 32px; }
+    .store_popup.active {top: 50%; left: 50%; transform: translate(-50%, -50%);}
+    .store_info {height:360px; margin: 16px 0; display: flex; border-bottom: 1px solid #e0e0e0; gap: 10px;}
+    .store_info > div {flex: 1;}
+    .store_map_MO {display: none;}
+}
+
+@media all and (max-width:1024px) {
+    .store_popup {height: calc(100% - 50px);}
+    .store_popup.active {top: 50px; left: 0;}
+    .popup_title {justify-content: center; padding-top: 40px;}
+    .popup_title h4 {line-height: 16px;}
+    .store_info {padding: 16px; height: auto;}
+    .store_list p { max-width:300px; font-size: 14px; line-height: 16px;}
+    .close_popup_icon {position: absolute; left: 16px;}
+    .store_list li {position: relative;}
+    .store_list li:before {content: ''; position: absolute; top: 34px; right: 0; background:  url('/svg/icon-map-pin.svg') no-repeat; width: 20px; height: 20px;}
+
+    .store_map_MO { display: none; position: absolute; height: 100%; width: 100%; background: #FFF; top: 0; left: 0;}
+    .store_map_MO .map_area {margin-top: 16px; height: 344px;}
+    .map_info {padding: 24px 0; margin: 0 16px; border-bottom: 1px solid #E0E0E0;}
+    .map_info p:not(.store_name) {color: #747474; margin-top: 8px;}
+    .map_info p.store_name {color: #000;}
+    .close_map {margin-top: 40px;}
 }

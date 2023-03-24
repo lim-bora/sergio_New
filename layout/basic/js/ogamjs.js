@@ -129,12 +129,21 @@ $(function () {
         }
     });
 
-    // 매장찾기
+    // 매장찾기 팝업
     $('.storeGuide').on('click', function () {
        $('.store_popup').addClass('active');
+       $('body').addClass('ofHidden');
     });
     $('.close_popup').on('click', function() {
        $('.store_popup').removeClass('active');
+       $('body').removeClass('ofHidden');
+    });
+    $('.close_popup_icon').on('click', function() {
+        $('.store_popup').removeClass('active');
+        $('body').removeClass('ofHidden');
+    });
+    $('.close_map').on('click', function() {
+        $('.store_map_MO').hide();
     });
 });
 
