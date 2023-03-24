@@ -13,6 +13,7 @@
 .xans-product-detail .imgArea .prdImg img { cursor:pointer; }
 .xans-product-detail .imgArea .color { overflow:hidden; width:346px; margin:5px auto; }
 .xans-product-detail .imgArea .chips { float:left; width:28px; height:18px; margin:0 3px 3px 0; border:1px solid #e3e3e3; font-size:0; line-height:0; }
+.xans-product-detail .imgArea .RW .listImg .inner .list{position: relative!important;width: auto!important;}
 
 /* infoArea */
 .xans-product-detail .infoArea .info_material{color: #C34B4E;font-size: 16px;font-weight: 500;}
@@ -333,9 +334,9 @@ span.arrow.rotate{transform: rotate(315deg)}
     .xans-product-detail .imgArea .listImg li img { max-width:100%; cursor:pointer; height: 100%;}
     .xans-product-detail .imgArea .listImg button { position:absolute; top:0; width:30px; height:94px; font-size:0; line-height:0; color:transparent; border:1px solid #e3e3e3; box-sizing:border-box; }
     .xans-product-detail .imgArea .listImg .icon { border-color:#6d6d6d; }
-    .xans-product-detail .imgArea .listImg .prev { left:0; background-position:0 0; }
-    .xans-product-detail .imgArea .listImg .prev .icon { margin-left:3px; }
-    .xans-product-detail .imgArea .listImg .next { right:0; background-position:-31px 0; }
+    .xans-product-detail .imgArea .listImg .prev { left:0; background-position:0 0;display: none!important; }
+    .xans-product-detail .imgArea .listImg .prev .icon { margin-left:3px;}
+    .xans-product-detail .imgArea .listImg .next { right:0; background-position:-31px 0; display: none!important;}
     .xans-product-detail .imgArea .listImg .next .icon { margin-left:-3px; }
     .xans-product-detail .infoArea { display:inline-block; top:100px; width:483px; margin:0 69px 0 68px; font-size:13px; line-height:1; vertical-align:top; }
     #totalPrice { padding:32px 0 26px; font-family: "Acumin Pro", sans-serif;}

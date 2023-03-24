@@ -518,3 +518,8 @@ $(document).ready(function(){
 	$('body').css('visibility','visible');
 });
 
+$(document).ready(function(){
+	if (window.location.pathname == '/layout/basic/heritage.html'){
+		$('.footer_margin').css('marginTop',0);
+	}
+});

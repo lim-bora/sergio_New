@@ -6,9 +6,9 @@ select::-ms-expand {display:none;}
 #userStyle #mCafe24Order .txtEm,
 #userStyle #mCafe24Order .txtStrong {color:#111;}
 #userStyle #mCafe24Order .btnSubmit {background-color:#111 !important;border:1px solid #111 !important;}
-
+#contents{margin-top: 0!important;}
 .headerOrder{max-width: 100% !important;  position: fixed!important;  z-index: 9999999!important;}
-.containerOrder{padding-top: 100px;}
+/*.containerOrder{padding-top: 80px;}*/
 #header .header{display: none;}
 .titleArea{margin: 80px 0 32px!important;}
 #header .titleArea h1{background-color: #fff!important;color: #000!important;border: 0!important;font-size: 24px!important;font-weight: 400!important;display: none!important;}
@@ -28,7 +28,8 @@ select::-ms-expand {display:none;}
 #ec-jigsaw-title-payment:after, #ec-jigsaw-title-paymethod:after, #ec-jigsaw-title-orderProduct:after{display: none!important;}
 #mCafe24Order .ec-base-fold > .title:after{display: none!important;}
 #mCafe24Order #ec-jigsaw-title-billingInfo:after,
-#mCafe24Order .ec-base-fold > #ec-jigsaw-title-shippingInfo:after{content:''; display: block!important;position: absolute;top: 43%!important;right: 71px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: red;border-radius: 50%;border: 0!important;}
+#mCafe24Order .ec-base-fold > #ec-jigsaw-title-shippingInfo:after{content:''; display: block!important;position: absolute;top: 43%!important;right: 71px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: #e73223;border-radius: 50%;border: 0!important;}
+
 
 #mCafe24Order .title h2{margin: 0 0px 0 0!important;}
 #mCafe24Order .orderArea .ec-base-prdInfo{margin: 0 0px 0px 0px!important;border-bottom: 1px solid #EAEAEA!important;}
@@ -50,6 +51,8 @@ select::-ms-expand {display:none;}
 
 #ec-jigsaw-area-billingInfo colgroup{display: none!important;}
 #ec-jigsaw-area-billingInfo .address_form tr{display: flex;flex-direction: column;}
+#ec-jigsaw-area-billingInfo .address_form tr:nth-child(1){position: relative;}
+#ec-jigsaw-area-billingInfo .address_form tr:nth-child(1) th:after{content:''; display: block!important;position: absolute;top: 33px!important;left: 87px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: #e73223;border-radius: 50%;border: 0!important;}
 #ec-jigsaw-area-billingInfo .ec-base-table th, #ec-jigsaw-area-billingInfo .ec-base-table td{border-bottom: 0!important;}
 #mCafe24Order .ec-base-table.typeWrite tbody th{padding: 32px 0 16px!important;}
 #mCafe24Order .ec-base-table.typeWrite td{padding: 0px 0 0px!important;}
@@ -81,8 +84,10 @@ select::-ms-expand {display:none;}
 #rzipcode1{width: calc(100% - 85px)!important;flex: none!important;}
 #btn_search_rzipcode{width: 70px!important;margin: 0 0 0 0px!important;}
 #receiver_zipcode_wrap{ justify-content: space-between; height: 48px!important;}
-#mCafe24Order .segment.ec-shippingInfo-newAddress-setMain{ padding: 0 0px 20px!important;}
+#mCafe24Order .segment.ec-shippingInfo-newAddress-setMain{ padding: 8px 0px 20px!important;}
 #ec-shippingInfo-newAddress .ec-base-table{padding-bottom: 32px!important;}
+#ec-shippingInfo-newAddress .ec-shippingInfo-newAddress-name{position: relative;}
+#ec-shippingInfo-newAddress .ec-shippingInfo-newAddress-name th:after{content:''; display: block!important;position: absolute;top: 33px!important;left: 74px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: #e73223;border-radius: 50%;border: 0!important;}
 
 #mCafe24Order #ec-jigsaw-area-payment .segment{padding: 16px 0px 0px!important;}
 #mCafe24Order #ec-jigsaw-area-payment .ec-base-table th, #ec-jigsaw-area-payment .ec-base-table td{border-bottom: 0!important;}
@@ -172,7 +177,11 @@ select::-ms-expand {display:none;}
 #mCafe24Order .pannelArea .ec-base-help{color: #008FE0!important;background: none!important;padding-left: 0!important;}
 #mCafe24Order .pannelArea input{height: 48px!important;}
 #mCafe24Order .ec-orderform-NoMemberPasswdRow{ margin-top: 0px!important;}
-#order_password, #order_password_confirm{border-top: 0!important;}
+#order_password, #order_password_confirm{border-top: 1px solid #eaeaea!important;}
+.ec-orderform-NoMemberPasswdRow .ec-base-table th{    border-bottom: 0!important;}
+#mCafe24Order .pannelArea tr{position: relative;}
+#ec-jigsaw-area-shippingInfo .pannelArea tr:nth-child(1) th:after{content:''; display: block!important;position: absolute;top: 33px!important;left: 113px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: #e73223;border-radius: 50%;border: 0!important;}
+#ec-jigsaw-area-shippingInfo .pannelArea tr:nth-child(2) th:after{content:''; display: block!important;position: absolute;top: 33px!important;left: 145px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: #e73223;border-radius: 50%;border: 0!important;}
 
 #mCafe24Order .agreeArea .allAgree, #mCafe24Order .agreeArea .agreement{ margin: 0 0px!important; }
 #allAgree[type="checkbox"]{margin-top: 8px!important;}
@@ -199,7 +208,13 @@ li:nth-of-type(3){ order:2; }
 #mCafe24Order input[type="checkbox"] + label{    margin: 0 16px 0 13px!important;font-weight: 400!important;  font-size: 14px!important;  line-height: 21px;color: #000!important;}
 #mCafe24Order .agreeArea .agreement .agree .check{    padding: 0 0 0 13px!important;}
 
+
+
+
+
+
 @media all and (max-width:1024px) {
+    .containerOrder{padding-top: 40px;}
     #mCafe24Order{margin: 0 auto!important;}
     #mCafe24Order > h2{padding: 0px 0 32px;}
     .containerOrder #titleArea.titleArea{display: none!important;}

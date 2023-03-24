@@ -735,6 +735,7 @@
                                     <span class="txtStatus">{$status}</span>
                                 </div>
                                 <div class="gRight">
+
                                     <a href="/board/product/write.html{$param_postscript}" class="btnNormal sizeS {$postscript_display|display}">구매후기</a>
                                     <a href="#none" class="btnNormal sizeS {$withdraw_cancel_display|display}" onclick="{$action_withdraw_cancel}">취소철회</a>
                                     <a href="#none" class="btnNormal sizeS {$withdraw_exchange_display|display}" onclick="{$action_withdraw_exchange}">교환철회</a>
@@ -765,6 +766,7 @@
                                 <div class="gLeft">
                                     <span class="txtStatus">{$status}</span>
                                 </div>
+
                                 <div class="gRight">
                                     <a href="/board/product/write.html{$param_postscript}" class="btnNormal sizeS {$postscript_display|display}">구매후기</a>
                                     <a href="#none" class="btnNormal sizeS {$withdraw_cancel_display|display}" onclick="{$action_withdraw_cancel}">취소철회</a>
@@ -787,8 +789,8 @@
                     </div>
                 </div>
                 <div class="ec-base-button {$button_display|display}">
-                    <span class="gRight">
-                        <button type="submit" class="btnNormal sizeS {$cancel_display|display}">주문취소</button>
+                    <span class="">
+                        <button type="submit" class="btnNormal sizeS {$cancel_display|display}" style="width: 84px;height: 36px;float: right;">주문취소</button>
                     </span>
                 </div>
             </div>
@@ -1577,7 +1579,7 @@
             </div>
         </div>
 
-        <div class="ec-base-button">
+        <div class="ec-base-button" style="margin-top: 45px;">
             <span class="gRight">
                 <a href="#none" onclick="{$action_issue_cash}" class="btnNormal sizeS {$issue_cash_display|display}">현금영수증 신청</a>
                 <a href="#none" onclick="{$action_print_pg_cash}" class="btnNormal sizeS RW {$print_pg_cash_display|display}">현금영수증전표 인쇄</a>

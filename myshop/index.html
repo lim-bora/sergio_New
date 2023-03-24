@@ -1,5 +1,5 @@
 <!--@layout(/layout/basic/layout.html)-->
-
+<!--@js(/Ogam/js/myPage.js)-->
 
 <div module="layout_logincheck">
 <!--
@@ -34,7 +34,7 @@
 			<span>현재 위치</span>
 			<ol>
 				<li><a href="/">Home</a></li>
-				<li title="현재 위치">My Page</li>
+				<li title="현재 위치" style="color: #888888;font-size: 12px;">My Page</li>
 			</ol>
 		</div>
 
@@ -42,7 +42,6 @@
 			<h1 module="myshop_asyncbenefit">{$member_name}<span style="font-weight: 300;">님</span></h1>
 			<div module="myshop_asyncbankbook">
 				<!--@css(/css/module/myshop/bankbook.css)-->
-				<!--@js(/Ogam/js/myPage.js)-->
 				<ul>
 					<li module="myshop_asyncbenefit" class="{$display_benefit|display}">
 						<div class="user">
@@ -139,8 +138,8 @@
 		</div>
 
 		<div class="RW">
-			<div class="titleArea titleArea--middle">
-				<h3>주문내역 조회</h3>
+			<div class="titleArea titleArea--middle" style="border-bottom: 1px solid #000;padding-bottom: 16px;">
+				<h3>주문내역</h3>
 			</div>
 			<!--@import(/myshop/order/history_list_item.html)-->
 		</div>

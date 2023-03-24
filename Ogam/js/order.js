@@ -30,14 +30,20 @@ $(function(){
     let orderInputParent = $('.address_form ').find('#oname').parent()
     let orderPerson = orderInputParent.prev();
     orderPerson.text('주문하시는 분');
+
     //받으시는 분 텍스트변경
     let orderPersonnew = $('.ec-shippingInfo-newAddress-name').find('th')
     orderPersonnew.text('받으시는 분');
 
+    //텍스트변경
+    $('.paymentPrice .heading').text('최종결제금액');
 
     //주문자 인풋 : 플레이스홀더 추가
     let orderInput = $('.address_form ').find('#oname');
     orderInput.attr('placeholder','이름을 입력해 주세요.');
+
+    //이메일 인풋 : 플레이스홀더 추가
+    $('#oemail1').attr('placeholder','이메일을 입력해 주세요.');
 
     //이메일하단 텍스트추가
     let emailInput = $('.ec-orderform-emailRow');
@@ -55,10 +61,6 @@ $(function(){
     $(".discountDetail.mCouponSelect").insertAfter("#mileage_use_area");
     $(".discountDetail.mCouponModify").insertAfter(".discountDetail.mCouponSelect");
 
-    // 주문내역상품 가격맨위로 순서변경
-    // $(".ec-base-prdInfo .proPrice").insertAfter("li[title = '옵션']")
-    // $(".xans-order-normallist .proPrice").insertAfter(".xans-order-normallist .prdName");
-    // $(".xans-order-normallist .prdName").after("..proPrice");
 
     //결제수단 텍스트
     $('.ec-paymethod-newArea > label').empty();
@@ -71,8 +73,11 @@ $(function(){
     let message = $('.ec-shippingInfo-shippingMessage #omessage_select');
     let messageTitle = `<span class="messageTxt">요청사항</span>`
     message.before(messageTitle)
-});
 
+
+    // $('#mileage_use_area .summary').text('보유 마일리지');
+    $('#mileage_use_area .summary').contents()[0].textContent = "보유 마일리지 "
+});
 
 $(function() {
     // 쿠폰 이름변경
@@ -113,6 +118,7 @@ $(function() {
     let totalprice = `<span class="totalprice"></span>`;
     $('.totalAdd').append(totalH3,totalprice);
     $('.totalprice').append(CAFE24.SHOP_FRONT_ORDERFORM_DATA.order.fBasicProductTotalPrice + '원')
+
 });
 
 $(function() {

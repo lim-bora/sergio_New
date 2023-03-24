@@ -375,7 +375,7 @@
 
 .myshopArea {width:100%;max-width:721px !important;/*padding:0 0 0 220px !important;*/margin:0 auto !important;min-height:630px;}
 .myshopArea.section_full {width:calc(100% - 220px) !important;}
-.myshopArea .titleArea--middle {margin:64px 0 16px 0;text-align: center;}
+.myshopArea .titleArea--middle {margin:64px 0 0px 0;text-align: center;}
 .myshopArea .titleArea--middle h3{font-size: 14px; font-weight: 500;}
 .myshopArea .ec-base-prdEmpty {border-top:2px solid #1a1a1a;border-bottom:1px solid #e6e6e6;font-size:16px;color:#9a9a9a;padding:64px 0;display:flex;flex-direction:column;align-items:center;}
 .myshopArea .ec-base-prdEmpty svg {margin-bottom:16px;}
@@ -509,10 +509,10 @@ div.ec-base-help ul {margin:0;}
 .xans-order-basketpackage .summary .title h5 {font-size:14px;}
 .xans-order-basketpackage .summary strong {font-weight:400;}
 .xans-order-basketpackage .ec-base-button a {height:50px;padding:17px 20px;font-weight:400;font-size:14px;}
-.xans-order-basketpackage .cart-total {width:100%;border-top: 1px solid #EAEAEA; margin-top: 4px;}
+.xans-order-basketpackage .cart-total {width:100%; margin-top: 4px;}
 .xans-order-basketpackage .cart-total .sticky {top:100px;}
 .xans-order-basketpackage .cart-total .ec-base-help li {line-height:16px;}
-.xans-order-basketpackage .totalSummary {padding:24px 0px;}
+.xans-order-basketpackage .totalSummary {padding:24px 0px;border-top: 1px solid #EAEAEA;}
 .xans-order-basketpackage .totalSummary__item {margin-bottom:16px;}
 .xans-order-basketpackage .totalSummary__item .title {font-size:16px;color:#747474;}
 .xans-order-basketpackage .totalSummary__item .data {font-size:14px;color:#1a1a1a;}
@@ -520,7 +520,7 @@ div.ec-base-help ul {margin:0;}
 /*.xans-order-basketpackage .totalSummary .total {margin-top:30px;padding-top:30px;border-top:1px solid #e8e8e8;}*/
 .xans-order-basketpackage .totalSummary .total .title {font-size:16px;color:#747474;font-weight:400;}
 .xans-order-basketpackage .totalSummary .paymentPrice {color:#1a1a1a;}
-.xans-order-basketpackage .ec-base-prdEmpty {border-top:0;border-bottom:1px solid #e6e6e6;font-size:16px;color:#9a9a9a;padding:14px 0 64px;display:flex;flex-direction:column;align-items:center;}
+.xans-order-basketpackage .ec-base-prdEmpty {border-top:0;border-bottom:0!important;font-size:16px;color:#9a9a9a;padding:92px 0px;display:flex;flex-direction:column;align-items:center;}
 .xans-order-basketpackage .ec-base-prdEmpty svg {margin-bottom:16px;}
 .xans-order-basketguide .inner ul {margin-top:15px;}
 
@@ -843,7 +843,7 @@ div.ec-base-help ul {margin:0;}
 
 	/* 장바구니 */
 	.xans-order-basketpackage .ec-base-prdInfo .thumbnail {width:80px;height:auto;border:0;}
-	.xans-order-basketpackage .ec-base-prdInfo .description .prdName img {height:20px;}
+	/*.xans-order-basketpackage .ec-base-prdInfo .description .prdName img {height:20px;}*/
 	.xans-order-basketpackage .ec-base-prdInfo .optionGroup {margin:35px 0 0 0;}
 	.xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity {padding:0;}
 	.xans-order-basketpackage .ec-base-prdInfo.gCheck .sumPrice {margin:0 0 24px 0;}
@@ -851,7 +851,7 @@ div.ec-base-help ul {margin:0;}
 	.xans-order-basketpackage .ec-base-button {margin:0;}
 	.xans-order-basketpackage .ec-base-button > div {display:flex;width:100%;}
 	.xans-order-basketpackage .ec-base-button a {flex:1;margin-bottom:10px;}
-	.xans-order-basketpackage .cart-total {width:100%;margin-top:30px;}
+	/*.xans-order-basketpackage .cart-total {width:100%;margin-top:30px;}*/
 	.xans-order-basketpackage .totalSummary {margin:0 0 24px 0;}
 	.xans-order-basketpackage .typeModal .ec-base-button {margin:0 20px 10px;}
 	.xans-order-basketpackage .ec-base-button.gFixed > div {width:auto;}

@@ -15,6 +15,7 @@
 .xans-myshop-wishlist .xans-myshop-wishlistitem .ec-base-prdInfo{ width: 49%;border-bottom: 0;}
 .xans-myshop-wishlist .xans-myshop-wishlistitem .ec-base-prdInfo .prdBox{padding: 0 0 32px;flex-direction: column;}
 .xans-myshop-wishlist .xans-myshop-wishlistitem .ec-base-prdInfo .description{ min-height: 80px;}
+.xans-myshop-wishlist .xans-myshop-wishlistitem .ec-base-prdInfo .description li.salePrice:not(.displaynone) + .sellPrice{color: #AEAEAE;text-decoration: line-through;}
 .xans-myshop-wishlist .xans-myshop-wishlistitem .ec-base-prdInfo .description .prdName{margin: 13px 0 8px;}
 .xans-myshop-wishlist .xans-myshop-wishlistitem .ec-base-prdInfo .description .prdName a{font-weight: 700;}
 .xans-myshop-wishlist .xans-myshop-wishlistitem .ec-base-prdInfo .btnDelete{top: 13px;right: 13px;}

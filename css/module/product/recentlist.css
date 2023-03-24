@@ -3,6 +3,7 @@
 .xans-product-recentlist .xans-product-listitem > li{ width: 49%;border-bottom: 0;}
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .prdBox{padding: 0 0 32px;flex-direction: column;}
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description{ min-height: 80px;}
+.xans-product-recentlist .ec-base-prdInfo .description li.salePrice:not(.displaynone) + .sellPrice{color: #AEAEAE;text-decoration: line-through;}
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .prdName{margin: 13px 0 8px;}
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .prdName a{font-weight: 700;}
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .btnDelete{top: 13px;right: 13px;}

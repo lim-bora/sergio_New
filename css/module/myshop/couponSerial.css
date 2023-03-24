@@ -1,4 +1,4 @@
-.xans-myshop-couponserial .couponSerial { text-align:center; border-top-color:#000; }
+.xans-myshop-couponserial .couponSerial { text-align:center; border-top-color:#000; border-top: 0!important;}
 .xans-myshop-couponlist .couponList .ec-base-table,
 .xans-myshop-couponlist .couponList .ec-base-prdEmpty { border-top:0; }
 .xans-myshop-couponlist .couponList .ec-base-prdEmpty { padding-top:50px; }

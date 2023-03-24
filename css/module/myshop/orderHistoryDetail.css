@@ -62,7 +62,7 @@
 .xans-myshop-orderhistorydetail .ec-base-fold.theme1 > .title:after{display: none;}
 .xans-myshop-orderhistorydetail .ec-base-table th { border-bottom:none; background-color:#fff; padding: 4px 0px;color: #747474;}
 .xans-myshop-orderhistorydetail .ec-base-table td { border-bottom:none; padding: 4px 0px;text-align: right;}
-.xans-myshop-orderhistorydetail .ec-base-table td strong{font-weight: 400;font-size: 14px; color: #747474}
+.xans-myshop-orderhistorydetail .ec-base-table td strong{font-weight: 400;font-size: 14px; color: #000;}
 .xans-myshop-orderhistorydetail .ec-base-table td span.gSpace20{margin-right: 5px;}
 .xans-myshop-orderhistorydetail .ec-base-table td span.gSpace20 strong{font-weight: 400;}
 .xans-myshop-orderhistorydetail .ec-base-table td a.underline{border: 0;border-bottom: 1px solid #747474;color: #747474; padding: 0 0 2px 0; height: auto;}
