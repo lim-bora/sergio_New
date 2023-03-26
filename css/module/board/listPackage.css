@@ -25,7 +25,7 @@
 .xans-board-listpackage .ec-base-table table td.chk .ec-common-rwd-image { margin:3px 0 0; }
 .xans-board-listpackage .ec-base-table table td.subject .product { margin:0 10px 5px 0; line-height:18px; color:#6d6d6d; }
 .xans-board-listpackage .ec-base-table table td.subject .product:empty { margin-bottom:0; }
-.xans-board-listpackage .ec-base-table table td.subject a { margin-right:5px; vertical-align:middle; color: #000 !important;}
+.xans-board-listpackage .ec-base-table table td.subject a { margin-right:5px; vertical-align:middle; color: #000 !important;line-height: 16px;}
 .xans-board-listpackage .ec-base-table table td.subject img { width:auto; height:21px; margin:0px 5px 1px 0; vertical-align:middle; }
 .xans-board-listpackage .ec-base-table table td.subject .badge img { height:auto; }
 .xans-board-listpackage .ec-base-table table td.thumb a { display:inline-block; overflow:hidden; }
@@ -38,7 +38,7 @@
 /* 나의문의 add*/
 .xans-board-list-9 tr{display: flex!important;flex-direction: row; flex-wrap: wrap;width: 100%;padding: 16px 0!important;border-bottom: 1px solid #EAEAEA;text-align: left;}
 .xans-board-list-9 tr td{border-bottom: 0!important;padding-top: 0!important;padding-bottom: 0!important;}
-.xans-board-list-9 tr td.subject{padding: 0 10px 4px!important;width: 100%;}
+.xans-board-list-9 tr td.subject{padding: 0 0px 4px!important;width: 100%;}
 .xans-board-list-9 tr td.consultTxt{position: relative;}
 .xans-board-list-9 tr td.consultTxt::after{content: ''; display: block;background-color:#888888;width: 1px; height:8px;position: absolute;top: 8px;right: 0;}
 .xans-board-list-9 tr td.consultTxt .txtNum,.xans-board-list-9 tr td.dateTxt .txtNum{color: #888;}

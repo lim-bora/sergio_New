@@ -1,20 +1,25 @@
 <!--@layout(/layout/basic/layout.html)-->
-<div class="section" module="board_ReplyPackage_9">
+<div class="section myshopArea" module="board_ReplyPackage_9">
+    <div class="pc_margin_myshop">
+        <h4 class="subtitleH4" style="border-bottom: 1px solid #000;padding-top: 40px; margin-bottom: 8px;">1:1 문의</h4>
     <!--@css(/css/module/board/replyPackage_9.css)-->
-    <div module="board_title_9">
-        <div class="path">
-            <span>현재 위치</span>
-            <ol>
-                <li><a href="/">홈</a></li>
-                <li><a href="/myshop/index.html">마이쇼핑</a></li>
-                <li title="현재 위치"><strong>{$board_name}</strong></li>
-            </ol>
-        </div>
+    <!--@js(/Ogam/js/myPage.js)-->
 
-        <div class="titleArea">
-            <h2>{$board_title}</h2>
-        </div>
-    </div>
+
+<!--    <div module="board_title_9">-->
+<!--        <div class="path">-->
+<!--            <span>현재 위치</span>-->
+<!--            <ol>-->
+<!--                <li><a href="/">홈</a></li>-->
+<!--                <li><a href="/myshop/index.html">마이쇼핑</a></li>-->
+<!--                <li title="현재 위치"><strong>{$board_name}</strong></li>-->
+<!--            </ol>-->
+<!--        </div>-->
+
+<!--        <div class="titleArea">-->
+<!--            <h2>{$board_title}</h2>-->
+<!--        </div>-->
+<!--    </div>-->
 
     <div module="Board_Read_9">
         <!--
@@ -23,12 +28,12 @@
         <div class="ec-base-table gLayoutFixed">
             <table border="1" >
             <caption>1:1 맞춤상담 상세</caption>
-            <colgroup>
-                <col style="width:130px;" />
-                <col style="width:auto;" />
-                <col style="width:130px;" />
-                <col style="width:auto;" />
-            </colgroup>
+<!--            <colgroup>-->
+<!--                <col style="width:130px;" />-->
+<!--                <col style="width:auto;" />-->
+<!--                <col style="width:130px;" />-->
+<!--                <col style="width:auto;" />-->
+<!--            </colgroup>-->
             <tbody>
                 <tr>
                     <th scope="row">제목</th>
@@ -37,18 +42,20 @@
                 <tr>
                     <th scope="row">작성자</th>
                     <td>{$writer}</td>
-                    <th scope="row">답변여부</th>
-                    <td>{$consult}</td>
                 </tr>
                 <tr class="{$config.use_date|display}">
                     <th scope="row">문의일시</th>
                     <td colspan="3">{$write_date}</td>
                 </tr>
-                <tr class="view">
-                    <td colspan="4">
-                        <div class="detail">{$content}</div>
-                    </td>
+                <tr>
+                    <th scope="row">답변여부</th>
+                    <td>{$consult}</td>
                 </tr>
+<!--                <tr class="view">-->
+<!--                    <td colspan="4">-->
+<!--                        <div class="detail">{$content}</div>-->
+<!--                    </td>-->
+<!--                </tr>-->
             </tbody>
             </table>
             </div>
@@ -65,7 +72,7 @@
 
                 <tbody>
                     <tr>
-                        <th scope="row" class="RW top">답변 쓰기</th>
+<!--                        <th scope="row" class="RW top">답변 쓰기</th>-->
                         <td>
                             {$form.content}
                         </td>
@@ -75,14 +82,16 @@
         </div>
 
         <div class="ec-base-button gBottom">
-            <span class="gLeft RW">
-                <span class="{$config.is_admin|display}"><a href="#none" class="btnNormalFix sizeM" onclick="{$action_comment_admin}">관리자 답변보기</a></span>
-                <a href="{$link_board_list}" class="btnNormalFix sizeM">목록</a>
-            </span>
+<!--            <span class="gLeft RW">-->
+<!--                <span class="{$config.is_admin|display}"><a href="#none" class="btnNormalFix sizeM" onclick="{$action_comment_admin}">관리자 답변보기</a></span>-->
+<!--                <a href="{$link_board_list}" class="btnNormalFix sizeM">목록</a>-->
+<!--            </span>-->
             <span class="gRight">
                 <a href="{$link_board_list}" class="btnNormalFix sizeM">취소</a>
                 <a href="#none" onclick="{$action_reply}" class="btnSubmitFix sizeM">등록</a>
             </span>
         </div>
     </div>
+</div>
+    <!--@import(/myshop/myshop_main.html)-->
 </div>

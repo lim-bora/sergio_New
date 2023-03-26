@@ -3,7 +3,7 @@
 .xans-myshop-orderhistorylistitem .order__number a{color: #747474;font-weight:normal;font-size: 14px;}
 .xans-myshop-orderhistorylistitem .order:first-child .order__number { margin-top:0; }
 .xans-myshop-orderhistorylistitem .order__number .date { font-weight:normal;font-size: 14px;margin-right: 8px;}
-.xans-myshop-orderhistorylistitem .btnDetail { position:absolute; top:19px; right:19px; }
+.xans-myshop-orderhistorylistitem .btnDetail { position:absolute; top:17px; right:19px; }
 .xans-myshop-orderhistorylistitem .request { position:relative; overflow:hidden; padding:25px 0 0; text-align:right; }
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail {display:flex;flex-direction:row-reverse;padding:0 0 18px 0;line-height:26px;font-size:13px;}
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .gRight {float:right;text-align:right;}
@@ -13,11 +13,13 @@
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title > strong {margin-right:5px;}
 .xans-myshop-orderhistorylistitem .ec-base-button .gRight a{height: 36px; line-height: 35px; min-width: 84px;border-radius: 2px;}
 [class^='btn'].sizeS.btnRe{width: 84px;height: 36px;font-size: 14px;padding:10px 16px;margin-left: 8px;}
-.xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot{ border-top: 0!important;border-bottom: 0!important; padding: 16px 0 5px!important;}
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot{ border-top: 0!important;border-bottom: 0!important; padding: 10px 0 0px!important;}
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdBox{padding: 14px 0 16px;}
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo a[class^='btn'].sizeS{ font-size: 12px; border: 1px solid #E0E0E0;width: 65px;height: 30px;padding: 0;line-height: 29px;border-radius: 2px;}
+
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
-    .xans-myshop-orderhistorylistitem .order__number { margin:50px 0 0; }
+    .xans-myshop-orderhistorylistitem .order__number { margin:40px 0 0; }
     .xans-myshop-orderhistorylistitem .request { padding:25px 16px; }
 
 	.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail {display:block;padding:18px 16px;line-height:26px;font-size:12px;border-top:1px solid #e5e5e5;display: none;}

@@ -191,7 +191,7 @@
 
 /* 버튼 */
 .ec-base-button [class^='btn'].sizeL {height:56px;padding:0;line-height:56px;font-size:16px;border-radius: 2px;}
-.ec-base-button [class^='btn'].sizeM {height:50px;padding:0;line-height:50px;font-size:14px;border-radius: 2px;}
+.ec-base-button [class^='btn'].sizeM {height:48px;padding:0;line-height:50px;font-size:14px;border-radius: 2px;}
 .ec-base-button [class^='btn'].sizeS {height:48px;padding:0; line-height:20px;font-size:14px;border-radius: 2px;}
 .ec-base-button.gBottom .gLeft [class^='btn'] {margin:0 8px 0 0;}
 .ec-base-button.gBottom .gRight [class^='btn'] {margin:0 0 0 8px;}
@@ -376,7 +376,7 @@
 .myshopArea.section_full {width:calc(100% - 220px) !important;}
 .myshopArea .titleArea--middle {margin:64px 0 0px 0;text-align: center;}
 .myshopArea .titleArea--middle h3{font-size: 14px; font-weight: 500;}
-.myshopArea .ec-base-prdEmpty {font-size:14px;color: #747474;padding:64px 0;display:flex;flex-direction:column;align-items:center;}
+.myshopArea .ec-base-prdEmpty {font-size:14px;color: #747474;padding:92px 0;display:flex;flex-direction:column;align-items:center;border-bottom: 1px solid #EAEAEA;}
 .myshopArea .ec-base-prdEmpty svg {margin-bottom:16px;}
 /*.myshopArea .titleArea--myshop h2 {font-weight:700;}*/
 div.ec-base-help {margin:50px 0 0;}
@@ -417,7 +417,7 @@ div.ec-base-help ul {margin:0;}
 /*.xans-myshop-addrmodify .ec-base-table.typeWrite #ma_main_flag0 {margin-top:-3px;}*/
 /* 마이페이지 배송주소록 관리 re */
 .myshopAddrList #myshopMain{top: 40px;}
-.xans-myshop-addrlist .addrlistBox{display:flex;flex-direction: row;border-bottom: 1px solid #EAEAEA;padding: 16px 0 24px;}
+.xans-myshop-addrlist .addrlistBox{display:flex;flex-direction: row;border-bottom: 1px solid #EAEAEA;padding: 19px 0 24px;}
 .xans-myshop-addrlist .addrlistBox .leftCheck{width: 8%;}
 .xans-myshop-addrlist .addrlistBox .leftCheck input[type="checkbox"]{float: left;border: 1px solid #E0E0E0;border-radius: 2px;width: 16px;height: 16px;background: none;}
 .xans-myshop-addrlist .addrlistBox .leftCheck input[type="checkbox"]:checked{ border: 1px solid #000; background-size: 17px!important;background: url('/SkinImg/img/checkbox_on.svg') no-repeat center;}
@@ -433,6 +433,8 @@ div.ec-base-help ul {margin:0;}
 .xans-myshop-addrlist .gBottom a.btnNormalFix{border: 1px solid #000000;font-weight: normal!important;}
 .xans-myshop-addrlist .gBottom a.btnSubmitFix{font-weight: normal!important;}
 .xans-myshop-addrlist div.ec-base-help .inner{border: 0!important;padding: 24px 0!important;}
+.xans-myshop-addrlist .ec-base-button.gBottom{display: flex;margin-top: 24px;}
+.xans-myshop-addrlist .ec-base-button.gBottom > a{flex: 1; height: 48px;line-height: 47px;}
 
 
 /* 마이페이지 정기배송 관리 */
@@ -752,7 +754,7 @@ div.ec-base-help ul {margin:0;}
 	.myshopArea .xans-myshop-main .subTitle {display:block;margin:0;background:none;padding:24px 0 16px 0;}
 	.myshopArea .xans-myshop-main .menu {padding-top:6px;}
 	.myshopArea .xans-myshop-main .menu li {margin:16px 0 0 0;border:0;}
-	.myshopArea .xans-myshop-main .menu li a {font-size:12px;color:#606060;padding:0;}
+	.myshopArea .xans-myshop-main .menu li a {font-size:14px;color:#606060;padding:0;}
 	.myshopArea .xans-myshop-main .menu li a:after {display:none;}
 	.myshopArea .xans-myshop-main .consult {margin:40px 0 0;}
 
@@ -786,6 +788,11 @@ div.ec-base-help ul {margin:0;}
 	.xans-myshop-addrmodify #ma_rcv_mobile_no1 {margin-left:0;}
 	.xans-myshop-addrmodify .ec-base-table tr.right {margin-top:10px;}
 	.xans-myshop-addrmodify .ec-base-table tr.right label {margin-right:5px;}
+	#frmAddr{width: 108%;margin-left: -4%!important;}
+	.xans-myshop-addrlist div.ec-base-help .inner{ padding: 24px 16px!important;}
+	.xans-myshop-addrlist .gBottom{width: 92%;margin: 0 auto;}
+	.xans-myshop-addrlist .gBottom a.btnSubmitFix{width: 92% !important;}
+	.xans-myshop-addrlist .addrlistBox{ padding: 19px 16px 24px;}
 
 	/* 마이페이지 정기배송 관리 */
 	.regularDeliveryPayInfo .ec-base-box .information .title {display:none;}

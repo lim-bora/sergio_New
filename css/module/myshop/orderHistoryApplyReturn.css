@@ -66,7 +66,7 @@ p.ec-base-help span{font-size: 12px;color: #747474;}
 .returnApplication #pickup_phone2_1,.returnApplication #pickup_phone2_2,.returnApplication #pickup_phone2_3{width: 33%;height: 48px;}
 .returnApplication .formGroup.code{ display: flex;flex-wrap: nowrap;justify-content: space-between;align-items: center;}
 .returnApplication #btn_search_rzipcode{width: 120px; height: 48px;border: 1px solid #e0e0e0;}
-#cs_shipfee_payment{display: none;}
+/*#cs_shipfee_payment{display: none;}*/
 .returnInfo th{color: #606060;}
 .returnInfo td{color: #000;}
 .fullbtn{width: 100%;font-weight: 400;}

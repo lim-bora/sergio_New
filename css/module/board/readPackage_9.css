@@ -25,6 +25,7 @@
 .xans-board-read-9 .ec-base-button.gBottom [class^='btn']{flex: none}
 
 .xans-board-read-9 .ec-base-box.typeThinBg{background: #F9F9F9;border-bottom: 1px solid #EAEAEA;border-top: 1px solid #eaeaea;border-left: 0;border-right: 0;padding: 16px;}
+.adminAnswer{display: none;}
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
     .xans-board-read-9 .btnCommon{width: 48.5%!important;min-width:48.5%!important;}

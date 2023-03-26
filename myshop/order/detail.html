@@ -86,16 +86,16 @@
                                 </span>
                                 <a href="#none" onclick="{$total.total_order_layer_on}" class="btnNormal sizeS underline">내역보기</a>
                                 <div id="{$total.total_order_layer}" class="totalDetail ec-base-layer typeLayer">
-                                    <div class="header noLine">
+                                    <div class="header noLine" style="margin: 0 20px;">
                                         <h3 style="text-align: left;">총 주문금액 상세내역</h3>
                                     </div>
-                                    <div class="content">
-                                            <p><strong class="term" style="float: left;">총 주문금액</strong>{$total.price_unit_head}{$total.total_order_price}{$total.price_unit_tail}</p>
+                                    <div class="content" style="padding: 8px 20px;">
+                                            <p><strong class="term" style="float: left;color: #747474;">총 주문금액</strong>{$total.price_unit_head}{$total.total_order_price}{$total.price_unit_tail}</p>
                                         <ul class="ec-base-desc typeDot gLarge rightDD">
-                                            <li><strong class="term">상품금액</strong><span class="desc">{$total.price_unit_head}{$total.total_product_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_vat_price_display|display}"><strong class="term">부가세</strong><span class="desc">{$total.price_unit_head}{$total.total_vat_price}{$total.price_unit_tail}</span></li>
-                                            <li><strong class="term">배송비</strong><span class="desc">{$total.price_unit_head}{$total.total_ship_fee}{$total.price_unit_tail}</span></li>
-                                            <li><strong class="term">지역별 배송비</strong><span class="desc">{$total.price_unit_head}{$total.total_local_ship_fee}{$total.price_unit_tail}</span></li>
+                                            <li><strong class="term" style="color: #747474;">상품금액</strong><span class="desc">{$total.price_unit_head}{$total.total_product_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_vat_price_display|display}"><strong class="term"style="color: #747474;">부가세</strong><span class="desc">{$total.price_unit_head}{$total.total_vat_price}{$total.price_unit_tail}</span></li>
+                                            <li><strong class="term"style="color: #747474;">배송비</strong><span class="desc">{$total.price_unit_head}{$total.total_ship_fee}{$total.price_unit_tail}</span></li>
+                                            <li><strong class="term"style="color: #747474;">지역별 배송비</strong><span class="desc">{$total.price_unit_head}{$total.total_local_ship_fee}{$total.price_unit_tail}</span></li>
                                         </ul>
                                     </div>
                                     <a href="#none" class="btnClose" onclick="{$total.total_order_layer_off}"></a>
@@ -128,27 +128,27 @@
                                 <span class="gSpace20">{$total.price_unit_head}{$total.total_benefit_price}{$total.price_unit_tail}</span>
                                 <a href="#none" class="btnNormal sizeS underline" onclick="{$total.total_benefit_layer_on}">내역보기</a>
                                 <div id="{$total.total_benefit_layer}" class="totalDetail ec-base-layer typeLayer">
-                                    <div class="header noLine">
+                                    <div class="header noLine" style="margin: 0 20px;">
                                         <h3 style="text-align: left;">추가금액할인 내역보기</h3>
                                     </div>
-                                    <div class="content">
+                                    <div class="content" style="padding: 8px 20px;">
                                         <p>{$total.price_unit_head}{$total.total_benefit_price}{$total.price_unit_tail}</p>
                                         <ul class="ec-base-desc typeDot gLarge rightDD">
-                                            <li class="{$total.total_mobilesale_price_display|display}"><strong class="term">모바일할인</strong><span class="desc">{$total.price_unit_head}{$total.total_mobilesale_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_subscriptionpayseqsale_price_display|display}"><strong class="term">정기배송할인</strong><span class="desc">{$total.price_unit_head}{$total.total_subscriptionpayseqsale_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_periodsale_price_display|display}"><strong class="term">기간할인</strong><span class="desc">{$total.price_unit_head}{$total.total_periodsale_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_membersale_price_display|display}"><strong class="term">회원할인</strong><span class="desc">{$total.price_unit_head}{$total.total_membersale_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_rebuysale_price_display|display}"><strong class="term">{$rebuysale_head}재구매할인</strong><span class="desc">{$total.price_unit_head}{$total.total_rebuysale_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_paymethodsale_price_display|display}"><strong class="term">결제수단할인</strong><span class="desc">{$total.price_unit_head}{$total.total_paymethodsale_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_newproductsale_price_display|display}"><strong class="term">신규상품할인</strong><span class="desc">{$total.price_unit_head}{$total.total_newproductsale_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_bulksale_price_display|display}"><strong class="term">대량구매할인</strong><span class="desc">{$total.price_unit_head}{$total.total_bulksale_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_pbpsale_price_display|display}"><strong class="term">어바웃pbp할인</strong><span class="desc">{$total.price_unit_head}{$total.total_pbpsale_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_livelinkonsale_price_display|display}"><strong class="term">바로가기(링콘)할인</strong><span class="desc">{$total.price_unit_head}{$total.total_livelinkonsale_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_membergroupsale_price_display|display}"><strong class="term">회원등급할인</strong><span class="desc">{$total.price_unit_head}{$total.total_membergroupsale_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_setproductsale_price_display|display}"><strong class="term">세트할인</strong><span class="desc">{$total.price_unit_head}{$total.total_setproductsale_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.explode_set_product_discount_amount_display|display}"><strong class="term">세트상품할인</strong><span class="desc">{$total.price_unit_head}{$total.explode_set_product_discount_amount}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_shipfeesale_price_display|display}"><strong class="term">배송비할인</strong><span class="desc">{$total.price_unit_head}{$total.total_shipfeesale_price}{$total.price_unit_tail}</span></li>
-                                            <li class="{$total.total_externaladdsale_price_display|display}"><strong class="term">추가할인(상품)</strong><span class="desc">{$total.price_unit_head}{$total.total_externaladdsale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_mobilesale_price_display|display}"><strong class="term" style="color: #747474;">모바일할인</strong><span class="desc">{$total.price_unit_head}{$total.total_mobilesale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_subscriptionpayseqsale_price_display|display}"><strong class="term" style="color: #747474;">정기배송할인</strong><span class="desc">{$total.price_unit_head}{$total.total_subscriptionpayseqsale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_periodsale_price_display|display}"><strong class="term" style="color: #747474;">기간할인</strong><span class="desc">{$total.price_unit_head}{$total.total_periodsale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_membersale_price_display|display}"><strong class="term" style="color: #747474;">회원할인</strong><span class="desc">{$total.price_unit_head}{$total.total_membersale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_rebuysale_price_display|display}"><strong class="term" style="color: #747474;">{$rebuysale_head}재구매할인</strong><span class="desc">{$total.price_unit_head}{$total.total_rebuysale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_paymethodsale_price_display|display}"><strong class="term" style="color: #747474;">결제수단할인</strong><span class="desc">{$total.price_unit_head}{$total.total_paymethodsale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_newproductsale_price_display|display}"><strong class="term" style="color: #747474;">신규상품할인</strong><span class="desc">{$total.price_unit_head}{$total.total_newproductsale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_bulksale_price_display|display}"><strong class="term" style="color: #747474;">대량구매할인</strong><span class="desc">{$total.price_unit_head}{$total.total_bulksale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_pbpsale_price_display|display}"><strong class="term" style="color: #747474;">어바웃pbp할인</strong><span class="desc">{$total.price_unit_head}{$total.total_pbpsale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_livelinkonsale_price_display|display}"><strong class="term" style="color: #747474;">바로가기(링콘)할인</strong><span class="desc">{$total.price_unit_head}{$total.total_livelinkonsale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_membergroupsale_price_display|display}"><strong class="term" style="color: #747474;">회원등급할인</strong><span class="desc">{$total.price_unit_head}{$total.total_membergroupsale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_setproductsale_price_display|display}"><strong class="term" style="color: #747474;">세트할인</strong><span class="desc">{$total.price_unit_head}{$total.total_setproductsale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.explode_set_product_discount_amount_display|display}"><strong class="term" style="color: #747474;">세트상품할인</strong><span class="desc">{$total.price_unit_head}{$total.explode_set_product_discount_amount}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_shipfeesale_price_display|display}"><strong class="term" style="color: #747474;">배송비할인</strong><span class="desc">{$total.price_unit_head}{$total.total_shipfeesale_price}{$total.price_unit_tail}</span></li>
+                                            <li class="{$total.total_externaladdsale_price_display|display}"><strong class="term" style="color: #747474;">추가할인(상품)</strong><span class="desc">{$total.price_unit_head}{$total.total_externaladdsale_price}{$total.price_unit_tail}</span></li>
                                         </ul>
                                         <ul class="ec-base-desc typeDot gLarge rightDD {$total.total_appproductsale_price_display|display}">
                                             {$total.total_appproductsale_price_detail}
@@ -433,7 +433,7 @@
 
         <div class="ec-base-fold theme1 gBottomLine selected eToggle">
             <div class="title">
-                <h3>주문 상품 정보 <!--span class="order">(총 {$item_count}개 / {$total.price_unit_head}{$total.total_order_price}{$total.price_unit_tail})</span--></h3>
+                <h3 style="padding: 0 0 2px;">주문 상품 정보 <!--span class="order">(총 {$item_count}개 / {$total.price_unit_head}{$total.total_order_price}{$total.price_unit_tail})</span--></h3>
             </div>
             <div class="contents">
                 <div class="{$basic_display|display}">
@@ -790,7 +790,7 @@
                 </div>
                 <div class="ec-base-button {$button_display|display}">
                     <span class="">
-                        <button type="submit" class="btnNormal sizeS {$cancel_display|display}" style="width: 84px;height: 36px;float: right;">주문취소</button>
+                        <button type="submit" class="btnNormal sizeS {$cancel_display|display}" style="width: 84px;height: 36px;float: right;margin-top: 16px;">주문취소</button>
                     </span>
                 </div>
             </div>
@@ -856,18 +856,18 @@
                     <table border="1" >
                         <caption>취소/교환/반품 신청 정보</caption>
                         <colgroup>
-                            <col style="width:170px" />
+                            <col style="width:100px" />
                             <col style="width:auto" />
                             <col style="width:120px" class="RW" />
                             <col style="width:150px" class="RW" />
                         </colgroup>
                         <thead class="RW">
-                        <tr>
-                            <th scope="col" class="left">구분</th>
-                            <th scope="col">상품정보</th>
-                            <th scope="col">수량</th>
-                            <th scope="col">상품구매금액</th>
-                        </tr>
+<!--                        <tr>-->
+<!--                            <th scope="col" class="left">구분</th>-->
+<!--                            <th scope="col">상품정보</th>-->
+<!--                            <th scope="col">수량</th>-->
+<!--                            <th scope="col">상품구매금액</th>-->
+<!--                        </tr>-->
                         </thead>
                         <tbody>
                         <tr>
@@ -1060,12 +1060,12 @@
                             <col style="width:150px" class="RW" />
                         </colgroup>
                         <thead class="RW">
-                        <tr class="ec-payment-refund-header">
-                            <th scope="col" class="left">구분</th>
-                            <th scope="col">상품정보</th>
-                            <th scope="col">수량</th>
-                            <th scope="col">상품구매금액</th>
-                        </tr>
+<!--                        <tr class="ec-payment-refund-header">-->
+<!--                            <th scope="col" class="left">구분</th>-->
+<!--                            <th scope="col">상품정보</th>-->
+<!--                            <th scope="col">수량</th>-->
+<!--                            <th scope="col">상품구매금액</th>-->
+<!--                        </tr>-->
                         </thead>
                         <tbody>
                         <tr class="{$add_payment_product_display|display}">
@@ -1310,12 +1310,12 @@
                             <col style="width:150px" class="RW" />
                         </colgroup>
                         <thead class="RW">
-                        <tr class="ec-payment-add-header">
-                            <th scope="col" class="left">구분</th>
-                            <th scope="col">상품정보</th>
-                            <th scope="col">수량</th>
-                            <th scope="col">상품구매금액</th>
-                        </tr>
+<!--                        <tr class="ec-payment-add-header">-->
+<!--                            <th scope="col" class="left">구분</th>-->
+<!--                            <th scope="col">상품정보</th>-->
+<!--                            <th scope="col">수량</th>-->
+<!--                            <th scope="col">상품구매금액</th>-->
+<!--                        </tr>-->
                         </thead>
                         <tbody>
                         <tr class="{$cancel_product_class} {$cancel_product_display|display}">
@@ -1478,12 +1478,12 @@
                             <col style="width:150px" class="RW" />
                         </colgroup>
                         <thead class="RW">
-                        <tr>
-                            <th scope="col" class="left">구분</th>
-                            <th scope="col" class="center">상품정보</th>
-                            <th scope="col" class="center">수량</th>
-                            <th scope="col" class="center">상품구매금액</th>
-                        </tr>
+<!--                        <tr>-->
+<!--                            <th scope="col" class="left">구분</th>-->
+<!--                            <th scope="col" class="center">상품정보</th>-->
+<!--                            <th scope="col" class="center">수량</th>-->
+<!--                            <th scope="col" class="center">상품구매금액</th>-->
+<!--                        </tr>-->
                         </thead>
                         <tbody>
                         <tr>
@@ -1579,7 +1579,7 @@
             </div>
         </div>
 
-        <div class="ec-base-button" style="margin-top: 45px;">
+        <div class="ec-base-button" style="margin-top: 40px;">
             <span class="gRight">
                 <a href="#none" onclick="{$action_issue_cash}" class="btnNormal sizeS {$issue_cash_display|display}">현금영수증 신청</a>
                 <a href="#none" onclick="{$action_print_pg_cash}" class="btnNormal sizeS RW {$print_pg_cash_display|display}">현금영수증전표 인쇄</a>

@@ -5,7 +5,7 @@
 
 /* 상세보기 토글 */
 .xans-myshop-couponlist .layer { position:relative; padding:0; font-size:0; }
-.xans-myshop-couponlist .layer:after { content:""; overflow:hidden; display:inline-block; width:10px; height:10px; border-left:1px solid #000; border-bottom:1px solid #000; -webkit-transform:rotate(-45deg);  transform:rotate(-45deg); -webkit-transition:.3s ease-out; transition:.3s ease-out;}
+.xans-myshop-couponlist .layer:after { content:""; overflow:hidden; display:inline-block; width:5px; height:5px; border-left:1px solid #000; border-bottom:1px solid #000; -webkit-transform:rotate(-45deg);  transform:rotate(-45deg); -webkit-transition:.3s ease-out; transition:.3s ease-out;}
 .xans-myshop-couponlist .layer.selected:after { position:relative; top:8px; -webkit-transform:rotate(135deg); transform:rotate(135deg); }
 
 /* 쿠폰 정보 레이어 */
@@ -21,15 +21,19 @@
 .xans-myshop-couponlist .title p { float:right; color:#757575; }
 
 .xans-myshop-couponlist .ec-base-table table td { border-bottom:0;  padding: 16px 0px 16px 5px; text-align: left;}
-.xans-myshop-couponlist .ec-base-table table td.center{text-align: center;padding: 16px 0;}
+.xans-myshop-couponlist .ec-base-table table td.center{text-align: center;padding: 30px 0;}
 .xans-myshop-couponlist .ec-base-table table td span.content{display: block; color: #888;font-size: 12px;}
 .xans-myshop-couponlist .ec-base-table table .selected td { border-top:0; }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
+    .myshopArea{width: 100% !important;}
     .xans-myshop-couponlist ul { padding:0; }
     .xans-myshop-couponlist .ec-base-table table td.selected { padding:20px 15px; }
     .xans-myshop-couponlist .ec-base-table table th { padding-left:10px; padding-right:10px; }
     .xans-myshop-couponlist .ec-base-table table td.contents{padding: 16px;}
+    #frmCouponlist{ width: 108%;margin-left: -4%!important;}
+    .xans-myshop-couponlist .ec-base-table table td{padding-left: 16px;}
+    .xans-myshop-couponlist .ec-base-table table td.center{padding-right: 16px;}
 
 }

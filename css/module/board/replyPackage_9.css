@@ -5,3 +5,8 @@
 .xans-board-replypackage-9 .ec-base-table .view .detail ul { margin:15px 0; padding:0 0 0 40px; }
 .xans-board-replypackage-9 .ec-base-table .view .detail ol li { list-style:decimal; }
 .xans-board-replypackage-9 .ec-base-table .view .detail ul li { list-style:disc; }
+
+#myshopMain{padding-top: 40px;}
+.adminAnswer{display: none;}
+.xans-board-replypackage-9 .ec-base-table th{border-bottom: 0;padding: 8px 0px;font-weight: 500;}
+.xans-board-replypackage-9 .ec-base-table td{border-bottom: 0;padding: 8px 0;}

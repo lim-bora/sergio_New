@@ -16,6 +16,16 @@ $(function(){
     let wishproductTotal = `<span>(${wishTotal}건)</span>`
     $(".xans-myshop-wishlistbutton .wishTotal").append(wishproductTotal);
 
+    //모바일 쿠폰 너비 100
+    // if (window.location.pathname == '/myshop/coupon/coupon.html'){
+    //     $(window).resize(function(){
+    //         if (window.innerWidth < 1024) {  // 다바이스 크기가 1024이하일때
+    //             $('.myshopArea').parent('#contents').css('width',"100%");
+    //             // $('.myshopArea').css('maxWidth',"100%");
+    //             $('.myshopArea').attr('style', 'max-width: 100% !important');
+    //         }
+    //     }).resize();
+    // }
 
 
 });

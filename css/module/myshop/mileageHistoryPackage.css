@@ -1,7 +1,7 @@
 .xans-myshop-summary { margin:0 0 40px; }
 .xans-myshop-summary.ec-base-box.gHalf { border:none;border-top:1px solid #000;padding:0; }
 .xans-myshop-summary.ec-base-box.gHalf::before { display:none; }
-.xans-myshop-summary ul{ position:relative; float:none;width:100%;}
+.xans-myshop-summary ul{ position:relative; float:none;width:100%;border-bottom: 1px solid #EAEAEA;padding-bottom: 8px;}
 .xans-myshop-summary:after { content:""; display:block; clear:both; }
 .xans-myshop-summary ul li {  padding:20px 16px;  line-height:1.5; vertical-align:top; box-sizing:border-box; overflow:hidden; }
 .xans-myshop-summary .title { float:left; width:50%; font-weight:normal; box-sizing:border-box; color: #747474; font-size: 14px;}
@@ -19,6 +19,7 @@
 .xans-myshop-historylist .item table td {line-height:1.5;background:#fff;}
 .xans-myshop-historylist .item table th {color:#6d6d6d;text-align:left;font-weight:normal;}
 
+.xans-myshop-mileagehistorypackage .ec-base-tab.typeNav .menu li{border-radius: 2px;}
 .xans-myshop-mileagehistorypackage .ec-base-tab.typeNav .menu li a{ width: 100%;padding: 14px 0;background-color: transparent!important; color: #000;}
 .xans-myshop-mileagehistorypackage .ec-base-tab.typeNav .menu li:nth-child(1){width: 100% !important;background-color: #000!important; margin-bottom: 8px;}
 .xans-myshop-mileagehistorypackage .ec-base-tab.typeNav .menu li:nth-child(1) a{color: #fff!important;}
