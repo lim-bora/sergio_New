@@ -21,11 +21,11 @@
 #mCafe24Order.xans-order-result .pannelArea .ec-base-table tr.paySection th{width: 20%;}
 #mCafe24Order.xans-order-result .pannelArea .ec-base-table tr.paySection td{text-align: right;}
 #mCafe24Order .ec-base-table.typeView h3{font-weight: 400;color: #000000;padding-top: 40px;}
-#mCafe24Order.xans-order-result .ec-base-prdInfo{ padding: 20px 0px 15px;border-top: 0;}
-#mCafe24Order.xans-order-result .orderArea h3{font-weight: 400;color: #000000;padding-top: 40px;border-top: 1px solid #eaeaea;}
+#mCafe24Order.xans-order-result .ec-base-prdInfo{ padding: 8px 0px 0px;border-top: 0;}
+#mCafe24Order.xans-order-result .orderArea h3{font-weight: 400;color: #000000;padding-top: 32px;}
 #mCafe24Order.xans-order-result .orderArea .ec-base-prdInfo{border-bottom: 0!important;}
 #mCafe24Order.xans-order-result .orderArea .ec-base-prdInfo:first-child{border-top: 1px solid #EAEAEA!important;}
-#mCafe24Order.xans-order-result .orderArea .ec-base-prdInfo:last-child{border-bottom: 1px solid #EAEAEA!important;    padding-bottom: 34px;}
+/*#mCafe24Order.xans-order-result .orderArea .ec-base-prdInfo:last-child{padding-bottom: 34px;}*/
 #mCafe24Order.xans-order-result .ec-base-prdInfo .description .prdName{margin-bottom: 8px;font-weight: 500;}
 
 #mCafe24Order .ec-base-table h3{font-weight: 400;color: #000000;}
@@ -43,7 +43,7 @@
 #mCafe24Order .resultBtn a{height: 48px!important;font-weight: 400;font-size: 14px!important; margin: 0 0 0 0px!important;border-radius: 2px;}
 #mCafe24Order .resultBtn a.btnSubmit{border: 1px solid #000;color: #000;background-color: #fff;margin-bottom: 8px!important;}
 #mCafe24Order .resultBtn a.btnEm{background-color: #000;color: #fff;border: 0!important;}
-
+#mCafe24Order .ec-base-prdInfo .prdBox{padding: 16px 0px 0;}
 
 
 

@@ -38,7 +38,8 @@ ul.info li { padding: 0 0 0 9px;}
 .xans-board-write-9 .ec-base-button.gBottom .gRight .hasBtn a{width: -webkit-fill-available;}
 .xans-board-modify .fr-wrapper .fr-iframe, .xans-board-reply .fr-wrapper .fr-iframe, .xans-board-write .fr-wrapper .fr-iframe{height: 702px!important;}
 
-
+.fr-toolbar{border: 1px solid #eaeaea!important; border-bottom: 0!important;}
+.fr-box.fr-basic .fr-wrapper{ border: 1px solid #eaeaea!important;border-bottom-color: #eaeaea!important;border-top: 0!important;}
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
 	.xans-board-write-9 .ec-base-table input[type="text"],
