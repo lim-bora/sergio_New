@@ -4,7 +4,7 @@
 /* headingArea */
 .xans-product-detail .headingArea { position:relative; }
 .xans-product-detail .headingArea h1 { display:inline; font-size:20px; line-height:30px; vertical-align:middle; }
-.xans-product-detail .headingArea .icon_img { max-height:23px; }
+.xans-product-detail .headingArea .icon_img { max-height:23px; display: none;}
 .xans-product-detail .headingArea .icon img { margin:0 4px 0 0; vertical-align:middle; }
 .xans-product-detail .headingArea .actionWish{position: absolute;top: 0;right: 0;border: 0;padding: 0;height: 0;}
 .xans-product-detail .headingArea .actionWish img{width: 17.42px;}
@@ -30,8 +30,10 @@
 	.xans-product-detaildesign tr[data-name="상품요약정보"]{ display:none; }
 .priceBlack{color: #000 !important;}
 #span_product_price_sale{ font-family: 'Acumin Pro';}
-.xans-product-detaildesign tr[data-name="할인판매가"] td #span_product_price_sale span{font-weight: 600;}
+.xans-product-detaildesign tr[data-name="할인판매가"] td #span_product_price_sale span{font-weight: 700;}
+.xans-product-detaildesign tr[data-name="할인판매가"] td{padding: 0;}
 .xans-product-detaildesign tr[data-name="판매가"] > td{padding: 0;}
+.xans-product-detaildesign tr[data-name="판매가"].margin{margin-left: 6px;display: inline-flex;}
 .xans-product-detaildesign tr[data-name="상품간략설명"]{font-weight: 300;line-height:24px; margin-top: 16px;display: block;}
 .xans-product-detail .infoArea table { border:0; margin:24px 0 0; font-size:13px;  }
 .xans-product-detail .infoArea th { font-weight:normal; width:106px; padding:7px 5px 6px 0; text-align:left; vertical-align:top;display: none; }
@@ -144,7 +146,7 @@
 /* quantity */
 .ec-base-desc.quantity { margin:10px 0 0; padding:10px 0 0; border-top:1px solid #ddd; }
 .ec-base-desc.quantity dt { width:125px; padding:0 0 0 8px; }
-#totalProducts table p:not(.product) { position:relative; display:inline-block; width:103px; margin:18px 0 0; padding:0 30px; vertical-align:top; box-sizing:border-box; }
+#totalProducts table p:not(.product) { position:relative; display:inline-block; width:80px; margin:18px 0 0; padding:0 30px; vertical-align:top; box-sizing:border-box; }
 #totalProducts table p:not(.product) .quantity_opt { width:45px; height:30px; padding:0; line-height:28px; margin-left:-1px; border:1px solid #e5e5e5; text-align:center; }
 #totalProducts table p:not(.product) .quantity_opt:focus,
 #totalProducts table p:not(.product) .quantity_opt:hover { border:1px solid #e5e5e5; }
@@ -168,7 +170,8 @@
 #totalProducts tbody th strong { font-weight:normal; }
 #totalProducts tbody td { padding:20px 0; line-height:18px; vertical-align:middle; word-wrap:break-word; word-break:break-all; }
 #totalProducts tbody td .product + .product { padding:7px 10px 0 0; }
-#totalProducts tbody td .product span { font-weight:normal; color:#000; line-height:14px; font-family: "Acumin Pro", sans-serif;font-size: 14px;}
+#totalProducts tbody td .product{visibility: hidden; line-height: 1px;}
+#totalProducts tbody td .product span { font-weight:normal; color:#000; line-height:14px; font-family: "Acumin Pro", sans-serif;font-size: 14px;    visibility: visible;}
 #totalProducts tbody td .product span.soldOut { display:inline-block; color:#000; }
 #totalProducts tbody td img { vertical-align:middle; }
 #totalProducts .quantity { display:inline-block; position:relative; width:80px !important; padding:0 20px;vertical-align:top; box-sizing:border-box; }
@@ -181,12 +184,12 @@
 #totalProducts .quantity a { width:30px; height:30px; border:1px solid #eaeaea; box-sizing:border-box; overflow: hidden; white-space: nowrap; text-indent: 150%; color: transparent; font-size: 1px; line-height:1px;  background-color: #fff;}
 #totalProducts .quantity a:before { content: ''; position: absolute;left:11px; top: 50%; width: 9px; height: 1px; background: #000; }
 #totalProducts .quantity .up:after {content: ''; position: absolute;left: 50%; top: 50%;width: 1px;height: 9px; margin: -4px 0 0 0; background: #000;}
-#totalProducts .delete { display:inline-block; width:12px; height:12px;  vertical-align: middle; background: url(//img.echosting.cafe24.com/skin/skin/product/ico_product_delete.svg) no-repeat 0 0;     position: absolute;right: 18px;top: 50%;transform: translateY(-50%);}
+#totalProducts .delete { display:inline-block; width:12px; height:12px;  vertical-align: middle; background: url(//img.echosting.cafe24.com/skin/skin/product/ico_product_delete.svg) no-repeat 0 0;     position: absolute;right: 18px;top: 53.5%;transform: translateY(-50%);}
 #totalProducts .delete img { opacity: .00001; }
 #totalProducts tbody td .mileage { display:block; white-space:nowrap; }
 #totalProducts .xans-product-fileoption {border-top:1px solid #e5e5e5;}
 /*#totalProducts > table > tbody > tr.option_product > td {border-top: 27px solid #F9F9F9;     border-bottom: 27px solid #f9f9f9;}*/
-#totalProducts > table > tbody > tr > td:first-child { padding-right:10px; padding-left: 16px; line-height: 23px;}
+#totalProducts > table > tbody > tr > td:first-child { padding-right:10px; padding-left: 16px; line-height: 23px; }
 #totalProducts > table > tbody > tr > td:first-child .product strong{display: none;}
 #totalProducts > table > tbody > tr > td:last-child{}
 #totalProducts tr.option_product{background-color: #F9F9F9;border-bottom: 8px solid #fff;position: relative;}
@@ -292,7 +295,7 @@
 .detailToggle ul{display: flex;flex-direction: column;}
 .detailToggle ul li{border-bottom: 1px solid #EAEAEA;}
 .detailToggle ul li .d_tab.active{display: block;}
-.detailToggle ul li p{padding:24px 0px 24px;  line-height:24px;}
+.detailToggle ul li p{padding:24px 16px 24px;  line-height:24px;}
 .detailToggle ul li div span{padding:24px 16px;  line-height:24px;display: block;}
 .detailToggle ul li div span{background: #F9F9F9;color: #888888;}
 span.arrow{display:inline-block;
@@ -303,9 +306,15 @@ span.arrow{display:inline-block;
 	border-right: 0.1rem solid #333;
 	transform: rotate(135deg);
 	transition: 0.3s;
-	float: right;}
+	float: right;
+	top: 3px;
+	position: relative;}
 span.arrow.rotate{transform: rotate(315deg)}
+.ec-front-product-item-price{margin-right: 14px;}
 
+/*추천상품*/
+.xans-product-relation .relation_title{font-weight: 500!important;font-size: 20px!important;text-align: left!important;}
+.xans-product-relation .ec-base-product{margin-top: 10px!important;}
 
 /*네이버페이 커스텀*/
 #NaverChk_Button{margin-top: 0px!important;}
@@ -335,8 +344,16 @@ span.arrow.rotate{transform: rotate(315deg)}
     .xans-product-detail .discountMember > li { position:static; }
     .xans-product-detail .btnTooltip { position:static; }
     .differentialShipping { left:0; right:0; width:88%; margin:10px auto 0; }
-	/*#opt_layer_iframe_parent{bottom: 0!important;    top: 47vh!important;  }*/
+	#opt_layer_iframe_parent{display: block!important; bottom: 0!important; top: auto!important;  }
+	#opt_layer_iframe_parent iframe#productOptionIframe{height: 548px!important;}
 	.xans-product-detaildesign tr[data-name="상품간략설명"]{margin-top: 32px;border-top:1px solid #eaeaea; padding-top: 32px;}
+	.detailToggle ul li p{padding:24px 24px 24px; }
+	.detailToggle ul li div span{padding:24px 24px;}
+	.detailToggle ul{width: 108%;margin-left: -4%!important;}
+
+	/*추천상품*/
+	.xans-product-relation .relation_title{font-size: 16px!important;}
+	.xans-product-relation .ec-base-product{margin-top: 6px!important;}
 }
 
 /********************* PC *********************/
@@ -433,16 +450,17 @@ span.arrow.rotate{transform: rotate(315deg)}
 
 /* 재입고알림 버튼 */
 .xans-product-detail .infoArea td #span_product_price_text {margin-right:8px; font-weight: 400;}
+.xans-product-detail .infoArea td #span_product_price_text.margin{margin-left:8px;}
 .xans-product-detail .infoArea td #btn_restock img {display:none;}
 .xans-product-detail .infoArea td #btn_restock:after {content:'재입고 알림 SMS';font-size:11px;color:#111;font-weight:400;border:1px solid #d6d6d6;display:inline-block;padding:2px 5px;}
 .xans-product-detail .infoArea td #btn_restock:hover:after {border:1px solid #999;}
 
 /* 구매버튼 */
 .xans-product-action .action_button {display:flex;flex-direction: column;}
-.xans-product-action .action_button .btnNormal {flex:1;height:40px;padding:18px 0;font-size:14px;font-weight:400;margin-left: 0!important;margin-bottom: 8px;border: 1px solid #000;}
+.xans-product-action .action_button .btnNormal {flex:1;height:40px;padding:18px 0;font-size:14px;font-weight:400;margin-left: 0!important;margin-bottom: 8px;border: 1px solid #000;border-radius: 2px;}
 .xans-product-action .action_button .btnSubmit {flex-basis:100%;height:40px;padding:18px 0;font-size:14px;font-weight:400;margin-bottom: 8px; border-radius: 2px;}
 /*.xans-product-action .action_button [class^='btn'] + [class^='btn'] {margin-left:20px;}*/
-.xans-product-action .action_button .sub_sold {flex:1;background-color:#000;color:#fff;font-size:16px;line-height:66px;font-weight:400;text-align:center;}
+.xans-product-action .action_button .sub_sold {flex:1;background-color:#EAEAEA;color:#606060;font-size:14px;line-height:56px;font-weight:400;text-align:center;border-radius: 2px;}
 .mrt10 {margin-top:10px;}
 
 /* 상세페이지 탭 */
@@ -484,8 +502,8 @@ span.arrow.rotate{transform: rotate(315deg)}
 .swiper-container.relation_slide ul {display:flex;padding:0;margin:0;height:auto;}
 .swiper-container.relation_slide ul .thumbnail {margin:0;}
 .swiper-container.relation_slide ul > li .prdList__item {margin:0;}
-.swiper-container.relation_slide ul > li .description .name a {font-size:16px;color:#3a3a3a;line-height:1.2;}
-.swiper-container.relation_slide ul > li .description .price {font-size:20px;margin-top:10px;color:#1a1a1a;font-weight:700;}
+.swiper-container.relation_slide ul > li .description .name a {font-size:14px;color:#000;line-height:20px;font-weight: 500;}
+.swiper-container.relation_slide ul > li .description .price {font-size:14px;margin-top:8px;color:#000;font-weight:700;}
 
 /* 게시판 */
 .board_title {display:flex;justify-content:space-between;align-items:center;margin:0 0 40px 0;}
@@ -559,8 +577,8 @@ span.arrow.rotate{transform: rotate(315deg)}
 	.relation .relation_title {padding:30px 0 0 0;font-size:16px;}
 	.relation .relation_title span {font-size:11px;}
 	.swiper-container.relation_slide ul > li .description {border:0;padding:0;min-height:auto;}
-	.swiper-container.relation_slide ul > li .description .name a {font-size:13px;}
-	.swiper-container.relation_slide ul > li .description .price {font-size:13px;}
+	.swiper-container.relation_slide ul > li .description .name a {font-size:14px;}
+	.swiper-container.relation_slide ul > li .description .price {font-size:14px;}
 	.relation .swiper-button-prev,
 	.relation .swiper-button-next {display:none;}
 

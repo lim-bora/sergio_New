@@ -1101,7 +1101,7 @@
                                     <h5 class="title">회원할인</h5>
                                     <div class="data" id="{$total_membersale_price_id}">{$price_unit_head}{$total_membersale_price}{$price_unit_tail}</div>
                                 </div>
-                                <div class="item {$total_rebuysale_price_display|display}">
+                                <div class="item {$total_rebuysa인le_price_display|display}">
                                     <h5 class="title">{$rebuysale_head}재구매할인</h5>
                                     <div class="data" id="{$total_rebuysale_price_id}">{$price_unit_head}{$total_rebuysale_price}{$price_unit_tail}</div>
                                 </div>
@@ -1231,7 +1231,7 @@
                 <div class="{$btn_order_display|display}" module="Order_TotalOrder" id="orderFixItem">
                     <div class="ec-base-button">
 <!--                        <a href="#none" onclick="{$action_order_all}" class="btnSubmit gFull sizeL {$buy_display|display}" link-order="/order/orderform.html{$param}" link-login="/member/login.html">전체상품주문</a>-->
-                        <a href="#none" onclick="{$action_order_select}" class="btnNormal gFull sizeL bkMBtn" link-order="/order/orderform.html{$param}" link-login="/member/login.html">주문하기</a>
+                        <a href="#none" onclick="{$action_order_select}" class="btnNormal gFull sizeL bkMBtn" link-order="/order/orderform.html{$param}" link-login="/member/login.html" style="border-radius: 2px;border: 0!important;">주문하기</a>
                     </div>
                     <!-- 네이버 체크아웃 구매 버튼  -->
                     <div id="{$naver_checkout_button_id}"></div>
@@ -1280,7 +1280,7 @@
         <a href="#none" class="btnClose" onclick="$('#ec-basketOptionModifyLayer').hide();">닫기</a>
     </div>
 </div>
-<div module="Order_BasketGuide" class="section ec-base-help cartSection">
+<div module="Order_BasketGuide" class="section ec-base-help cartSection" style="margin-top: 0!important;">
     <h3>이용안내</h3>
     <div class="inner">
         <h4>장바구니 이용안내</h4>

@@ -82,10 +82,10 @@ $swipe = yes
             </div>
             <div module="product_detaildesign">
                 <!--
-출력 갯수 지정 변수, 없으면 설정된 전체가 나옵니다.
-count = 10
--->
-                <table border="1">
+                    출력 갯수 지정 변수, 없으면 설정된 전체가 나옵니다.
+                    count = 10
+                 -->
+                <table border="1" style="margin-top: 16px;">
                     <caption>{$name} 기본 정보</caption>
                     <tbody>
                         <tr class="{$item_display|display}" data-name="{$item_title|striptag}">
@@ -563,13 +563,13 @@ $default_option = yes
             <div module="product_action" id="{$fixed_action_button}" class="productAction">
                 <div id="ec-product-price-info" class="displaynone" ec-data-custom="{$disp_product_custom}" ec-data-price="{$product_price}"></div>
                 <div class="{$action_display|display} action_button">
-                    <span class="sub_sold {$soldout_display|display}">SOLD OUT</span>
+                    <span class="sub_sold {$soldout_display|display}">품절</span>
                     <a href="#none" class="btnSubmit sizeL {$buy_display|display}" onclick="{$action_buy}"><span id="{$btn_buy_mobile_id}">바로 구매</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span><span id="{$btn_regular_delivery_id}" class="{$btn_regular_delivery|display}">REGULAR DELIVERY</span></a>
                     <button type="button" class="btnNormal sizeL actionCart {$basket_display|display}" onclick="{$action_basket}" id="actionCart">쇼핑백에 담기</button>
 <!--                    <button type="button" class="btnNormal sizeL actionWish {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWish">WISH LIST</button>-->
                 </div>
                 <div class="ec-base-button soldout {$action_soldout_display|display}">
-                    <button type="button" class="btnSubmit gFull sizeL {$soldout_display|display}">SOLD OUT</button>
+                    <button type="button" class="btnSubmit gFull sizeL {$soldout_display|display}">품절</button>
                     <button type="button" class="btnNormal gFull sizeL {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWishSoldout">WISH LIST</button>
                 </div>
                 <a href="/board/inquiry/write.html{$inquiry_param}" class="btnNormal gFull sizeL mrt10 {$inquiry_display|display}">대량구매문의</a>
@@ -578,14 +578,14 @@ $default_option = yes
                 <div id="{$app_payment_button_box_id}"></div>
                 <div class="eventArea {$common_event_b|display}">{$common_event_b}</div>
             </div>
-            <div module="product_action" class="ec-base-button gFixed" id="orderFixArea">
+            <div module="product_action" class="ec-base-button gFixed" id="orderFixArea" style="border-top: 1px solid #EAEAEA;">
                 <div class="ec-base-button gColumn {$action_display|display}">
                     <a href="#none" class="btnSubmit sizeM {$buy_display|display}" onclick="{$action_buy}"><span id="{$btn_buy_mobile_id}">구매하기</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span><span id="{$btn_regular_delivery_id}" class="{$btn_regular_delivery|display}">REGULAR DELIVERY</span></a>
 <!--                    <button type="button" class="btnNormal sizeM actionCart {$basket_display|display}" onclick="{$action_basket}">쇼핑백에 담기</button>-->
                 </div>
                 <div class="ec-base-button gColumn {$action_soldout_display|display}">
-                    <button type="button" class="btnSubmit sizeM {$soldout_display|display}">SOLD OUT</button>
-                    <button type="button" class="btnNormal sizeM {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWishSoldout">WISH LIST</button>
+                    <button type="button" class="btnSubmit sizeM {$soldout_display|display}" style="background-color: #EAEAEA;font-size: 14px;color: #606060;">품절</button>
+<!--                    <button type="button" class="btnNormal sizeM {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWishSoldout">WISH LIST</button>-->
                 </div>
             </div>
 
@@ -644,41 +644,7 @@ $default_option = yes
     <div id="prdDetail" class="productDetail">
         <div>{$product_detail}</div>
 
-        <div module="product_relation">
-            <div class="relation">
-                <div class="relation_title">YOU MAY ALSO LIKE<span>함께 구매하면 좋을 관련상품 모음</span></div>
 
-                <div module="product_relationlist" class="ec-base-product swiper-container relation_slide">
-                    <ul class="swiper-wrapper prdList">
-                        <li class="swiper-slide">
-                            <div class="prdList__item">
-                                <div class="thumbnail">
-                                    <a href="{$link_product_detail}"><img src="{$img_medium}" alt="{$seo_alt_tag}"></a>
-                                </div>
-                                <div class="description">
-                                    <div class="name"><a href="{$link_product_detail}">{$name}</a></div>
-                                    <div class="price"><span class="salePrice {$sale_price_display|display}">{$disp_sale_price}</span><span class="prdPrice {$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</span></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <div class="prdList__item">
-                                <div class="thumbnail">
-                                    <a href="{$link_product_detail}"><img src="{$img_medium}" alt="{$seo_alt_tag}"></a>
-                                </div>
-                                <div class="description">
-                                    <div class="name"><a href="{$link_product_detail}">{$name}</a></div>
-                                    <div class="price"><span class="salePrice {$sale_price_display|display}">{$disp_sale_price}</span><span class="prdPrice {$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</span></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="swiper-scrollbar"></div>
-                </div>
-                <div class="swiper-button-next swiper-next-relation"></div>
-                <div class="swiper-button-prev swiper-prev-relation"></div>
-            </div>
-        </div><!-- //product_relation -->
     </div><!-- //prdDetail -->
 
     <div id="prdReview">
@@ -772,6 +738,43 @@ $default_option = yes
             </div>
         </div><!-- //상품리뷰 -->
     </div><!-- //prdReview -->
+
+    <div module="product_relation">
+        <div class="relation">
+            <div class="relation_title">추천상품<span></span></div>
+
+            <div module="product_relationlist" class="ec-base-product swiper-container relation_slide">
+                <ul class="swiper-wrapper prdList">
+                    <li class="swiper-slide">
+                        <div class="prdList__item">
+                            <div class="thumbnail">
+                                <a href="{$link_product_detail}"><img src="{$img_medium}" alt="{$seo_alt_tag}"></a>
+                            </div>
+                            <div class="description">
+                                <div class="name"><a href="{$link_product_detail}">{$name}</a></div>
+                                <div class="price"><span class="salePrice {$sale_price_display|display}">{$disp_sale_price}</span><span class="prdPrice {$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="prdList__item">
+                            <div class="thumbnail">
+                                <a href="{$link_product_detail}"><img src="{$img_medium}" alt="{$seo_alt_tag}"></a>
+                            </div>
+                            <div class="description">
+                                <div class="name"><a href="{$link_product_detail}">{$name}</a></div>
+                                <div class="price"><span class="salePrice {$sale_price_display|display}">{$disp_sale_price}</span><span class="prdPrice {$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+<!--                <div class="swiper-scrollbar"></div>-->
+            </div>
+            <div class="swiper-button-next swiper-next-relation"></div>
+            <div class="swiper-button-prev swiper-prev-relation"></div>
+        </div>
+    </div><!-- //product_relation -->
+
 
     <div id="prdQnA">
         <div id="qna" class="pdt150 cboth"></div>

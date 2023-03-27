@@ -40,9 +40,9 @@
 #mCafe24Order.xans-order-result .ec-base-table.gCellNarrow tbody td{font-size: 14px;}
 
 #mCafe24Order .resultBtn{ margin: 0!important;display: flex!important;flex-direction: column;}
-#mCafe24Order .resultBtn a{height: 48px;font-weight: 400;font-size: 14px!important; margin: 0 0 0 0px!important;}
+#mCafe24Order .resultBtn a{height: 48px!important;font-weight: 400;font-size: 14px!important; margin: 0 0 0 0px!important;border-radius: 2px;}
 #mCafe24Order .resultBtn a.btnSubmit{border: 1px solid #000;color: #000;background-color: #fff;margin-bottom: 8px!important;}
-#mCafe24Order .resultBtn a.btnEm{background-color: #000;color: #fff;}
+#mCafe24Order .resultBtn a.btnEm{background-color: #000;color: #fff;border: 0!important;}
 
 
 

@@ -501,13 +501,13 @@ div.ec-base-help ul {margin:0;}
 .xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity .ec-base-qty a {width:40px;height:32px;}
 .xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity .ec-base-qty a:before {width:11px;left:14px;}
 .xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity .ec-base-qty .up:after {height:11px;margin:-5px 0 0 0;}
-.xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity [class^='btn'].sizeQty {font-size:14px; padding: 8px 10px;background-color: #000;color: #fff;width: 56px;height: 32px;border-radius: 2px;}
+.xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity [class^='btn'].sizeQty {font-size:12px; padding: 10px 10px;background-color: #000;color: #fff;width: 56px;height: 32px;border-radius: 2px;border: 0;}
 .xans-order-basketpackage .ec-base-prdInfo.gCheck .sumPrice {padding:24px 0 0 0;display:flex;align-items:center;width:100%;margin:0 0 24px 37px;border-top:1px solid #e8e8e8;}
 .xans-order-basketpackage .ec-base-prdInfo.gCheck .sumPrice .label {flex:1;font-size:14px;color:#1a1a1a;text-align:left;}
 .xans-order-basketpackage .ec-base-prdInfo .buttonGroup {position:static;width:100%;display:flex;margin:0 0 0 37px;;}
 .xans-order-basketpackage .ec-base-prdInfo .buttonGroup a {flex:1;height:50px;padding:16px 20px;font-weight:400;}
 .xans-order-basketpackage .ec-base-prdInfo .buttonGroup [class^='btn'] + [class^='btn'] {margin-left:8px;}
-.xans-order-basketpackage .summary {margin:0 0 40px 0;font-size:14px;padding:16px;border-bottom:1px solid #e8e8e8;}
+.xans-order-basketpackage .summary {margin:0 0 24px 0;font-size:14px;padding:16px;border-bottom:1px solid #e8e8e8;}
 .xans-order-basketpackage .summary .title h5 {font-size:14px;}
 .xans-order-basketpackage .summary strong {font-weight:400;}
 .xans-order-basketpackage .ec-base-button a {height:50px;padding:17px 20px;font-weight:400;font-size:14px;}
@@ -860,9 +860,12 @@ div.ec-base-help ul {margin:0;}
 	.xans-order-basketpackage .ec-base-button > div {display:flex;width:100%;}
 	.xans-order-basketpackage .ec-base-button a {flex:1;margin-bottom:10px;}
 	/*.xans-order-basketpackage .cart-total {width:100%;margin-top:30px;}*/
-	.xans-order-basketpackage .totalSummary {margin:0 0 24px 0;}
+	.xans-order-basketpackage .totalSummary {width: 108%;margin-left: -4%!important;}
 	.xans-order-basketpackage .typeModal .ec-base-button {margin:0 20px 10px;}
 	.xans-order-basketpackage .ec-base-button.gFixed > div {width:auto;}
+	.xans-order-basketpackage .cart-total{margin-top: 24px;}
+	.xans-order-basketpackage .totalSummary__item {width: 92%;margin: 0 auto 16px;}
+	.xans-order-basketpackage .totalSummary .total{width: 92%;margin: 0 auto;}
 
 	/* 검색페이지 */
 	.xans-product-searchdata .searchField fieldset .searchInput input[type=text] {padding: 18px 64px 18px 8px;}

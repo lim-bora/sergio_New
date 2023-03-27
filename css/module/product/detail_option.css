@@ -1,14 +1,17 @@
 body { background:none !important; }
-#popup { padding:0 !important; }
-#popup #product_detail_option_layer.ec-base-layer { width: 100%;  max-height: 100%;}
 
+#popup { padding:0 !important;    height: 100%; }
+#popup #product_detail_option_layer.ec-base-layer { width: 100%;  max-height: 100%; height: 100% !important;}
+#popup .ec-base-layer .btnClose{top: 26.25px!important;}
+.ec-base-layer .btnClose:after{width: 13.5px!important;top: 3px!important;right: 14px!important;}
+.ec-base-layer .btnClose:before{height: 13.5px!important;top: -4px!important;right: 20px!important;}
 /* 옵션 레이어 */
 #product_detail_option_layer { height:454px; }
 #product_detail_option_layer .optionArea { height:308px; padding:0; overflow-y:scroll; }
 #product_detail_option_layer .optionArea select{border: 1px solid #000; height: 56px;border-radius: 2px;}
 #product_detail_option_layer .byte { font-size:11px; vertical-align:middle; }
 #product_detail_option_layer .byte strong { color:#1b87d4; }
-#product_detail_option_layer .xans-product-action { padding:20px 16px; }
+#product_detail_option_layer .xans-product-action { padding:0px 16px 20px; }
 #product_detail_option_layer .header{border: 0;}
 
     /* 옵션 레이어 > 기본 정보 */
@@ -65,7 +68,7 @@ body { background:none !important; }
 /* 상품 옵션 */
 #product_detail_option_layer .xans-product-option th { vertical-align:top; }
 #product_detail_option_layer .xans-product-option tr:first-child th,
-#product_detail_option_layer .xans-product-option .xans-product-fileoption th { padding-top:14px; }
+#product_detail_option_layer .xans-product-option .xans-product-fileoption th { padding-top:2px; }
 #product_detail_option_layer .xans-product-option tr:first-child td,
 #product_detail_option_layer .xans-product-option .xans-product-fileoption td { padding-top:10px;  }
 #product_detail_option_layer .xans-product-option td.selectButton { text-align:right; }
@@ -97,12 +100,12 @@ body { background:none !important; }
 
 /* quantity */
 #totalProducts p:not(.product) { position:relative; display:inline-block; width:80px; margin:10px 0 0; padding:0 20px; vertical-align:top; box-sizing:border-box; }
-#totalProducts p:not(.product) .quantity_opt { width:45px; height:30px; padding:0; line-height:28px; margin-left:-1px; border:1px solid #e5e5e5; text-align:center; }
+#totalProducts p:not(.product) .quantity_opt { width:45px; height:30px; padding:0; line-height:28px; margin-left:-1px; border:1px solid #e5e5e5; text-align:center; margin-top: 8px;}
 #totalProducts p:not(.product) .quantity_opt:focus,
 #totalProducts p:not(.product) .quantity_opt:hover { border:1px solid #e5e5e5; }
 #totalProducts p:not(.product) img { position:absolute; top:0; left:0; opacity:.00001; width:100%; height:100%; z-index:10; }
-#totalProducts p:not(.product) .up { position:absolute; right:0; top:0; border-left: 0!important; }
-#totalProducts p:not(.product) .down { position:absolute; left:0; top:0; border-right: 0!important;}
+#totalProducts p:not(.product) .up { position:absolute; right:0; top:8px; border-left: 0!important; }
+#totalProducts p:not(.product) .down { position:absolute; left:0; top:8px; border-right: 0!important;}
 #totalProducts p:not(.product) a { width:30px; height:30px; border:1px solid #e5e5e5; box-sizing:border-box; overflow: hidden; white-space: nowrap; text-indent: 150%; color: transparent; font-size: 1px; line-height:1px; background-color: #fff;}
 #totalProducts p:not(.product) a:before { content: ''; position: absolute;left:11px; top: 50%; width: 9px; height: 1px; background: #000; }
 #totalProducts p:not(.product) .up:after {content: ''; position: absolute;left: 50%; top: 50%;width: 1px;height: 9px; margin: -4px 0 0 0; background: #000;}
@@ -113,12 +116,12 @@ body { background:none !important; }
 #totalProducts table .left { text-align:left; }
 #totalProducts table .center { text-align:center; }
 #totalProducts table .right {font-weight:400!important; text-align:right; }
-#totalProducts table .right strong{font-weight:400!important;}
+#totalProducts table .right strong{font-weight:400!important;display: block;line-height: 5px;}
 #totalProducts thead th { height:0; padding:0; font-size:0; line-height:0; }
 #totalProducts tbody th { padding-left:15px; vertical-align:middle; font-weight:normal; text-align:left; }
-#totalProducts tbody td { padding:30px 0; line-height:18px; vertical-align:middle; word-wrap:break-word; word-break:break-all; }
+#totalProducts tbody td { padding:30px 0; line-height:20px; vertical-align:middle; word-wrap:break-word; word-break:break-all; }
 #totalProducts tbody td .product + .product { padding:7px 10px 0 0; }
-#totalProducts tbody td .product span { font-weight:normal; color:#000; line-height:18px;font-size: 14px; }
+#totalProducts tbody td .product span { font-weight:normal; color:#000; line-height:28px;font-size: 14px; }
 #totalProducts tbody td .product span.soldOut { display:inline-block; color:#000; }
 #totalProducts tbody td img { vertical-align:middle; }
 #totalProducts .quantity { display:inline-block; position:relative; width:103px !important; padding:0 30px;vertical-align:top; box-sizing:border-box; }
@@ -136,6 +139,7 @@ body { background:none !important; }
 #totalProducts tbody td .mileage { display:block; white-space:nowrap; }
 #totalProducts .xans-product-fileoption {border-top:1px solid #e5e5e5;}
 #totalProducts .option_product { background-color: #F9F9F9;    border-left: 16px solid #f9f9f9; border-right: 16px solid #f9f9f9}
+/*#totalProducts .option_product > td{padding-right: 24px;}*/
 #totalProducts .option_product > td tbody > tr:first-child td:first-child { padding-left:20px; }
 #totalProducts tr.option_product > td > table { margin:-30px 0; }
 #totalProducts tr.option_product > td > table tr:first-child td:nth-child(2),
@@ -164,23 +168,24 @@ body { background:none !important; }
 #totalProducts tr.add_product > td > table tr:first-child td { border-top:0; }
 #totalProducts tr.add_product .product { padding:0; }
 
-#product_detail_option_layer .totalPrice { display:flex; justify-content:space-between; padding:15px; font-size:14px;font-weight: 600; vertical-align:middle; background:#fff; }
+#product_detail_option_layer .totalPrice { display:flex; justify-content:space-between; padding: 36px 15px; font-size:14px;font-weight: 600; vertical-align:middle; background:#fff; position: relative;}
 #product_detail_option_layer .totalPrice .title { font-weight:normal; }
 #product_detail_option_layer .totalPrice .qty{font-weight: 400;font-size: 14px;color: #747474;}
 #product_detail_option_layer .totalPrice .total { color:#7d7d7d; font-size:13px; }
 #product_detail_option_layer .totalPrice .total strong { color:#000; color:var(--font-color-primary); font-size:15px;  }
 #product_detail_option_layer .totalPrice .total em {font-style:normal;}
+#product_detail_option_layer .totalPrice:after{content: '';display: block;width: 96%;height: 1px;background-color: #eaeaea; position: absolute;top: 0; left: 50%;transform: translateX(-50%);}
 
 /** 오우이_style 210824 **/
-#totalProducts {margin:21px 16px 32px;}
+#totalProducts {min-height: 100px;max-height: 100px;overflow-y: scroll;overflow-x: hidden;margin: 32px 16px;}
 #totalProducts .delete {margin-top:0;}
-#totalProducts tbody td {padding:15px 0;}
-#product_detail_option_layer #totalProducts tbody td:first-child {display: flex;    justify-content: space-between;}
+#totalProducts tbody td {padding:5px 0;}
+#product_detail_option_layer #totalProducts tbody td:first-child {display: flex;    justify-content: space-between; width: 90%;}
 #product_detail_option_layer .xans-product-option .ec-product-button.ec-product-preview li {border-radius:50%;}
 #product_detail_option_layer .xans-product-option .ec-product-button.ec-product-preview li a {width:20px;height:20px;min-width:auto;}
 #product_detail_option_layer .xans-product-option .ec-product-button li a {height:24px;}
 #product_detail_option_layer .xans-product-option .ec-product-button li a span {line-height:1;padding:7px 5px;font-size:11px;}
-#product_detail_option_layer .xans-product-action .ec-base-button{flex-direction: column;}
+#product_detail_option_layer .xans-product-action .ec-base-button{flex-direction: column;gap: 8px;}
 #product_detail_option_layer .xans-product-action .ec-base-button button, #product_detail_option_layer .xans-product-action .ec-base-button a{margin: 0;padding-top: 20.5px;padding-bottom: 20.5px;border-radius: 2px;}
 #product_detail_option_layer .xans-product-action .ec-base-button button:first-child{margin-bottom: 8px;}
 #product_detail_option_layer .xans-product-action .ec-base-button [class^='btn'] + [class^='btn']{margin-left: 0;}

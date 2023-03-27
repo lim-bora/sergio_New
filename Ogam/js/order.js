@@ -117,7 +117,10 @@ $(function() {
     let totalH3 = `<h3>총 금액</h3>`
     let totalprice = `<span class="totalprice"></span>`;
     $('.totalAdd').append(totalH3,totalprice);
-    $('.totalprice').append(CAFE24.SHOP_FRONT_ORDERFORM_DATA.order.fBasicProductTotalPrice + '원')
+    let totalComma = CAFE24.SHOP_FRONT_ORDERFORM_DATA.order.fBasicProductTotalPrice;
+    $('.totalprice').append(comma(totalComma) + '원')
+
+    console.log(comma(totalComma));
 
 });
 
@@ -134,3 +137,15 @@ $(function() {
     $('.allAgreeTitle').addClass('titleLine')
 
 });
+
+//금액+컴마 정규삭
+function comma(str){
+    try {
+        str = String(str);
+        return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+    } catch (err) {
+        console.log(err);
+        return str;
+    }
+    ;
+}

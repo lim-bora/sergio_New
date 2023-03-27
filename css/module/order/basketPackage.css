@@ -35,13 +35,14 @@
 
 #NaverChk_Button { margin:8px 0 0; }
 /*네이버페이 커스텀*/
-#NaverChk_Button .npay_button{padding: 0px 0 0px 0px !important;}
-#NaverChk_Button .npay_type_A_1{ width: 100% !important;height: 56px !important;}
+#NaverChk_Button .npay_button{padding: 0px 0 0px 0px !important;height: 56px!important;}
+#NaverChk_Button .npay_btn_list{height: 56px!important;}
+#NaverChk_Button .npay_type_A_1{ width: 100% !important;height: 56px !important;border-radius: 2px!important;}
 #NaverChk_Button .npay_type_MA_1{ width: 100% !important;height: 56px !important;}
 #NaverChk_Button .npay_button_box{border-top: 0!important;}
 #NaverChk_Button .npay_text{display: none!important;}
 #NaverChk_Button .npay_event{display: none!important;}
-#NaverChk_Button .npay_btn_link{ height: 56px !important;padding-top: 6px!important;}
+#NaverChk_Button .npay_btn_link{ height: 56px !important;}
 #NaverChk_Button .npay_btn_link.npay_btn_pay{    background-size: 78px auto !important;background-position: 50% -38px !important;}
 #NaverChk_Button .npay_button_box{padding: 0 0px!important;}
 
@@ -58,10 +59,10 @@
 .xans-order-basketpackage input[type="checkbox"]:checked{ border: 1px solid #000; background-size: 17px;}
 .btnNormal.opChan{width: 84px;height: 36px;border: 1px solid #E0E0E0;border-radius: 2px;padding: 10px 18px;}
 .xans-order-basketpackage .ec-base-prdInfo .description .price li{margin-bottom: 8px;}
-.xans-order-basketpackage .xans-order-selectorder .gLeft{display: flex;flex-wrap: nowrap;float: none;}
-.xans-order-basketpackage .xans-order-selectorder .gLeft a{width: 50%;height: 48px; line-height: 47px;border: 1px solid #000;}
+.xans-order-basketpackage .xans-order-selectorder .gLeft{display: flex;flex-wrap: nowrap;float: none;gap: 8px;}
+.xans-order-basketpackage .xans-order-selectorder .gLeft a{flex: 1; height: 48px; line-height: 47px;border: 1px solid #000; margin: 0;}
 .xans-order-basketpackage .cart-total h4{color: #747474!important;}
-#orderFixItem .ec-base-button{margin: 8px 0;}
+#orderFixItem .ec-base-button{margin: 0px 0 8px;}
 
 .ec-base-help{margin: 48px auto!important;}
 .ec-base-help h3{text-align: center;margin: 0 0 16px;font-weight: 400;}
@@ -93,7 +94,7 @@
     .cart-total { position:relative; width:300px; margin:0 0 0 0px; }
     .cart-total .sticky { position:sticky; top:60px; }
 	.xans-order-basketpackage .xans-order-tabinfo { margin:40px 0 54px; }
-    .xans-order-basketpackage .summary { margin:40px 0; }
+    .xans-order-basketpackage .summary { margin:24px 0; }
     .xans-order-basketpackage .ec-base-prdInfo .description { margin:0 20% 0 0; }
     #orderFixArea { display:none !important; }
 }

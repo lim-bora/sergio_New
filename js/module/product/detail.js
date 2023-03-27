@@ -79,8 +79,13 @@ jQuery(document).ready(function() {
 			},
 			breakpoints: {
 				768: {
-					slidesPerView: 2,
+					slidesPerView: 2.2,
 					spaceBetween: 10,
+                    scrollbar: {
+                        el: ".swiper-scrollbar",
+                        hide: true,
+                    },
+                    autoplay: false,
 				},
 			}
 		});
@@ -122,10 +127,12 @@ $(function() {
 
 //할인판매가 있을땐 판매가칼라 회색, 아니면 검정색
 $(function() {
+    let sellPrice = $('.xans-product-detaildesign tr[data-name="판매가"]')
     let sellPriceAdd = $('.xans-product-detaildesign tr[data-name="판매가"] td span') //판매가안에 글자 셀렉
     let salePrice = $('.xans-product-detaildesign tr[data-name="할인판매가"]') //할인판매가
     if(salePrice.length > 0){//할인판매가 존재하면
         sellPriceAdd.removeClass('priceBlack');//판매가 글자색 검정제거
+        sellPrice.addClass('margin');
     }else{
         sellPriceAdd.addClass('priceBlack');//판매가 글자색 검정추가(검정컬러 클래스생성)
     }
@@ -179,4 +186,17 @@ $(window).resize(function(){
         $('.detailToggle').insertAfter('#fixedActionButton')
     }
 }).resize();
+
+//옵션팝업 슬라이드업, 바디 스크롤방지
+$(window).resize(function(){
+    if (window.innerWidth < 1024) {  // 다바이스 크기가 1024이하일때
+        $('#orderFixArea').click( function() {
+            $('#opt_layer_iframe_parent').slideUp();
+            $('body').css('overflow','hidden');
+        } );
+    }
+}).resize();
+
+
+
 
