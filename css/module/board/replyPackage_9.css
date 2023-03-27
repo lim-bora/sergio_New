@@ -8,5 +8,18 @@
 
 #myshopMain{padding-top: 40px;}
 .adminAnswer{display: none;}
-.xans-board-replypackage-9 .ec-base-table th{border-bottom: 0;padding: 8px 0px;font-weight: 500;}
+.xans-board-replypackage-9 .ec-base-table.gLayoutFixed tr{display: flex; flex-direction: row;}
+.xans-board-replypackage-9 .ec-base-table th{border-bottom: 0;padding: 8px 0px;font-weight: 500;margin-right: 16px;}
 .xans-board-replypackage-9 .ec-base-table td{border-bottom: 0;padding: 8px 0;}
+.xans-board-replypackage-9 .ec-base-table.typeWrite{margin-top: 32px;}
+.xans-board-replypackage-9 .ec-base-table.typeWrite td{padding: 0 0px;}
+.xans-board-replypackage-9 .ec-base-button .gRight{display: flex; width: 100%; flex-wrap: wrap;gap: 8px;}
+.xans-board-replypackage-9 .ec-base-button .gRight a{flex: 1;margin: 0!important;font-weight: 400;}
+.xans-board-modify .fr-wrapper .fr-iframe, .xans-board-reply .fr-wrapper .fr-iframe, .xans-board-write .fr-wrapper .fr-iframe{height: 702px!important;}
+
+
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    .xans-board-modify .fr-wrapper .fr-iframe, .xans-board-reply .fr-wrapper .fr-iframe, .xans-board-write .fr-wrapper .fr-iframe{height: 432px!important;}
+}

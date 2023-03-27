@@ -14,7 +14,6 @@
 .xans-board-modify-9 .file [id^="delfile"] { margin-left:20px; }
 .xans-board-modify-9 .flexColumn{display: flex; flex-direction: column;}
 .xans-board-modify-9 .ec-base-table th,.xans-board-modify-9 .ec-base-table td{    border-bottom: 0; padding: 16px 0 0!important;}
-/*.xans-board-modify-9 .ec-base-table td{    padding: 16px 0!important;}*/
 #email1,#email2{width: 47% !important}
 #email1{float: left;margin-right: 9px;}#email2{float: right;}
 #email3{width: 100% !important;margin-left: 0!important;height: 48px!important;margin-top: 8px!important;}
@@ -25,6 +24,16 @@
 .gLeft a{width: 100%;background-color: #000!important;color:#fff!important;}
 .gRight{width: 100%;display: flex; flex-direction: row;justify-content: space-between;}
 .gRight a{flex: none!important;width: 49%; margin: 0 0 0 0px!important;border: 1px solid #000!important;; color: #000!important;;background-color: #fff!important;font-weight: 400!important;}
+.xans-board-modify-9 .ec-base-table.gLayoutFixed{margin-bottom: 16px;}
+.xans-board-modify-9 .ec-base-table.gLayoutFixed tr{display: flex;}
+.xans-board-modify-9 .ec-base-table.gLayoutFixed th{margin-right: 16px;font-weight: 500;}
+
+.xans-board-modify-9 .ec-base-button.gBottom{display: flex;flex-direction: row;gap: 8px;justify-content: space-between;}
+.xans-board-modify-9 .ec-base-button.gBottom > span{flex: 1;}
+.xans-board-modify-9 .ec-base-button.gBottom .gRight a{    min-width: auto;    width: inherit;}
+.xans-board-modify-9 .ec-base-button.gBottom:after{display: none;}
+.xans-board-modify .fr-wrapper .fr-iframe, .xans-board-reply .fr-wrapper .fr-iframe, .xans-board-write .fr-wrapper .fr-iframe{height: 702px!important;}
+
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
 	.xans-board-modify-9 .ec-base-table input[type="text"],
@@ -37,11 +46,12 @@
     .xans-board-modify-9 .file input[type="file"] { display:block; }
     #email1{margin-right: 2px!important;}
     .gRight a{width: 49.5%;}
+    .xans-board-modify .fr-wrapper .fr-iframe, .xans-board-reply .fr-wrapper .fr-iframe, .xans-board-write .fr-wrapper .fr-iframe{height: 432px!important;}
 }
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-    .xans-board-modify-9 #subject { width:526px; }
+    .xans-board-modify-9 #subject { width:100%; }
     .xans-board-modify-9 #email1,
     .xans-board-modify-9 #email2 { width:138px; }
     .xans-board-modify-9 #email3 { width:138px; margin:0 0 0 10px; }

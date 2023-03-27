@@ -14,6 +14,9 @@
 
 #contents .ec-base-paginate.typeList {display:flex; align-items:center; justify-content:center; margin-top: 32px; }
 
+
+
+
 @media screen and (max-width:1024px) {
     #contents > .section .titleArea {margin: 44px 0 32px;}
 }

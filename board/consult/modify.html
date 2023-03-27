@@ -39,14 +39,16 @@
                 <tr>
                     <th scope="row">작성자</th>
                     <td>{$parent_writer}</td>
-                    <th scope="row">답변여부</th>
-                    <td>{$parent_consult}</td>
                 </tr>
                 <tr class="{$config.use_date|display}">
                     <th scope="row">문의일시</th>
                     <td colspan="3">{$parent_write_date}</td>
                 </tr>
-                <tr class="view">
+                <tr>
+                    <th scope="row">답변여부</th>
+                    <td>{$parent_consult}</td>
+                </tr>
+                <tr class="view" style="display: none;">
                     <td colspan="4">
                         <div class="detail">{$parent_content}</div>
                     </td>
@@ -64,7 +66,7 @@
 <!--            </colgroup>-->
             <tbody>
                 <tr class="flexColumn">
-                    <th scope="row" class="RW">제목</th>
+                    <th scope="row" class="">제목</th>
                     <td>{$form.subject}</td>
                 </tr>
                 <tr class="flexColumn">
@@ -109,11 +111,11 @@
         </div>
 
         <div class="ec-base-button gBottom">
-            <span class="gLeft"><a href="#none" class="btnSubmitFix sizeM" onclick="{$action_modify}">등록</a></span>
             <span class="gRight">
-                <a href="{$link_board_list}" class="btnNormalFix sizeM">목록</a>
-                <a href="{$link_board_list}" class="btnNormalFix sizeM">취소</a>
+<!--                <a href="{$link_board_list}" class="btnNormalFix sizeM" style="font-weight: 400;">목록</a>-->
+                <a href="{$link_board_list}" class="btnNormalFix sizeM" style="font-weight: 400;">취소</a>
             </span>
+            <span class="gLeft"><a href="#none" class="btnSubmitFix sizeM" onclick="{$action_modify}" style="font-weight: 400;">등록</a></span>
         </div>
     </div>
 </div>

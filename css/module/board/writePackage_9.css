@@ -27,9 +27,17 @@ ul.info li { padding: 0 0 0 9px;}
 .gRight{width: 100%;display: flex; flex-direction: row;justify-content: space-between;}
 .gRight a{flex: none!important;width: 49%; margin: 0 0 0 0px!important;border: 1px solid #000!important;; color: #000!important;;background-color: #fff!important;font-weight: 400!important;}
 
-/*.xans-board-write-9 .ec-base-button .gRight >*{flex-grow: 1!important;min-width: 0!important;}*/
-/*.xans-board-write-9 .ec-base-button .gRight > span, .xans-board-write-9 .ec-base-button gRight > a{flex: 1;}*/
-/*.xans-board-write-9 .ec-base-button .gRight span:not(.displaynone) + .gRight > a{width: 50%;}*/
+.xans-board-write-9 #subject{width: 100% !important;}
+.xans-board-write-9 .ec-base-button.gBottom{display: flex;flex-direction: column;gap: 8px;}
+.xans-board-write-9 .ec-base-button.gBottom > span{flex: 1;}
+.xans-board-write-9 .ec-base-button.gBottom .gRight{display: flex;flex-direction: row;gap: 8px;}
+.xans-board-write-9 .ec-base-button.gBottom > span a{min-width: auto;width: inherit;}
+.xans-board-write-9 .ec-base-button:after{display: none;}
+.xans-board-write-9 .ec-base-button.gBottom .gLeft{margin-bottom: 0;}
+.xans-board-write-9 .ec-base-button.gBottom .gRight > *{ flex: 1!important;}
+.xans-board-write-9 .ec-base-button.gBottom .gRight .hasBtn a{width: -webkit-fill-available;}
+.xans-board-modify .fr-wrapper .fr-iframe, .xans-board-reply .fr-wrapper .fr-iframe, .xans-board-write .fr-wrapper .fr-iframe{height: 702px!important;}
+
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
@@ -44,6 +52,7 @@ ul.info li { padding: 0 0 0 9px;}
 
     #email1{margin-right: 2px!important;}
     .gRight a{width: 49.5%;}
+    .xans-board-modify .fr-wrapper .fr-iframe, .xans-board-reply .fr-wrapper .fr-iframe, .xans-board-write .fr-wrapper .fr-iframe{height: 432px!important;}
 }
 
 /********************* PC *********************/
