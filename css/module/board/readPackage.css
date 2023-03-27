@@ -30,6 +30,6 @@
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
-    #contents > .section .xans-board-title .titleArea {margin: 44px 0 0; }
+    #contents > .section .xans-board-title .titleArea {margin: 44px 0 0 -4%; width: 108%;}
     .xans-board-read .ec-base-table .attach {margin: 0 16px; }
 }

@@ -35,6 +35,6 @@
 }
 
 /********************* MO  *********************/
-@media all and (max-width:767px) {
+@media all and (max-width:1024px) {
     #contents > .section.titleArea {margin: 40px auto 56px;}
 }

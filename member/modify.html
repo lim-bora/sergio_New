@@ -55,7 +55,7 @@
                 <tr>
                     <th scope="row">인증여부</th>
                     <td>
-                        <strong class="txtEm" id="MauthText">미인증</strong>
+                        <p class="txtEm" id="MauthText">미인증</p>
                         <ul class="certifInfo txtInfo">{$certification_info}</ul>
                     </td>
                 </tr>
@@ -68,7 +68,7 @@
                             <p class="txtInfo">아이핀이란, 회원님의 개인정보 보호를 위해 웹사이트에 주민등록번호를 제공하지 않고 본인임을 확인하는 인터넷상의 개인식별번호 서비스입니다.<br />아이핀을 통한 가입을 원하시면 아이핀 인증 버튼을 눌러 진행해 주십시오.</p>
                         </div>
                         <div class="certifForm" id="mobileWrap">
-                            <a href="#none" class="btnNormal sizeS" onclick="{$action_mobile_open}">PASS 인증</a>
+                            <a href="#none" class="btnNormal sizeS member_pass" onclick="{$action_mobile_open}">PASS 인증</a>
                             <p class="txtInfo">본인 명의의 휴대폰으로 본인인증을 진행합니다.</p>
                         </div>
                         <div class="certifForm" id="emailWrap">
@@ -380,7 +380,7 @@
             <tr class="{$display_bank_info|display}">
                 <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_bank_account_no|display}" alt="필수" />환불계좌</th>
                 <td>
-                    <a href="#none" class="btnNormal" {$action_reg_bank}><span id="id_has_bank_img" class="{$display_has_bank|display}">환불계좌변경</span><span id="id_reg_bank_img" class="{$display_reg_bank|display}">환불계좌등록</span></a>
+                    <a href="#none" class="btnNormal btnAccount" {$action_reg_bank}><span id="id_has_bank_img" class="{$display_has_bank|display}">환불계좌변경</span><span id="id_reg_bank_img" class="{$display_reg_bank|display}">환불계좌등록</span></a>
                     <span id="{$id_bank_info}" class="gFlow">{$bank_info}</span>
                 </td>
             </tr>

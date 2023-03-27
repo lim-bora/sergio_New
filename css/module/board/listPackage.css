@@ -60,7 +60,7 @@
     .xans-board-listpackage .ec-base-table.typeList table td.subject .badge { display:inline-block; }
     
     /* ec-base-tab (Common) */
-    .xans-board-listpackage .ec-base-tab.typeMenu { margin:0; padding:0 2px; }
+    .xans-board-listpackage .ec-base-tab.typeMenu { width: 108%; margin-left: -4%;}
     .xans-board-listpackage .ec-base-tab.gScroll::-webkit-scrollbar { display:none; }
     .xans-board-listpackage .ec-base-tab.gScroll{ -ms-overflow-style:none; scrollbar-width:none; }
 

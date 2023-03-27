@@ -1,5 +1,5 @@
 #container > #contents {max-width: 474px;}
-#container > #contents .titleArea--middle {margin: 56px 0 16px; padding: 0; text-align: center;background:none;}
+#container > #contents .titleArea--middle {margin: 56px 0 0; padding: 0 0 16px; text-align: center;background:none; border-bottom: 1px solid #000;}
 .titleArea--middle h3 {font-size: 14px; line-height: 16px; font-weight: 500;}
 
 .xans-member-join .required { display:block; margin: -13px 0 0; line-height:1; text-align:right; color:var(--font-color-base); }
@@ -64,7 +64,7 @@
 #realNameAuth p span { display:inline-block; width:80px; }
 
 .xans-member-join #btn_verify_mobile_confirm { margin-left:15px; }
-.ec-base-table.typeWrite .accountInfo {border-top: 1px solid #000; padding: 24px 0 0 !important;}
+.ec-base-table.typeWrite .accountInfo {padding: 24px 0 0 !important;}
 .ec-base-table.typeWrite .accountInfo dt {margin-bottom: 16px !important; line-height: 16px; font-weight: 500;}
 .ec-base-table.typeWrite .accountInfo dd:not(:last-child) {margin-bottom: 32px !important;}
 .ec-base-table.typeWrite .accountInfo select {color: #888;}
@@ -72,6 +72,9 @@
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
+    #container #contents {max-width: 721px;}
+    #container > #contents .titleArea--middle {width: 108%; margin-left: -4% !important;}
+
     .xans-member-join input,
     .xans-member-join select,
     .xans-member-join .eTooltip,
