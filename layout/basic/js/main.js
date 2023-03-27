@@ -130,4 +130,12 @@ jQuery(document).ready(function () {
 				})
 		}
 	});
+
+
+	// $('#header.layout3 .inner .top_nav_box .top_category > ul > li').append('<div class="depth_wrap"></div>')
+	// let depthWrap = $('#header ul li .depth_wrap');
+	// depthWrap.each(function () {
+	// 	let subCate = $(this).parent().find('.sub_cate01');
+	// 	$(this).append(subCate);
+	// });
 });
