@@ -291,8 +291,9 @@
 .xans-member-edit .txtInfo {display:block;margin:8px 0 0 0;color: #747474;line-height: 14px;}
 .xans-member-edit .ec-base-table {border-top:2px solid #1a1a1a;}
 .xans-member-edit .ec-base-table.typeWrite tr {display: flex; flex-direction: column; padding: 24px 0 0; }
-.xans-member-edit .ec-base-table.typeWrite th[scope*="row"] {padding:0 0 8px;font-size:14px;font-weight:400;border: none;}
-.xans-member-edit .ec-base-table.typeWrite td {padding: 8px 0; border: none;}
+.xans-member-edit .ec-base-table.typeWrite th[scope*="row"] {padding:0 0 8px;font-size:14px;font-weight:500;border: none;}
+.xans-member-edit .ec-base-table.typeWrite td {padding: 8px 0; border: none; position: relative;}
+.xans-member-edit .ec-base-table.typeWrite td .btnNormal {position: absolute; top: 0; right: 0; font-size: 12px; line-height: 30px; height: 30px; border-color: #000; border-radius: 2px;}
 .xans-member-edit .ec-base-table.typeWrite .ec-address input[type="text"],
 .xans-member-edit .ec-base-table.typeWrite .ec-address select,
 .xans-member-edit .ec-base-table.typeWrite td input[type="text"],

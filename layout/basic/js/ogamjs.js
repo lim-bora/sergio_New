@@ -15,7 +15,6 @@ $(function () {
     // 아이디찾기 페이지 휴대폰번호 인증 우선 체크
     let isClicked = true;
     changeRadioBtnState();
-    foreignerDisplay();
 
     function changeRadioBtnState() {
         if (isClicked)
@@ -35,20 +34,6 @@ $(function () {
         changeRadioBtnState();
     });
 
-
-    // 회원가입 : 외국인 회원가입 이름 필드 비노출 함수
-    function foreignerDisplay() {
-        let foreForm = $('.xans-member-join .ec-base-table #foreignerAuth');
-        if (foreForm.css('display') === 'none') {
-            $('.xans-member-join .ec-base-table th#nameTitle').parent().removeClass('layout_hidden');
-        } else {
-            $('.xans-member-join .ec-base-table th#nameTitle').parent().addClass('layout_hidden');
-        }
-    }
-
-    $("input[name='member_type']").on('change', function () {
-        foreignerDisplay();
-    });
     $('#postBtn').text('검색');
 
 
@@ -97,6 +82,7 @@ $(function () {
     // 통합검색 : 판매가 스타일 조정
     let searchSalePrice = $('.xans-search-result .prdList .spec > li[data-name="할인판매가"]');
     if(searchSalePrice.length > 0) {
+        console.log("hi");
         searchSalePrice.parent().find('li[data-name="판매가"] > span').addClass('active');
     }
 

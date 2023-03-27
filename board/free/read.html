@@ -3,6 +3,16 @@
     <!--@css(/css/module/board/readPackage.css)-->
     <!--@css(/css/module/board/csCommon.css)-->
     <!--@js(/js/module/board/readPackage.js)-->
+    <div class="cs_nav display_pc_only">
+        <p class="cs_nav_title">고객센터</p>
+        <ul>
+            <li><a href="/board/index.html">고객센터안내</a></li>
+            <li><a href="/board/memberBenefits.html">회원혜택안내</a></li>
+            <li><a href="/board/free/list.html?board_no=3">자주묻는질문</a></li>
+            <li><a href="/board/free/list.html?board_no=1">공지사항</a></li>
+        </ul>
+    </div>
+
     <div module="board_title_1002">
 <!--        <div class="path">-->
 <!--            <span>현재 위치</span>-->
@@ -62,15 +72,15 @@
         </div>
 
         <div class="ec-base-button gBottom">
-            <span class="gLeft">
-                <span class="{$config.is_admin|display}">
-                    <a href="#none" onclick="{$action_post}" class="btnNormalFix sizeS admin {$config.is_post|display}">{$admin_publish_message}</a>
-                    <a href="#none" onclick="{$action_post}" class="btnNormalFix sizeS admin {$config.not_post|display}">{$not_publish_message}</a>
-                    <a href="#none" onclick="{$action_spam}" class="btnNormalFix sizeS {$is_global_display|display}">스팸신고</a>
-                    <a href="#none" onclick="{$action_spam_cancle}" class="btnNormalFix sizeS {$is_global_display|display}">스팸해제</a>
-                </span>
-                <a href="#none" onclick="{$action_delete}" class="btnNormalFix sizeM {$delete_button_auth|display}">삭제</a>
+            <span>
+<!--                <span class="{$config.is_admin|display}">-->
+<!--                    <a href="#none" onclick="{$action_post}" class="btnNormalFix sizeS admin {$config.is_post|display}">{$admin_publish_message}</a>-->
+<!--                    <a href="#none" onclick="{$action_post}" class="btnNormalFix sizeS admin {$config.not_post|display}">{$not_publish_message}</a>-->
+<!--                    <a href="#none" onclick="{$action_spam}" class="btnNormalFix sizeS {$is_global_display|display}">스팸신고</a>-->
+<!--                    <a href="#none" onclick="{$action_spam_cancle}" class="btnNormalFix sizeS {$is_global_display|display}">스팸해제</a>-->
+<!--                </span>-->
                 <a href="/board/product/modify.html{$param_modify}" class="btnNormalFix sizeM {$modify_button_auth|display}">수정</a>
+                <a href="#none" onclick="{$action_delete}" class="btnNormalFix sizeM {$delete_button_auth|display}">삭제</a>
             </span>
             <span>
                 <a href="{$link_board_list}" class="btnBlack">목록</a>

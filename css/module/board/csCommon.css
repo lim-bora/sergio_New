@@ -1,11 +1,22 @@
 #contents > .section {
     max-width: 474px !important; margin: 0 auto;
+    position: relative;
 }
 #contents > .section .titleArea {margin: 80px 0 32px;}
+
+.cs_nav { position: absolute; left: -242px;}
+.cs_nav_title {font-size: 12px; line-height: 18px; font-weight: 500; margin-bottom: 8px;}
+.cs_nav ul li:not(:last-child) { margin-bottom: 8px; }
+.cs_nav ul li a {font-size: 12px; line-height: 18px; color: #606060;}
 
 .ec-base-table.typeList .xans-board-1002 tr { display: flex; flex-direction: column; padding: 16px 8px; gap:8px; border-bottom: 1px solid #EAEAEA;}
 .ec-base-table.typeList .xans-board-1002 td {padding: 0; border-bottom: none; color: #888888;}
 .ec-base-table.typeList .xans-board-1002 td.subject {padding: 0; font-size: 14px; line-height: 16px;}
+
+.xans-board-read .ec-base-button.gBottom [class^='btn'] + [class^='btn'] {margin-left: 8px;}
+.ec-base-button.gBottom > span {display: flex;}
+.ec-base-button.gBottom > span:first-child a {margin-bottom: 8px;}
+.ec-base-button.gBottom > span > a {flex: 1; border-color: #000; border-radius: 2px; }
 
 .boardChk {margin-right: 8px;}
 .xans-board-search #search_key, .xans-board-search #search_date {display: none;}
