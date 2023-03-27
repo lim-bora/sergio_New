@@ -139,6 +139,13 @@ $(function () {
     $(".xans-member-findid #searchType option[value='corp']").remove();
     $(".xans-member-findpasswd  #searchType option[value='indibuis']").remove();
     $(".xans-member-findpasswd  #searchType option[value='corp']").remove();
+
+    // 고객센터 : 관리자 only 체크박스 간격 조정
+    let boardChkbox = $('.ec-base-table.typeList .xans-board-1002 td.subject .boardChk')
+    if(boardChkbox.length > 0) {
+        $('.ec-base-table.typeList .xans-board-1002 td:nth-child(2)').css('padding-left','24px')
+    }
+
 });
 
 

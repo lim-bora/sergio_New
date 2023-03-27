@@ -28,6 +28,8 @@
 .xans-board-product .information .button { margin:15px 0 0; }
 .ec-base-button .btnBlack { width: calc((100% - 40px)/2); display: block; margin: 0 auto; box-sizing: border-box;}
 
+.xans-board-function {margin-top: 40px !important;}
+
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
     #contents > .section .xans-board-title .titleArea {margin: 44px 0 0 -4%; width: 108%;}

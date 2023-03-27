@@ -1,4 +1,5 @@
-#contents > .section {
+#contents > .section,
+.xans-board-function {
     max-width: 474px !important; margin: 0 auto;
     position: relative;
 }
@@ -11,7 +12,7 @@
 
 .ec-base-table.typeList .xans-board-1002 tr { display: flex; flex-direction: column; padding: 16px 8px; gap:8px; border-bottom: 1px solid #EAEAEA;}
 .ec-base-table.typeList .xans-board-1002 td {padding: 0; border-bottom: none; color: #888888;}
-.ec-base-table.typeList .xans-board-1002 td.subject {padding: 0; font-size: 14px; line-height: 16px;}
+.ec-base-table.typeList .xans-board-1002 td.subject {display:flex; padding: 0; font-size: 14px; line-height: 16px;}
 
 .xans-board-read .ec-base-button.gBottom [class^='btn'] + [class^='btn'] {margin-left: 8px;}
 .ec-base-button.gBottom > span {display: flex;}
@@ -23,13 +24,21 @@
 .xans-board-search a.btnRound {border: 1px solid #000; border-radius: 2px; padding: 14px 0; text-align: center; width: 61px; height: 48px; box-sizing: border-box;}
 .ec-base-button .btnBlack {width: calc((100% - 8px)/2); height:48px; padding:14px 16px; font-size:14px; line-height:20px; background-color: #000; color: #FFF; border-radius: 2px;}
 
-#contents .ec-base-paginate.typeList {display:flex; align-items:center; justify-content:center; margin-top: 32px; }
+#contents .ec-base-paginate.typeList {display:flex; align-items:center; justify-content:center; margin: 32px auto; }
+.xans-board-buttonlist.ec-base-button.gBottom {margin-top: 16px !important;}
 
+.ec-base-button.gBottom .gRight .btnWirte {width:66px !important; height:36px; line-height:34px; font-size: 12px; background-color: #FFF; color: #000; font-weight: 400; border:1px solid #E0E0E0; text-align: center;}
 
-
+td.subject input[type="checkbox"] { width: 16px; height: 16px; border-color: #E0E0E0; border-radius: 2px; background: transparent;}
+td.subject input[type="checkbox"]:checked {
+    background: url(/skin-skin1/SkinImg/img/checkbox_on.svg) no-repeat center;
+    transition: none;
+    border: 1px solid #d9d9d9;
+}
 
 @media screen and (max-width:1024px) {
-    #contents > .section { max-width: 721px !important; }
+    #contents > .section,
+    .xans-board-function { max-width: 721px !important; }
     #contents > .section .titleArea {margin: 44px 0 32px;}
 
     .xans-board-read .ec-base-table.typeWrite {width: 108%; margin-left: -4%;}

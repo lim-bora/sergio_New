@@ -1,14 +1,23 @@
-.xans-board-function { padding:10px 16px; border-top:1px solid #e5e5e5; }
+.xans-board-function { padding:16px 0; border-top:1px solid #e5e5e5; border-bottom: 1px solid #eaeaea;
+    position: relative;}
 .xans-board-function #boardGroup { margin:0 8px; }
-.xans-board-function .ec-base-help { display:inline-block; position:relative; top:4px; margin-left:5px; background-position:0 1px; }
-.xans-board-function select { width:138px; }
+.xans-board-function .ec-base-help { margin: 0; position: absolute; top: 88px; left: 0; background: url("/svg/icon-alert-circle.svg") no-repeat; padding: 0 0 0 16px; background-position-y: 3px;}
+.xans-board-function select { width:184px; font-size: 14px;}
 .xans-board-function [class^='btn'].sizeS {padding: 8px 16px;}
 
              .xans-board-movement + form > .xans-board-function { max-width: 474px; margin-top: 40px;}
 .xans-board-listsgroup + form > .xans-board-function { padding-top:0; border-top:0; }
 
+.xans-board-function span.gColumn:first-child {margin-right: 8px;}
+
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-    .xans-board-function { padding:10px 0; }
     .xans-board-function .gColumn:first-of-type { margin-left:0; }
+}
+
+/********************* MO *********************/
+@media all and (max-width:520px) {
+    .xans-board-function span.gColumn {display: block;}
+    .xans-board-function span.gColumn:not(:first-child) {margin-top: 16px;}
+    .xans-board-function .ec-base-help {top: 130px;}
 }
