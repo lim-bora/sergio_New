@@ -526,3 +526,30 @@ $(document).ready(function(){
 		$('.footer_margin').css('marginTop',0);
 	}
 });
+
+$(document).ready(function(){
+	//띠배너 네비겹침현상 방지/닫기버튼 이벤트
+	let body = $('body');
+	let navBtn = $('#top_nav_box').find('.top_nav');
+	let navCloseBtn = $('#top_nav_box').find('.btnClose');
+	let close = $(document).find('.topBannerBox').children('.btnClose');
+
+	navBtn.click(function(){
+		if(body.hasClass('activeAside')===true){
+			console.log('있음')
+			$('.topBannerBox').css('display','none')
+		}else{
+			console.log('없ㅇ,ㅁ')
+			$('.topBannerBox').css('display','block')
+		}
+	});
+	navCloseBtn.click(function(){
+		console.log('ddd')
+			$('.topBannerBox').css('display','block')
+	});
+	close.click(function(){
+		console.log('ddddddd')
+		$('.topBannerBox').css('display','none')
+	});
+
+});
