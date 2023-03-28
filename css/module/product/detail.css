@@ -315,6 +315,7 @@ span.arrow.rotate{transform: rotate(315deg)}
 /*추천상품*/
 .xans-product-relation .relation_title{font-weight: 500!important;font-size: 20px!important;text-align: left!important;}
 .xans-product-relation .ec-base-product{margin-top: 10px!important;}
+.xans-product-relationlist span.salePrice:not(.displaynone) + .prdPrice{color: #ccc;text-decoration-line: line-through;font-weight: 400;margin-left: 8px;}
 
 /*네이버페이 커스텀*/
 #NaverChk_Button{margin-top: 0px!important;}
@@ -581,6 +582,7 @@ span.arrow.rotate{transform: rotate(315deg)}
 	.swiper-container.relation_slide ul > li .description .price {font-size:14px;}
 	.relation .swiper-button-prev,
 	.relation .swiper-button-next {display:none;}
+
 
 	/* 안내 */
 	.detail_guide .ec-base-fold.theme1 {width:100%;}

@@ -1,14 +1,4 @@
-// $(function() {
-//     let topBtn = $('.topBanner .btnClose').find('img');
-//     topBtn.click( function() {
-//         console.log('ㅅㄷㄴㅅ');
-//         $('.topBanner a').style.pointerEvents="none"
-//         $('.topbanner').addClass('close');
-//     });
-// });
-function closeTop(){
-   $(document).find('.topBannerBox').addClass('close');
-}
+
 
 $(function() {
     //메인배너 슬라이드 스와이프

@@ -33,6 +33,10 @@
 .xans-board-modify-9 .ec-base-button.gBottom .gRight a{    min-width: auto;    width: inherit;}
 .xans-board-modify-9 .ec-base-button.gBottom:after{display: none;}
 .xans-board-modify .fr-wrapper .fr-iframe, .xans-board-reply .fr-wrapper .fr-iframe, .xans-board-write .fr-wrapper .fr-iframe{height: 702px!important;}
+.fr-toolbar{border: 1px solid #eaeaea!important; border-bottom: 0!important;}
+.fr-box.fr-basic .fr-wrapper{ border: 1px solid #eaeaea!important;border-bottom-color: #eaeaea!important;border-top: 0!important;}
+
+
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {

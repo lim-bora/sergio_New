@@ -60,7 +60,7 @@ select::-ms-expand {display:none;}
 #mCafe24Order .ec-base-table .ec-address > li{padding: 0px 0px 8px!important;}
 #ec-jigsaw-area-billingInfo input{height: 48px!important;background-color: #fff!important;}
 #ec-jigsaw-area-billingInfo select{height: 48px!important; border: 1px solid #E1E1E1!important;}
-#ec-jigsaw-area-billingInfo #btn_search_ozipcode{height: 48px!important;width: 61px!important;margin: 0 0 0 0px!important;min-width: 61px!important;}
+#ec-jigsaw-area-billingInfo #btn_search_ozipcode{height: 48px!important;width: 61px!important;margin: 0 0 0 0px!important;min-width: 61px!important;border-radius: 2px;}
 #ozipcode1{width: calc(100% - 70px)!important;flex: none!important;}
 #orderer_zipcode_wrap{ justify-content: space-between; height: 48px!important;}
 .emailtxt{font-size: 12px;color: #747474;display: contents;line-height: 2;}
@@ -74,7 +74,7 @@ select::-ms-expand {display:none;}
 #ec-shop-deliveryInfoCell, #ec-shop-deliveryInfoTel{font-size: 14px!important; color: #949494!important;}
 #ec-shop-deliveryInfoName{font-size: 14px!important; font-weight: 700!important;}
 #omessage_select{ border: 1px solid #EAEAEA!important; color: #888!important;height: 48px!important;}
-#ec-shippingInfo-showRecentAddressList{ border: 1px solid #EAEAEA!important; color: #000!important; height: 36px!important; padding: 0 15px!important;}
+#ec-shippingInfo-showRecentAddressList{ border: 1px solid #EAEAEA!important; color: #000!important;     width: 100px;height: 36px!important;line-height: 35px!important; padding: 0 15px!important;border-radius: 2px;}
 #mCafe24Order .segment.ec-shippingInfo-sameaddr{padding: 10px 0px 0px!important;}
 #mCafe24Order input[type="radio"] + label{font-size: 14px!important;color: #606060;}
 #ec-shippingInfo-newAddress colgroup{display: none;}
@@ -85,6 +85,7 @@ select::-ms-expand {display:none;}
 #btn_search_rzipcode{width: 70px!important;margin: 0 0 0 0px!important;}
 #receiver_zipcode_wrap{ justify-content: space-between; height: 48px!important;}
 #mCafe24Order .segment.ec-shippingInfo-newAddress-setMain{ padding: 8px 0px 20px!important;}
+#mCafe24Order .recentShipArea .segment .sideRight{right: 0!important}
 #ec-shippingInfo-newAddress .ec-base-table{padding-bottom: 32px!important;}
 #ec-shippingInfo-newAddress .ec-shippingInfo-newAddress-name{position: relative;}
 #ec-shippingInfo-newAddress .ec-shippingInfo-newAddress-name th:after{content:''; display: block!important;position: absolute;top: 33px!important;left: 74px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: #e73223;border-radius: 50%;border: 0!important;}
@@ -132,8 +133,8 @@ select::-ms-expand {display:none;}
 #btn_coupon_select{line-height: 48px!important;}
 #mCafe24Order .payMethod{margin-top: 0!important;}
 
-#mCafe24Order .payMethod > li.ec-paymethod-newArea .inner{display:flex!important;flex-wrap: wrap;gap: 8px;justify-content: space-between; flex-direction: row!important;}
-#mCafe24Order .payMethod > li.ec-paymethod-newArea .inner span{width: 49% !important;}
+#mCafe24Order .payMethod > li.ec-paymethod-newArea .inner{display:grid!important;gap: 8px; flex-direction: row!important; grid-template-columns: 1fr 1fr;}
+/*#mCafe24Order .payMethod > li.ec-paymethod-newArea .inner span{width: 49% !important;}*/
 #ec-jigsaw-area-paymethod .segment{padding: 20px 0px 0px!important;}
 #mCafe24Order .payMethod > li .inner > .ec-base-label > label{border-bottom: 1px solid #EBEBEB!important;padding: 9px 25px 9px!important;}
 #mCafe24Order .payMethod > li .inner > .ec-base-label > input:checked ~ label{border: 1px solid #000!important;color: #000!important;font-weight: 400!important;}
@@ -208,10 +209,15 @@ li:nth-of-type(3){ order:2; }
 #mCafe24Order input[type="checkbox"] + label{    margin: 0 16px 0 13px!important;font-weight: 400!important;  font-size: 14px!important;  line-height: 21px;color: #000!important;}
 #mCafe24Order .agreeArea .agreement .agree .check{    padding: 0 0 0 13px!important;}
 
+#mCafe24Order.xans-order-result .ec-base-table.gCellNarrow tbody th{padding-bottom: 4px!important; padding-top: 4px!important;}
+#mCafe24Order.xans-order-result .ec-base-table.gCellNarrow tbody td{padding-bottom: 4px!important; padding-top: 4px!important;}
+#mCafe24Order.xans-order-result .ec-base-table:first-child{margin-top: 0px!important;}
+#mCafe24Order.xans-order-result .ec-base-table:last-child{margin-bottom: 0px!important;}
+#mCafe24Order .ec-base-table.typeView h3{padding-top: 18px!important;font-size: 14px!important;}
+#mCafe24Order.xans-order-result .pannelArea{border-bottom: 1px solid #EAEAEA!important; margin: 0 0 0px!important;}
+#mCafe24Order.xans-order-result .pannelArea .ec-base-table tr.paySection{padding-bottom: 18px!important;border-bottom: 0!important;}
 
-
-
-
+#mCafe24Order .segment .ec-base-table tbody tr:first-child td{padding-bottom: 0!important;}
 
 @media all and (max-width:1024px) {
     .containerOrder{padding-top: 40px;}
@@ -223,11 +229,12 @@ li:nth-of-type(3){ order:2; }
     .emailtxt{display: block;line-height: 1;padding-top: 8px;}
     #ec-shippingInfo-newAddress #btn_search_rzipcode{top: 0px!important;right: 0px!important;}
     #mCafe24Order .discountDetail .ec-base-help li{margin:2px 0!important;}
+    #ec-jigsaw-area-paymethod .segment{padding: 14px 0px 0px!important;}
 }
 @media all and (max-width:767px) {
     #mCafe24Order{width: 98%!important;margin: 0 auto!important;}
     #mCafe24Order > h2{padding: 0px 0 32px;}
     .containerOrder #titleArea.titleArea{display: none!important;}
     #header .titleArea{display: block!important; margin-top: 0px!important;}
-    #mCafe24Order .payMethod > li.ec-paymethod-newArea .inner span{ width: 48% !important;}
+    /*#mCafe24Order .payMethod > li.ec-paymethod-newArea .inner span{ width: 48% !important;}*/
 }

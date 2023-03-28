@@ -46,7 +46,7 @@
 
         <div class="titleArea">
             <h1>주문완료</h1>
-            <span style="color: #888888;padding-top: 16px;display: block; padding-bottom: 36px;">고객님의 주문이 정상적으로 완료되었습니다.</span>
+            <span style="color: #888888;padding-top: 16px;display: block; padding-bottom: 4px;">고객님의 주문이 정상적으로 완료되었습니다.</span>
         </div>
     <!-- [주문완료정보] -->
     <div class="resultArea">
@@ -99,7 +99,7 @@
                             <th scope="row" style="width: 25%;">결제수단</th>
                             <td>
                                 {$paymethod_name}
-                                <div class="methodDetail">{$paymethod_detail}</div>
+                                <div class="methodDetail" style="color: #747474;">{$paymethod_detail}</div>
                                 <span class="methodButton">
                                             <a href="#none" onclick="{$action_issue_cash}" class="btnNormal mini {$issue_cash_display|display}">현금영수증 신청</a>
                                             <a href="#none" onclick="{$action_issue_tax}" class="btnNormal mini {$issue_tax_display|display}">세금계산서 신청</a>
@@ -133,15 +133,15 @@
                                     <col style="width:94px">
                                     <col style="width:auto">
                                 </colgroup>
-                                <tbody style="padding: 24px 0 40px;display: block;">
+                                <tbody style="padding: 24px 0 18px;display: block;">
                                 <h3>배송지</h3>
-                                <tr>
+                                <tr style="padding-bottom: 8px!important;">
                                     <th scope="row">받는사람</th>
-                                    <td>{$rname}({$o_email})</td>
+                                    <td style="text-align: right;line-height: 1.8;">{$rname}<br/>({$o_email})</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row" style="width: 20%;">주소</th>
-                                    <td style="text-align: right;">
+                                    <th scope="row" style="width: 20%;padding-top: 0!important">주소</th>
+                                    <td style="text-align: right;padding-top: 0!important">
                                         {$rzipcode} {$raddr}
                                         <div class="{$receive_info_display|display}">
                                             {$store_name}에서 수령예정
@@ -164,16 +164,16 @@
                                     <td>{$ju_do}</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">연락처</th>
-                                    <td>{$rphone_1} <span class="ec-shop-delimiter {$r_phone_delimiter_display|display}"> / </span> {$rphone_2}</td>
+                                    <th scope="row" style="padding-top: 0!important">연락처</th>
+                                    <td style="padding-top: 0!important">{$rphone_1} <span class="ec-shop-delimiter {$r_phone_delimiter_display|display}"> / </span> {$rphone_2}</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">배송요청</th>
-                                    <td>
+                                    <th scope="row" style="padding-top: 0!important">배송요청</th>
+                                    <td style="padding-top: 0!important">
                                         {$sc_name}
-                                        <span class="gBlank5">{$hope_date}</span>
-                                        <span class="gBlank5">{$hope_time}</span>
-                                        <span class="gBlank5">{$rmessage}</span>
+                                        <span class="">{$hope_date}</span>
+                                        <span class="">{$hope_time}</span>
+                                        <span class="">{$rmessage}</span>
                                     </td>
                                 </tr>
                                 <tr class="{$deliverybinding_display|display}">
@@ -368,10 +368,10 @@
                                             </ul>
                                         </li>
                                         <li>{$product_quantity}개</li>
-                                        <li id="{$product_discount_price_div_id}" class="{$product_discount_price_display|display}">
-                                            할인금액: <span class="txtWarn">-{$product_discount_price_front_head}<span id="{$product_discount_price_front_id}">{$product_discount_price_front}</span>{$product_sale_price_front_tail} </span>
-                                            <span class="txtWarn {$product_discount_price_ref_display|display}">({$product_discount_price_back_head}{$product_discount_price_back}{$product_discount_price_back_tail})</span></span>
-                                        </li>
+<!--                                        <li id="{$product_discount_price_div_id}" class="{$product_discount_price_display|display}">-->
+<!--                                            할인금액: <span class="txtWarn">-{$product_discount_price_front_head}<span id="{$product_discount_price_front_id}">{$product_discount_price_front}</span>{$product_sale_price_front_tail} </span>-->
+<!--                                            <span class="txtWarn {$product_discount_price_ref_display|display}">({$product_discount_price_back_head}{$product_discount_price_back}{$product_discount_price_back_tail})</span></span>-->
+<!--                                        </li>-->
                                         <li title="배송">기본배송 <span class="{$oversea_able_display|display}">(해외배송가능)</span></li>
                                         <li class="{$product_weight_display|display}">상품중량 : {$product_weight}kg * {$product_quantity}개 = {$total_product_weight}kg</li>
                                     </ul>
@@ -399,10 +399,10 @@
                                             </ul>
                                         </li>
                                         <li>{$product_quantity}개</li>
-                                        <li id="{$product_discount_price_div_id}" class="{$product_discount_price_display|display}">
-                                            할인금액: <span class="txtWarn">-{$product_discount_price_front_head}<span id="{$product_discount_price_front_id}">{$product_discount_price_front}</span>{$product_sale_price_front_tail} </span>
-                                            <span class="txtWarn {$product_discount_price_ref_display|display}">({$product_discount_price_back_head}{$product_discount_price_back}{$product_discount_price_back_tail})</span></span>
-                                        </li>
+<!--                                        <li id="{$product_discount_price_div_id}" class="{$product_discount_price_display|display}">-->
+<!--                                            할인금액: <span class="txtWarn">-{$product_discount_price_front_head}<span id="{$product_discount_price_front_id}">{$product_discount_price_front}</span>{$product_sale_price_front_tail} </span>-->
+<!--                                            <span class="txtWarn {$product_discount_price_ref_display|display}">({$product_discount_price_back_head}{$product_discount_price_back}{$product_discount_price_back_tail})</span></span>-->
+<!--                                        </li>-->
                                         <li title="배송">기본배송 <span class="{$oversea_able_display|display}">(해외배송가능)</span></li>
                                         <li class="{$product_weight_display|display}">상품중량 : {$product_weight}kg * {$product_quantity}개 = {$total_product_weight}kg</li>
                                     </ul>
@@ -590,10 +590,10 @@
                                         <span id="{$product_purchase_price_div_id}">상품구매금액: {$product_purchase_price_front_head}{$product_purchase_price_front}{$product_purchase_price_front_tail} </span>
                                         <span class="{$product_purchase_ref_display|display}">({$product_purchase_price_back_head}{$product_purchase_price_back}{$product_purchase_price_back_tail})</span>
                                     </li>
-                                    <li id="{$product_discount_price_div_id}" class="{$product_discount_price_display|display}">
-                                        할인금액: <span class="txtWarn">-{$product_discount_price_front_head}<span id="{$product_discount_price_front_id}">{$product_discount_price_front}</span>{$product_sale_price_front_tail} </span>
-                                        <span class="txtWarn {$product_discount_price_ref_display|display}">({$product_discount_price_back_head}{$product_discount_price_back}{$product_discount_price_back_tail})</span></span>
-                                    </li>
+<!--                                    <li id="{$product_discount_price_div_id}" class="{$product_discount_price_display|display}">-->
+<!--                                        할인금액: <span class="txtWarn">-{$product_discount_price_front_head}<span id="{$product_discount_price_front_id}">{$product_discount_price_front}</span>{$product_sale_price_front_tail} </span>-->
+<!--                                        <span class="txtWarn {$product_discount_price_ref_display|display}">({$product_discount_price_back_head}{$product_discount_price_back}{$product_discount_price_back_tail})</span></span>-->
+<!--                                    </li>-->
                                     <li title="배송">해외배송</li>
                                     <li class="{$product_weight_display|display}">상품중량 : {$product_weight}kg * {$product_quantity}개 = {$total_product_weight}kg</li>
                                 </ul>
@@ -621,10 +621,10 @@
                                         <span id="{$product_purchase_price_div_id}">상품구매금액: {$product_purchase_price_front_head}{$product_purchase_price_front}{$product_purchase_price_front_tail} </span>
                                         <span class="{$product_purchase_ref_display|display}">({$product_purchase_price_back_head}{$product_purchase_price_back}{$product_purchase_price_back_tail})</span>
                                     </li>
-                                    <li id="{$product_discount_price_div_id}" class="{$product_discount_price_display|display}">
-                                        할인금액: <span class="txtWarn">-{$product_discount_price_front_head}<span id="{$product_discount_price_front_id}">{$product_discount_price_front}</span>{$product_sale_price_front_tail} </span>
-                                        <span class="txtWarn {$product_discount_price_ref_display|display}">({$product_discount_price_back_head}{$product_discount_price_back}{$product_discount_price_back_tail})</span></span>
-                                    </li>
+<!--                                    <li id="{$product_discount_price_div_id}" class="{$product_discount_price_display|display}">-->
+<!--                                        할인금액: <span class="txtWarn">-{$product_discount_price_front_head}<span id="{$product_discount_price_front_id}">{$product_discount_price_front}</span>{$product_sale_price_front_tail} </span>-->
+<!--                                        <span class="txtWarn {$product_discount_price_ref_display|display}">({$product_discount_price_back_head}{$product_discount_price_back}{$product_discount_price_back_tail})</span></span>-->
+<!--                                    </li>-->
                                     <li title="배송">해외배송</li>
                                     <li class="{$product_weight_display|display}">상품중량 : {$product_weight}kg * {$product_quantity}개 = {$total_product_weight}kg</li>
                                 </ul>
@@ -740,12 +740,12 @@
     </div>
 
     <!-- [결제정보] -->
-    <div class="pannelArea" style="border-bottom: 1px solid #eaeaea;padding-bottom: 40px;">
+    <div class="pannelArea" style="border-bottom: 1px solid #eaeaea;">
         <div class="title">
             <h2>결제정보</h2>
         </div>
         <div class="contents">
-            <div class="segment">
+            <div class="segment" style="padding: 32px 0!important">
                 <div class="ec-base-table gCellNarrow">
                     <table border="1">
                         <caption>결제정보 상세</caption>
@@ -928,7 +928,7 @@
     </div>
 
     <!-- [적립 혜택] -->
-    <div class="pannelArea {$total_mileage_summary_display|display}" style="padding: 40px 0;">
+    <div class="pannelArea {$total_mileage_summary_display|display}" style="padding: 32px 0;">
         <div class="title">
             <h2>적립 혜택</h2>
         </div>

@@ -95,9 +95,8 @@ $(function() {
     let summary = mileage.find('.summary');
     let mileageUseBox = `<span class="mileageUse">사용가능한 마일리지 </span>`
     summary.before(mileageUseBox);
-    let mileageUse = CAFE24.SHOP_FRONT_ORDERFORM_DATA.mileage.fMemberAvailMileage + '원'
-    $('.mileageUse').append(mileageUse);
-    console.log(mileageUse)
+    let mileageUse = CAFE24.SHOP_FRONT_ORDERFORM_DATA.mileage.fMemberAvailMileage;
+    $('.mileageUse').append(comma(mileageUse) + '원');
 
     //마일리지문구 수정
     let mileageHelp = mileage.find('.ec-base-help')
