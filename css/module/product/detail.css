@@ -19,7 +19,7 @@
 .xans-product-detail .imgArea .RW .listImg .inner .list{position: relative!important;width: auto!important;}
 
 /* infoArea */
-.xans-product-detail .infoArea .info_material{color: #C34B4E;font-size: 16px;font-weight: 500;padding-bottom: 16px;}
+.xans-product-detail .infoArea .info_material{color: #AF0A14;font-size: 16px;font-weight: 500;padding-bottom: 16px;}
 .xans-product-detail .infoArea p.delivery { padding:10px 0 20px; }
 .xans-product-detail .infoArea .guideArea { overflow:hidden; margin:10px 0 0; }
 .xans-product-detail .infoArea .guideArea .info { float:left; }
@@ -33,7 +33,7 @@
 .xans-product-detaildesign tr[data-name="할인판매가"] td #span_product_price_sale span{font-weight: 700;}
 .xans-product-detaildesign tr[data-name="할인판매가"] td{padding: 0;}
 .xans-product-detaildesign tr[data-name="판매가"] > td{padding: 0;}
-.xans-product-detaildesign tr[data-name="판매가"].margin{margin-left: 6px;display: inline-flex;}
+.xans-product-detaildesign tr[data-name="판매가"].margin{margin-left: 6px;display: inline-flex; font-weight: 400 !important;}
 .xans-product-detaildesign tr[data-name="상품간략설명"]{font-weight: 300;line-height:24px; margin-top: 16px;display: block;}
 .xans-product-detail .infoArea table { border:0; margin:24px 0 0; font-size:13px;  }
 .xans-product-detail .infoArea th { font-weight:normal; width:106px; padding:7px 5px 6px 0; text-align:left; vertical-align:top;display: none; }
@@ -295,7 +295,7 @@
 .detailToggle ul{display: flex;flex-direction: column;}
 .detailToggle ul li{border-bottom: 1px solid #EAEAEA;}
 .detailToggle ul li .d_tab.active{display: block;}
-.detailToggle ul li p{padding:24px 16px 24px;  line-height:24px;}
+.detailToggle ul li p{padding:24px 16px 24px;  line-height:24px;  cursor: pointer;}
 .detailToggle ul li div span{padding:24px 16px;  line-height:24px;display: block;}
 .detailToggle ul li div span{background: #F9F9F9;color: #888888;}
 span.arrow{display:inline-block;
@@ -450,7 +450,7 @@ span.arrow.rotate{transform: rotate(315deg)}
 .xans-product-detail .infoArea .rental ul li { padding-bottom:4px; color:#999; }
 
 /* 재입고알림 버튼 */
-.xans-product-detail .infoArea td #span_product_price_text {margin-right:8px; font-weight: 400;}
+.xans-product-detail .infoArea td #span_product_price_text {margin-right:8px; font-weight: 700;}
 .xans-product-detail .infoArea td #span_product_price_text.margin{margin-left:8px;}
 .xans-product-detail .infoArea td #btn_restock img {display:none;}
 .xans-product-detail .infoArea td #btn_restock:after {content:'재입고 알림 SMS';font-size:11px;color:#111;font-weight:400;border:1px solid #d6d6d6;display:inline-block;padding:2px 5px;}

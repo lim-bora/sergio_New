@@ -133,6 +133,11 @@ $(function () {
     $('.close_map').on('click', function() {
         $('.store_map_MO').hide();
     });
+    $('.store_list li').on('click', function () {
+        $('.store_map_MO').show();
+    });
+
+
 
     // 아이디찾기, 비밀번호 찾기 js
     $(".xans-member-findid #searchType option[value='indibuis']").remove();

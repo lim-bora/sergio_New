@@ -99,7 +99,7 @@ input::placeholder {color:#888; font-weight: 400;}
     .store_popup.active {top: 50%; left: 50%; transform: translate(-50%, -50%);}
     .store_info {height:360px; margin: 16px 0; display: flex; border-bottom: 1px solid #e0e0e0; gap: 10px;}
     .store_info > div {flex: 1;}
-    .store_map_MO {display: none;}
+    .store_map_MO {display: none !important;}
 }
 
 @media all and (max-width:1024px) {
@@ -107,7 +107,7 @@ input::placeholder {color:#888; font-weight: 400;}
     .store_popup.active {top: 50px; left: 0;}
     .popup_title {justify-content: center; padding-top: 40px;}
     .popup_title h4 {line-height: 16px;}
-    .store_info {padding: 16px; height: auto;}
+    .store_info {padding: 16px; height: calc(100% - 123px); overflow-y: scroll;}
     .store_list p { max-width:300px; font-size: 14px; line-height: 16px;}
     .close_popup_icon {position: absolute; left: 16px;}
     .store_list li {position: relative;}

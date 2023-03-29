@@ -16,6 +16,7 @@
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot{ border-top: 0!important;border-bottom: 0!important; padding: 10px 0 0px!important;}
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdBox{padding: 14px 0 16px;}
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo a[class^='btn'].sizeS{ font-size: 12px; border: 1px solid #E0E0E0;width: 65px;height: 30px;padding: 0;line-height: 29px;border-radius: 2px;}
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot .btnText {color: #747474; font-size: 12px; line-height: 14px;}
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {

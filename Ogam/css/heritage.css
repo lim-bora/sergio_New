@@ -1,11 +1,11 @@
 #heritageMain{position: relative;}
 .pc{display: block;}
 .mo{display: none;}
-#heritageMain .txtBox{    position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); text-align: center;}
+#heritageMain .txtBox{ font-family: 'Acumin Pro'; position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); text-align: center;}
 #heritageMain .txtBox p, #heritageSection .txtBox h3{color: #fff;}
-#heritageMain .pc .txtBox img{ width: 62px;  height: 67px;}
-#heritageMain .pc .txtBox p{font-family: 'Acumin Pro';font-size: 18px;padding-top: 24px;}
-#heritageMain .pc .txtBox h3{font-size: 36px;font-weight: 700;padding-top: 10px;color: #fff;}
+#heritageMain .pc .txtBox img{ height: 64px;}
+#heritageMain .pc .txtBox p{font-size: 18px; line-height:20px; padding-top: 24px;}
+#heritageMain .pc .txtBox h3{font-size: 36px; line-height:38px; font-weight: 700;padding-top: 10px;color: #fff;}
 
 .scroll-downs {position: absolute;right: 0;bottom: 70px;left: 0;margin: auto;width :34px;height: 55px;}
 .mousey {width: 3px;padding: 10px 15px;height: 35px;border: 2px solid #fff;border-radius: 25px;opacity: 0.75;box-sizing: content-box;}
@@ -51,7 +51,7 @@
 .girdSection{max-width: 1440px;margin: 0 auto;padding-top: 118px;}
 .girdSection .imgBox{display: flex;flex-direction: row;flex-wrap: nowrap;gap: 10px;}
 .girdSection .imgBox .big{width: 55%;}
-.girdSection .imgBox .big img{object-fit: cover;  height: 100%;}
+.girdSection .imgBox .big img{object-fit: cover;  }
 .girdSection .imgBox .small{width:45%;display: block;}
 .girdSection .imgBox .small img:nth-child(1){margin-bottom: 10px;}
 .girdSection .txtBox{text-align: center;padding: 40px 0 118px;}
@@ -62,6 +62,10 @@
 .halfSection img{width:50%;}
 .halfSection .txtBox{width:50%;text-align: left;padding-left: 80px;}
 .halfSection .txtBox p{font-size: 16px;line-height: 26px;color: #fff;font-weight: 400;}
+
+@media all and (min-width:1025px) {
+    .girdSection .imgBox .big img {height: 100%;}
+}
 
 /********************* PC / Small *********************/
 @media all and (min-width:1920px) {
@@ -91,21 +95,21 @@
     .pc{display: none;}
     .mo{display: block;}
     #heritageMain .txtBox{top: 45%;}
-    #heritageMain .mo .txtBox img{ width: 47px;  height: 50px;}
+    #heritageMain .mo .txtBox img{ height: 48px;}
     #heritageMain .mo .txtBox p{font-family: 'Acumin Pro';font-size: 18px;padding-top: 24px;}
-    #heritageMain .mo .txtBox h3{font-size: 36px;font-weight: 700;padding-top: 10px;color: #fff;}
+    #heritageMain .mo .txtBox h3{font-size: 36px; line-height:38px; font-weight: 700;padding-top: 10px; color: #fff;}
 
 
 
     .middleSection{padding-top: 88px}
     .middleSection .txtBox{display: block;width:92%;margin: 48px auto 196px;}
-    .middleSection .txtBox p{font-size: 18px;line-height: 28px;}
+    .middleSection .txtBox p{font-size: 16px;line-height: 26px;}
 
     .blackSection{flex-direction: column;padding: 240px 0 176px;}
     .blackSection .crossBox{width: 100%;  padding: 100px 0;}
     /*.blackSection .crossBox span{font-size: 18px;line-height: 28px;}*/
     .blackSection .txtBox{width: 92%;text-align: left; padding-top: 48px;margin-top: 130px;}
-    .blackSection .txtBox p{font-size: 18px;line-height: 28px;padding-left: 0px;}
+    .blackSection .txtBox p{font-size: 16px;line-height: 26px;padding-left: 0px;}
     .blackSection .crossBox span img{width: 45px;height: 50px;}
     .blackSection .crossBox > span.brand01 span{
         display: block;
@@ -137,21 +141,20 @@
     .girdSection .imgBox .big{width: 100%;}
     .girdSection .imgBox .small{width:100%;}
     .girdSection .txtBox{padding: 32px 0 100px;}
-    .girdSection .txtBox p{font-size: 18px;line-height: 28px;text-align: left;}
+    .girdSection .txtBox p{font-size: 16px;line-height: 26px;text-align: left;}
 
     .halfSection{flex-direction: column;}
     .halfSection img{width:100%;}
     .halfSection .txtBox{padding: 40px 0 166px;width: 92%;}
-    .halfSection .txtBox p{font-size: 18px;line-height: 28px;color: #fff;font-weight: 400;}
+    .halfSection .txtBox p{font-size: 16px;line-height: 26px;color: #fff;font-weight: 400;}
 
 }
 @media all and (max-width:756px) {
     .scroll-downs {bottom: 80px;width: 28px;height: 40.44px;}
     .mousey{padding: 8px 12px;height: 28px;}
     #heritageMain .txtBox{top: 45%;}
-    #heritageMain .mo .txtBox img{ width: 47px;  height: 50px;}
-    #heritageMain .mo .txtBox p{font-family: 'Acumin Pro';font-size: 14px;padding-top: 24px;}
-    #heritageMain .mo .txtBox h3{font-size: 26px;font-weight: 700;padding-top: 10px;color: #fff;}
+    #heritageMain .mo .txtBox p{font-size: 14px; line-height:16px; padding-top: 24px;}
+    #heritageMain .mo .txtBox h3{font-size: 26px; line-height:28px; font-weight: 700;padding-top: 10px;color: #fff;}
 
     .blackSection .crossBox span{font-size: 14px;line-height: 16px;font-weight: 700;}
     .blackSection {padding: 80px 0;}

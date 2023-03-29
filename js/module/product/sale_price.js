@@ -51,7 +51,7 @@ EC$(function($) {
             } else if (sDisplayAmount == 'w') {
                 sSaleText = parseInt(iCustomPrice - iPrice).toString().replace(regexp, ',') + '원 OFF';
             }
-            salePriceEl.append("<div class='sale_box'>" + sSaleText + "</div>");
+            // salePriceEl.append("<div class='sale_box'>" + sSaleText + "</div>");
         }
     }
 

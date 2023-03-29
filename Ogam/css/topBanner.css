@@ -1,4 +1,4 @@
-.topBannerBox{position: relative;}
+.topBannerBox{position: relative; z-index: 12;}
 .topBannerBox > div{ height: 100%;}
 .topBannerBox span.btnClose{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%); max-width: 1440px;display: block;width: 100%; height: auto;padding: 5px 0;}
 .topBannerBox span.btnClose img{width: 24px;height: 24px;float: right;cursor: pointer;z-index: 10;}
@@ -10,4 +10,6 @@
     .topBannerBox{height: 40px;}
     .topBannerBox a img{object-fit: cover;height: 100%;}
     .topBannerBox span{width: 92%!important;}
+
+    body.searchExpand .topBannerBox {display: none !important;}
 }

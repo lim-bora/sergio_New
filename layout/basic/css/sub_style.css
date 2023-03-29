@@ -364,7 +364,7 @@
 .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info .txtEm1 {font-size:20px;font-weight:700;color:#1a1a1a;}
 .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info .user__data {font-size:14px;color:#6a6a6a;white-space:nowrap;}
 .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info .user__data span {color:#1a1a1a;}
-.xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info .user__data span .xans-member-var-group_name{font-family: 'Acumin Pro';font-weight: 700;font-size: 20px;line-height: 22px;text-transform: uppercase;color: #001A72;}
+.xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info .user__data span .xans-member-var-group_name{font-family: 'Acumin Pro';font-weight: 700;font-size: 20px;line-height: 22px;text-transform: uppercase;color: #000A55;}
 .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info p {font-size:12px;}
 .xans-myshop-asyncbankbook li {display:flex !important;align-items:center;justify-content:center;padding:24px 30px;margin-bottom: 0;}
 .xans-myshop-asyncbankbook li:not(:last-child):after {top:0;height:100%;margin:0;background:#e3e3e3;}
@@ -425,7 +425,7 @@ div.ec-base-help ul {margin:0;}
 .xans-myshop-addrlist .addrlistBox .rightInfo > span{padding: 6px 0;}
 .xans-myshop-addrlist .addrlistBox .rightInfo > span:nth-child(1){padding-top: 0;}
 .xans-myshop-addrlist .addrlistBox .rightInfo span.stitle{color: #888888;font-size: 12px;margin-right: 8px;}
-.xans-myshop-addrlist .addrlistBox .rightInfo span.stitle .basicIcon{color: #fff; background: #001A72; padding: 2px 4px;font-size: 10px;margin-left: 8px;}
+.xans-myshop-addrlist .addrlistBox .rightInfo span.stitle .basicIcon{color: #fff; background: #000A55; padding: 2px 4px;font-size: 10px;margin-left: 8px;}
 .xans-myshop-addrlist .addrlistBox .rightInfo .addbtn{float: right;text-align: right;}
 .xans-myshop-addrlist .addrlistBox .rightInfo .addbtn a{width: 43px;height: 26px;font-size: 12px;border-radius: 2px;}
 .xans-myshop-addrlist .addrlistBox .rightInfo .addbtn a[class^='btnEm']{background: #424242;}
