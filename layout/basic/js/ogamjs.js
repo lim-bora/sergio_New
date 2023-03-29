@@ -78,6 +78,59 @@ $(function () {
         $(this).parent().siblings().removeClass('selected');
     });
 
+    // 쇼핑큐레이션 : 컬러칩
+    //쇼핑큐레이션
+    $('.xans-product-searchfilterlist .xans-product-filterform li').each(function () {
+        for(let i=0; i< $(this).length; i++){
+            let filterTxt =  $(this).find('button').text();
+            console.log(filterTxt);
+            switch (filterTxt) {
+                case 'BLACK' :
+                    $(this).prepend('<span class="colorchip black"></span>');
+                    break
+                case 'WHITE' :
+                    $(this).prepend('<span class="colorchip white"></span>');
+                    break
+                case 'IVORY' :
+                    $(this).prepend('<span class="colorchip ivory"></span>');
+                    break
+                case 'BEIGE' :
+                    $(this).prepend('<span class="colorchip beige"></span>');
+                    break
+                case 'YELLOW' :
+                    $(this).prepend('<span class="colorchip yellow"></span>');
+                    break
+                case 'ORANGE' :
+                    $(this).prepend('<span class="colorchip orange"></span>');
+                    break
+                case 'PINK' :
+                    $(this).prepend('<span class="colorchip pink"></span>');
+                    break
+                case 'RED' :
+                    $(this).prepend('<span class="colorchip red"></span>');
+                    break
+                case 'KHAKI' :
+                    $(this).prepend('<span class="colorchip khaki"></span>');
+                    break
+                case 'GRAY' :
+                    $(this).prepend('<span class="colorchip gray"></span>');
+                    break
+                case 'BLUE' :
+                    $(this).prepend('<span class="colorchip blue"></span>');
+                    break
+                case 'NAVY' :
+                    $(this).prepend('<span class="colorchip navy"></span>');
+                    break
+                case 'PURPLE' :
+                    $(this).prepend('<span class="colorchip purple"></span>');
+                    break
+                case 'GREEN' :
+                    $(this).prepend('<span class="colorchip green"></span>');
+                    break
+            }
+        }
+    })
+
 
     // 통합검색 : 판매가 스타일 조정
     let searchSalePrice = $('.xans-search-result .prdList .spec > li[data-name="할인판매가"]');

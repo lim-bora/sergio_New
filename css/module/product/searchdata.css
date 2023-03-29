@@ -75,6 +75,23 @@
 #searchContent tr .check li input[type=checkbox] {visibility: hidden; width: 0; height: 0; margin: 0;}
 #searchContent tr .check li input[type=checkbox]:checked {visibility: visible; background: url('/svg/icon-check.svg') no-repeat; width: 14px; height: 14px; margin: 0 4px 0 0; border: none;}
 
+/* 컬러칩 */
+.colorchip{ width: 12px; height: 12px; border-radius: 50%; display: inline-block;margin-right: 8px; vertical-align: middle}
+.colorchip.black{ background-color: #000000}
+.colorchip.green{ background-color: #059E39}
+.colorchip.purple{ background-color: #9745EA}
+.colorchip.navy{ background-color: #2E4788}
+.colorchip.blue{ background-color: #2B7EFB}
+.colorchip.gray{ background-color: #949494}
+.colorchip.khaki{ background-color: #5B5C39}
+.colorchip.red{ background-color: #EA454F}
+.colorchip.pink{ background-color: #FF8BC3}
+.colorchip.orange{ background-color: #FBA540}
+.colorchip.yellow{ background-color: #FFE666}
+.colorchip.beige{ background-color: #EAD8B6}
+.colorchip.ivory{ background-color: #F9EBD2}
+.colorchip.white{ border: 1px solid #CCCCCC;box-sizing: border-box}
+
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
     .xans-product-searchdata .searchField .keywordArea { margin:25px auto 0; }

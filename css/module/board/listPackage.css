@@ -25,7 +25,7 @@
 .xans-board-listpackage .ec-base-table table td.chk .ec-common-rwd-image { margin:3px 0 0; }
 .xans-board-listpackage .ec-base-table table td.subject .product { margin:0 10px 5px 0; line-height:18px; color:#6d6d6d; }
 .xans-board-listpackage .ec-base-table table td.subject .product:empty { margin-bottom:0; }
-.xans-board-listpackage .ec-base-table table td.subject a { margin-right:5px; vertical-align:middle; color: #000 !important;line-height: 16px;}
+.xans-board-listpackage .ec-base-table table td.subject a { display:block; width:100%; vertical-align:middle; color: #000 !important;line-height: 16px;}
 .xans-board-listpackage .ec-base-table table td.subject img { width:auto; height:21px; margin:0px 5px 1px 0; vertical-align:middle; }
 .xans-board-listpackage .ec-base-table table td.subject .badge img { height:auto; }
 .xans-board-listpackage .ec-base-table table td.thumb a { display:inline-block; overflow:hidden; }
