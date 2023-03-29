@@ -28,7 +28,7 @@
 
 .xans-order-result .ec-base-button { margin:10px 0 0; }
 
-
+.xans-order-result .ec-base-table.gCellNarrow tbody th,.xans-order-result .ec-base-table.gCellNarrow tbody td{padding-top: 4px!important; padding-bottom: 4px!important;}
 
 /* Total */
 .xans-order-result .totalArea { margin:40px 0 0; }

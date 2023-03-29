@@ -6,3 +6,9 @@ jQuery(document).ready(function() {
 
 
 
+$(document).ready(function(){
+
+    let close = $('#totalProducts .option_product td').find('.delete');
+    $('#totalProducts .option_product tr').find('right').insertAfter(close);
+    $('#totalProducts .option_product tr').css('color','red');
+});

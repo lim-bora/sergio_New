@@ -661,7 +661,7 @@ $default_option = yes
         </div><!-- //detail_tab -->
 
         <div class="{$review_display|display}">
-            <div class="board_title">
+            <div class="board_title" style="display:none">
                 <h2>REVIEW</h2>
                 <!--브이리뷰 (vreview) 스크립트 / 수정할 경우 연락 부탁드립니다 (dev@vreview.tv)-->
                 <div class="ec-base-button" style="display:none">
@@ -669,8 +669,6 @@ $default_option = yes
                     <a href="{$review_write}" class="btnNormalFix">WRITE</a>
                 </div>
             </div>
-            <!--브이리뷰 (vreview) 스크립트 / 수정할 경우 연락 부탁드립니다 (dev@vreview.tv)-->
-            <div class="vreview-review-board-widget" />
             <div class="contents" style="display:none">
                 <div module="product_review">
                     <!--@js(/js/module/product/review.js)-->
@@ -738,7 +736,9 @@ $default_option = yes
             </div>
         </div><!-- //상품리뷰 -->
     </div><!-- //prdReview -->
-
+    
+    <!--브이리뷰 (vreview) 스크립트 / 수정할 경우 연락 부탁드립니다 (dev@vreview.tv)-->
+    <div class="vreview-review-board-widget" />
     <div module="product_relation">
         <div class="relation">
             <div class="relation_title">추천상품<span></span></div>
