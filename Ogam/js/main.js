@@ -21,7 +21,7 @@ $(function() {
     let halfA = $('.half_Cate').find('a');
     halfA.append(cateTxt);
     let firstA = $('.half_Cate a:first-child').find('span');
-    firstA.text('WOMAN');
+    firstA.text('WOMEN');
     let seconA = $('.half_Cate a:nth-child(2)').find('span');
     seconA.text('MEN');
 });

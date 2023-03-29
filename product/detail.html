@@ -20,26 +20,26 @@
 $coupon_download_page = /coupon/coupon_productdetail.html
 -->
     <div class="detailArea">
-        <div class="imgArea" module="product_image">
+        <div class="imgArea" module="product_image" style="max-width: 836px;">
             <!--@js(/js/module/product/product_image.js)-->
 
             <div class="RW">
                 <!--div class="prdImg">
-<div class="thumbnail">
-<a href="/product/image_zoom2.html{$zoom_param}" alt="{$product_code}" onclick="window.open(this.href, 'image_zoom2', 'toolbar=no,scrollbars=auto,resizable=yes,width=450,height=693,left=0,top=0', this);return false;">
-<img src="{$big_img}" alt="{$seo_alt_tag}" class="{$big_img_class} {$img_display|display}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
-</a>
-<div id="zoom_wrap"></div>
-</div>
-</div-->
+                <div class="thumbnail">
+                <a href="/product/image_zoom2.html{$zoom_param}" alt="{$product_code}" onclick="window.open(this.href, 'image_zoom2', 'toolbar=no,scrollbars=auto,resizable=yes,width=450,height=693,left=0,top=0', this);return false;">
+                <img src="{$big_img}" alt="{$seo_alt_tag}" class="{$big_img_class} {$img_display|display}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
+                </a>
+                <div id="zoom_wrap"></div>
+                </div>
+                </div-->
 
                 <div class="listImg" module="product_addimage">
-                    <div class="inner swiper prdImgSwiper">
-                        <ul class="list swiper-wrapper">
-                            <li class="swiper-slide">{$add_img}</li>
-                            <li class="swiper-slide">{$add_img}</li>
+                    <div class="inner">
+                        <ul class="list">
+                            <li>{$add_img}</li>
+                            <li>{$add_img}</li>
                         </ul>
-                        <div class="swiper-scrollbar"></div>
+<!--                        <div class="swiper-scrollbar"></div>-->
                     </div>
 
                 </div>
