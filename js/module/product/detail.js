@@ -64,26 +64,23 @@ jQuery(document).ready(function() {
 			observeParents: true,
 			watchOverflow: 'true', // 스와이프가 한개일때 버튼 라인 비활성
 			speed:700,
-			navigation: {
-				nextEl: '.swiper-next-relation',
-				prevEl: '.swiper-prev-relation',
-			},
+			// navigation: {
+			// 	nextEl: '.swiper-next-relation',
+			// 	prevEl: '.swiper-prev-relation',
+			// },
 			scrollbar: {
 				el: ".swiper-scrollbar",
 				hide: false,
 				draggable: true,
 			},
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			},
+			autoplay: false,
 			breakpoints: {
 				768: {
 					slidesPerView: 2.2,
 					spaceBetween: 10,
                     scrollbar: {
                         el: ".swiper-scrollbar",
-                        hide: true,
+                        hide: false,
                     },
                     autoplay: false,
 				},

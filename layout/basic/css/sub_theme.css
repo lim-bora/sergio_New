@@ -20,7 +20,7 @@ input[type="checkbox"]:checked::-ms-check {background:url('/SkinImg/img/checkbox
 .ec-base-step .selected {color:#000000; font-weight: 500;}
 
 /* button */
-[class^='btnNormal'], a[class^='btnNormal'] {border:1px solid #D6D6D6;}
+[class^='btnNormal'], a[class^='btnNormal'] {border:1px solid #E0E0E0;}
 [class^='btnSubmit'], a[class^='btnSubmit'] {background:#000;color:#fff;}
 
 /* Table */

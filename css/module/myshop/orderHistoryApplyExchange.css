@@ -2,7 +2,7 @@
 .xans-myshop-orderhistoryapplyexchange .order { position:relative; }
 .xans-myshop-orderhistoryapplyexchange .order__number { overflow:hidden; padding:16px 0 16px 0px; font-size:14px; background-color:#fff;border-bottom: 1px solid #EAEAEA;}
 .xans-myshop-orderhistoryapplyexchange .order__number .number{color: #747474;}
-.xans-myshop-orderhistoryapplyexchange .order__number .date { font-weight: 500;font-size: 14px;}
+.xans-myshop-orderhistoryapplyexchange .order__number .date { font-weight: 400;font-size: 14px;}
 .xans-myshop-orderhistoryapplyexchange .ec-base-prdInfo .description .price{font-family: 'Acumin Pro';font-size: 14px;}
 .xans-myshop-orderhistoryapplyexchange .productSelect { border-bottom:1px solid #e5e5e5; background:#f9f9f9; }
 .xans-myshop-orderhistoryapplyexchange .exchangeProduct { border-top:1px solid #000; }

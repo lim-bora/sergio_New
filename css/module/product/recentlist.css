@@ -1,17 +1,18 @@
 /*.xans-product-listitem { border-top:1px solid #000; }*/
 
 .xans-product-recentlist .xans-product-listitem > li{ width: 49%;border-bottom: 0;}
-.xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .prdBox{padding: 0 0 32px;flex-direction: column;}
-.xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description{ min-height: 80px;}
-.xans-product-recentlist .ec-base-prdInfo .description li.salePrice:not(.displaynone) + .sellPrice{color: #AEAEAE;text-decoration: line-through;}
+.xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .prdBox{padding: 0 0 26px;flex-direction: column;}
+/*.xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description{ min-height: 80px;}*/
+.xans-product-recentlist .ec-base-prdInfo .description li.salePrice, .xans-product-recentlist .ec-base-prdInfo .description li.sellPrice strong{font-weight: 700;}
+.xans-product-recentlist .ec-base-prdInfo .description li.salePrice:not(.displaynone) + .sellPrice{color: #AEAEAE;text-decoration: line-through;font-size: 12px;font-weight: 500!important;}
+
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .prdName{margin: 13px 0 8px;}
-.xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .prdName a{font-weight: 700;}
+.xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .prdName a{font-weight: 500;}
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .btnDelete{top: 13px;right: 13px;}
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .price{display: flex;}
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .price li:nth-child(2){margin-right: 8px;}
 .wishBack,.wishBB{display: none;}
-.priceBlack{color: #000 !important;}
-.priceGray{color:#ccc !important;text-decoration: line-through;}
+
 /****************** MO ******************************/
 @media screen and (max-width:1024px) {
     .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .btnDelete{top: 10px;right: 10px;}

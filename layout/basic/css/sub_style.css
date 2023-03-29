@@ -191,7 +191,7 @@
 
 /* 버튼 */
 .ec-base-button [class^='btn'].sizeL {height:56px;padding:0;line-height:56px;font-size:16px;border-radius: 2px;}
-.ec-base-button [class^='btn'].sizeM {height:48px;padding:0;line-height:50px;font-size:14px;border-radius: 2px;}
+.ec-base-button [class^='btn'].sizeM {height:48px;padding:0;line-height:48px;font-size:14px;border-radius: 2px;}
 .ec-base-button [class^='btn'].sizeS {height:48px;padding:0; line-height:20px;font-size:14px;border-radius: 2px;}
 .ec-base-button.gBottom .gLeft [class^='btn'] {margin:0 8px 0 0;}
 .ec-base-button.gBottom .gRight [class^='btn'] {margin:0 0 0 8px;}
@@ -379,7 +379,7 @@
 .myshopArea .ec-base-prdEmpty {font-size:14px;color: #747474;padding:92px 0;display:flex;flex-direction:column;align-items:center;border-bottom: 1px solid #EAEAEA;}
 .myshopArea .ec-base-prdEmpty svg {margin-bottom:16px;}
 /*.myshopArea .titleArea--myshop h2 {font-weight:700;}*/
-div.ec-base-help {margin:50px 0 0;}
+div.ec-base-help {margin:40px 0 0;}
 div.ec-base-help .inner,
 .xans-myshop-couponserial .couponSerial,
 .xans-myshop-summary.ec-base-box.gHalf {border-top:1px solid #000;}
@@ -390,7 +390,7 @@ div.ec-base-help ul {margin:0;}
 .myshopArea .xans-myshop-main > .subTitle {padding-bottom:6px;}
 .myshopArea .xans-myshop-main > .subTitle:first-child {margin:0;}
 .myshopArea .xans-myshop-main h3 {font-size:12px;font-weight: 500;}
-.myshopArea .xans-myshop-main .menu li {margin:10px 0 0 0;}
+.myshopArea .xans-myshop-main .menu li {margin:8px 0 0 0;}
 .myshopArea .xans-myshop-main .consult a {font-size:14px;}
 
 
@@ -407,7 +407,7 @@ div.ec-base-help ul {margin:0;}
 .xans-myshop-addrlist a[class^='btnNormal'] {padding:5px 10px;height:auto;}
 /*.xans-myshop-addrregister .ec-base-table.typeWrite {border-top:2px solid #1a1a1a;}*/
 .xans-myshop-addrregister .icoRequired {margin-right:12px;}
-.xans-myshop-addrregister .ec-base-table.typeWrite .ec-address li {margin-bottom:10px;}
+.xans-myshop-addrregister .ec-base-table.typeWrite .ec-address li {margin-bottom:8px;}
 .xans-myshop-addrregister .ec-base-table.typeWrite .ec-address li#shippingRegist_detailAddr_wrap {margin:0;}
 /*.xans-myshop-addrregister .ec-base-table.typeWrite #ma_main_flag0 {margin-top:-3px;}*/
 /*.xans-myshop-addrmodify .ec-base-table.typeWrite {border-top:2px solid #1a1a1a;}*/
@@ -416,7 +416,7 @@ div.ec-base-help ul {margin:0;}
 .xans-myshop-addrmodify .ec-base-table.typeWrite .ec-address li#shippingUpdate_detailAddr_wrap {margin:0;}
 /*.xans-myshop-addrmodify .ec-base-table.typeWrite #ma_main_flag0 {margin-top:-3px;}*/
 /* 마이페이지 배송주소록 관리 re */
-.myshopAddrList #myshopMain{top: 40px;}
+.myshopAddrList #myshopMain{top: 56px;}
 .xans-myshop-addrlist .addrlistBox{display:flex;flex-direction: row;border-bottom: 1px solid #EAEAEA;padding: 19px 0 24px;}
 .xans-myshop-addrlist .addrlistBox .leftCheck{width: 8%;}
 .xans-myshop-addrlist .addrlistBox .leftCheck input[type="checkbox"]{float: left;border: 1px solid #E0E0E0;border-radius: 2px;width: 16px;height: 16px;background: none;}
@@ -427,7 +427,7 @@ div.ec-base-help ul {margin:0;}
 .xans-myshop-addrlist .addrlistBox .rightInfo span.stitle{color: #888888;font-size: 12px;margin-right: 8px;}
 .xans-myshop-addrlist .addrlistBox .rightInfo span.stitle .basicIcon{color: #fff; background: #000A55; padding: 2px 4px;font-size: 10px;margin-left: 8px;}
 .xans-myshop-addrlist .addrlistBox .rightInfo .addbtn{float: right;text-align: right;}
-.xans-myshop-addrlist .addrlistBox .rightInfo .addbtn a{width: 43px;height: 26px;font-size: 12px;border-radius: 2px;}
+.xans-myshop-addrlist .addrlistBox .rightInfo .addbtn a{width: 43px;height: 26px;font-size: 12px;border-radius: 2px;line-height: 13px;}
 .xans-myshop-addrlist .addrlistBox .rightInfo .addbtn a[class^='btnEm']{background: #424242;}
 .xans-myshop-addrlist .gBottom a{width:48%;}
 .xans-myshop-addrlist .gBottom a.btnNormalFix{border: 1px solid #000000;font-weight: normal!important;}
@@ -779,7 +779,7 @@ div.ec-base-help ul {margin:0;}
 	.xans-myshop-addrregister .icoRequired {margin-right:10px;}
 	.xans-myshop-addrregister #ma_rcv_phone1,
 	.xans-myshop-addrregister #ma_rcv_mobile_no1 {margin-left:0;}
-	.xans-myshop-addrregister .ec-base-table tr.right {margin-top:10px;}
+	.xans-myshop-addrregister .ec-base-table tr.right {margin-top:16px;}
 	.xans-myshop-addrregister .ec-base-table tr.right label {margin-right:5px;}
 	.xans-myshop-addrmodify .ec-base-table.typeWrite th {padding:24px 0 8px;}
 	.xans-myshop-addrmodify .ec-base-table.typeWrite td {padding:0;}
@@ -788,11 +788,11 @@ div.ec-base-help ul {margin:0;}
 	.xans-myshop-addrmodify #ma_rcv_mobile_no1 {margin-left:0;}
 	.xans-myshop-addrmodify .ec-base-table tr.right {margin-top:10px;}
 	.xans-myshop-addrmodify .ec-base-table tr.right label {margin-right:5px;}
-	#frmAddr{width: 108%;margin-left: -4%!important;}
-	.xans-myshop-addrlist div.ec-base-help .inner{ padding: 24px 16px!important;}
+	/*#frmAddr{width: 108%;margin-left: -4%!important;}*/
+	.xans-myshop-addrlist div.ec-base-help .inner{ padding: 24px 0px!important;}
 	.xans-myshop-addrlist .gBottom{width: 92%;margin: 0 auto;}
 	.xans-myshop-addrlist .gBottom a.btnSubmitFix{width: 92% !important;}
-	.xans-myshop-addrlist .addrlistBox{ padding: 19px 16px 24px;}
+	.xans-myshop-addrlist .addrlistBox{ padding: 24px 0px 24px;}
 
 	/* 마이페이지 정기배송 관리 */
 	.regularDeliveryPayInfo .ec-base-box .information .title {display:none;}

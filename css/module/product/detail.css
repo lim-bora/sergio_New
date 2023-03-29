@@ -295,8 +295,8 @@
 .detailToggle ul{display: flex;flex-direction: column;}
 .detailToggle ul li{border-bottom: 1px solid #EAEAEA;}
 .detailToggle ul li .d_tab.active{display: block;}
-.detailToggle ul li p{padding:24px 16px 24px;  line-height:24px;  cursor: pointer;}
-.detailToggle ul li div span{padding:24px 16px;  line-height:24px;display: block;}
+.detailToggle ul li > p{padding:24px 16px 24px;  line-height:24px;  cursor: pointer;}
+.detailToggle ul li div > span{padding:24px 16px;  line-height:24px;display: block;}
 .detailToggle ul li div span{background: #F9F9F9;color: #888888;}
 span.arrow{display:inline-block;
 	width: 8px;
@@ -311,6 +311,9 @@ span.arrow{display:inline-block;
 	position: relative;}
 span.arrow.rotate{transform: rotate(315deg)}
 .ec-front-product-item-price{margin-right: 14px;}
+.detailToggle .deliveBox h5{font-weight: 700;font-size: 14px;line-height: 18px;color: #000;padding: 16px 0 8px;}
+.detailToggle .deliveBox > p{display: block;text-align: left;margin: 8px 0 8px;font-weight: 400;font-size: 14px;line-height: 18px;color: #000;}
+.detailToggle .deliveBox > p span{display: block;text-align: left;margin: 8px 0 0px;font-weight: 400;font-size: 12px;line-height: 18px;color: #888;}
 
 /*추천상품*/
 .xans-product-relation .relation_title{font-weight: 500!important;font-size: 20px!important;text-align: left!important;}
@@ -346,11 +349,12 @@ span.arrow.rotate{transform: rotate(315deg)}
     .xans-product-detail .btnTooltip { position:static; }
     .differentialShipping { left:0; right:0; width:88%; margin:10px auto 0; }
 	#opt_layer_iframe_parent{display: block!important; bottom: 0!important; top: auto!important;  }
-	#opt_layer_iframe_parent iframe#productOptionIframe{height: 548px!important;}
+	#opt_layer_iframe_parent iframe#productOptionIfra me{height: 548px!important;}
 	.xans-product-detaildesign tr[data-name="상품간략설명"]{margin-top: 32px;border-top:1px solid #eaeaea; padding-top: 32px;}
 	.detailToggle ul li p{padding:24px 24px 24px; }
-	.detailToggle ul li div span{padding:24px 24px;}
+	.detailToggle ul li div > span{padding:24px 24px;}
 	.detailToggle ul{width: 108%;margin-left: -4%!important;}
+
 
 	/*추천상품*/
 	.xans-product-relation .relation_title{font-size: 16px!important;}

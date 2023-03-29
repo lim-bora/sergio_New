@@ -65,7 +65,7 @@
   .ec-base-table.typeWrite td label { line-height:32px; }
   /* address */
   .ec-base-table.typeWrite .ec-address { width:100%; }
-  .ec-base-table.typeWrite .ec-address .btnBasic { display:inline-block; padding:12px 19px; height:48px; font-size:12px; box-sizing:border-box; border:1px solid #000000; line-height:1; font-weight:normal; text-decoration:none; vertical-align:middle; word-spacing:-0.5px; letter-spacing:0; text-align:center; white-space:nowrap; color:#000; background-color:#fff; }
+  .ec-base-table.typeWrite .ec-address .btnBasic { display:inline-block; padding:12px 19px; height:48px; font-size:12px; box-sizing:border-box; border:1px solid #000000; line-height:1; font-weight:400; text-decoration:none; vertical-align:middle; word-spacing:-0.5px; letter-spacing:0; text-align:center; white-space:nowrap; color:#000; background-color:#fff;border-radius: 2px; }
   .ec-base-table.typeWrite .ec-address-area select { display:block; margin:10px 0 0; }
   .ec-base-table.typeWrite .ec-address-area select:first-of-type { margin-top:0; }
 

@@ -76,6 +76,7 @@
                                 <strong class="name">{$product_name_link}</strong>
                                 <div class="price">
                                     <span title="판매가">{$item_price_raw_front_head}<strong>{$item_price_raw_front}</strong>{$item_price_raw_front_tail}<span class="{$item_price_ref_display|display}"> {$item_price_raw_back_head}{$item_price_raw_back}{$item_price_raw_back_tail}</span></span>
+                                    <span class="qty" title="수량">{$quantity}개</span>
                                     <div class="optionGroup {$option_display|display}">
                                         <div>{$option_str}</div>
                                         <ul module="Myshop_optionSet">
@@ -84,7 +85,6 @@
                                         </ul>
                                         <p class="free {$card_installment_display|display}">무이자할부 상품</p>
                                     </div>
-                                    <span class="qty" title="수량">{$quantity}개</span>
                                 </div>
                                 <ul class="info">
                                     <li class="free {$card_installment_display|display}">무이자할부 상품</li>
@@ -191,7 +191,7 @@
         </div>
 
         <div id="{$check_is_pickup_id}" class="{$pickuplist_display|display}">
-            <div class="titleArea titleArea--middle">
+            <div class="titleArea titleArea--middle" style="margin-bottom: 16px;">
                 <h3>수거신청</h3>
             </div>
             <div class="ec-base-table typeWrite topline exChangeBack">
@@ -221,7 +221,7 @@
             </div>
         </div>
         <div id="{$pickup_detail_id}" class="{$pickup_detail_display|display}">
-            <div class="titleArea titleArea--middle">
+            <div class="titleArea titleArea--middle" style="margin-bottom: 16px;">
                 <h3>수거지 정보</h3>
             </div>
             <div class="ec-base-table typeWrite topline exChangeApplication">
@@ -273,7 +273,7 @@
         </div>
 
         <div id="{$cs_shipfee_payment_id}" class="{$cs_shipfee_payment_display|display}">
-            <div class="titleArea titleArea--middle">
+            <div class="titleArea titleArea--middle" style="margin-bottom: 16px;">
                 <h3>교환배송비 결제</h3>
             </div>
             <div class="ec-base-table typeWrite topline exChangePayment">
@@ -307,7 +307,7 @@
 
         {$form.is_new_cs_form}
         <div class="{$refund_info_display|display}">
-            <div class="titleArea titleArea--middle">
+            <div class="titleArea titleArea--middle" style="margin-bottom: 16px;">
                 <h3>교환정보</h3>
             </div>
             <div class="ec-base-table typeWrite topline exChangeInfo">
@@ -343,7 +343,7 @@
         </div>
         <div class="ec-base-button gBottom">
 <!--            <a href="/myshop/order/list.html{$back_page_param}" class="btnNormalFix sizeM">이전페이지</a>-->
-            <a href="#none" class="btnSubmitFix sizeM fullbtn" onclick="OrderApply.apply(); return false;">교환신청</a>
+            <a href="#none" class="btnSubmitFix sizeM fullbtn" onclick="OrderApply.apply(); return false;" style="font-weight: 400;">교환신청</a>
         </div>
     </div>
 

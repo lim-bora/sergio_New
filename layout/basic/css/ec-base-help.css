@@ -12,9 +12,9 @@ div.ec-base-help p,
 div.ec-base-help ul,
 div.ec-base-help ol { margin:15px 0 0 0; }
 div.ec-base-help p,
-div.ec-base-help li { color:#6d6d6d; font-size:12px; line-height:21px; }
+div.ec-base-help li { color:#000; font-size:14px; line-height:20px; }
 div.ec-base-help p,
-div.ec-base-help ul li { padding:0 0 0 12px; }
+div.ec-base-help ul li { padding:0 0 8px 12px; }
 div.ec-base-help p:before,
 div.ec-base-help ul li:before { content:""; display:inline-block; width:3px; height:3px; margin:7px 9px 0 -12px; vertical-align:top; border-radius:50%; background:#6d6d6d; }
 
