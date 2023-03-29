@@ -494,8 +494,8 @@ div.ec-base-help ul {margin:0;}
 .xans-order-basketpackage .ec-base-prdInfo .optionGroup {margin:10px 0 0 0px;padding:16px 0px;width:100%;background-color:#fff;font-size:14px;border-top: 1px solid #EAEAEA;border-bottom: 1px solid #EAEAEA;}
 .xans-order-basketpackage .ec-base-prdInfo .optionGroup .name {position:relative;padding: 0 0 0 0px;display: flex;justify-content: space-between; align-items: center;}
 /*.xans-order-basketpackage .ec-base-prdInfo .optionGroup .name:before { content:''; position:absolute; width:6px; height:6px; top:7px; left:0; background:url('/SkinImg/img/ico_option_modify.svg') no-repeat 0 0;}*/
-.xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity {padding:0 0 0 0px;display:flex;align-items:center;width:100%;margin:24px 0;}
-.xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity .label {flex:1;font-size:14px;color:#7a7a7a;}
+.xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity {padding:0 0 0 0px;display:flex;align-items:center;width:100%;margin:16px 0;}
+.xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity .label {flex:1;font-size:14px;color:#000;}
 .xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity .ec-base-qty {width:80px;padding:0 18px;}
 .xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity .ec-base-qty input[type="text"] {height:32px;line-height:38px;}
 .xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity .ec-base-qty a {width:40px;height:32px;}
@@ -524,7 +524,7 @@ div.ec-base-help ul {margin:0;}
 .xans-order-basketpackage .totalSummary .paymentPrice {color:#1a1a1a;}
 .xans-order-basketpackage .ec-base-prdEmpty {border-top:0;border-bottom:0!important;font-size:14px;color:#747474;padding:92px 0px;display:flex;flex-direction:column;align-items:center;}
 .xans-order-basketpackage .ec-base-prdEmpty svg {margin-bottom:16px;}
-.xans-order-basketguide .inner ul {margin-top:15px;}
+.xans-order-basketguide .inner ul {margin-top:8px; padding-left: 14px;}
 
 /* 예치금 */
 .xans-myshop-deposithistorylist .ec-base-table .message {border-bottom:1px solid #e6e6e6;font-size:16px;color:#9a9a9a;padding:64px 0;}

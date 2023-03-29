@@ -44,7 +44,7 @@
 
 .ec-base-prdInfo .optionGroup { margin:8px 0 0; font-size: 14px;color: #747474;}
 .ec-base-prdInfo .optionGroup:empty { margin-top:0; }
-.ec-base-prdInfo .optionGroup li { margin:5px 0 0; line-height:20px; color:#7d7d7d; }
+.ec-base-prdInfo .optionGroup li { line-height:20px; color:#000; }
 .ec-base-prdInfo .optionGroup .optionName { line-height:18px; word-break:break-all; }
 .ec-base-prdInfo .optionGroup li .product { display:block; margin:8px 0 0; color:#000; }
 .ec-base-prdInfo .optionGroup li .change { margin:0 0 0 5px; white-space:nowrap; }

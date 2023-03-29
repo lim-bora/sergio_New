@@ -23,6 +23,4 @@ div.ec-base-help ul li:before { content:""; display:inline-block; width:3px; hei
     span.ec-base-help,
     p.ec-base-help,
     ul.ec-base-help li { margin:10px 0; }
-    div.ec-base-help > h2,
-    div.ec-base-help > h3 { padding:0 15px; }
 }

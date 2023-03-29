@@ -77,7 +77,7 @@ body.expand #layoutDimmed { display:block; }
 /********************* PC *********************/
 @media all and (min-width:1025px) {
     body.expand { left:458px; }
-    #aside { top:100px; left:-458px;  width:458px; }
+    #aside { top:70px; left:-458px;  width:458px; }
 }
 
 

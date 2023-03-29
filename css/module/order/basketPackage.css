@@ -33,18 +33,18 @@
 .xans-order-basketpackage .totalSummary .title div .refer { display:inline-block; font-size:12px; word-break:break-all; }
 .xans-order-basketpackage .totalSummary .ec-base-help { margin:10px 0; }
 
-#NaverChk_Button { margin:8px 0 0; }
 /*네이버페이 커스텀*/
-#NaverChk_Button .npay_button{padding: 0px 0 0px 0px !important;height: 56px!important;}
-#NaverChk_Button .npay_btn_list{height: 56px!important;}
-#NaverChk_Button .npay_type_A_1{ width: 100% !important;height: 56px !important;border-radius: 2px!important;}
-#NaverChk_Button .npay_type_MA_1{ width: 100% !important;height: 56px !important;}
+#NaverChk_Button .npay_button{padding: 0px 0 0px 0px !important;height: 48px!important;}
+#NaverChk_Button .npay_btn_list{height: 48px!important;}
+#NaverChk_Button .npay_type_A_1{ width: 100% !important;height: 48px !important;border-radius: 2px!important;}
+#NaverChk_Button .npay_type_MA_1{ width: 100% !important;height: 48px !important;}
 #NaverChk_Button .npay_button_box{border-top: 0!important;}
 #NaverChk_Button .npay_text{display: none!important;}
 #NaverChk_Button .npay_event{display: none!important;}
-#NaverChk_Button .npay_btn_link{ height: 56px !important;}
+#NaverChk_Button .npay_btn_link{ height: 48px !important; line-height: 48px !important;}
 #NaverChk_Button .npay_btn_link.npay_btn_pay{    background-size: 78px auto !important;background-position: 50% -38px !important;}
 #NaverChk_Button .npay_button_box{padding: 0 0px!important;}
+#NaverChk_Button .npay_btn_link.npay_btn_pay .npay_logo { margin: 3px 6px 0 0 !important; }
 
 .xans-order-basketpackage td .box.shipping { line-height:1.3em; }
 .xans-order-basketpackage td .box.shipping .shippingArea { font-size:12px; line-height:1.3em; }
@@ -65,9 +65,13 @@
 #orderFixItem .ec-base-button{margin: 0px 0 8px;}
 
 .ec-base-help{margin: 48px auto!important;}
-.ec-base-help h3{text-align: center;margin: 0 0 16px;font-weight: 400;}
+#contents .ec-base-help > h3{font-size:14px; line-height:16px; text-align: center;margin: 0 0 16px;font-weight: 400;}
 .ec-base-help .inner{border: 0!important;border-top: 1px solid #000!important;padding: 16px 0!important;}
-.bkMBtn{background-color: #000!important;color: #fff!important;}
+.xans-order-basketpackage .ec-base-button a.bkMBtn{height:48px; font-size:14px; line-height: 20px; padding: 14px 0; background-color: #000;color: #fff;}
+#contents div.ec-base-help h4 {font-size: 14px; line-height: 20px; }
+#contents div.ec-base-help h4:not(:first-child) {margin-top: 16px;}
+#contents div.ec-base-help ul li {font-size: 14px; line-height: 20px; color: #747474; padding: 0;}
+
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
     .xans-order-basketpackage .xans-order-tabinfo { margin:0 0 40px; }
