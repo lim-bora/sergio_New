@@ -194,6 +194,13 @@ $(window).resize(function(){
     }
 }).resize();
 
-
-
-
+$(document).ready(function(){
+    //소재 텍스트 유무 스타일적용
+    let materialTxt = $('.xans-product-detail .infoArea .info_material');
+    let productName = materialTxt.next('h1');
+    if(materialTxt.length == 0){
+        productName.css('marginTop','0px');
+    }else{
+        productName.css('marginTop','16px');
+    }
+});

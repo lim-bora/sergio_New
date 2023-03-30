@@ -3,12 +3,12 @@
 
 /* headingArea */
 .xans-product-detail .headingArea { position:relative; }
-.xans-product-detail .headingArea h1 { display:inline; font-size:20px; line-height:30px; vertical-align:middle; }
+.xans-product-detail .headingArea h1 { display:inline; font-size:20px; line-height:30px; vertical-align:middle; width: 95%;}
 .xans-product-detail .headingArea .icon_img { max-height:23px; display: none;}
 .xans-product-detail .headingArea .icon img { margin:0 4px 0 0; vertical-align:middle; }
-.xans-product-detail .headingArea .actionWish{position: absolute;top: 0;right: 0;border: 0;padding: 0;height: 0;}
+.xans-product-detail .headingArea .actionWish{position: absolute;top: 3px;right: 0;border: 0;padding: 0;height: 0;}
 .xans-product-detail .headingArea .actionWish img{width: 17.42px;}
-
+.xans-product-detail .detailArea > div{max-width: 836px;}
 
 /* imgArea */
 .xans-product-detail .imgArea .prdImg .thumbnail { display:block; position:relative; max-width:100%; }
@@ -19,7 +19,7 @@
 .xans-product-detail .imgArea .RW .listImg .inner .list{position: relative!important;width: auto!important;}
 
 /* infoArea */
-.xans-product-detail .infoArea .info_material{color: #AF0A14;font-size: 16px;font-weight: 500;padding-bottom: 16px;}
+.xans-product-detail .infoArea .info_material{color: #AF0A14;font-size: 16px;font-weight: 500;/*margin-bottom: 16px;*/}
 .xans-product-detail .infoArea p.delivery { padding:10px 0 20px; }
 .xans-product-detail .infoArea .guideArea { overflow:hidden; margin:10px 0 0; }
 .xans-product-detail .infoArea .guideArea .info { float:left; }
@@ -28,7 +28,7 @@
 .xans-product-detail .infoArea .sizeGuide a:hover { text-decoration:none; }
 	.xans-product-detaildesign > table > tbody > tr:first-child { display:none; }
 	.xans-product-detaildesign tr[data-name="상품요약정보"]{ display:none; }
-.priceBlack{color: #000 !important;}
+.priceBlack{color: #000 !important;font-weight: 700!important;}
 #span_product_price_sale{ font-family: 'Acumin Pro';}
 .xans-product-detaildesign tr[data-name="할인판매가"] td #span_product_price_sale span{font-weight: 700;}
 .xans-product-detaildesign tr[data-name="할인판매가"] td{padding: 0;}
@@ -311,9 +311,9 @@ span.arrow{display:inline-block;
 	position: relative;}
 span.arrow.rotate{transform: rotate(315deg)}
 .ec-front-product-item-price{margin-right: 14px;}
-.detailToggle .deliveBox h5{font-weight: 700;font-size: 14px;line-height: 18px;color: #000;padding: 16px 0 8px;}
-.detailToggle .deliveBox > p{display: block;text-align: left;margin: 8px 0 8px;font-weight: 400;font-size: 14px;line-height: 18px;color: #000;}
-.detailToggle .deliveBox > p span{display: block;text-align: left;margin: 8px 0 0px;font-weight: 400;font-size: 12px;line-height: 18px;color: #888;}
+.detailToggle .deliveBox h5{font-weight: 700;font-size: 12px;line-height: 18px;color: #000;padding: 16px 0 0px;}
+.detailToggle .deliveBox > p{display: block;text-align: left;margin: 0px 0 8px;font-weight: 400;font-size: 12px;line-height: 18px;color: #000;}
+.detailToggle .deliveBox > p span{display: block;text-align: left;margin: 0px 0 0px;font-weight: 400;font-size: 12px;line-height: 18px;color: #888;}
 
 /*추천상품*/
 .xans-product-relation .relation_title{font-weight: 500!important;font-size: 20px!important;text-align: left!important;}
@@ -333,6 +333,8 @@ span.arrow.rotate{transform: rotate(315deg)}
 #NaverChk_Button .npay_button_box{padding: 0 0px!important;}
 #NaverChk_Button .btn_width{display: none!important;}
 
+
+
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
 	.xans-product-detail .detailArea { flex-direction: column;}
@@ -351,7 +353,7 @@ span.arrow.rotate{transform: rotate(315deg)}
 	#opt_layer_iframe_parent{display: block!important; bottom: 0!important; top: auto!important;  }
 	#opt_layer_iframe_parent iframe#productOptionIfra me{height: 548px!important;}
 	.xans-product-detaildesign tr[data-name="상품간략설명"]{margin-top: 32px;border-top:1px solid #eaeaea; padding-top: 32px;}
-	.detailToggle ul li p{padding:24px 24px 24px; }
+	.detailToggle ul li > p{padding:24px 24px 24px; }
 	.detailToggle ul li div > span{padding:24px 24px;}
 	.detailToggle ul{width: 108%;margin-left: -4%!important;}
 
@@ -371,16 +373,14 @@ span.arrow.rotate{transform: rotate(315deg)}
     .xans-product-detail .imgArea .listImg { position:relative; overflow:hidden; width:100%; height:94px; margin:0px 0 0; padding:0 40px; box-sizing:border-box; }
     .xans-product-detail .imgArea .listImg .inner { position:relative; overflow:hidden; width:100%; height:94px;overflow-y: scroll; }
 	.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar {
-		width: 4px;  /* 스크롤바의 너비 */
-		position: absolute;
-		right: 8px;
+		width: 8px;  /* 스크롤바의 너비 */
 	}
 	.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar-thumb {
 		width: 4px;
 		height: 240px; /* 스크롤바의 길이 */
 		background: #AEAEAE; /* 스크롤바의 색상 */
 		border-radius: 10px;
-		/*background-clip: padding-box;*/
+		background-clip: padding-box;
 		border: 2px solid transparent;
 	}
 	.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar-track {
@@ -471,7 +471,7 @@ span.arrow.rotate{transform: rotate(315deg)}
 .xans-product-detail .infoArea .rental ul li { padding-bottom:4px; color:#999; }
 
 /* 재입고알림 버튼 */
-.xans-product-detail .infoArea td #span_product_price_text {margin-right:8px; font-weight: 700;}
+.xans-product-detail .infoArea td #span_product_price_text {margin-right:8px; font-weight: 400;}
 .xans-product-detail .infoArea td #span_product_price_text.margin{margin-left:8px;}
 .xans-product-detail .infoArea td #btn_restock img {display:none;}
 .xans-product-detail .infoArea td #btn_restock:after {content:'재입고 알림 SMS';font-size:11px;color:#111;font-weight:400;border:1px solid #d6d6d6;display:inline-block;padding:2px 5px;}
@@ -556,6 +556,11 @@ span.arrow.rotate{transform: rotate(315deg)}
 /* 간편결제 */
 #NaverChk_Button,
 #appPaymentButtonBox {margin:10px 0 0;}
+/*!********************* pc small *********************!*/
+/*@media all and (max-width:1520px) {*/
+/*	.xans-product-detail .detailArea > div{max-width: 48vw;}*/
+/*}*/
+/*!********************* pc small *********************!*/
 
 @media all and (max-width:1024px) {
 	#totalProducts, #totalPrice, #fixedActionButton{display: none;}
@@ -641,4 +646,15 @@ span.arrow.rotate{transform: rotate(315deg)}
 
 	#orderFixArea .ec-base-button{margin: 10px 16px;}
 	#orderFixArea .ec-base-button [class^='btn'].sizeM{    margin: 0 0px;}
+}
+/* pc 썸넬-인포 사이즈조정 */
+@media all and (max-width:1520px) {
+	.xans-product-detail .detailArea > div {
+		max-width: 48vw;
+	}
+}
+@media all and (max-width:1024px) {
+	.xans-product-detail .detailArea > div {
+		max-width: none;
+	}
 }
