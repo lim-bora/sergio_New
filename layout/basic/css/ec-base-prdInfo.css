@@ -18,8 +18,8 @@
 .ec-base-prdInfo .description .price .discount { font-weight:normal; text-decoration:line-through; }
 .ec-base-prdInfo .description .price .strike { font-weight:normal; text-decoration:line-through; }
 .ec-base-prdInfo .description .price .strike strong { font-weight:normal; }
-.ec-base-prdInfo .description .info { margin:5px 0 0; }
-.ec-base-prdInfo .description .info li { margin:0 0 3px; font-size:12px; color:#7d7d7d; }
+.ec-base-prdInfo .description .info { margin:8px 0 0; }
+.ec-base-prdInfo .description .info li { margin:0 0 8px; font-size:12px; line-height: 14px; color:#747474; }
 .ec-base-prdInfo .description .info a { color:#7d7d7d; }
 .ec-base-prdInfo .description .info .mileage { display:inline-block; }
 .ec-base-prdInfo .description .info .mileage img {    vertical-align: text-top;} 

@@ -287,7 +287,7 @@
 .xans-member-edit {max-width:720px;margin:0 auto;}
 .xans-member-edit .required {font-size:12px;color:#888888;}
 .xans-member-edit .icoRequired {margin-right:4px; margin-left: 4px;}
-.xans-member-edit .txtInfo {display:block;margin:8px 0 0 0;color: #747474;line-height: 14px;}
+.xans-member-edit .txtInfo {display:block;margin:8px 0 0 0;color: #747474;line-height: 18px;}
 .xans-member-edit .ec-base-table.typeWrite tr {display: flex; flex-direction: column; padding: 24px 0 0; }
 
 .xans-member-edit .ec-base-table.typeWrite th[scope*="row"] {padding:0 0 8px;font-size:14px;font-weight:500;border: none;}
@@ -387,9 +387,7 @@ div.ec-base-help ul {margin:0;}
 .myshopArea .subtitleH4{font-weight: 500;font-size: 14px;text-align: center;padding-bottom: 16px;}
 
 /* 마이페이지 좌측메뉴 */
-.myshopArea .xans-myshop-main > .subTitle {padding-bottom:6px;}
-.myshopArea .xans-myshop-main > .subTitle:first-child {margin:0;}
-.myshopArea .xans-myshop-main h3 {font-size:12px;font-weight: 500;}
+.myshopArea .xans-myshop-main h3 {font-size:12px; line-height:18px; font-weight: 500;}
 .myshopArea .xans-myshop-main .menu li {margin:8px 0 0 0;}
 .myshopArea .xans-myshop-main .consult a {font-size:14px;}
 
@@ -485,13 +483,12 @@ div.ec-base-help ul {margin:0;}
 .xans-order-basketpackage {margin:0 auto;}
 .xans-order-basketpackage .ec-base-fold.theme1 > .title {border-top:0;}
 .xans-order-basketpackage .ec-base-fold.theme1 > .title h3 {font-size:16px;}
-.xans-order-basketpackage .title.subTitle h4 {background-color:#fff;font-size:14px;}
 .xans-order-basketpackage .ec-base-prdInfo {border-bottom:1px solid #e8e8e8;}
 .xans-order-basketpackage .ec-base-prdInfo .btnDelete {top:33px;}
-.xans-order-basketpackage .ec-base-prdInfo .prdBox {padding:10px 0 0;}
+.xans-order-basketpackage .ec-base-prdInfo .prdBox {padding:16px 0 0;}
 .xans-order-basketpackage .ec-base-prdInfo .thumbnail {width:120px;height:auto;border:0;}
 .xans-order-basketpackage .ec-base-prdInfo .description .prdName img {max-height:30px;display: none;}
-.xans-order-basketpackage .ec-base-prdInfo .optionGroup {margin:10px 0 0 0px;padding:16px 0px;width:100%;background-color:#fff;font-size:14px;border-top: 1px solid #EAEAEA;border-bottom: 1px solid #EAEAEA;}
+.xans-order-basketpackage .ec-base-prdInfo .optionGroup {margin:16px 0 0 0;padding:16px 0;width:100%;background-color:#fff;font-size:14px;border-top: 1px solid #EAEAEA;border-bottom: 1px solid #EAEAEA;}
 .xans-order-basketpackage .ec-base-prdInfo .optionGroup .name {position:relative;padding: 0 0 0 0px;display: flex;justify-content: space-between; align-items: center;}
 /*.xans-order-basketpackage .ec-base-prdInfo .optionGroup .name:before { content:''; position:absolute; width:6px; height:6px; top:7px; left:0; background:url('/SkinImg/img/ico_option_modify.svg') no-repeat 0 0;}*/
 .xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity {padding:0 0 0 0px;display:flex;align-items:center;width:100%;margin:16px 0;}
@@ -516,12 +513,12 @@ div.ec-base-help ul {margin:0;}
 .xans-order-basketpackage .cart-total .ec-base-help li {line-height:16px;}
 .xans-order-basketpackage .totalSummary {padding:24px 0px;border-top: 1px solid #EAEAEA;}
 .xans-order-basketpackage .totalSummary__item {margin-bottom:16px;}
-.xans-order-basketpackage .totalSummary__item .title {font-size:16px;color:#747474;}
+.xans-order-basketpackage .totalSummary__item .title {font-size:14px; line-height:20px; color:#747474;}
 .xans-order-basketpackage .totalSummary__item .data {font-size:14px;color:#1a1a1a;}
-.xans-order-basketpackage .totalSummary__item .data strong {font-size:16px;font-weight:400;color:#1a1a1a;}
+.xans-order-basketpackage .totalSummary__item .data strong {font-size:14px; line-height:20px; font-weight:400;color:#000;}
 /*.xans-order-basketpackage .totalSummary .total {margin-top:30px;padding-top:30px;border-top:1px solid #e8e8e8;}*/
-.xans-order-basketpackage .totalSummary .total .title {font-size:16px;color:#747474;font-weight:400;}
-.xans-order-basketpackage .totalSummary .paymentPrice {color:#1a1a1a;}
+.xans-order-basketpackage .totalSummary .total .title {font-size:14px;color:#747474;font-weight:400;}
+.xans-order-basketpackage .totalSummary .paymentPrice {color:#000;}
 .xans-order-basketpackage .ec-base-prdEmpty {border-top:0;border-bottom:0!important;font-size:14px;color:#747474;padding:92px 0px;display:flex;flex-direction:column;align-items:center;}
 .xans-order-basketpackage .ec-base-prdEmpty svg {margin-bottom:16px;}
 .xans-order-basketguide .inner ul {margin-top:8px; padding-left: 14px;}
@@ -583,9 +580,6 @@ div.ec-base-help ul {margin:0;}
 .ec-base-paginate.typeList > a.first {background:url('/SkinImg/img/btn_page_first.png') no-repeat center center;background-size:40px;}
 .ec-base-paginate.typeList > a.last {background:url('/SkinImg/img/btn_page_last.png') no-repeat center center;background-size:40px;}
 
-/* 페이지경로 */
-.path {margin:0 auto;padding:20px 0 0 0;}
-
 /* 기획전 페이지 */
 .xans-project-list {border:0;margin:0;}
 .xans-project-list h3 {position:relative;}
@@ -594,6 +588,7 @@ div.ec-base-help ul {margin:0;}
 
 @media all and (min-width:1025px) {
 	.myshopArea .pc_margin_myshop{margin-left: 200px!important;}
+	.myshopArea .subtitleH4 {padding-top: 56px !important;}
 	.ec-base-product .prdList .spec .discountRate {font-weight: 700; line-height: 18px; margin-left: 8px;}
 }
 

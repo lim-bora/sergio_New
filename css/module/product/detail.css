@@ -366,8 +366,8 @@ span.arrow.rotate{transform: rotate(315deg)}
 /********************* PC *********************/
 @media all and (min-width:1025px) {
     .xans-product-detail { padding:100px 0 0 0; }
-    .xans-product-detail .detailArea { font-size:0; line-height:0; display: flex;flex-direction: row;}
-    .xans-product-detail .imgArea { display:inline-block;  }
+    .xans-product-detail .detailArea { font-size:0; line-height:0; display: flex; gap: 80px; flex-direction: row;}
+    .xans-product-detail .imgArea { flex:1.6;  }
     .xans-product-detail .imgArea .prdImg { width:100%; margin:0 auto; }
     .xans-product-detail .imgArea .prdImg img { width:100%; }
     .xans-product-detail .imgArea .listImg { position:relative; overflow:hidden; width:100%; height:94px; margin:0px 0 0; padding:0 40px; box-sizing:border-box; }
@@ -398,7 +398,7 @@ span.arrow.rotate{transform: rotate(315deg)}
     .xans-product-detail .imgArea .listImg .prev .icon { margin-left:3px;}
     .xans-product-detail .imgArea .listImg .next { right:0; background-position:-31px 0; display: none!important;}
     .xans-product-detail .imgArea .listImg .next .icon { margin-left:-3px; }
-    .xans-product-detail .infoArea { display:inline-block; top:100px; width:483px; margin:0 69px 0 68px; font-size:13px; line-height:1; vertical-align:top; }
+    .xans-product-detail .infoArea { flex: 1; font-size:13px; line-height:1; vertical-align:top; }
     #totalPrice { padding:32px 0 26px; font-family: "Acumin Pro", sans-serif;}
   	#orderFixArea { display:none !important; }
     .xans-product-detail .xans-product-action .gActionButtonColumn { display:flex; margin:0 -5px; }
@@ -443,7 +443,6 @@ span.arrow.rotate{transform: rotate(315deg)}
 .xans-product-detail .xans-product-option .ec-product-button.ec-product-preview li a {width:20px;height:20px;min-width:auto;}
 .xans-product-detail .xans-product-option .ec-product-button li a {height:24px;}
 .xans-product-detail .xans-product-option .ec-product-button li a span {line-height:1;padding:7px 5px;font-size:11px;}
-.xans-product-detail .infoArea {width:604px;margin:0 0 0 80px;}
 .xans-product-detail .infoArea table.xans-product-option {border-top:0;}
 .xans-product-detail .infoArea .xans-product-option {}
 .xans-product-detail .xans-product-option tr,

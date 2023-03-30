@@ -1,16 +1,16 @@
 $(function () {
     // placeholder 삽입
-    $(".xans-layout-searchheader #keyword").attr("placeholder", "검색어를 입력해주세요.");
-    $(".xans-product-searchdata .searchField .keyword").attr("placeholder", "검색어를 입력해주세요.");
-    $("input#name").attr("placeholder", "이름을 입력해주세요.");
-    $("input#email").attr("placeholder", "이메일을 입력해주세요.");
-    $("input#email1").attr("placeholder", "이메일을 입력해주세요.");
-    $("input#member_id").attr("placeholder", "아이디를 입력해주세요.");
-    $("input#member_passwd").attr("placeholder", "비밀번호를 입력해주세요.");
-    $("input#passwd").attr("placeholder", "비밀번호를 입력해주세요.");
-    $("input#user_passwd_confirm").attr("placeholder", "비밀번호를 입력해주세요.");
-    $("input#bank_account_owner").attr("placeholder", "예금주를 입력해주세요.");
-    $("input#bank_account_no").attr("placeholder", "계좌번호를 입력해주세요.");
+    $(".xans-layout-searchheader #keyword").attr("placeholder", "검색어를 입력해 주세요.");
+    $(".xans-product-searchdata .searchField .keyword").attr("placeholder", "검색어를 입력해 주세요.");
+    $("input#name").attr("placeholder", "이름을 입력해 주세요.");
+    $("input#email").attr("placeholder", "이메일을 입력해 주세요.");
+    $("input#email1").attr("placeholder", "이메일을 입력해 주세요.");
+    $("input#member_id").attr("placeholder", "아이디를 입력해 주세요.");
+    $("input#member_passwd").attr("placeholder", "비밀번호를 입력해 주세요.");
+    $("input#passwd").attr("placeholder", "비밀번호를 입력해 주세요.");
+    $("input#user_passwd_confirm").attr("placeholder", "비밀번호를 입력해 주세요.");
+    $("input#bank_account_owner").attr("placeholder", "예금주를 입력해 주세요.");
+    $("input#bank_account_no").attr("placeholder", "계좌번호를 입력해 주세요.");
 
     // 아이디찾기 페이지 휴대폰번호 인증 우선 체크
     let isClicked = true;

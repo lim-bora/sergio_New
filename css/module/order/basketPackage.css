@@ -5,7 +5,7 @@
 .xans-order-basketpackage .title.topTitle h3{font-size: 14px!important;font-weight: 500;padding: 16px 0!important;}
 .xans-order-basketpackage .title.subTitle { display:block; padding:0; }
 .xans-order-basketpackage .title.subTitle:after { display:none; }
-.xans-order-basketpackage .title.subTitle h4 { display:block; padding:0 0 0 0px; line-height:55px; font-size:14px; font-weight:400; background-color:#fff; border-bottom: 1px solid #e8e8e8;}
+.xans-order-basketpackage .title.subTitle h4 { display:block; padding:16px 0; font-size:14px; line-height: 16px; font-weight:400; background-color:#fff; border-bottom: 1px solid #eaeaea;}
 .xans-order-basketpackage .summary { padding:20px; border-bottom:1px solid #e5e5e5; background:#f9f9f9; }
 .xans-order-basketpackage .summary .title { margin:0 0 5px; color: #747474;}
 .xans-order-basketpackage .summary .title h5 { font-size:13px; font-weight:normal; }
@@ -18,7 +18,7 @@
 .xans-order-basketpackage .totalSummary__title { display:block; margin:0 0 20px; padding:0 0 19px; font-size:14px; border-bottom:1px solid #e5e5e5; }
 .xans-order-basketpackage .totalSummary { padding:20px;  }
 .xans-order-basketpackage .totalSummary__item { margin:0 0 20px; }
-.xans-order-basketpackage .totalSummary__item .heading { display:flex; justify-content: space-between; margin:0 0 15px; }
+.xans-order-basketpackage .totalSummary__item .heading { display:flex; justify-content: space-between; margin:0 0 16px; }
 .xans-order-basketpackage .totalSummary__item .item { display:flex; justify-content: space-between; margin:10px 0 0; color:#747474; }
 .xans-order-basketpackage .totalSummary__item .title { font-size:13px; font-weight:normal; }
 .xans-order-basketpackage .totalSummary__item .data { text-align:right; }
@@ -28,7 +28,7 @@
 .xans-order-basketpackage .totalSummary .paymentPrice { text-align:right; }
 .xans-order-basketpackage .totalSummary .paymentPrice strong,
 .xans-order-basketpackage .totalSummary .paymentPrice span { display:inline-block; word-break:break-all; }
-.xans-order-basketpackage .totalSummary .paymentPrice strong { font-size:16px;}
+.xans-order-basketpackage .totalSummary .paymentPrice strong { font-size:14px; line-height: 20px;}
 .xans-order-basketpackage .totalSummary .title p .refer,
 .xans-order-basketpackage .totalSummary .title div .refer { display:inline-block; font-size:12px; word-break:break-all; }
 .xans-order-basketpackage .totalSummary .ec-base-help { margin:10px 0; }
@@ -41,7 +41,7 @@
 #NaverChk_Button .npay_button_box{border-top: 0!important;}
 #NaverChk_Button .npay_text{display: none!important;}
 #NaverChk_Button .npay_event{display: none!important;}
-#NaverChk_Button .npay_btn_link{ height: 48px !important; line-height: 48px !important;}
+#NaverChk_Button .npay_btn_link{ height: 48px !important; line-height: 48px !important; border: none !important;}
 #NaverChk_Button .npay_btn_link.npay_btn_pay{    background-size: 78px auto !important;background-position: 50% -38px !important;}
 #NaverChk_Button .npay_button_box{padding: 0 0px!important;}
 #NaverChk_Button .npay_btn_link.npay_btn_pay .npay_logo { margin: 3px 6px 0 0 !important; }

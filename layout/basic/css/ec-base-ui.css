@@ -120,13 +120,13 @@ span.noBorder input { border:none !important; width:auto !important; height:auto
 .ec-base-chk { display:inline-block; position:relative; margin:0 8px 0 0; vertical-align:top; cursor:pointer; }
 
 /* path */
-.path { overflow:hidden; margin:20px 0 0; height:30px; line-height:30px; }
+.path { overflow:hidden; padding-bottom: 16px;}
 .path span { overflow:hidden; position:absolute; width:0; height:0; white-space:nowrap; text-indent:100%; }
 .path ol { float:right; }
 .path li { display:inline-block; }
 .path li:not(:first-child):before {     content: '';display: inline-block;width: 6px;height: 6px;margin-left: 5px; margin-right: 8px;border-top: 0.1rem solid #888;border-right: 0.1rem solid #888;transform: rotate(45deg); }
 .path li:first-child { background:none; }
-.path li a { font-size:12px; color:#7d7d7d; text-decoration:none; }
+.path li a { font-size:12px; line-height: 14px; color:#AEAEAE; text-decoration:none; }
 .path li:last-child a,
 .path li strong,
 .path li strong a { color:#000; }
@@ -196,7 +196,7 @@ span.noBorder input { border:none !important; width:auto !important; height:auto
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-    .titleArea { margin:45px 0 56px; text-align:center; }
+    .titleArea { margin:56px 0; text-align:center; }
     .titleArea h2 { display:inline-block; color:#000; color:var(--font-color-heading); font-size:30px; }
     .titleArea h3 { color:#000; color:var(--font-color-heading); font-size:16px; font-weight:normal; }
     	.titleArea--middle { margin:50px 0 20px; text-align:left; }

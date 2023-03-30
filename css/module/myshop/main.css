@@ -18,15 +18,15 @@
 @media all and (min-width:1025px) {
     /* myshop layout */
     .myshopArea { position:relative; margin:39px 0 0; }
-    .myshopArea .wrap_order .myshopArea .wrap_order{margin-left: 200px;}
+    .myshopArea .wrap_order .myshopArea .wrap_order{margin-left: 242px;}
     .xans-myshop-main { position:absolute; left:0; top:0; width:200px; }
     .xans-myshop-main.active { top:40px; }
 
     .xans-myshop-main .title {  font-size:30px; }
-    .xans-myshop-main .subTitle { margin:50px 0 0; }
+    .xans-myshop-main .subTitle:not(:first-child) { margin:24px 0 0; }
     .xans-myshop-main h3 { color:#000; color:var(--font-color-heading); font-size:18px; font-weight:normal; font-weight:bold; }
     .xans-myshop-main .menu li { margin:16px 0 0; }
-	.xans-myshop-main .menu li a { display:block; color:#6d6d6d; font-size:12px; text-decoration:none; }
+	.xans-myshop-main .menu li a { display:block; color:#606060; font-size:12px; line-height: 18px; text-decoration:none; }
     .xans-myshop-main .consult { margin:45px 0 0; }
 }
 
