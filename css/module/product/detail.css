@@ -333,6 +333,10 @@ span.arrow.rotate{transform: rotate(315deg)}
 #NaverChk_Button .npay_button_box{padding: 0 0px!important;}
 #NaverChk_Button .btn_width{display: none!important;}
 
+/* 상세페이지 탭 */
+#prdInfo,
+#prdQnA,
+#prdReview {display:none;}
 
 
 /********************* Mobile / Tablet *********************/
@@ -419,7 +423,7 @@ span.arrow.rotate{transform: rotate(315deg)}
 /** 오우이_style 210913 **/
 
 /* 상세페이지 */
-.xans-product-detail {margin:0 auto 80px;}
+.xans-product-detail {margin:0 auto 32px;}
 /*.xans-product-detail .imgArea {width:calc(100% - 650px);}*/
 .xans-product-detail .imgArea .listImg {/*height:auto;*/padding:0;height: 1115px;}
 .xans-product-detail .imgArea .listImg .inner {height:100%;}/*height:auto;*/
@@ -486,9 +490,8 @@ span.arrow.rotate{transform: rotate(315deg)}
 
 /* 상세페이지 탭 */
 .xans-product-additional.section {margin:0 auto 120px auto;}
-.xans-product-additional .pdt150 {padding-top:150px;}
 .xans-product-additional .productDetail {margin:0;}
-.detail_tab {display:block; height:64px; margin:0 auto 40px; font-size:0;}
+.detail_tab {display:none; height:64px; margin:0 auto 40px; font-size:0;}
 .detail_tab li {display:inline-block; width:25%; vertical-align:top; border-top:1px solid #f0f0f0; border-bottom:1px solid #111; border-left:1px solid #f0f0f0; box-sizing:border-box;}
 .detail_tab li:last-child {border-right:1px solid #f0f0f0;}
 .detail_tab li a {display:block; height:60px; color:#9a9a9a; font-size:14px; line-height:60px; text-align:center;}
@@ -613,12 +616,6 @@ span.arrow.rotate{transform: rotate(315deg)}
 	.detail_guide .ec-base-fold.theme1 {width:100%;}
 	.detail_guide .ec-base-fold.theme1 .title {border-top:1px solid #1a1a1a;}
 	.detail_guide .ec-base-fold.theme1 .title:after {display:inline-block;}
-
-	/* 상세페이지 탭 */
-	.detail_tab {display:none;}
-	#prdInfo,
-	#prdQnA,
-	#prdReview {display:none;}
 
 	/* 게시판 */
 	.board_title {margin:0 0 20px 0;}

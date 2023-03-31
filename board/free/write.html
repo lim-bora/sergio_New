@@ -1,16 +1,19 @@
 <!--@layout(/layout/basic/layout.html)-->
 <div class="section" module="board_writePackage_1002">
+    <!--@css(/css/module/board/csCommon.css)-->
     <!--@css(/css/module/board/writePackage.css)-->
-    <div module="board_title_1002">
-        <div class="path">
-            <span>현재 위치</span>
-            <ol>
-                <li><a href="/">홈</a></li>
-                <li><a href="#">게시판</a></li>
-                <li title="현재 위치"><strong>{$board_name}</strong></li>
-            </ol>
-        </div>
 
+    <div class="cs_nav display_pc_only">
+        <p class="cs_nav_title">고객센터</p>
+        <ul>
+            <li><a href="/board/index.html">고객센터안내</a></li>
+            <li><a href="/board/memberBenefits.html">회원혜택안내</a></li>
+            <li><a href="/board/free/list.html?board_no=3">자주묻는질문</a></li>
+            <li><a href="/board/free/list.html?board_no=1">공지사항</a></li>
+        </ul>
+    </div>
+
+    <div module="board_title_1002">
         <div class="titleArea">
             <h2>{$board_title}</h2>
         </div>
@@ -30,7 +33,7 @@
             </colgroup>
             <tbody>
                 <tr>
-                    <th scope="row" class="RW">제목</th>
+                    <th scope="row">제목</th>
                     <td>{$form.board_category}{$form.subject}<span class="ec-base-label">{$form.notice}</span><span class="ec-base-label">{$form.is_post}</span></td>
                 </tr>
                 <tr class="{$config.is_login|display}">
@@ -46,7 +49,6 @@
                     <td>{$form.point}</td>
                 </tr>
                 <tr>
-                    <th scope="row" class="RW top">본문</th>
                     <td>
                         {$form.content}
                     </td>
@@ -107,19 +109,19 @@
             </table>
         </div>
 
-        <ul class="info">
+        <ul class="info displaynone">
             <li>- 상품과 관련없는 내용 또는 이미지, 욕설/비방, 개인정보유출, 광고/홍보글 등 적절하지 않은 게시물은 별도의 고지없이 비공개 처리 될 수 있습니다. </li>
             <li>- 작성된 게시물(사진, 동영상 포함)은 운영 및 마케팅에 활용될 수 있습니다.</li>
         </ul>
 
-        <div class="ec-base-button gBottom">
-            <span class="gLeft RW">
-                <span class="{$config.is_admin|display}"><a href="#none" class="btnNormalFix sizeM" onclick="{$action_comment_admin}">관리자 답변보기</a></span>
-                <a href="{$link_board_list}" class="btnNormalFix sizeS">목록</a>
-            </span>
-            <span class="gRight">
-                <a href="{$link_board_list}" class="btnNormalFix sizeM">취소</a>
+        <div class="ec-base-button">
+            <span>
                 <a href="#none" class="btnSubmitFix sizeM" onclick="{$action_write}">등록</a>
+            </span>
+            <span class="buttonTwo">
+                <a href="#none" class="{$config.is_admin|display} btnNormalFix sizeM" onclick="{$action_comment_admin}">관리자 답변보기</a>
+                <a href="{$link_board_list}" class="btnNormalFix sizeM">취소</a>
+<!--                <a href="{$link_board_list}" class="btnNormalFix sizeS">목록</a>-->
             </span>
         </div>
     </div>

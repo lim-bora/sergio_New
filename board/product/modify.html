@@ -1,16 +1,18 @@
 <!--@layout(/layout/basic/layout.html)-->
 <div class="section" module="board_ModifyPackage_4">
+    <!--@css(/css/module/board/csCommon.css)-->
     <!--@css(/css/module/board/modifyPackage.css)-->
-    <div module="board_title_4">
-        <div class="path">
-            <span>현재 위치</span>
-            <ol>
-                <li><a href="/">홈</a></li>
-                <li><a href="#">게시판</a></li>
-                <li title="현재 위치"><strong>{$board_name}</strong></li>
-            </ol>
-        </div>
+    <div class="cs_nav display_pc_only">
+        <p class="cs_nav_title">고객센터</p>
+        <ul>
+            <li><a href="/board/index.html">고객센터안내</a></li>
+            <li><a href="/board/memberBenefits.html">회원혜택안내</a></li>
+            <li><a href="/board/free/list.html?board_no=3">자주묻는질문</a></li>
+            <li><a href="/board/free/list.html?board_no=1">공지사항</a></li>
+        </ul>
+    </div>
 
+    <div module="board_title_4">
         <div class="titleArea">
             <h2>{$board_title}</h2>
         </div>
@@ -45,7 +47,7 @@
             </colgroup>
             <tbody>
                 <tr>
-                    <th scope="row" class="RW">제목</th>
+                    <th scope="row">제목</th>
                     <td>{$form.board_category}{$form.subject}<span class="ec-base-label">{$form.notice}</span><span class="ec-base-label">{$form.is_post}</span></td>
                 </tr>
                 <tr class="{$config.is_login|display}">
@@ -61,7 +63,6 @@
                     <td>{$form.point}</td>
                 </tr>
                 <tr>
-                    <th scope="row" class="RW top">본문</th>
                     <td>
                         {$form.content}
                     </td>
@@ -123,10 +124,11 @@
         </div>
 
         <div class="ec-base-button gBottom">
-            <span class="gLeft RW"><a href="{$link_board_list}" class="btnNormalFix sizeM">목록</a></span>
-            <span class="gRight">
+            <span>
+                <a href="#none" class="btnSubmitFix sizeM" onclick="{$action_modify}">수정</a></span>
+            <span>
+                <a href="{$link_board_list}" class="btnNormalFix sizeM">목록</a>
                 <a href="{$link_board_list}" class="btnNormalFix sizeM">취소</a>
-                <a href="#none" class="btnSubmitFix sizeM" onclick="{$action_modify}">수정</a>
             </span>
         </div>
     </div>
