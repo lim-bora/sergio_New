@@ -12,7 +12,7 @@
 .xans-board-modify-9 .file td { color:#7d7d7d; }
 .xans-board-modify-9 .file label { color:#000; }
 .xans-board-modify-9 .file [id^="delfile"] { margin-left:20px; }
-.xans-board-modify-9 .flexColumn{display: flex; flex-direction: column;}
+.xans-board-modify-9 .flexColumn{display: flex; flex-direction: column;width: 521px;}
 .xans-board-modify-9 .ec-base-table th,.xans-board-modify-9 .ec-base-table td{    border-bottom: 0; padding: 16px 0 0!important;}
 #email1,#email2{width: 47% !important}
 #email1{float: left;margin-right: 9px;}#email2{float: right;}
@@ -36,7 +36,7 @@
 .fr-toolbar{border: 1px solid #eaeaea!important; border-bottom: 0!important;}
 .fr-box.fr-basic .fr-wrapper{ border: 1px solid #eaeaea!important;border-bottom-color: #eaeaea!important;border-top: 0!important;}
 
-
+.xans-board-modify-9 tr{    display: flex;flex-direction: column;}
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
@@ -51,6 +51,8 @@
     #email1{margin-right: 2px!important;}
     .gRight a{width: 49.5%;}
     .xans-board-modify .fr-wrapper .fr-iframe, .xans-board-reply .fr-wrapper .fr-iframe, .xans-board-write .fr-wrapper .fr-iframe{height: 432px!important;}
+    .xans-board-modify-9 .flexColumn{width: auto;}
+
 }
 
 /********************* PC *********************/
