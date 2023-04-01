@@ -171,8 +171,9 @@ $(document).ready(function(){
     toggle_detail.hide();
     $("ul li > p").click(function(){
         $(this).next('div').stop().slideToggle(300);
-        $(this).find("span").toggleClass('rotate');
+        $(this).find("span").toggleClass('rotateUp');
         $(this).parent("li").siblings().children("div").slideUp(300);
+        $(this).parent("li").siblings().find("span").removeClass('rotateUp');
     });
 });
 //아코디언 해상도 크기에따라 위치변경

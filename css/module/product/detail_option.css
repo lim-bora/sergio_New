@@ -11,7 +11,7 @@ body { background:none !important; }
 #product_detail_option_layer .optionArea select{border: 1px solid #000; height: 56px;border-radius: 2px;}
 #product_detail_option_layer .byte { font-size:11px; vertical-align:middle; }
 #product_detail_option_layer .byte strong { color:#1b87d4; }
-#product_detail_option_layer .xans-product-action { width:100% !important; padding:0px 16px 20px; box-sizing: border-box;}
+#product_detail_option_layer .xans-product-action { width:100% !important; padding:32px 16px 20px; box-sizing: border-box;}
 #product_detail_option_layer .header{border: 0;}
 
     /* 옵션 레이어 > 기본 정보 */
@@ -177,7 +177,7 @@ body { background:none !important; }
 #product_detail_option_layer .totalPrice:after{content: '';display: block;width: 96%;height: 1px;background-color: #eaeaea; position: absolute;top: 0; left: 50%;transform: translateX(-50%);}
 
 /** 오우이_style 210824 **/
-#totalProducts {min-height: 100px;max-height: 100px;overflow-y: scroll;overflow-x: hidden;margin: 32px 16px;}
+#totalProducts {min-height: 80px;max-height: 160px;overflow-y: scroll;overflow-x: hidden;margin: 32px 16px 0;}
 #totalProducts .delete {margin-top:0;}
 #totalProducts tbody td {padding:5px 0;}
 #product_detail_option_layer #totalProducts tbody td:first-child {display: flex;    justify-content: space-between; width: 90%;}

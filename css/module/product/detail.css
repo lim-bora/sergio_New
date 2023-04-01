@@ -6,7 +6,7 @@
 .xans-product-detail .headingArea h1 { display:inline; font-size:20px; line-height:30px; vertical-align:middle; width: 95%;}
 .xans-product-detail .headingArea .icon_img { max-height:23px; display: none;}
 .xans-product-detail .headingArea .icon img { margin:0 4px 0 0; vertical-align:middle; }
-.xans-product-detail .headingArea .actionWish{position: absolute;top: 3px;right: 0;border: 0;padding: 0;height: 0;}
+.xans-product-detail .headingArea .actionWish{position: absolute;top: 2px;right: 0;border: 0;padding: 0;height: 0;}
 .xans-product-detail .headingArea .actionWish img{width: 17.42px;}
 .xans-product-detail .detailArea > div{max-width: 836px;}
 
@@ -309,7 +309,8 @@ span.arrow{display:inline-block;
 	float: right;
 	top: 3px;
 	position: relative;}
-span.arrow.rotate{transform: rotate(315deg)}
+span.arrow.rotateUp{transform: rotate(315deg)}
+
 .ec-front-product-item-price{margin-right: 14px;}
 .detailToggle .deliveBox h5{font-weight: 700;font-size: 12px;line-height: 18px;color: #000;padding: 16px 0 0px;}
 .detailToggle .deliveBox > p{display: block;text-align: left;margin: 0px 0 8px;font-weight: 400;font-size: 12px;line-height: 18px;color: #000;}
@@ -355,7 +356,7 @@ span.arrow.rotate{transform: rotate(315deg)}
     .xans-product-detail .btnTooltip { position:static; }
     .differentialShipping { left:0; right:0; width:88%; margin:10px auto 0; }
 	#opt_layer_iframe_parent{display: block!important; bottom: 0!important; top: auto!important;  }
-	#opt_layer_iframe_parent iframe#productOptionIfra me{height: 548px!important;}
+	#opt_layer_iframe_parent iframe#productOptionIframe{height: 650px!important;}
 	.xans-product-detaildesign tr[data-name="상품간략설명"]{margin-top: 32px;border-top:1px solid #eaeaea; padding-top: 32px;}
 	.detailToggle ul li > p{padding:24px 24px 24px; }
 	.detailToggle ul li div > span{padding:24px 24px;}

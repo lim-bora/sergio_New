@@ -320,13 +320,14 @@
             </table>
 
         </div>
+
+    </div>
+
+    <div module="product_action" style="position: fixed;bottom: 0;width: 96%;">
         <div id="{$total.total_price_id}" class="totalPrice">
             <strong>TOTAL<span class="qty">(QUANTITY)</span></strong> <span class="{$total.total_cnt}"><strong class="price">0</strong></span>
         </div>
         <p class="ec-base-help {$price_warning_class}">할인가가 적용된 최종 결제예정금액은 주문 시 확인할 수 있습니다.</p>
-    </div>
-
-    <div module="product_action" style="position: fixed;bottom: 0;width: 96%;">
         <div class="ec-base-button gColumn {$action_display|display}">
 			<a href="#none" class="btnSubmit {$buy_display|display}" onclick="{$action_buy}"><span id="{$btn_buy_mobile_id}">바로 구매</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span><span id="{$btn_regular_delivery_id}" class="{$btn_regular_delivery|display}">정기배송 신청하기</span></a>
             <button type="button" class="btnNormal {$basket_display|display}" onclick="{$action_basket}" style="border: 1px solid #000;">쇼핑백에 담기</button>
