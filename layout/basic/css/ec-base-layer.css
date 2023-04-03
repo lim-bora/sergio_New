@@ -45,6 +45,8 @@ h1, h3 { margin:0; }
     .ec-base-layer { position:fixed; top:50%; left:0; right:0; min-width:320px; width:calc(100% - 32px); margin:0 auto; transform:translateY(calc(-50% + 0.5px)); }
     .ec-base-layer.typeSide {top: 0; left: 0; bottom: 0; width: 100%; transform: initial; }
     #popup .ec-base-layer { position:relative; top:auto; left:auto; width:100%; border:0; transform: initial; }
+    #detail_info_layer .ec-base-layer .btnClose:before { top:2px; }
+    #detail_info_layer .ec-base-layer .btnClose:after { right:2px;}
 }
 
 /********************* PC *********************/

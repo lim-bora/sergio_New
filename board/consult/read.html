@@ -96,10 +96,12 @@
             <span class="gLeft" style="width: 100%;display: flex;flex-wrap: wrap;gap: 8px;justify-content: space-between;">
                 <a href="/board/consult/modify.html{$param_modify}" class="btnNormalFix btnCommon sizeM {$modify_button_auth|display}" style="border:1px solid #000;">수정</a>
                 <a href="#none" onclick="{$action_delete}" class="btnNormalFix btnCommon sizeM {$delete_button_auth|display}" style="border:1px solid #000;">삭제</a>
+                <a href="{$link_board_list}" class="btnNormalFix sizeM listGo">목록</a>
+                <a href="/board/consult/reply.html{$param_reply}" class="btnSubmitFix sizeM {$reply_button_auth|display}" style="margin-top: 0px;font-weight: 400;border:1px solid #000;background-color: #fff;color: #000;flex: 1;">답변</a>
             </span>
 			<span class="gRight gBreak {$config.is_admin|display}">
-                <a href="{$link_board_list}" class="btnNormalFix sizeM listGo">목록</a>
-                <a href="/board/consult/reply.html{$param_reply}" class="btnSubmitFix sizeM {$reply_button_auth|display}" style="margin-top: 0px;font-weight: 400;">답변</a>
+<!--                <a href="{$link_board_list}" class="btnNormalFix sizeM listGo">목록</a>-->
+<!--                <a href="/board/consult/reply.html{$param_reply}" class="btnSubmitFix sizeM {$reply_button_auth|display}" style="margin-top: 0px;font-weight: 400;">답변</a>-->
             </span>
 		</div>
     </div>

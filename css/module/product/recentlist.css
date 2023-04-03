@@ -3,11 +3,12 @@
 .xans-product-recentlist .xans-product-listitem > li{ width: 49%;border-bottom: 0;}
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .prdBox{padding: 0 0 26px;flex-direction: column;}
 /*.xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description{ min-height: 80px;}*/
-.xans-product-recentlist .ec-base-prdInfo .description li.salePrice, .xans-product-recentlist .ec-base-prdInfo .description li.sellPrice strong{font-weight: 700;}
+/*.xans-product-recentlist .ec-base-prdInfo .description li.salePrice, .xans-product-recentlist .ec-base-prdInfo .description li.sellPrice strong{font-weight: 700;}*/
+.xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .price li.salePrice{font-weight: 700;}
 .xans-product-recentlist .ec-base-prdInfo .description li.salePrice:not(.displaynone) + .sellPrice{color: #AEAEAE;text-decoration: line-through;font-size: 12px;font-weight: 500!important;}
 
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .prdName{margin: 13px 0 8px;}
-.xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .prdName a{font-weight: 500;}
+.xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .prdName a{font-weight: 500;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 255px;width: 100%;display: block;}
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .btnDelete{top: 13px;right: 13px;}
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .price{display: flex;}
 .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .price li:nth-child(2){margin-right: 8px;}
@@ -19,7 +20,7 @@
     /*.xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .btnDelete:before{height: 10px;top: 2px;right: 15px;}*/
     /*.xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .btnDelete:after{width: 10px; top: 7px; right: 11px;}*/
     .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description{padding: 0 0px 0 0;}
-    .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .prdName a{font-weight: 500;}
+    .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .prdName a{font-weight: 500;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100%;width: 100%;display: block;}
     /*.xans-myshop-wishlistbutton .ec-base-button{margin-left: 0;margin-right: 0; }*/
     .recentBack,.recentBB{display: block;}
     .recentBack:after {
@@ -40,4 +41,8 @@
         background: transparent;
     }
     .recentTitle {display: flex;justify-content: space-between; margin: 40px 0px 24px!important;}
+}
+/****************** MO ******************************/
+@media screen and (max-width:768px) {
+    .xans-product-recentlist .xans-product-listitem .ec-base-prdInfo .description .prdName a{font-weight: 500;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100%;width: 45vw;display: block;}
 }

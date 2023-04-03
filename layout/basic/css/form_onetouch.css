@@ -41,7 +41,7 @@ select::-ms-expand {display:none;}
 #mCafe24Order .icoRequired{width: 4px!important;height: 4px!important;background: #E73223!important;border-radius: 50%!important;vertical-align: top!important;margin: 0px 0 0!important;}
 #mCafe24Order .ec-base-tab li{background: #fff!important;border-left: 0!important;}
 #mCafe24Order .ec-base-tab li.selected{    border-bottom-color: #000!important;}
-#mCafe24Order #ec-jigsaw-area-shippingInfo .ec-base-tab ul {margin-bottom: 24px; }
+#mCafe24Order #ec-jigsaw-area-shippingInfo .ec-base-tab ul {margin-bottom: 0px; }
 #ec-jigsaw-tab-shippingInfo.ec-base-tab li a{font-size: 14px!important;font-weight: 500!important;color: #888888!important;}
 #ec-jigsaw-tab-shippingInfo.ec-base-tab li.selected a{color: #000!important;}
 #mCafe24Order .segment .paymentList .discountName .ico_accumulate{display: none!important;}
@@ -53,7 +53,7 @@ select::-ms-expand {display:none;}
 #ec-jigsaw-area-billingInfo colgroup{display: none!important;}
 #ec-jigsaw-area-billingInfo .address_form tr{display: flex;flex-direction: column;}
 #ec-jigsaw-area-billingInfo .address_form tr:nth-child(1){position: relative;}
-#ec-jigsaw-area-billingInfo .address_form tr:nth-child(1) th:after{content:''; display: block!important;position: absolute;top: 33px!important;left: 87px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: #e73223;border-radius: 50%;border: 0!important;}
+#ec-jigsaw-area-billingInfo .address_form tr:nth-child(1) th:after{content:''; display: block!important;position: absolute;top: 33px!important;left: 82px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: #e73223;border-radius: 50%;border: 0!important;}
 #ec-jigsaw-area-billingInfo .ec-base-table th, #ec-jigsaw-area-billingInfo .ec-base-table td{border-bottom: 0!important;}
 #mCafe24Order .ec-base-table.typeWrite tbody th{padding: 32px 0 16px!important; font-size: 14px; line-height: 16px; font-weight: 500;}
 #mCafe24Order .ec-base-table.typeWrite td{padding: 0px 0 0px!important;}
@@ -72,12 +72,13 @@ select::-ms-expand {display:none;}
 .ec-shippingInfo-shippingMessage{padding: 20px 0px 20px!important;}
 #mCafe24Order .segment.unique{border-top: 0!important;padding: 0px 0px 0px!important;}
 .messageTxt{ line-height:16px; font-weight:500; color: #000;margin-bottom: 8px; display: block;}
+#mCafe24Order .recentShipArea{padding-top: 24px;}
 #mCafe24Order .recentShipArea .recent .address{font-size: 14px!important; color: #949494!important;}
 #ec-shop-deliveryInfoCell, #ec-shop-deliveryInfoTel{font-size: 14px!important; color: #949494!important;}
 #ec-shop-deliveryInfoName{font-size: 14px!important; font-weight: 700!important;}
 #omessage_select{ border: 1px solid #EAEAEA!important; color: #888!important;height: 48px!important;}
 #ec-shippingInfo-showRecentAddressList{ border: 1px solid #EAEAEA!important; color: #000!important;     width: 100px;height: 36px!important;line-height: 35px!important; padding: 0 15px!important;border-radius: 2px;}
-#mCafe24Order .segment.ec-shippingInfo-sameaddr{padding: 0 !important;}
+#mCafe24Order .segment.ec-shippingInfo-sameaddr{padding: 24px 0 0!important;}
 #mCafe24Order input[type="radio"] + label{font-size: 14px!important;color: #000;}
 #ec-shippingInfo-newAddress colgroup{display: none;}
 .ec-shippingInfo-newAddress-name, #ec-receiver-address, .ec-shippingInfo-receiverPhone , .ec-shippingInfo-receiverCell {display: flex;flex-direction: column;}
@@ -87,7 +88,7 @@ select::-ms-expand {display:none;}
 #btn_search_rzipcode{width: 70px!important;margin: 0 0 0 0px!important;}
 #receiver_zipcode_wrap{ justify-content: space-between; height: 48px!important;}
 #mCafe24Order .segment.ec-shippingInfo-newAddress-setMain{ padding: 8px 0px 20px!important;}
-#mCafe24Order .recentShipArea .segment .sideRight{right: 0!important}
+#mCafe24Order .recentShipArea .segment .sideRight{right: 0!important;}
 #ec-shippingInfo-newAddress .ec-base-table{padding-bottom: 32px!important;}
 #ec-shippingInfo-newAddress .ec-shippingInfo-newAddress-name{position: relative;}
 #ec-shippingInfo-newAddress .ec-shippingInfo-newAddress-name th:after{content:''; display: block!important;position: absolute;top: 33px!important;left: 74px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: #e73223;border-radius: 50%;border: 0!important;}
@@ -183,8 +184,8 @@ select::-ms-expand {display:none;}
 #order_password, #order_password_confirm{border-top: 1px solid #eaeaea!important;}
 .ec-orderform-NoMemberPasswdRow .ec-base-table th{    border-bottom: 0!important;}
 #mCafe24Order .pannelArea tr{position: relative;}
-#ec-jigsaw-area-shippingInfo .pannelArea tr:nth-child(1) th:after{content:''; display: block!important;position: absolute;top: 33px!important;left: 113px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: #e73223;border-radius: 50%;border: 0!important;}
-#ec-jigsaw-area-shippingInfo .pannelArea tr:nth-child(2) th:after{content:''; display: block!important;position: absolute;top: 33px!important;left: 145px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: #e73223;border-radius: 50%;border: 0!important;}
+#ec-jigsaw-area-shippingInfo .pannelArea tr:nth-child(1) th:after{content:''; display: block!important;position: absolute;top: 33px!important;left: 106px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: #e73223;border-radius: 50%;border: 0!important;}
+#ec-jigsaw-area-shippingInfo .pannelArea tr:nth-child(2) th:after{content:''; display: block!important;position: absolute;top: 33px!important;left: 136px!important;width:4px!important; height:4px!important; transform: translateY(-50%)!important;color: #888888!important;background: #e73223;border-radius: 50%;border: 0!important;}
 
 #mCafe24Order .agreeArea .allAgree, #mCafe24Order .agreeArea .agreement{ margin: 0 0px!important; }
 #allAgree[type="checkbox"]{margin-top: 8px!important;}

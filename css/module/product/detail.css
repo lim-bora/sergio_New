@@ -34,11 +34,12 @@
 .xans-product-detaildesign tr[data-name="할인판매가"] td{padding: 0;}
 .xans-product-detaildesign tr[data-name="판매가"] > td{padding: 0;}
 .xans-product-detaildesign tr[data-name="판매가"].margin{margin-left: 6px;display: inline-flex; font-weight: 400 !important;}
-.xans-product-detaildesign tr[data-name="상품간략설명"]{font-weight: 300;line-height:24px; margin-top: 16px;display: block;}
+.xans-product-detaildesign tr[data-name="상품간략설명"]{font-weight: 300;line-height:24px; margin-top: 16px;display: block;border-bottom: 1px solid #EAEAEA;padding-bottom: 16px;}
+.xans-product-detaildesign tbody > tr[data-name="판매가"] #span_product_price_text{font-weight: 700;}
 .xans-product-detail .infoArea table { border:0; margin:24px 0 0; font-size:13px;  }
 .xans-product-detail .infoArea th { font-weight:normal; width:106px; padding:7px 5px 6px 0; text-align:left; vertical-align:top;display: none; }
 .xans-product-detail .infoArea td { padding:7px 6px 8px 0; vertical-align:baseline; }
-.xans-product-detail .infoArea img { vertical-align:middle; }
+.xans-product-detail .infoArea img { vertical-align:middle; }판
 .xans-product-detail .infoArea td input[type=text] { width:80%; }
 .xans-product-detail .infoArea select { width:100%; }
 .xans-product-detail .infoArea td #delivery_cost_prepaid { margin:0 0 10px; }
@@ -110,7 +111,7 @@
 #divNvPointInfo a img { vertical-align:middle; }
 #imgNaverMileageHelp { cursor:pointer; }
 
-.xans-product-detail .productSet { margin:16px 0 0; border-top:1px solid #EAEAEA; }
+/*.xans-product-detail .productSet { margin:16px 0 0; }*/
 .xans-product-detail .productSet > .title { position:relative; padding:24px 0 16px; box-sizing:border-box; }
 .xans-product-detail .productSet > .title h3 { font-size:14px; font-weight: 500;font-family: "Acumin Pro";}
 .xans-product-detail .productSet .product > li { position:relative; margin:-1px 0 0; padding-right: 8px;}
@@ -361,7 +362,8 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 	.detailToggle ul li > p{padding:24px 24px 24px; }
 	.detailToggle ul li div > span{padding:24px 24px;}
 	.detailToggle ul{width: 108%;margin-left: -4%!important;}
-
+	.xans-product-detaildesign tr[data-name="할인판매가"] > td{border-bottom: 1px solid #eaeaea;padding-bottom: 32px;}
+	.xans-product-detaildesign tr[data-name="상품간략설명"]{padding-bottom: 32px;}
 
 	/*추천상품*/
 	.xans-product-relation .relation_title{font-size: 16px!important;}

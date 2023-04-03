@@ -70,7 +70,7 @@
 .xans-myshop-orderhistorydetail .ec-base-prdInfo .thumbnail{border: 0;width: 120px;height: auto;}
 .xans-myshop-orderhistorydetail .ec-base-prdInfo .prdFoot{padding: 24px 0;}
 .xans-myshop-orderhistorydetail .ec-base-button .gRight{display: flex;width: 100%;}
-.xans-myshop-orderhistorydetail .ec-base-button .gRight a{width: 50%; border: 1px solid #000; line-height: 48px;}
+.xans-myshop-orderhistorydetail .ec-base-button .gRight a{flex: 1; border: 1px solid #000; line-height: 48px;}
 .xans-myshop-orderhistorydetail .ec-base-button, .xans-myshop-orderhistorydetail .ec-base-button.gBottom{margin: 8px 0 0;}
 .xans-myshop-orderhistorydetail .ec-base-layer .header.noLine{border-bottom: 0;padding: 24px 0;}
 .xans-myshop-orderhistorydetail .ec-base-layer{border: 1px solid #E0E0E0;}
