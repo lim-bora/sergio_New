@@ -127,7 +127,7 @@ body.expand {left:0;}
 #aside .navigation-menu__project ul li {margin:40px 0;}
 #aside .navigation-menu__category #slide_add_category,
 #aside .navigation-menu__category #slide_add_category li.selected > ul {display: flex; flex-direction: column; align-items: center;}
-#aside .navigation-menu__category #slide_add_category a.cate {display:inline-block;background: url("/svg/icon-chevron-right.svg") no-repeat;margin-left:8px; word-wrap:break-word;overflow:hidden;width:16px;height:20px;font-size:0;line-height:1px;color:transparent;white-space:nowrap;}
+#aside .navigation-menu__category #slide_add_category a.cate {display:inline-block;background: url("/svg/icon-chevron-right.svg") no-repeat;margin-left:8px; word-wrap:break-word;overflow:hidden;width:16px;height:20px;font-size:0;line-height:1px;color:transparent;white-space:nowrap; margin-top: 0.5px;}
 #aside .navigation-menu__category #slide_add_category .sub_cate01 a.cate {display: none;}
 /*#aside .navigation-menu__category #slide_add_category a.cate:before {content:'';position:absolute;left:0;top:0;width:16px;height:16px;background-image: url("/svg/icon-chevron-right.svg")}*/
 #aside .navigation-menu__category #slide_add_category li.selected > a.cate:after {display:none;}
