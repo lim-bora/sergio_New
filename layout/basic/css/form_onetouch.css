@@ -112,8 +112,9 @@ select::-ms-expand {display:none;}
 #ec-jigsaw-area-discount #ec-shop-orderfom-total-benefit-view-id, #ec-jigsaw-title-discount{display: none!important;}
 #mileage_use_area, .mCouponSelect, .mCouponModify{padding: 10px 0px 0!important;}
 #mileage_use_area .displayblock{display: flex; flex-direction: column;text-align: left;}
-#input_mile{height: 48px!important;width: calc(100% - 70px)!important;}
-#all_use_mileage, #btn_coupon_select{width: 61px!important;height: 48px!important;border-radius: 2px;}
+#input_mile{height: 48px!important;width: calc(100% - 95px)!important;}
+#btn_coupon_select{width: 61px!important;height: 48px!important;border-radius: 2px;}
+#all_use_mileage{width: 87px!important;height: 48px!important;border-radius: 2px;}
 #mCafe24Order .discountDetail{border-bottom: 0!important;}
 #mCafe24Order .discountDetail .control{justify-content: space-between!important;}
 #mCafe24Order ul.ec-base-help li{background: none;}

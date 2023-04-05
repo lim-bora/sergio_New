@@ -54,7 +54,7 @@ $(function(){
     //검색,조회버튼들 텍스트 변경
     $('#btn_search_ozipcode').text('검색');
     $('#btn_search_rzipcode').text('검색');
-    $('#all_use_mileage').text('사용');
+    $('#all_use_mileage').text('전액 사용');
     $('#btn_coupon_select').text('조회');
 
     // 마일리지-쿠폰 순서변경
