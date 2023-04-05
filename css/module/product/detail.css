@@ -374,11 +374,13 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 @media all and (min-width:1025px) {
     .xans-product-detail { padding:100px 0 0 0; }
     .xans-product-detail .detailArea { font-size:0; line-height:0; display: flex; gap: 80px; flex-direction: row;}
+	.xans-product-detail .detailArea .infoArea .infoBox.fix{position: fixed;max-width: 524px;}
+	.xans-product-detail .detailArea .infoArea .infoBox.sticky{position: sticky;top: 100px;}
     .xans-product-detail .imgArea { flex:1.6;  }
     .xans-product-detail .imgArea .prdImg { width:100%; margin:0 auto; }
     .xans-product-detail .imgArea .prdImg img { width:100%; }
-    .xans-product-detail .imgArea .listImg { position:relative; overflow:hidden; width:100%; height:94px; margin:0px 0 0; padding:0 40px; box-sizing:border-box; }
-    .xans-product-detail .imgArea .listImg .inner { position:relative; overflow:hidden; width:100%; height:94px;overflow-y: scroll; }
+    .xans-product-detail .imgArea .listImg { position:relative; width:100%; height:94px; margin:0px 0 0; padding:0 40px; box-sizing:border-box; }
+    .xans-product-detail .imgArea .listImg .inner { position:relative;  width:100%; height:94px; }
 	.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar {
 		width: 8px;  /* 스크롤바의 너비 */
 	}

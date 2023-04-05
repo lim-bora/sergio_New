@@ -205,3 +205,23 @@ $(document).ready(function(){
         productName.css('marginTop','16px');
     }
 });
+
+$(document).ready(function(){
+        let fixScroll = 0;
+        $(window).scroll(function(event){
+            let scroll = $(this).scrollTop();
+            let imgHeight = $('.xans-product-image').height();
+            let heightMin = imgHeight - 920;
+
+            if (scroll >= 114 && scroll <= heightMin){
+                $('#wrap').css('overflow','unset');
+                $(".infoBox").addClass("fix");
+                $(".infoBox").addClass("sticky");
+            }
+            else {
+                $(".infoBox").removeClass("fix");
+                $(".infoBox").removeClass("sticky");
+            }
+            fixScroll = scroll;
+        });
+});
