@@ -191,7 +191,6 @@ $(function () {
     });
 
 
-
     // 아이디찾기, 비밀번호 찾기 js
     $(".xans-member-findid #searchType option[value='indibuis']").remove();
     $(".xans-member-findid #searchType option[value='corp']").remove();
@@ -203,7 +202,6 @@ $(function () {
     if(boardChkbox.length > 0) {
         $('.ec-base-table.typeList .xans-board-1002 td:not(:first-child)').css('padding-left','24px')
     }
-
 });
 
 
