@@ -33,9 +33,11 @@
 .ec-base-button.gBottom .gRight .btnWirte {width:66px !important; height:36px; line-height:34px; font-size: 12px; background-color: #FFF; color: #000; font-weight: 400; border:1px solid #E0E0E0; text-align: center;}
 
 td.subject input[type="checkbox"],
+.xans-board-listpackage .ec-base-table.typeList table td.chk .boardChk,
 input#notice0,
 input#is_post0 { width: 16px; height: 16px; border-color: #E0E0E0; border-radius: 2px; background: transparent;}
 td.subject input[type="checkbox"]:checked,
+.xans-board-listpackage .ec-base-table.typeList table td.chk .boardChk:checked,
 input#notice0:checked,
 input#is_post0:checked {
     background: url(/skin-skin1/SkinImg/img/checkbox_on.svg) no-repeat center;

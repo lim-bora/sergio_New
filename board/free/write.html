@@ -53,10 +53,10 @@
                         {$form.content}
                     </td>
                 </tr>
-                <tr class="ucc">
-                    <th scope="row">UCC URL</th>
-                    <td>{$form.ucc}</td>
-                </tr>
+<!--                <tr class="ucc">-->
+<!--                    <th scope="row">UCC URL</th>-->
+<!--                    <td>{$form.ucc}</td>-->
+<!--                </tr>-->
             </tbody>
 
             <tbody class="{$config.use_attach|display}">
@@ -83,7 +83,7 @@
             </tbody>
 
             <tbody>
-                <tr class="{$config.use_password|display}">
+                <tr class="{$config.use_password|display} displaynone">
                     <th scope="row">비밀번호</th>
                     <td>{$form.password} <span class="{$password_rule_help_display|display} txtInfo">(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)</span></td>
                 </tr>

@@ -195,10 +195,10 @@ body.activeAside #header .top_nav {display: none !important;}
 
 /* 하단 쇼핑몰정보 */
 #footer .inner .bt_info .title {font-size:14px;font-weight:700;color:#1a1a1a;line-height:2;margin-bottom:10px;}
-#footer .inner .bt_info .bt_info_list {display:flex;flex-wrap:wrap;justify-content:flex-start;max-width:350px;font-size:11px;font-weight:400;color:#000;line-height:18px;}
+#footer .inner .bt_info .bt_info_list {display:inline-flex;flex-wrap:wrap;justify-content:flex-start;max-width:350px;font-size:11px;font-weight:400;color:#000;line-height:18px;}
 #footer .inner .bt_info .bt_info_list a {font-size:10px;font-weight:400;color:#747474;line-height:1.5;}
 #footer .inner .bt_info .bt_info_list > div {margin:0 10px 0 0;}
-#footer .inner .bt_info .bt_info_list > div.bt_copyright {margin-top: 8px;}
+#footer .inner .bt_info .bt_info_list > div.bt_copyright {line-height:12px; margin-top: 8px;}
 
 /* 하단 카피라이트 */
 #footer .inner .bt_wrap2 .bt_copyright {font-size:12px;font-weight:400;color:#a8a8a8;line-height:1.6;}
@@ -301,7 +301,7 @@ body.activeAside #header .top_nav {display: none !important;}
 	#footer .inner .bt_bank .bt_txt02 {font-size:13px;line-height:1.6;}
 	#footer .inner .bt_info {order:1;margin:16px 0 0 0;}
 	#footer .inner .bt_info .title {margin-bottom:10px;font-size:16px;}
-	#footer .inner .bt_info .bt_info_list {line-height:1.5;font-size:10px;word-break:keep-all;}
+	#footer .inner .bt_info .bt_info_list {line-height:1.5;font-size:10px !important;word-break:keep-all;}
 	#footer .inner .bt_escrow {margin-top:40px;margin-bottom:0;}
 	#footer .inner .bt_escrow a span {font-size:11px;width:auto;}
 	#footer .inner .bt_escrow a img {height:30px;}

@@ -77,24 +77,26 @@
                     $deny_access_url = /index.html
                 -->
                 <tr style="{$list_bg_color} {$list_char_color}" class="{$block_target_class}" {$block_data_attr}>
-                    <td class="chk">{$checkbox}<span class="RW">{$notice_icon}</span></td>
+<!--                    <td class="chk"><span class="RW">{$notice_icon}</span></td>-->
                     <td class="subject left txtBreak">
+                        {$checkbox}
                         <span class="badge">{$notice_icon}</span> <strong>{$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}" class="{$block_content_class}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_mobile}{$icon_new}{$icon_hit}</strong>
                     </td>
                     <td class="{$category_display|display}">{$category_name}</td>
-                    <td>{$member_icon}{$writer}</td>
-                    <td class="{$date_display|display}">{$write_date}</td>
+                    <td class="displaynone">{$member_icon}{$writer}</td>
+                    <td class="{$date_display|display} kor-Cap">{$write_date}</td>
                     <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
                     <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점"></td>
                 </tr>
                 <tr style="{$list_bg_color} {$list_char_color}" class="{$block_target_class}" {$block_data_attr}>
-                    <td class="chk">{$checkbox}<span class="RW">{$notice_icon}</span></td>
+<!--                    <td class="chk">{$checkbox}<span class="RW">{$notice_icon}</span></td>-->
                     <td class="subject left txtBreak">
+                        {$checkbox}
                         <span class="badge">{$notice_icon}</span> <strong>{$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}" class="{$block_content_class}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_mobile}{$icon_new}{$icon_hit}</strong>
                     </td>
                     <td class="{$category_display|display}">{$category_name}</td>
-                    <td>{$member_icon}{$writer}</td>
-                    <td class="{$date_display|display}">{$write_date}</td>
+                    <td class="displaynone">{$member_icon}{$writer}</td>
+                    <td class="{$date_display|display} kor-Cap">{$write_date}</td>
                     <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
                     <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점"></td>
                 </tr>
