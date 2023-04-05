@@ -81,13 +81,13 @@
         </div>
 
         <div class="ec-base-button gBottom">
-            <span class="gLeft">
-                <a href="#none" onclick="{$action_write}" class="btnSubmitFix sizeM" style="background-color: #000!important;color: #fff!important;font-weight: 400;">등록</a>
+            <span class="gLeft" style="display: flex; gap: 8px;">
+                <a href="{$link_board_list}" class="btnNormalFix sizeM" style="background-color: #fff!important;color: #000!important;font-weight: 400;border: 1px solid #000;flex: 1;margin: 0;">취소</a>
+                <a href="#none" onclick="{$action_write}" class="btnSubmitFix sizeM" style="background-color: #000!important;color: #fff!important;font-weight: 400;flex: 1;margin: 0;">등록</a>
             </span>
             <span class="gRight">
-                <span class="{$config.is_admin|display} hasBtn"><a href="#none" class="btnNormalFix sizeM" onclick="{$action_comment_admin}">관리자 답변보기</a></span>
 <!--                <a href="{$link_board_list}" class="btnNormalFix sizeM">목록</a>-->
-                <a href="{$link_board_list}" class="btnNormalFix sizeM">취소</a>
+                <span class="{$config.is_admin|display} hasBtn"><a href="#none" class="btnNormalFix sizeM" onclick="{$action_comment_admin}">관리자 답변보기</a></span>
             </span>
         </div>
     </div>

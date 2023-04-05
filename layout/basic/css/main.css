@@ -73,6 +73,7 @@
 
 /* 인스타그램 */
 #instagramWidgetManual{height: 350px;}
+/*#instagramWidgetManual .instaPreview #follow{display: none;}*/
 /*#instagramWidgetManual #slideshow-main-container{padding: 0!important;}*/
 /*#instagramWidgetManual #grid-main-container div#slideshow-header #follow{display: none;}*/
 
