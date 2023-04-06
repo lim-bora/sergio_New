@@ -157,10 +157,10 @@
 .project4 .cnt5 .og_product_here{
     margin-right: 10px;
 }
-.ec-base-product,
-.ec-base-product .prdList > li,
-.ec-base-product .prdList .prdList__item,
-.ec-base-product .prdList{
+.project4 .ec-base-product,
+.project4 .ec-base-product .prdList > li,
+.project4 .ec-base-product .prdList .prdList__item,
+.project4 .ec-base-product .prdList{
     margin: 0;
 }
 .project4 .cnt6 .bg{
@@ -183,7 +183,7 @@
 .project4 .cnt7 .og_product_here .xans-project-productlist{
     padding-bottom: 64px;
 }
-.swiper-container-horizontal>.swiper-scrollbar{
+.project4 .swiper-container-horizontal>.swiper-scrollbar{
     height: 1px;
     width: 100%;
     left: 0;
