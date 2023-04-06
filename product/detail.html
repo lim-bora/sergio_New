@@ -151,8 +151,8 @@ $swipe = yes
 
             <div class="productSet additional" module="product_addproduct">
                 <!--
-$use_per_add_option = yes
--->
+                    $use_per_add_option = yes
+                    -->
                 <div class="title">
                     <h3>COLOR <span class="txtInfo"></span></h3><!--추가구성상품-->
                     <!--                    <a href="#self" class="toggle"><i aria-hidden="true" class="icon icoArrowBottom"></i>추가구성상품 닫기</a>-->
@@ -562,7 +562,7 @@ $default_option = yes
             </div>
             <p class="ec-base-help {$price_warning_class}">할인가가 적용된 최종 결제예정금액은 주문 시 확인할 수 있습니다.</p>
 
-            <div module="product_action" id="{$fixed_action_button}" class="productAction">
+            <div module="product_action" id="{$fixed_action_button}" class="productAction mhide">
                 <div id="ec-product-price-info" class="displaynone" ec-data-custom="{$disp_product_custom}" ec-data-price="{$product_price}"></div>
                 <div class="{$action_display|display} action_button">
                     <span class="sub_sold {$soldout_display|display}">품절</span>

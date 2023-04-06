@@ -177,13 +177,27 @@ $(document).ready(function(){
     });
 });
 //아코디언 해상도 크기에따라 위치변경
-$(window).resize(function(){
-    if (window.innerWidth < 1024) {  // 다바이스 크기가 1024이하일때
-        $('.detailToggle').insertAfter('#prdDetail')
-    }else{
-        $('.detailToggle').insertAfter('#fixedActionButton')
-    }
-}).resize();
+
+
+$(function() {
+     if (window.innerWidth < 1024) {  // 다바이스 크기가 1024이하일때
+         $('.detailToggle').insertAfter('#prdDetail')
+     }else{
+         $('.detailToggle').insertAfter('#fixedActionButton')
+     }
+
+    let flag = (window.innerWidth < 1024) ? 'a' : 'b';
+    let flag_chk;
+    let flag_start = 0;
+    $(window).resize(function(){
+        flag_chk = (window.innerWidth < 1024) ? 'a' : 'b';
+        if(flag !== flag_chk && flag_start == 0){
+            flag_start ++;
+            location.reload();
+        }
+    });
+});
+
 
 //옵션팝업 슬라이드업, 바디 스크롤방지
 $(window).resize(function(){
@@ -224,4 +238,25 @@ $(document).ready(function(){
             }
             fixScroll = scroll;
         });
+});
+
+$(document).ready(function(){
+    //추가구성상품 품절표시
+    $('.xans-product-addproduct .product > li').each(function(){
+        let $e = $(this),
+            $option = $e.find('.option option');
+        let optionLength = 0;
+        $option.each(function(){
+            let $e2 = $(this);
+            if($e2.val().indexOf('*') == -1){
+                optionLength = optionLength + 1;
+                if($e2.text().indexOf('품절') > -1){
+                    $e2.addClass('soldout');
+                }
+            }
+        });
+        if(optionLength == $option.filter('.soldout').length ){
+            $e.addClass('soldout');
+        }
+    });
 });
