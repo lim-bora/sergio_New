@@ -399,7 +399,7 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 
 
 	.xans-product-detail .imgArea .listImg ul { margin:0 -6px; }
-    .xans-product-detail .imgArea .listImg li { display:inline-block; width:80px; margin:0 6px; font-size:12px; line-height:14px; vertical-align:top; }
+    .xans-product-detail .imgArea .listImg li { display:inline-block; width:80px; margin:0 6px; font-size:12px; line-height:14px; vertical-align:top; float: left;}
     .xans-product-detail .imgArea .listImg li img { max-width:100%; cursor:pointer; height: 100%;}
     .xans-product-detail .imgArea .listImg button { position:absolute; top:0; width:30px; height:94px; font-size:0; line-height:0; color:transparent; border:1px solid #e3e3e3; box-sizing:border-box; }
     .xans-product-detail .imgArea .listImg .icon { border-color:#6d6d6d; }

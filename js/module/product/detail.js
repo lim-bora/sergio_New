@@ -220,7 +220,7 @@ $(document).ready(function(){
             }
             else {
                 $(".infoBox").removeClass("fix");
-                $(".infoBox").removeClass("sticky");
+                // $(".infoBox").removeClass("sticky");
             }
             fixScroll = scroll;
         });
