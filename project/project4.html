@@ -1,132 +1,130 @@
 <!--@layout(/layout/basic/layout.html)-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 <!--@css(/Ogam/css/project.css)-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <!--@js(/Ogam/js/project.js)-->
+<div class="project4">
+    <div module="Project_Package" class="section">
+        <section class="cnt1">
+            <div class="section1">
+                <strong class="rotate_txt">23 SS Collection</strong>
+                <h1><img src="/SkinImg/img/font_sergio.svg"/></h1>
+            </div>
+        </section>
+        <section class="cnt2">
+            <p>세르지오 타카니의 오리지널<br> 헤리티지가 담긴 테니스 웨어는<br>코트 위에서 독보적인 스타일을 선보입니다.</p>
+            <div class="section2">
+                <div class="flex_box"><img src="/SkinImg/img/project4_pic2.png" /><strong class="rotate_txt">New Launching</strong><img src="/SkinImg/img/project4_pic1.png" /></div>
+                <div class="bg">
+                    <p>세르지오 타키니의 테니스 웨어는<br>
+                        다양한 컬러와 디자인으로 구성되어 있습니다.<br>
+                        코트에서도 빛나는 스타일링으로<br>
+                        더욱 근사한 테니스 룩을 연출해보세요.</p>
+                </div>
+            </div>
+        </section>
+        <section class="cnt3">
+            <div class="bg">
+                <div class="bg_txt bg_txt1"><img src="/SkinImg/img/project4_bg_txt1.svg" /></div>
+                <div class="bg_txt bg_txt2"><img src="/SkinImg/img/project4_bg_txt2.svg" /></div>
+            </div>
+        </section>
+        <section id="og_menuCate_1" class="cnt4">
+            <div class="bg"><img src="/SkinImg/img/project4_bg4.png" /></div>
+            <div class="og_product_here"></div>
+        </section>
+        <section id="og_menuCate_2">
+            <div class="cnt5">
+                <div class="og_product_here"></div>
+                <div class="bg"><img src="/SkinImg/img/project4_bg5.png" /></div>
+            </div>
 
-<style>
-    .introBanner{display: none !important;} /* 작업 중 임시해제 */
-</style>
+        </section>
+        <section class="cnt6">
+            <div class="bg"></div>
+        </section>
+        <section id="og_menuCate_3" class="cnt7">
+            <div class="og_title_here"></div>
+            <div class="og_product_here"></div>
+        </section>
 
-
-<div module="Project_Package" class="section">
-
-    <!--@css(/css/module/product/project_package.css)-->
-
-    <div class="path" module="project_head">
-        <span>현재 위치</span>
-        <ol>
-            <li><a href="/">홈</a></li>
-            <li title="현재 위치">기획전</li>
-        </ol>
-    </div>
-
-    <div class="section title" module="product_headcategory">
-        <h2>{$title_text_or_image}</h2>
-    </div>
-
-
-    <div module="product_headcategory" class="product_top_image">{$top_image_tag}</div>
-
-
-
-    <section id="og_menuCate_1">
-        <div class="og_title_here"></div>
-        <div class="og_product_here">
-
+        <!-- 하단 영역 감추고 별도 처리 -->
+        <div class="section ec-base-tab typeMenu displaynone" id="og_menuCategory_list">
+            <ul class="menuCategory menu">
+                <li module="product_projectcategory" style="display:{$display};">
+                    <a href="#{$cate_id}" class="button">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
+                </li>
+            </ul>
         </div>
-    </section>
+        <div id="og_menuCatgory_list">
+            <div module="project_list" class="displaynone" id="og_menuCategory_item_{$cate_id}">
+                <!--
+                    $basket_result = /product/add_basket.html
+                    $basket_option = /product/basket_option.html
+                -->
+                <h3><span id="{$cate_id}"></span>{$category_name}</h3>
 
-    <section id="og_menuCate_2">
-        <div class="og_title_here"></div>
-        <div class="og_product_here">
-
-        </div>
-    </section>
-
-    <section id="og_menuCate_3">
-        <div class="og_title_here"></div>
-        <div class="og_product_here">
-
-        </div>
-    </section>
-
-
-
-    <!-- 하단 영역 감추고 별도 처리 -->
-    <div class="section ec-base-tab typeMenu displaynone" id="og_menuCategory_list">
-        <ul class="menuCategory menu">
-            <li module="product_projectcategory" style="display:{$display};">
-                <a href="#{$cate_id}" class="button">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
-            </li>
-        </ul>
-    </div>
-    <div id="og_menuCatgory_list">
-        <div module="project_list" class="displaynone" id="og_menuCategory_item_{$cate_id}">
-            <!--
-                $basket_result = /product/add_basket.html
-                $basket_option = /product/basket_option.html
-            -->
-            <h3><span id="{$cate_id}"></span>{$category_name}</h3>
-
-            <div module="project_productlist" class="ec-base-product">
-                <ul class="prdList grid4">
-                    <li id="anchorBoxId_{$product_no}">
-                        <div class="prdList__item">
-                            <div class="thumbnail">
-                                <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" loading="lazy"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                                <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button></div>
-                                <div class="badge"><span></span></div>
-                                <div class="icon__box">
-                                    <span class="wish">{$list_wish_icon}WISH</span>
-                                    <span class="cart">{$basket_icon}ADD</span>
-                                    <span class="option">{$option_preview_icon}OPTION</span>
+                <div module="project_productlist" class="ec-base-product swiper">
+                    <ul class="prdList swiper-wrapper">
+                        <li id="anchorBoxId_{$product_no}" class="swiper-slide">
+                            <div class="prdList__item">
+                                <div class="thumbnail">
+                                    <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" loading="lazy"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                                    <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button></div>
+                                    <div class="badge"><span></span></div>
+                                    <div class="icon__box">
+                                        <span class="wish">{$list_wish_icon}WISH</span>
+                                        <span class="cart">{$basket_icon}ADD</span>
+                                        <span class="option">{$option_preview_icon}OPTION</span>
+                                    </div>
+                                    <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
                                 </div>
-                                <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
-                            </div>
-                            <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
-                                <div class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
-                                <ul module="project_ListItem" class="spec">
-                                    <li class="{$item_display|display}">
-                                        <strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}
-                                    </li>
-                                    <li class="{$item_display|display}">
-                                        <strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li id="anchorBoxId_{$product_no}">
-                        <div class="prdList__item">
-                            <div class="thumbnail">
-                                <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" loading="lazy"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                                <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button></div>
-                                <div class="badge"><span></span></div>
-                                <div class="icon__box">
-                                    <span class="wish">{$list_wish_icon}WISH</span>
-                                    <span class="cart">{$basket_icon}ADD</span>
-                                    <span class="option">{$option_preview_icon}OPTION</span>
+                                <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
+                                    <div class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
+                                    <ul module="project_ListItem" class="spec">
+                                        <li class="{$item_display|display}">
+                                            <strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}
+                                        </li>
+                                        <li class="{$item_display|display}">
+                                            <strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
                             </div>
-                            <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
-                                <div class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
-                                <ul module="project_ListItem" class="spec">
-                                    <li class="{$item_display|display}">
-                                        <strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}
-                                    </li>
-                                    <li class="{$item_display|display}">
-                                        <strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}
-                                    </li>
-                                </ul>
+                        </li>
+                        <li id="anchorBoxId_{$product_no}" class="swiper-slide">
+                            <div class="prdList__item">
+                                <div class="thumbnail">
+                                    <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" loading="lazy"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                                    <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button></div>
+                                    <div class="badge"><span></span></div>
+                                    <div class="icon__box">
+                                        <span class="wish">{$list_wish_icon}WISH</span>
+                                        <span class="cart">{$basket_icon}ADD</span>
+                                        <span class="option">{$option_preview_icon}OPTION</span>
+                                    </div>
+                                    <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
+                                </div>
+                                <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
+                                    <div class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
+                                    <ul module="project_ListItem" class="spec">
+                                        <li class="{$item_display|display}">
+                                            <strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}
+                                        </li>
+                                        <li class="{$item_display|display}">
+                                            <strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
             </div>
         </div>
+        <!-- //하단 영역 감추고 별도 처리 -->
+
     </div>
-    <!-- //하단 영역 감추고 별도 처리 -->
-
-
-
 </div>

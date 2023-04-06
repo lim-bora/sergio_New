@@ -1,5 +1,372 @@
-/* project2 */
-
 /* project3 */
 
 /* project4 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.project4 .rotate_txt{
+    font-size: 20px;
+    font-weight: 300;
+    transform: rotate(-90deg);
+}
+.project4 .cnt1{
+    padding-bottom: 206px;
+}
+.project4 .section1{
+    position: relative;
+    background: url("/SkinImg/img/project4_bg1.png") no-repeat top center / cover;
+    max-width: 80%;
+    height: 1040px;
+    border-radius: 0 0 500px 0;
+    box-sizing: border-box;
+}
+.project4 .cnt1 .rotate_txt{
+    position: absolute;
+    right: -110px;
+    top: 70px;
+}
+.project4 .section1 h1{
+    position: absolute;
+    bottom: -118px;
+    right: 0;
+    padding-left: 118px;
+}
+
+.project4 .cnt2{
+    position: relative;
+    padding-bottom: 188px;
+}
+.project4 .cnt2 > p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+.project4 .cnt2 > p br:first-of-type{
+    display: none;
+}
+.project4 .cnt2 .bg{
+    background: url("/SkinImg/img/project4_bg2.png") no-repeat bottom center / cover;
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+.project4 .cnt2 .bg p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 64px;
+    line-height: 30px;
+}
+.project4 .cnt2 .bg p br:first-of-type,
+.project4 .cnt2 .bg p br:nth-of-type(3){
+    display: none;
+}
+.flex_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.project4 .cnt2 .flex_box{
+    position: relative;
+    margin-top: 148px;
+}
+.project4 .cnt2 .flex_box img{
+    width: 40vw;
+}
+.project4 .cnt2 .rotate_txt{
+    white-space: nowrap;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+}
+.project4 .cnt3{
+    padding: 25% 0 28%;
+}
+.project4 .cnt3 .bg{
+    position: relative;
+    background: url("/SkinImg/img/project4_bg3.png") no-repeat bottom center / cover;
+    width: 100vw;
+    padding-top: 70%;
+}
+.project4 .cnt3 .bg .bg_txt{
+    position: absolute;
+}
+.project4 .cnt3 .bg .bg_txt1{
+    top: -10%;
+    left: 90px;
+    max-width: 1090px;
+    z-index: -1;
+    padding-right: 30%;
+}
+.project4 .cnt3 .bg .bg_txt2{
+    bottom: -25%;
+    right: 90px;
+    max-width: 1375px;
+    padding-left: 20%;
+}
+.project4 .cnt4,
+.project4 .cnt5{
+    display: flex;
+    max-width: 1440px;
+    padding: 132px 60px;
+    margin: 0 auto;
+}
+.project4 .cnt4 > div,
+.project4 .cnt5 > div{
+    width: 50%;
+}
+.project4 .cnt4 .bg img,
+.project4 .cnt5 .bg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.project4 .cnt4 .ec-base-product ul,
+.project4 .cnt5 .ec-base-product ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 49px;
+    column-gap: 10px;
+}
+.project4 #og_menuCate_2{
+    background-color: #D7D5EC;
+}
+.project4 .cnt4{
+    padding-top: 0;
+}
+/*.project4 .cnt4 ul li:nth-of-type(1) {
+    grid-column: 1 / 3;
+    width: 50%;
+}*/
+.project4 .cnt4 .og_product_here{
+    margin-left: 10px;
+}
+
+.project4 .cnt5 .og_product_here{
+    margin-right: 10px;
+}
+.ec-base-product,
+.ec-base-product .prdList > li,
+.ec-base-product .prdList .prdList__item,
+.ec-base-product .prdList{
+    margin: 0;
+}
+.project4 .cnt6 .bg{
+    background: url("/SkinImg/img/project4_bg6.png") no-repeat top center / cover;
+    width: 100vw;
+    padding-top: 70%;
+    min-height: 336px;
+}
+.project4 .cnt7{
+    max-width: 1440px;
+    padding: 104px 60px 104px 60px;
+    margin: 0 auto;
+}
+.project4 .cnt7 .og_title_here{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+.project4 .cnt7 .og_product_here .xans-project-productlist{
+    padding-bottom: 64px;
+}
+.swiper-container-horizontal>.swiper-scrollbar{
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+@media all and (max-width:1440px){
+    .project4 .cnt2 .bg{
+        height: 400px;
+    }
+}
+
+@media all and (max-width:1024px) {
+    .project4 .section1{
+        max-width: 90%;
+        min-height: 430px;
+        height: 70vw;
+        border-radius: 0 0 300px 0;
+    }
+    .project4 .section1 h1{
+        bottom: -100px;
+    }
+    .project4 .cnt4 .bg img{
+        max-height: 80vh;
+    }
+    .project4 .cnt4{
+        flex-direction: column;
+    }
+    .project4 .cnt5{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .project4 .cnt4 > div, .project4 .cnt5 > div{
+        width: 100%;
+    }
+    .project4 .cnt4 ul li,
+    .project4 .cnt5 ul li,
+    .project4 .cnt7 ul li {
+        width: 39% !important;
+    }
+    .project4 .cnt4 .ec-base-product ul, .project4 .cnt5 .ec-base-product ul{
+        display: flex;
+        column-gap: 8px;
+    }
+    .project4 .cnt4 .ec-base-product ul{
+        margin-left: 0;
+    }
+    .project4 .cnt4{
+        padding: 80px 0 0 0;
+    }
+    .project4 .cnt4 .og_product_here{
+        margin-left: 0;
+    }
+    .project4 .cnt4 .ec-base-product,
+    .project4 .cnt5 .ec-base-product,
+    .project4 .cnt7 .ec-base-product{
+        padding: 64px 24px 64px 0;
+        margin: 0 20px 64px;
+    }
+    .project4 .cnt6 .bg{
+        padding-top: 0;
+    }
+    .project4 .cnt7{
+        padding: 64px 20px;
+    }
+    .project4 .cnt7 .og_title_here{
+        margin-bottom: 24px;
+    }
+    .project4 .cnt7 .ec-base-product{
+        padding-top: 0;
+        margin: 0;
+    }
+    .project4 .og_title_here h3{
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+
+}
+
+@media all and (max-width:768px){
+    .project4 .cnt4{
+        padding-top: 80px;
+    }
+    .project4 .section1{
+        border-radius: 0 0 100px 0;
+    }
+    .project4 .section1 h1{
+        bottom: -8%;
+        padding-left: 20%;
+    }
+    .project4 .cnt1{
+        padding-bottom: 96px;
+    }
+    .project4 .cnt1 .rotate_txt{
+        font-size: 10px;
+        right: -50px;
+        top: 40px;
+    }
+    .project4 .cnt2{
+        padding-bottom: 50%;
+    }
+    .project4 .cnt2 > p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .project4 .cnt2 > p br:first-of-type{
+        display: block;
+    }
+    .flex_box{
+        display: block;
+    }
+    .project4 .cnt2 .flex_box{
+        margin-top: 80px;
+    }
+    .project4 .cnt2 .flex_box img{
+        width: 100vw;
+    }
+    .project4 .cnt2 .flex_box img:nth-of-type(2){
+        margin-top: 64px;
+    }
+    .project4 .cnt2 .rotate_txt{
+        display: block;
+        transform: rotate(0deg);
+        position: initial;
+        text-align: center;
+        padding: 32px 0;
+        font-size: 16px;
+        line-height: 10px;
+        background: #fff;
+    }
+    .project4 .cnt2 .bg{
+        background: url("/SkinImg/img/project4_bg2_mo.png") left bottom / cover;
+        height: 250vw;
+    }
+    .project4 .cnt2 .bg p{
+        font-size: 14px;
+        line-height: 24px;
+        padding-bottom: 17%;
+    }
+    .project4 .cnt2 .bg p br:first-of-type,
+    .project4 .cnt2 .bg p br:nth-of-type(3){
+        display: block;
+    }
+
+    .project4 .cnt3{
+        padding-top: 120px;
+    }
+    .project4 .cnt3 .bg{
+        min-height: 400px;
+        padding: 0;
+        background-position: right center;
+    }
+    .project4 .cnt3 .bg .bg_txt1{
+        left: 20px;
+        top: -15%;
+        padding-right: 25%;
+    }
+    .project4 .cnt3 .bg .bg_txt2{
+        right: 20px;
+        bottom: -32%;
+        padding-left: 20px;
+    }
+    .project4 .cnt4 ul li,
+    .project4 .cnt5 ul li,
+    .project4 .cnt7 ul li {
+        width: 49% !important;
+    }
+
+}
+@media all and (max-width:500px){
+    .project4 .cnt3{
+        padding-bottom: 32%;
+    }
+    .project4 .cnt3 .bg .bg_txt1{
+        top: -10%;
+    }
+    .project4 .cnt3 .bg .bg_txt2{
+        bottom: -28%;
+    }
+
+    .project4 .cnt4 .bg img,
+    .project4 .cnt5 .bg img{
+        max-height: 600px;
+    }
+}
