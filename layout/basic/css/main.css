@@ -72,10 +72,10 @@
 
 
 /* 인스타그램 */
-#instagramWidgetManual{height: 350px;}
-/*#instagramWidgetManual .instaPreview #follow{display: none;}*/
-/*#instagramWidgetManual #slideshow-main-container{padding: 0!important;}*/
-/*#instagramWidgetManual #grid-main-container div#slideshow-header #follow{display: none;}*/
+.instagramST{margin-top: 74px;text-align: center;padding-bottom: 140px;}
+.instagramST h3{font-weight: 500;font-size: 34px;line-height: 44px;padding-bottom: 32px;}
+.instagramST .instaBox .insta{display: grid;grid-template-columns: repeat(4, 1fr);grid-gap: 8px;}
+
 
 /* 이미지&텍스트갤러리 */
 .main_image_text_gallery {margin:0 auto 120px;width:92%;padding:0;}
@@ -260,8 +260,10 @@
 
 
 	/* 인스타그램 */
-	#instagramWidgetManual{height: 600px;}
-
+	.instagramST{margin-top: 42px;padding-bottom: 109px;}
+	.instagramST h3{font-size: 22px;line-height: 24px;padding-bottom: 24px;}
+	.instagramST .instaBox .insta{display: grid; grid-template-rows: 1fr 1fr;grid-template-columns: 1fr 1fr; grid-gap: 5px;}
+	.instagramST .instaBox .insta a{cursor: pointer;}
 	/* 이미지&텍스트갤러리 */
 	.main_image_text_gallery {margin:0 auto 80px;}
 	.main_image_text_gallery .main_title {margin-bottom:20px;}
