@@ -260,3 +260,27 @@ $(document).ready(function(){
         }
     });
 });
+
+
+// 상품고시정보 size 탭 클릭시 보이는 코드
+$('.detailToggle ul li.d_info').on('click',function() {
+    let infoTxt = $('#prdDetail .cafe24-info-box');
+
+    // sizeSpec.find('h2').text('SIZE');
+    // infoTxt.find('h2').text('PRODUCT INFORMATION');
+
+    $('.detailToggle ul li.d_info .d_tab').append(infoTxt);
+
+    infoTxt.css('display','block');
+
+});
+$('.detailToggle ul li.d_size').on('click',function() {
+    let sizeSpec = $('#prdDetail .cafe24-sizespec-box');
+
+    // sizeSpec.find('h2').text('SIZE');
+    // infoTxt.find('h2').text('PRODUCT INFORMATION');
+
+    $('.detailToggle ul li.d_size .d_tab').append(sizeSpec);
+
+    sizeSpec.css('display','block');
+});
