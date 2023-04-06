@@ -266,10 +266,7 @@ $(document).ready(function(){
 $('.detailToggle ul li.d_info').on('click',function() {
     let infoTxt = $('#prdDetail .cafe24-info-box');
 
-    // sizeSpec.find('h2').text('SIZE');
-    // infoTxt.find('h2').text('PRODUCT INFORMATION');
-
-    $('.detailToggle ul li.d_info .d_tab').append(infoTxt);
+    $('.detailToggle ul li.d_info > div > span').append(infoTxt);
 
     infoTxt.css('display','block');
 
@@ -277,10 +274,7 @@ $('.detailToggle ul li.d_info').on('click',function() {
 $('.detailToggle ul li.d_size').on('click',function() {
     let sizeSpec = $('#prdDetail .cafe24-sizespec-box');
 
-    // sizeSpec.find('h2').text('SIZE');
-    // infoTxt.find('h2').text('PRODUCT INFORMATION');
-
-    $('.detailToggle ul li.d_size .d_tab').append(sizeSpec);
+    $('.detailToggle ul li.d_size > div > span').append(sizeSpec);
 
     sizeSpec.css('display','block');
 });
