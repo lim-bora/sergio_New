@@ -176,9 +176,9 @@ $(document).ready(function(){
         $(this).parent("li").siblings().find("span").removeClass('rotateUp');
     });
 });
+
+
 //아코디언 해상도 크기에따라 위치변경
-
-
 $(function() {
      if (window.innerWidth < 1024) {  // 다바이스 크기가 1024이하일때
          $('.detailToggle').insertAfter('#prdDetail')
