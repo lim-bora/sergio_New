@@ -62,4 +62,7 @@ $(function(){
             $('.menuCategory.menu').css({"height":cul});
         }
     };
+
+    if($('ul.prdList').length === 0 )
+        $('div.noProduct').addClass('active');
 });

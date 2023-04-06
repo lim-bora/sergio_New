@@ -1,5 +1,8 @@
 select {border: none !important;}
 
+div.noProduct:not(.active) {display: none;}
+div.noProduct.active { width: 100%; text-align: center; padding: 80px 0 0;}
+
 .xans-product-menupackage { margin:0 0 27px; }
 .xans-product-menupackage .title { min-height:30px; margin:10px 0 20px; }
 .xans-product-menupackage .title .banner { margin:0 0 20px; }

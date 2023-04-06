@@ -83,7 +83,6 @@ $(function () {
     $('.xans-product-searchfilterlist .xans-product-filterform li').each(function () {
         for(let i=0; i< $(this).length; i++){
             let filterTxt =  $(this).find('button').text();
-            console.log(filterTxt);
             switch (filterTxt) {
                 case 'BLACK' :
                     $(this).prepend('<span class="colorchip black"></span>');

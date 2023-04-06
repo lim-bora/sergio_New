@@ -341,17 +341,17 @@
 @media screen and (min-width:1025px) {
   #searchContent {display: flex !important; align-items: center; gap:30px; position: relative; height: 40px; margin-top: 46px; padding-right: 110px;}
   #searchContent tr td { position: absolute; top: 40px; left:0; width: 100%; padding: 40px 0; background-color: #FFF; z-index: 2;}
-  #searchContent tr .button li { width:104px; margin-right: 120px; word-break:break-all; word-wrap:break-word; vertical-align:top; }
+  #searchContent tr .button li { margin-right: 80px; word-break:break-all; word-wrap:break-word; vertical-align:top; }
   #searchContent tr .button li:hover button {color: #888888;}
   #searchContent .searchArea tbody { flex-direction: row; gap: 30px; }
   #searchContent tr .content {width:auto; flex-direction: column; gap:16px; flex-wrap: wrap; height: 104px; align-content: flex-start;}
-  #searchContent tr .button.full li { display:inline-block; width: 160px;}
+  #searchContent tr .button.full li { display:inline-block; width: 130px;}
   .xans-product-normalmenu {margin-left: auto !important;}
 
   /* 카테고리 */
   .cateTitle {display:block; height:40px; line-height:40px; cursor: pointer;}
   .menuCategory.menu {display: flex; gap: 16px; position: absolute; top: 40px; width: 100%; height: 184px; z-index: 2; padding: 40px 0; box-sizing:border-box; background-color: #FFF; flex-direction: column; align-content: flex-start; flex-wrap: wrap;}
-  .menuCategory.menu li {width: 160px; height: 14px; margin-right: 120px;}
+  .menuCategory.menu li {width: 130px; height: 14px; margin-right: 80px;}
   .menuCategory.menu li a {display:block; height: 14px; font-size: 12px; line-height: 14px;}
 
   #searchContent tr .check li label:hover {color: #888888;}
