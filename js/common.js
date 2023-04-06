@@ -69,4 +69,9 @@ $(function(){
     globalBuyBtnScrollFunc();
 });
 
+var OG_PAGE_CHK = $('meta[name="path_role"]').attr("content");
+if(OG_PAGE_CHK == "PRODUCT_PROJECT"){
+    $('#container #contents').css('width', '100%')
+}
+
 
