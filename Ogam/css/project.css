@@ -49,7 +49,8 @@
     font-weight: 500;
     text-align: center;
 }
-.project4 .cnt2 > p br:first-of-type{
+.project4 .cnt2 > p br:first-of-type,
+.project4 .cnt2 > p br:nth-of-type(3){
     display: none;
 }
 .project4 .cnt2 .bg{
@@ -110,7 +111,6 @@
     top: -12%;
     left: 0;
     max-width: 1069px;
-    z-index: -1;
     padding-right: 25%;
 }
 .project4 .cnt3 .bg .bg_txt2{
@@ -297,8 +297,12 @@
         font-size: 14px;
         line-height: 24px;
     }
-    .project4 .cnt2 > p br:first-of-type{
+    .project4 .cnt2 > p br:first-of-type,
+    .project4 .cnt2 > p br:nth-of-type(3){
         display: block;
+    }
+    .project4 .cnt2 > p br:nth-of-type(2){
+        display: none;
     }
     .flex_box{
         display: block;
