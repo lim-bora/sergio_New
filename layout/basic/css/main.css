@@ -16,7 +16,7 @@
 /* 메인키비주얼 텍스트 */
 .mainbanne01 .txtBox{position: absolute;bottom:100px;left: 50%; transform: translateX(-50%);text-align: center; width: 92%;}
 .mainbanne01 .txtBox h3{font-weight: 500;font-size: 54px;line-height: 64px;color: #FFFFFF;}
-.mainbanne01 .txtBox .mainBannerSub{padding: 16px 0 32px;color: #fff;}
+.mainbanne01 .txtBox .mainBannerSub{padding: 16px 0 32px;color: #fff;font-size: 18px;}
 .mainbanne01 .txtBox .mainBannerSub p{font-weight: 300;font-size: 18px;line-height: 28px;color: #FFFFFF;}
 .mainbanne01 .txtBox span{width: 233px;height: 48px;border: 1px solid #FFFFFF;border-radius: 2px;color: #fff;line-height: 48px;text-align: center;display: block; margin: 0 auto;}
 
@@ -246,7 +246,7 @@
 	/* 중간 풀배너01 */
 	.full_landingBanner .txtSection{width: 92%;padding: 32px 0;}
 	.full_landingBanner .txtSection h2{font-size: 22px;line-height: 32px;}
-	.full_landingBanner .txtSection span{margin: 16px 0;font-size: 14px;line-height: 20px;}
+	.full_landingBanner .txtSection span{margin: 16px 0;font-size: 14px;line-height: 20px;font-size: 12px;}
 	.full_landingBanner .txtSection a.landingBtn{width: 160px;height: 36px;line-height: 35px;}
 
 	/* 중간 풀배너02 */
@@ -336,7 +336,7 @@
 	.mainbanne01 .txtBox{bottom:80px;    width: 88%;}
 	.mainbanne01 .txtBox h3{font-size: 32px;line-height: 42px;}
 	.mainbanne01 .txtBox .mainBannerSub{padding: 8px 0 24px;}
-	.mainbanne01 .txtBox .mainBannerSub p{font-weight: 400;font-size: 14px;line-height: 20px;}
+	.mainbanne01 .txtBox .mainBannerSub p{font-weight: 400;font-size: 14px;line-height: 20px;font-size: 12px;}
 	.mainbanne01 .txtBox span{width: 160px;height: 36px; line-height: 36px;}
 
 	/* 메인 타이틀 */
