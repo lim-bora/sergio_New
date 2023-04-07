@@ -246,8 +246,8 @@
 	/* 중간 풀배너01 */
 	.full_landingBanner .txtSection{width: 92%;padding: 32px 0;}
 	.full_landingBanner .txtSection h2{font-size: 22px;line-height: 32px;}
-	.full_landingBanner .txtSection span{margin: 16px 0;font-size: 14px;line-height: 20px;font-size: 12px;}
-	.full_landingBanner .txtSection a.landingBtn{width: 160px;height: 36px;line-height: 35px;}
+	.full_landingBanner .txtSection span{margin: 16px 0;font-size: 14px;line-height: 20px;}
+	.full_landingBanner .txtSection a.landingBtn{width: 160px;height: 36px;line-height: 35px;font-size: 12px;}
 
 	/* 중간 풀배너02 */
 	.full_landingBanner.full02 .txtSection h2{padding:0 0 16px;font-weight: 500;font-size: 22px;line-height: 32px;}
@@ -336,8 +336,8 @@
 	.mainbanne01 .txtBox{bottom:80px;    width: 88%;}
 	.mainbanne01 .txtBox h3{font-size: 32px;line-height: 42px;}
 	.mainbanne01 .txtBox .mainBannerSub{padding: 8px 0 24px;}
-	.mainbanne01 .txtBox .mainBannerSub p{font-weight: 400;font-size: 14px;line-height: 20px;font-size: 12px;}
-	.mainbanne01 .txtBox span{width: 160px;height: 36px; line-height: 36px;}
+	.mainbanne01 .txtBox .mainBannerSub p{font-weight: 400;font-size: 14px;line-height: 20px;font-size: 14px;}
+	.mainbanne01 .txtBox span{width: 160px;height: 36px; line-height: 36px;font-size: 12px;}
 
 	/* 메인 타이틀 */
 	.main_title .main_title_txt02 {margin-top:8px;}
