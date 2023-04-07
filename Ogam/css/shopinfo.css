@@ -237,6 +237,7 @@
     }
     .new_member .new_M .new_M_num span {
         font-size: 48px;
+        line-height: 14px;
     }
     .new_member .new_M .new_M_num p{
         font-size: 22px;
