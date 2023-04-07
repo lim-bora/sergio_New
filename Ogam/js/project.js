@@ -59,6 +59,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
         initSwiper();
     });
 
+    const swiper = new Swiper(".section5 .project3Swiper", {
+        slidesPerView: "auto",
+        watchOverflow : true,
+        resistance : false,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+
 });
 
 

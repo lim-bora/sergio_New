@@ -8,8 +8,10 @@
     .project3 .prdListW .ec-base-product .prdList .prdList__item,
     .project3 .prdListW .ec-base-product .prdList .icon {margin: 0;}
     .project3 .ec-base-product .prdList .icon__box {display: none;}
-    .project3 .prdListW .ec-base-product .prdList {margin: 0; display: flex; flex-direction: column; gap: 80px;}
+    .project3 .prdListW .ec-base-product .prdList {margin: 0; display: flex; gap: 4.2vw;}
+    .project3 .section2 .ec-base-product .prdList {flex-direction: column;}
     .project3 .prdListW .ec-base-product .prdList > li { width: auto; margin: 0;}
+    .project3 .prdListW .ec-base-product .prdList .thumbnail {height: 23vw;}
     .project3 .prdListW .ec-base-product .prdList .description {padding: 0 16px;}
     .project3 .prdListW .ec-base-product .prdList .description .name a span,
     .project3 .prdListW .ec-base-product .prdList .spec span {color: #FFF !important;}
@@ -24,35 +26,56 @@
     .project3 .section2_bg {width: 100vw; }
     .project3 .section2_bg > img {width: 100vw;}
     .project3 .section2 > img {position: absolute; top:3.4%; width: 100%; padding-left: 42%;}
-    .project3 .section2 .og_product_here {position: absolute; top:12.3%; left: 28.5%; z-index: 2;}
+    .project3 .section2 .og_product_here {position: absolute; top:12.3%; right: 53%; z-index: 2;}
 
     .project3 .section3 {position: relative; margin-top: 6.6%;}
-    .project3 .section3 > img {position: absolute; width: 100vw; padding-right: 15.2%; z-index:1;}
+    .project3 .section3 > img {width: 100vw; padding-right: 15.2%; z-index:1;}
+    .project3 .section3 p {display: block; top:60%; left:7.8%; color:#747474; z-index: 1; font-size: 16px; line-height: 26px; font-weight:500; text-align: right;}
     .project3 .section3 .section3_bg {width: 100vw; padding-top: 23.5%;}
     .project3 .section3 .section3_bg > img {width: 100%; }
-    .project3 .section3 .og_product_here {position: absolute; bottom: 0; z-index: 2}
+    .project3 .section3 .og_product_here {position: absolute; left:27.2%; bottom: 7.4%; z-index: 2;}
 
     .project3 .section4 {background-color: #ECECEC; padding: 7.3% 12.5%;}
     .project3 .section4 > img {width: 100%;}
 
-    .project3 .section5 { max-width:1440px; margin: 104px auto 0 auto ;}
+    .project3 .section5 { max-width:1440px; margin: 104px auto 0 auto ; overflow: hidden;}
     .project3 .section5 h3 {font-size: 20px; line-height: 22px; font-weight: 500;}
+    .project3 .section5 .swiper-container-horizontal>.swiper-scrollbar {position: relative; height: 1px;}
 
-    /* 임시 제거 */
-    /*.project3 .prdListW .ec-base-product .prdList {display: none;}*/
+
+
+    @media all and (min-width:768px) {
+        .project3 .section3 > img {position: absolute;}
+        .project3 .section3 p {position: absolute; }
+    }
 
     @media all and (max-width:1024px) {
         .project3 .section1 .main_text {padding: 48px 16px;}
         .project3 .section1 .main_text h2 {font-size: 28px; line-height: 34px;}
         .project3 .section1 .main_text p {font-size: 14px; line-height: 24px; margin-top: 8px;}
 
+        .project3 .section3 p {font-size: 14px; line-height: 24px; left: 5%;}
+
+    }
+    @media all and (max-width:767px) {
+        .project3 .prdListW .ec-base-product .prdList {flex-direction: row; gap: 10px;}
+
         .project3 .section1 .main_img {height: 610px;}
         .project3 .section1 img {height: 100%; object-fit: cover;}
 
         .project3 .section2_bg {height: 916px;}
         .project3 .section2_bg > img {width: 100%; height: 100%; object-fit: cover;}
+        .project3 .section2 > img {width:329px; padding-left:0; top: 80px; right: 0; }
 
         .project3 .section3 {margin-top: 80px;}
+        .project3 .section3 > img {content: url("/project/img/project3-bg2_MO.png"); padding-right: 13%;}
+        .project3 .section3 p {padding: 32px 13% 0 0;}
+        .project3 .section3 .section3_bg {padding-top: 40px;}
+
+        .project3 .section4 {padding: 64px 4.3%;}
+        .project3 .section4 > img {content: url("/project/img/project3-3_MO.png"); }
+
+        .project3 .section5 {margin-top: 64px; }
     }
 
 
@@ -83,7 +106,8 @@
 
         <section id="og_menuCate_2" class="section3 prdListW">
 <!--            <div class="og_title_here"></div>-->
-            <img src="/project/img/project3-2.png" alt="슈즈컬렉션3">
+            <img src="/project/img/project3-2.png" alt="슈즈컬렉션3"><p>프리미엄 풀 그레인 페블 가죽과<br class="display_tablet_only"> 접지력이 뛰어난 고무 컵솔은<br>
+                코트 안팎에서 스타일과 편안함을 제공합니다.</p>
             <div class="section3_bg"><img src="/project/img/project3-bg2.png" alt="배경"></div>
             <div class="og_product_here">
             </div>
@@ -116,9 +140,9 @@
                 -->
                 <h3><span id="{$cate_id}"></span>{$category_name}</h3>
 
-                <div module="project_productlist" class="ec-base-product">
-                    <ul class="prdList grid4">
-                        <li id="anchorBoxId_{$product_no}">
+                <div module="project_productlist" class="ec-base-product swiper project3Swiper">
+                    <ul class="prdList grid4 swiper-wrapper">
+                        <li id="anchorBoxId_{$product_no}" class="swiper-slide">
                             <div class="prdList__item">
                                 <div class="thumbnail">
                                     <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" loading="lazy"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
@@ -129,7 +153,7 @@
                                         <span class="cart">{$basket_icon}ADD</span>
                                         <span class="option">{$option_preview_icon}OPTION</span>
                                     </div>
-                                    <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
+<!--                                    <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>-->
                                 </div>
                                 <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
                                     <div class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
@@ -144,7 +168,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li id="anchorBoxId_{$product_no}">
+                        <li id="anchorBoxId_{$product_no}" class="swiper-slide">
                             <div class="prdList__item">
                                 <div class="thumbnail">
                                     <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" loading="lazy"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
@@ -155,7 +179,7 @@
                                         <span class="cart">{$basket_icon}ADD</span>
                                         <span class="option">{$option_preview_icon}OPTION</span>
                                     </div>
-                                    <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
+<!--                                    <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>-->
                                 </div>
                                 <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
                                     <div class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
@@ -171,6 +195,7 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
         </div>
