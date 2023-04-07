@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* 멤버십 전체 컨텐츠 */
+.introBanner{ display: none !important;}
 .benefit_wrap {
     max-width: 1440px;
     width: 100%;
@@ -60,16 +60,6 @@
 }
 .new_member .new_M .new_M_num {
     width: calc(100% / 3);
-}
-.new_member .new_M .new_M_num span {
-    color: #F9F9F9;
-    font-family: 'Acumin Pro', sans-serif;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 62px;
-    font-style: normal;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #4B40C9;
 }
 .new_member .new_M .new_M_num p{
     margin-top: 8px;
@@ -206,7 +196,11 @@
     display: inline-block;
     height: 5px;
 }
+.member_standard .standard_M dt.on img{
+    transform: rotate(180deg);
+}
 .member_standard .standard_M dd {
+    display: none;
     padding: 24px 32px;
     background-color: #F9F9F9;
 }
@@ -239,10 +233,6 @@
     }
     .member_grade .grade_M table.grade_graph1 td {
         font-size: 16px;
-    }
-    .new_member .new_M .new_M_num span {
-        font-size: 48px;
-        line-height: 14px;
     }
     .new_member .new_M .new_M_num p{
         font-size: 22px;
@@ -286,10 +276,8 @@
         width: 100%;
         margin-bottom: 56px;
     }
-    .new_member .new_M .new_M_num span {
-        font-size: 32px;
-        line-height: 34px;
-        -webkit-text-stroke-width: 1px;
+    .new_member .new_M .new_M_num span svg{
+        height: 34px;
     }
     .new_member .new_M .new_M_num p{
         margin-top: 8px;
