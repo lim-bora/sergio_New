@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/acumin-pro');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* 멤버십 전체 컨텐츠 */
 .benefit_wrap {
     max-width: 1440px;
@@ -63,7 +63,7 @@
 }
 .new_member .new_M .new_M_num span {
     color: #F9F9F9;
-    font-family: "Acumin Pro","Noto Sans KR",sans-serif;
+    font-family: 'Acumin Pro', sans-serif;
     font-size: 60px;
     font-weight: 700;
     line-height: 62px;
@@ -107,7 +107,7 @@
     background-color: #000A55;
     color: #FFFFFF;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 48px;
     font-style: normal;
     cursor: pointer;
@@ -123,7 +123,6 @@
     border-top: 1px solid #EAEAEA;
     border-bottom: 1px solid #EAEAEA;
     vertical-align: middle;
-    color: #000A55;
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
@@ -212,13 +211,19 @@
     background-color: #F9F9F9;
 }
 .member_standard .standard_M dd p {
+    padding-left: 10px;
+    position: relative;
     color: #888888;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     font-style: normal;
 }
-
+.member_standard .standard_M dd p:before {
+    content: "∙";
+    position: absolute;
+    left: -5px;
+}
 /********** Tablet / Mobile **********/
 @media screen and (max-width: 1024px) {
     .new_member .new_M {
@@ -275,7 +280,7 @@
         line-height: 30px;
     }
     .new_member .new_M {
-        padding: 38px 48px;
+        padding: 48px 0;
     }
     .new_member .new_M .new_M_num {
         width: 100%;
@@ -312,20 +317,31 @@
         line-height: 20px;
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
     .benefit_wrap .benefit .benefit_title h2 {
-        width: 85%;
+        white-space: pre-line;
+    }
+    .benefit_wrap .benefit .benefit_title p {
+        white-space: pre-line;
+    }
+}
+@media screen and (max-width: 412px) {
+    .member_grade .grade_M table.grade_graph2 th:nth-of-type(3){
+        white-space: pre-line;
+    }
+    .member_grade .grade_M table.grade_graph2 th:nth-of-type(4){
+        white-space: pre-line;
     }
     .member_grade .grade_M table.grade_graph2 colgroup col:nth-of-type(1){
-        width: 32%;
+        width: 30%;
     }
     .member_grade .grade_M table.grade_graph2 colgroup col:nth-of-type(2){
-        width: 38%;
+        width: 34%;
     }
     .member_grade .grade_M table.grade_graph2 colgroup col:nth-of-type(3){
-        width: 15%;
+        width: 18%;
     }
-    .member_grade .grade_M table.grade_graph2 colgroup col:nth-of-type(4){
-        width: 15%;
+    .member_grade .grade_M table.grade_graph2 colgroup col:nth-of-type(4) {
+        width: 18%;
     }
 }
