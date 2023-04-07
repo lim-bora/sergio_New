@@ -138,6 +138,7 @@ select::-ms-expand {display:none;}
 #mCafe24Order .payMethod{margin-top: 0!important;}
 
 #mCafe24Order .payMethod > li.ec-paymethod-newArea .inner{display:grid!important;gap: 8px; flex-direction: row!important; grid-template-columns: 1fr 1fr;}
+#mCafe24Order .payMethod > li.ec-paymethod-newArea .inner a[href="https://www.kakaopay.com"]{display: none;}
 /*#mCafe24Order .payMethod > li.ec-paymethod-newArea .inner span{width: 49% !important;}*/
 #ec-jigsaw-area-paymethod .segment{padding: 20px 0px 0px!important;}
 #mCafe24Order .payMethod > li .inner > .ec-base-label > label{border: 1px solid #E0E0E0!important;padding: 9px 25px 9px!important; text-align: center; border-radius: 2px; height: 48px; box-sizing: border-box;}

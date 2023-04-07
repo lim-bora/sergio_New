@@ -72,7 +72,7 @@
 
 
 /* 인스타그램 */
-.instagramST{margin-top: 74px;text-align: center;padding-bottom: 140px;}
+.instagramST{margin-top: 74px;text-align: center;padding-bottom: 20px;}
 .instagramST h3{font-weight: 500;font-size: 34px;line-height: 44px;padding-bottom: 32px;}
 .instagramST .instaBox .insta{display: grid;grid-template-columns: repeat(4, 1fr);grid-gap: 8px;}
 
@@ -260,7 +260,7 @@
 
 
 	/* 인스타그램 */
-	.instagramST{margin-top: 42px;padding-bottom: 109px;}
+	.instagramST{margin-top: 42px;padding-bottom: 30px;}
 	.instagramST h3{font-size: 22px;line-height: 24px;padding-bottom: 24px;}
 	.instagramST .instaBox .insta{display: grid; grid-template-rows: 1fr 1fr;grid-template-columns: 1fr 1fr; grid-gap: 5px;}
 	.instagramST .instaBox .insta a{cursor: pointer;}
