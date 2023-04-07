@@ -4,7 +4,7 @@ $(function() {
     //메인배너 슬라이드 스와이프
     $(".mainSwiper ul").children().addClass("swiper-slide");
     var swiper = new Swiper(".mainSwiper", {
-        loop: true,
+        loop: false,   //배너이미지 2개이상일경우 true로 변경해야 바 생김
         watchOverflow : true,
         resistance : false,
         pagination: {
@@ -61,37 +61,38 @@ $(function() {
 
     //////////////////////////// 메인배너 타이틀///////////////////////////
     //pc 타이틀
-    pcMaintxt.eq(1).text('NEW YEAR SALE'); /*첫번째 배너 텍스트*/
-    $('.pc_main01 a:last-child').find('h3').text('NEW YEAR SALE'); /*첫번째 배너 텍스트*/
-    pcMaintxt.eq(2).text('test test'); /*두번째 배너 텍스트*/
-    pcMaintxt.eq(3).text('test test test'); /*세번째 배너 텍스트*/
-    pcMaintxt.eq(0).text('test test test'); /*세번째 배너 텍스트*/
+    pcMaintxt.eq(1).text('23SS COLLECTION'); /*첫번째 배너 텍스트*/
+    $('.pc_main01 a:last-child').find('h3').text('23SS COLLECTION'); /*첫번째 배너 텍스트*/
+    // pcMaintxt.eq(2).text('test test'); /*두번째 배너 텍스트*/
+    // pcMaintxt.eq(3).text('test test test'); /*세번째 배너 텍스트*/
+    pcMaintxt.eq(0).text('23SS COLLECTION'); /*마지막 배너 텍스트 , 배너1개일경우 배너1개 텍스트 기입*/
 
     //mo 타이틀
-    moMaintxt.eq(1).text('NEW YEAR SALE'); /*첫번째 배너 텍스트*/
-    $('.mo_main01 a:last-child').find('h3').text('NEW YEAR SALE'); /*첫번째 배너 텍스트*/
-    moMaintxt.eq(2).text('test test'); /*두번째 배너 텍스트*/
-    moMaintxt.eq(3).text('test test test'); /*세번째 배너 텍스트*/
-    moMaintxt.eq(0).text('test test test'); /*세번째 배너 텍스트*/
+    moMaintxt.eq(1).text('23SS COLLECTION'); /*첫번째 배너 텍스트*/
+    $('.mo_main01 a:last-child').find('h3').text('23SS COLLECTION'); /*첫번째 배너 텍스트*/
+    // moMaintxt.eq(2).text('test test'); /*두번째 배너 텍스트*/
+    // moMaintxt.eq(3).text('test test test'); /*세번째 배너 텍스트*/
+    moMaintxt.eq(0).text('23SS COLLECTION'); /*마지막 배너 텍스트 , 배너1개일경우 배너1개 텍스트 기입*/
 
     /////////////////////////// 메인배너 서브설명글///////////////////////////
     //pc 서브글
-    pcSubtxt.eq(1).html("<p>세르지오 타키니의 봄 컬렉션은 민감하게 반응하는 트렌트를 지향하기 위해 새로운 균형을 고민했습니다.<br>DAMARINDO 라인에서는 편안함과 세련미를 동시에 약속하는 아이템을 선보입니다.</p>");
-    $('.pc_main01 a:last-child').find('p').html("<p>세르지오 타키니의 봄 컬렉션은 민감하게 반응하는 트렌트를 지향하기 위해 새로운 균형을 고민했습니다.<br>DAMARINDO 라인에서는 편안함과 세련미를 동시에 약속하는 아이템을 선보입니다.</p>");
-    pcSubtxt.eq(2).html("<p>세르지오 타키니의 봄 컬렉션~~");
-    pcSubtxt.eq(3).html("<p>세르지오 타키니 테스트~~");
-    pcSubtxt.eq(0).html("<p>세르지오 타키니 테스트~~");
+    pcSubtxt.eq(1).html("<p>코트에서부터 일상까지 빛나는 스타일링을 위해, 이탈리안 헤리티지 감성의 ON COURT 컬렉션</p>");
+    $('.pc_main01 a:last-child').find('p').html("<p>코트에서부터 일상까지 빛나는 스타일링을 위해, 이탈리안 헤리티지 감성의 ON COURT 컬렉션</p>");
+    // pcSubtxt.eq(2).html("<p>세르지오 타키니의 봄 컬렉션~~</p>");
+    // pcSubtxt.eq(3).html("<p>세르지오 타키니 테스트~~</p>");
+    pcSubtxt.eq(0).html("코트에서부터 일상까지 빛나는 스타일링을 위해, 이탈리안 헤리티지 감성의 ON COURT 컬렉션</p>");/*마지막 배너 텍스트 , 배너1개일경우 배너1개 텍스트 기입*/
 
     //mo 서브글
-    moSubtxt.eq(1).html("<p>세르지오 타키니의 봄 컬렉션은 민감하게 반응하는<br>트렌트를 지향하기 위해 새로운 균형을 고민했습니다.<br>DAMARINDO 라인에서는 편안함과 세련미를<br>동시에 약속하는 아이템을 선보입니다.</p>");
-    $('.mo_main01 a:last-child').find('p').html("<p>세르지오 타키니의 봄 컬렉션은 민감하게 반응하는<br>트렌트를 지향하기 위해 새로운 균형을 고민했습니다.<br>DAMARINDO 라인에서는 편안함과 세련미를<br>동시에 약속하는 아이템을 선보입니다.</p>");
-    moSubtxt.eq(2).html("<p>세르지오 타키니의 봄 컬렉션~~");
-    moSubtxt.eq(3).html("<p>세르지오 타키니 테스트~~");
-    moSubtxt.eq(0).html("<p>세르지오 타키니 테스트~~");
+    moSubtxt.eq(1).html("<p>코트에서부터 일상까지 빛나는 스타일링을 위해,<br>이탈리안 헤리티지 감성의 ON COURT 컬렉션</p>");
+    $('.mo_main01 a:last-child').find('p').html("<p>코트에서부터 일상까지 빛나는 스타일링을 위해,<br>이탈리안 헤리티지 감성의 ON COURT 컬렉션</p>");
+    // moSubtxt.eq(2).html("<p>세르지오 타키니의 봄 컬렉션~~</p>");
+    // moSubtxt.eq(3).html("<p>세르지오 타키니 테스트~~</p>");
+    moSubtxt.eq(0).html("<p>코트에서부터 일상까지 빛나는 스타일링을 위해,<br>이탈리안 헤리티지 감성의 ON COURT 컬렉션</p>");/*마지막 배너 텍스트 , 배너1개일경우 배너1개 텍스트 기입*/
 
 });
 
 $(document).ready(function() {
+    //인스타클릭시 PC 새창열림 /M 현윈도우에서 창열림
     if (window.innerWidth > 1024) {  // 다바이스 크기가 1024이하일때
         $(".instagramST .insta a").attr({"target" : "_blank"})
     }else{

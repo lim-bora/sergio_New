@@ -12,3 +12,10 @@ $(document).ready(function(){
     $('#totalProducts .option_product tr').find('right').insertAfter(close);
     $('#totalProducts .option_product tr').css('color','red');
 });
+
+
+// $(document).ready(function(){
+// let slice = $('#product_detail_option_layer .option_products .product').text();
+// slice.replace('-','');
+// console.log(slice);
+// });

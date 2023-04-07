@@ -537,6 +537,9 @@ $(document).ready(function(){
 	console.log(thisUrl)
 
 	$('.thisUrl').attr("href",thisUrl)
+	$( window ).resize( function() {
+		$('.thisUrl').attr("href",thisUrl)
+	} );
 	navBtn.click(function(){
 		if(body.hasClass('activeAside')===true){
 			$('.topBannerBox').css('display','none')

@@ -278,3 +278,4 @@ $('.detailToggle ul li.d_size').on('click',function() {
 
     sizeSpec.css('display','block');
 });
+

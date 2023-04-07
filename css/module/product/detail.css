@@ -37,7 +37,8 @@
 .xans-product-detaildesign tr[data-name="상품간략설명"]{font-weight: 300;line-height:24px; margin-top: 16px;display: block;border-bottom: 1px solid #EAEAEA;padding-bottom: 16px;}
 .xans-product-detaildesign tbody > tr[data-name="판매가"] #span_product_price_text{font-weight: 700;}
 .xans-product-detail .infoArea table { border:0; margin:24px 0 0; font-size:13px;  }
-.xans-product-detail .infoArea th { font-weight:normal; width:106px; padding:7px 5px 6px 0; text-align:left; vertical-align:top;display: none; }
+.xans-product-detail .infoArea th { font-weight:normal; width:106px; padding:7px 5px 6px 0; text-align:left; vertical-align:top; }
+.xans-product-detail .infoArea tr[data-name="상품간략설명"] th,.xans-product-detail .infoArea tr[data-name="할인판매가"] th, .xans-product-detail .infoArea tr[data-name="판매가"] th{display: none;}
 .xans-product-detail .infoArea td { padding:7px 6px 8px 0; vertical-align:baseline; }
 .xans-product-detail .infoArea img { vertical-align:middle; }판
 .xans-product-detail .infoArea td input[type=text] { width:80%; }
@@ -315,9 +316,18 @@ span.arrow{display:inline-block;
 span.arrow.rotateUp{transform: rotate(315deg)}
 
 .ec-front-product-item-price{margin-right: 14px;}
-.detailToggle .deliveBox h5{font-weight: 700;font-size: 12px;line-height: 18px;color: #000;padding: 16px 0 0px;}
+.detailToggle .deliveBox h5{font-weight: 700;font-size: 12px;line-height: 18px;color: #000;padding: 16px 0 4px;}
 .detailToggle .deliveBox > p{display: block;text-align: left;margin: 0px 0 8px;font-weight: 400;font-size: 12px;line-height: 18px;color: #000;}
 .detailToggle .deliveBox > p span{display: block;text-align: left;margin: 0px 0 0px;font-weight: 400;font-size: 12px;line-height: 18px;color: #888;}
+.detailToggle .cafe24-sizespec-box thead tr th{text-align: center;}
+.detailToggle table{    table-layout: auto!important;}
+.detailToggle .cafe24-sizespec-box h2{display: none;}
+/*고시정보*/
+.detailToggle .cafe24-info-box{font-size: 12px;    line-height: 18px;}
+.detailToggle .cafe24-info-box p{padding: 0px 0 8px;line-height: 18px;}
+.detailToggle .cafe24-info-box p strong{font-weight: 700;font-size: 12px;line-height: 18px;color: #000;}
+.detailToggle .cafe24-info-box p span{line-height: 18px;margin-top: 4px;display: block;font-weight: 400;color: #888;font-size: 12px;}
+
 
 /*추천상품*/
 .xans-product-relation .relation_title{font-weight: 500!important;font-size: 20px!important;text-align: left!important;}
@@ -366,6 +376,8 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 	.detailToggle ul{width: 108%;margin-left: -4%!important;}
 	.xans-product-detaildesign tr[data-name="할인판매가"] > td{border-bottom: 1px solid #eaeaea;padding-bottom: 32px;}
 	.xans-product-detaildesign tr[data-name="상품간략설명"]{padding-bottom: 32px;}
+	.xans-product-detail .headingArea h1 { width: 90%;}
+	.xans-product-detail .headingArea .actionWish{top: -65px;}
 
 	/*추천상품*/
 	.xans-product-relation .relation_title{font-size: 16px!important;}
@@ -593,7 +605,7 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 	#totalProducts, #totalPrice, #fixedActionButton{display: none;}
 	.xans-product-detail .infoArea table.xans-product-option{display: none;}
 		/* 상세페이지 */
-	.xans-product-detail {margin-bottom:50px;}
+	/*.xans-product-detail {margin-bottom:50px;}*/
 	.xans-product-detail .imgArea {width:100%;}
 	.xans-product-detail .xans-product-option tr,
 	.xans-product-detail .xans-product-option td {display:block;}
@@ -618,7 +630,7 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 	/* 구매버튼 */
 	.xans-product-additional.section {width:100%;max-width:100%;margin-bottom:50px;}
 	.xans-product-additional .pdt150 {padding-top:0;}
-	.xans-product-additional .productDetail {margin:0 0 40px;}
+	.xans-product-additional .productDetail {margin:0 0 0px;}
 	.xans-product-action .action_button {flex-wrap: wrap;}
 	.xans-product-action .action_button .btnNormal {flex:1;height:66px;padding:23px 0;margin-left: 0!important;border-radius: 2px;}
 	.xans-product-action .action_button .btnSubmit {flex:none;width:100%;margin-bottom:12px;}

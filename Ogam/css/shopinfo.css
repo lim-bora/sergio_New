@@ -1,4 +1,6 @@
 /* 멤버십 전체 컨텐츠 */
+.pc{display: block;}
+.mo{display: none;}
 .introBanner{ display: none !important;}
 .benefit_wrap {
     max-width: 1440px;
@@ -220,6 +222,13 @@
 }
 /********** Tablet / Mobile **********/
 @media screen and (max-width: 1024px) {
+    .pc{display: none;}
+    .mo{display: block;}
+    .benefit_wrap .imag_wrap img {
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
     .new_member .new_M {
         padding: 64px 0;
         justify-content: space-around;
@@ -245,10 +254,7 @@
     .benefit_wrap {
         margin: 40px auto 157px;
     }
-    .benefit_wrap .imag_wrap img {
-        min-height: 160px;
-        height: auto;
-    }
+
     .benefit_wrap .benefit {
         margin-top: 48px;
     }

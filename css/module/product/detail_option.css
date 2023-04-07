@@ -201,6 +201,7 @@ body { background:none !important; }
 #totalProducts tr.option_product > td > table tr:first-child th,
 #totalProducts .option_product > td tbody > tr:first-child td:first-child {padding-left:0;}
 #product_detail_option_layer td.fileInfo .infoDesc { margin:0; }
+#product_detail_option_layer .option_products td .product:not(:last-child){font-size: 0;}
 #product_detail_option_layer .option_products td .product > strong{display: none;}
 #product_detail_option_layer #totalProducts col:nth-child(2){width: 60px!important;}
 

@@ -16,7 +16,7 @@
 /* 메인키비주얼 텍스트 */
 .mainbanne01 .txtBox{position: absolute;bottom:100px;left: 50%; transform: translateX(-50%);text-align: center; width: 92%;}
 .mainbanne01 .txtBox h3{font-weight: 500;font-size: 54px;line-height: 64px;color: #FFFFFF;}
-.mainbanne01 .txtBox .mainBannerSub{padding: 16px 0 32px;}
+.mainbanne01 .txtBox .mainBannerSub{padding: 16px 0 32px;color: #fff;}
 .mainbanne01 .txtBox .mainBannerSub p{font-weight: 300;font-size: 18px;line-height: 28px;color: #FFFFFF;}
 .mainbanne01 .txtBox span{width: 233px;height: 48px;border: 1px solid #FFFFFF;border-radius: 2px;color: #fff;line-height: 48px;text-align: center;display: block; margin: 0 auto;}
 
