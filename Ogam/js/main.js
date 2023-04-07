@@ -90,3 +90,22 @@ $(function() {
     moSubtxt.eq(0).html("<p>세르지오 타키니 테스트~~");
 
 });
+
+$(document).ready(function() {
+    if (window.innerWidth > 1024) {  // 다바이스 크기가 1024이하일때
+        $(".instagramST .insta a").attr({"target" : "_blank"})
+    }else{
+        $(".instagramST .insta a").attr({"target" : "_self"})
+    }
+
+    let flag = (window.innerWidth < 1024) ? 'a' : 'b';
+    let flag_chk;
+    let flag_start = 0;
+    $(window).resize(function(){
+        flag_chk = (window.innerWidth < 1024) ? 'a' : 'b';
+        if(flag !== flag_chk && flag_start == 0){
+            flag_start ++;
+            location.reload();
+        }
+    });
+})

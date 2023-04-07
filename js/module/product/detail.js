@@ -176,9 +176,9 @@ $(document).ready(function(){
         $(this).parent("li").siblings().find("span").removeClass('rotateUp');
     });
 });
+
+
 //아코디언 해상도 크기에따라 위치변경
-
-
 $(function() {
      if (window.innerWidth < 1024) {  // 다바이스 크기가 1024이하일때
          $('.detailToggle').insertAfter('#prdDetail')
@@ -259,4 +259,22 @@ $(document).ready(function(){
             $e.addClass('soldout');
         }
     });
+});
+
+
+// 상품고시정보 size 탭 클릭시 보이는 코드
+$('.detailToggle ul li.d_info').on('click',function() {
+    let infoTxt = $('#prdDetail .cafe24-info-box');
+
+    $('.detailToggle ul li.d_info > div > span').append(infoTxt);
+
+    infoTxt.css('display','block');
+
+});
+$('.detailToggle ul li.d_size').on('click',function() {
+    let sizeSpec = $('#prdDetail .cafe24-sizespec-box');
+
+    $('.detailToggle ul li.d_size > div > span').append(sizeSpec);
+
+    sizeSpec.css('display','block');
 });
