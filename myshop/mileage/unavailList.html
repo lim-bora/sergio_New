@@ -42,82 +42,71 @@
                 $count = 5
                 $login_page = /member/login.html
             -->
-            <div class="{$display_unavail|display}" style="display: flex;flex-direction: column;">
+            <div class="{$display_unavail|display}">
                 <div class="item">
-                        <div class="Itemleft">
-                            <span>{$mileage_type}</span>
-                            <span class="date" title="주문날짜">{$issue_date}</span>
-                        </div>
-                        <div class="ItemRight">
-                            <span>{$mileage_money}</span>
-                        </div>
-<!--                    <h3>-->
-<!--                        <span class="date" title="주문날짜">{$order_date}</span>-->
+                    <h3>
+                        <span>{$mileage_type}</span>
+                        <span class="date" title="주문날짜">{$order_date}</span>
 <!--                        <span class="number" title="관련주문번호"><a href="/myshop/order/detail.html?order_id={$order_id}">({$order_id})</a></span>-->
-<!--                    </h3>-->
-<!--                    <div class="ec-base-table gClearBorderTop">-->
-<!--                        <table border="1">-->
-<!--                            <caption>적립금</caption>-->
-<!--                            <colgroup>-->
-<!--                                <col style="width:120px;">-->
-<!--                                <col style="width:auto;">-->
-<!--                            </colgroup>-->
-<!--                            <tbody>-->
-<!--                                <tr>-->
-<!--                                    <th scope="row">{$mileage_name}</th>-->
-<!--                                    <td>{$product_mileage}</td>-->
-<!--                                </tr>-->
-<!--                                <tr>-->
-<!--                                    <th scope="row">사용가능<br />예정일</th>-->
-<!--                                    <td>{$can_use_date}</td>-->
-<!--                                </tr>-->
-<!--                                <tr>-->
-<!--                                    <th scope="row">내용</th>-->
-<!--                                    <td>{$mileage_type}</td>-->
-<!--                                </tr>-->
-<!--                            </tbody>-->
-<!--                        </table>-->
-<!--                    </div>-->
+                    </h3>
+                    <div class="ec-base-table gClearBorderTop">
+                        <table border="1">
+                            <caption>적립금</caption>
+                            <colgroup>
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+<!--                                <th scope="row">{$mileage_name}</th>-->
+                                <td>{$product_mileage}</td>
+                            </tr>
+<!--                            <tr>-->
+<!--                                <th scope="row">사용가능<br />예정일</th>-->
+<!--                                <td>{$can_use_date}</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">내용</th>-->
+<!--                                <td>{$mileage_type}</td>-->
+<!--                            </tr>-->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div class="item">
-                    <div class="Itemleft">
+                    <h3>
                         <span>{$mileage_type}</span>
-                        <span class="date" title="주문날짜">{$issue_date}</span>
-                    </div>
-                    <div class="ItemRight">
-                        <span>{$mileage_money}</span>
-                    </div>
-<!--                    <h3>-->
-<!--                        <span class="date" title="주문날짜">{$order_date}</span>-->
+                        <span class="date" title="주문날짜">{$order_date}</span>
 <!--                        <span class="number" title="관련주문번호"><a href="/myshop/order/detail.html?order_id={$order_id}">({$order_id})</a></span>-->
-<!--                    </h3>-->
-<!--                    <div class="ec-base-table gClearBorderTop">-->
-<!--                        <table border="1">-->
-<!--                            <caption>적립금</caption>-->
-<!--                            <colgroup>-->
-<!--                                <col style="width:120px;">-->
-<!--                                <col style="width:auto;">-->
-<!--                            </colgroup>-->
-<!--                            <tbody>-->
-<!--                                <tr>-->
-<!--                                    <th scope="row">{$mileage_name}</th>-->
-<!--                                    <td>{$product_mileage}</td>-->
-<!--                                </tr>-->
-<!--                                <tr>-->
-<!--                                    <th scope="row">사용가능<br />예정일</th>-->
-<!--                                    <td>{$can_use_date}</td>-->
-<!--                                </tr>-->
-<!--                                <tr>-->
-<!--                                    <th scope="row">내용</th>-->
-<!--                                    <td>{$mileage_type}</td>-->
-<!--                                </tr>-->
-<!--                            </tbody>-->
-<!--                        </table>-->
-<!--                    </div>-->
+                    </h3>
+                    <div class="ec-base-table gClearBorderTop">
+                        <table border="1">
+                            <caption>적립금</caption>
+                            <colgroup>
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+<!--                                <th scope="row">{$mileage_name}</th>-->
+                                <td>{$product_mileage}</td>
+                            </tr>
+<!--                            <tr>-->
+<!--                                <th scope="row">사용가능<br />예정일</th>-->
+<!--                                <td>{$can_use_date}</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">내용</th>-->
+<!--                                <td>{$mileage_type}</td>-->
+<!--                            </tr>-->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <p class="ec-base-prdEmpty {$display_unavail_none|display}"><!--@import(/svg/icon-empty.html)--->{$mileage_name} 내역이 없습니다.</p>
         </div>
+    </div>
     </div>
 
     <div module="myshop_unavailPaging" class="ec-base-paginate typeList">
