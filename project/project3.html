@@ -3,6 +3,7 @@
 <!--@js(/Ogam/js/project.js)-->
 <style>
     .introBanner{display: none !important;} /* 작업 중 임시해제 */
+    .display_1500_only {display: none !important;}
 
     .project3 .prdListW .ec-base-product,
     .project3 .prdListW .ec-base-product .prdList .prdList__item,
@@ -11,8 +12,7 @@
     .project3 .prdListW .ec-base-product .prdList {margin: 0; display: flex; gap: 4.2vw;}
     .project3 .section2 .ec-base-product .prdList {flex-direction: column;}
     .project3 .prdListW .ec-base-product .prdList > li { width: auto; margin: 0;}
-    .project3 .prdListW .ec-base-product .prdList .thumbnail {height: 23vw;}
-    .project3 .prdListW .ec-base-product .prdList .description {padding: 0 16px;}
+    .project3 .prdListW .ec-base-product .prdList .description {padding: 0 16px; margin: 16px 0 0 0;}
     .project3 .prdListW .ec-base-product .prdList .description .name a span,
     .project3 .prdListW .ec-base-product .prdList .spec span {color: #FFF !important;}
 
@@ -26,27 +26,41 @@
     .project3 .section2_bg {width: 100vw; }
     .project3 .section2_bg > img {width: 100vw;}
     .project3 .section2 > img {position: absolute; top:3.4%; width: 100%; padding-left: 42%;}
-    .project3 .section2 .og_product_here {position: absolute; top:12.3%; right: 53%; z-index: 2;}
+    .project3 .section2 .og_product_here {position: absolute; z-index: 2;}
 
     .project3 .section3 {position: relative; margin-top: 6.6%;}
     .project3 .section3 > img {width: 100vw; padding-right: 15.2%; z-index:1;}
     .project3 .section3 p {display: block; top:60%; left:7.8%; color:#747474; z-index: 1; font-size: 16px; line-height: 26px; font-weight:500; text-align: right;}
     .project3 .section3 .section3_bg {width: 100vw; padding-top: 23.5%;}
     .project3 .section3 .section3_bg > img {width: 100%; }
-    .project3 .section3 .og_product_here {position: absolute; left:27.2%; bottom: 7.4%; z-index: 2;}
+    .project3 .section3 .og_product_here {position: absolute; z-index: 2; width: 100%; box-sizing: border-box;}
+    /*.project3 .section3 .og_product_here .prdList > li:first-child::after {content: ''; position: absolute; height: 10px; width: 10px; border-radius: 20px; background-color: #AF0A14;}*/
 
     .project3 .section4 {background-color: #ECECEC; padding: 7.3% 12.5%;}
     .project3 .section4 > img {width: 100%;}
 
-    .project3 .section5 { max-width:1440px; margin: 104px auto 0 auto ; overflow: hidden;}
+    .project3 .section5 { max-width:1440px; margin: 104px auto 0 auto ; overflow: hidden; padding-left: 16px; }
     .project3 .section5 h3 {font-size: 20px; line-height: 22px; font-weight: 500;}
     .project3 .section5 .swiper-container-horizontal>.swiper-scrollbar {position: relative; height: 1px;}
-
+    .project3 .section5 .og_product_here {overflow: hidden;}
+    .project3 .section5 .ec-base-product .prdList .description {padding: 0 16px;}
 
 
     @media all and (min-width:768px) {
+        .project3 .prdListW .ec-base-product .prdList .thumbnail {height: 23vw;}
+
+        .project3 .section2 .og_product_here {top:12.3%; right: 53%; }
+
+        .project3 .section3 .og_product_here .prdList > li:nth-child(2) {position: absolute; right: 27%; bottom: 25%;}
         .project3 .section3 > img {position: absolute;}
         .project3 .section3 p {position: absolute; }
+        .project3 .section3 .og_product_here {padding-left:27.2%; bottom: 7.4%;}
+
+    }
+    @media (min-width: 768px) and (max-width:1500px) {
+        .project3 .section3 p {top: 56%; left: 4%;}
+
+        .display_1500_only {display: block !important;}
     }
 
     @media all and (max-width:1024px) {
@@ -54,11 +68,11 @@
         .project3 .section1 .main_text h2 {font-size: 28px; line-height: 34px;}
         .project3 .section1 .main_text p {font-size: 14px; line-height: 24px; margin-top: 8px;}
 
-        .project3 .section3 p {font-size: 14px; line-height: 24px; left: 5%;}
-
+        .project3 .section3 p {font-size: 14px; line-height: 24px; left: 5%; top: 57%;}
     }
     @media all and (max-width:767px) {
         .project3 .prdListW .ec-base-product .prdList {flex-direction: row; gap: 10px;}
+        .project3 .prdListW .ec-base-product .prdList > li {flex: 1;}
 
         .project3 .section1 .main_img {height: 610px;}
         .project3 .section1 img {height: 100%; object-fit: cover;}
@@ -66,16 +80,23 @@
         .project3 .section2_bg {height: 916px;}
         .project3 .section2_bg > img {width: 100%; height: 100%; object-fit: cover;}
         .project3 .section2 > img {width:329px; padding-left:0; top: 80px; right: 0; }
+        .project3 .section2 .og_product_here {width:100%; max-width: 400px; bottom: 80px; padding: 0 16px; box-sizing: border-box; left: 50%; transform: translateX(-50%);}
+        .project3 .prdListW .ec-base-product .prdList .thumbnail {height: auto;}
 
         .project3 .section3 {margin-top: 80px;}
         .project3 .section3 > img {content: url("/project/img/project3-bg2_MO.png"); padding-right: 13%;}
         .project3 .section3 p {padding: 32px 13% 0 0;}
-        .project3 .section3 .section3_bg {padding-top: 40px;}
+        .project3 .section3 .section3_bg {position:relative; padding-top: 40px; height: 440px;overflow: hidden;}
+        .project3 .section3 .section3_bg > img {content: url("/project/img/project3-bg2(MO).png"); width: 100%; height: 100%; object-fit: cover; object-position: right bottom;}
+        .project3 .section3 .og_product_here {max-width:440px; top: 56%; left: 50%; transform: translate(-50%, -54%); width: 100%; padding: 0 16px;}
 
         .project3 .section4 {padding: 64px 4.3%;}
         .project3 .section4 > img {content: url("/project/img/project3-3_MO.png"); }
 
         .project3 .section5 {margin-top: 64px; }
+        .project3 .section5 h3 {font-size: 16px; line-height: 18px;}
+        .project3 .section5 .ec-base-product {margin: 28px 0 0;}
+        .project3 .section5 .ec-base-product .prdList .description {margin: 16px 0 0 0;}
     }
 
 
@@ -106,11 +127,10 @@
 
         <section id="og_menuCate_2" class="section3 prdListW">
 <!--            <div class="og_title_here"></div>-->
-            <img src="/project/img/project3-2.png" alt="슈즈컬렉션3"><p>프리미엄 풀 그레인 페블 가죽과<br class="display_tablet_only"> 접지력이 뛰어난 고무 컵솔은<br>
+            <img src="/project/img/project3-2R.png" alt="슈즈컬렉션3"><p>프리미엄 풀 그레인 페블 가죽과<br class="display_tablet_only">
+            접지력이 뛰어난 고무 컵솔은<br class="display_tablet_only_only">
                 코트 안팎에서 스타일과 편안함을 제공합니다.</p>
-            <div class="section3_bg"><img src="/project/img/project3-bg2.png" alt="배경"></div>
-            <div class="og_product_here">
-            </div>
+            <div class="section3_bg"><img src="/project/img/project3-bg2.png" alt="배경"><div class="og_product_here"></div></div>
         </section>
         
         <section class="section4"><img src="/project/img/project3-3.png" alt="슈즈컬렉션4"></section>
