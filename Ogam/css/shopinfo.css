@@ -1,9 +1,11 @@
+@import url('https://fonts.cdnfonts.com/css/acumin-pro');
+/* 멤버십 전체 컨텐츠 */
 .benefit_wrap {
     max-width: 1440px;
     width: 100%;
     margin: 80px auto 173px;
 }
-/* 이미지영역 */
+/* 배너 이미지 */
 .benefit_wrap .imag_wrap {
     width: 100%;
 }
@@ -12,12 +14,12 @@
     height: 300px;
     object-fit: cover;
 }
-/* 전체컨텐츠 */
+/* 멤버십 컨텐츠 */
 .benefit_wrap .benefit {
     margin-top: 80px;
     text-align: center;
 }
-/* 전체제목 */
+/* 멤버십 컨텐츠 제목 */
 .benefit_wrap .benefit .benefit_title h2 {
     margin: 0 auto 16px;
     width: 100%;
@@ -36,7 +38,7 @@
     line-height: 26px;
     font-style: normal;
 }
-/* 컨텐츠 공통 */
+/* 멤버십 컨텐츠 공통 */
 .benefit .benefit_cnt {
     margin-top: 128px;
 }
@@ -48,7 +50,7 @@
     line-height: 44px;
     font-style: normal;
 }
-/* 컨텐츠1 */
+/* 세르지오 타키니 신규 멤버스 혜택 */
 .new_member .new_M {
     padding: 64px 88px;
     background-color: #F9F9F9;
@@ -61,9 +63,10 @@
 }
 .new_member .new_M .new_M_num span {
     color: #F9F9F9;
+    font-family: "Acumin Pro","Noto Sans KR",sans-serif;
     font-size: 60px;
     font-weight: 700;
-    /*line-height: 62px;*/
+    line-height: 62px;
     font-style: normal;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #4B40C9;
@@ -109,8 +112,8 @@
     font-style: normal;
     cursor: pointer;
 }
-/* 컨텐츠2 */
-/* 테이블 1 */
+/* 멤버 등급 혜택 */
+/* PC 버전 표 */
 .member_grade .grade_M table.grade_graph1 {
     width: 100%;
     margin: 0 auto;
@@ -144,7 +147,7 @@
     display: block;
     font-weight: 400;
 }
-/* 테이블 2 */
+/* Mobile 버전 표 */
 .member_grade .grade_M table.grade_graph2 {
     width: 100%;
     margin: 0 auto;
@@ -180,16 +183,19 @@
     color: #000A55;
     font-weight: 700;
 }
-/* 컨텐츠3 */
+/* 멤버십 등급기준 */
+.member_standard .standard_M dl:nth-of-type(1){
+    border-top: 1px solid #EAEAEA;
+}
 .member_standard .standard_M dl {
     text-align: left;
+    border-bottom: 1px solid #EAEAEA;
 }
 .member_standard .standard_M dt {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 24px 20px;
-    border-bottom: 1px solid #EAEAEA;
     color: #000000;
     font-size: 14px;
     font-weight: 500;
@@ -197,25 +203,13 @@
     font-style: normal;
     cursor: pointer;
 }
-.member_standard .standard_M dt.on {
-    border-bottom: none;
-}
-.member_standard .standard_M dt:nth-of-type(1) {
-    border-top: 1px solid #EAEAEA;
-}
 .member_standard .standard_M dt img {
-    display: block;
+    display: inline-block;
     height: 5px;
-}
-.member_standard .standard_M dt img:nth-child(2){
-    display: none;
 }
 .member_standard .standard_M dd {
     padding: 24px 32px;
     background-color: #F9F9F9;
-}
-.member_standard .standard_M dd.on{
-    border-bottom: 1px solid #eaeaea;
 }
 .member_standard .standard_M dd p {
     color: #888888;
@@ -235,14 +229,6 @@
         padding: 0 15px;
         width: calc(100% / 3 - 90px);
     }
-    .new_member .new_M .new_M_num span {
-        color: #F9F9F9;
-        font-size: 60px;
-        font-weight: 700;
-        font-style: normal;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: #4B40C9;
-    }
     .member_grade .grade_M table.grade_graph1 th {
         font-size: 16px;
     }
@@ -259,7 +245,6 @@
         font-size: 16px;
     }
 }
-
 @media screen and (max-width: 768px) {
     .benefit_wrap {
         margin: 40px auto 157px;
