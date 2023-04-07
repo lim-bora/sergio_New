@@ -5,7 +5,7 @@
 .benefit_wrap {
     max-width: 1440px;
     width: 100%;
-    margin: 80px auto 173px;
+    margin: 80px auto 28px;
 }
 /* 배너 이미지 */
 .benefit_wrap .imag_wrap {
@@ -224,6 +224,10 @@
 @media screen and (max-width: 1024px) {
     .pc{display: none;}
     .mo{display: block;}
+    .benefit_wrap .imag_wrap{
+        margin-left: -5%!important;
+        width: 110%;
+    }
     .benefit_wrap .imag_wrap img {
         width: auto;
         height: auto;
@@ -252,7 +256,7 @@
 }
 @media screen and (max-width: 768px) {
     .benefit_wrap {
-        margin: 40px auto 157px;
+        margin: 40px auto 14px;
     }
 
     .benefit_wrap .benefit {
