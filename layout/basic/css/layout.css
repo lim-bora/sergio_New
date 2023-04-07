@@ -23,8 +23,8 @@ a:hover {text-decoration:none;}
 .dimmed_for_header:not(.fixed) {pointer-events: none; z-index: -999; background: none;}
 
 /* 최상단 배너 */
-.main_top_banner {position:relative;z-index:997;background-color:#f5f5f5;overflow:hidden;width:100%;display:none;padding:20px 0;}
-.main_top_banner .top_banner_box_inner {max-width:1760px;width:92%;height:100%;margin:0 auto;display:flex;justify-content:space-between;align-items:center;position:relative;}
+.main_top_banner {position:relative;z-index:997;background-color:#f5f5f5;overflow:hidden;width:100%;display:none;height: 40px;}
+.main_top_banner .top_banner_box_inner {max-width:1440px;width:92%;height:100%;margin:0 auto;display:flex;justify-content:space-between;align-items:center;position:relative;}
 .main_top_banner .top_banner_box_inner .top_banner_text {flex:1;}
 .main_top_banner.ez-align-left .top_banner_box_inner .top_banner_text {text-align:left;}
 .main_top_banner.ez-align-center .top_banner_box_inner .top_banner_text {text-align:center;}
@@ -315,7 +315,7 @@ body.activeAside #header .top_nav {display: none !important;}
 	.more .btnMore {background-color:#fff;display:inline-block;min-width:auto;padding:13px 40px;border:1px solid #dadada;text-align:center;transition:all 400ms;font-size:16px;color:#1a1a1a;}
 
 	/* 상단검색 레이어 */
-    .xans-layout-searchheader {top:50px; height: calc(100% - 50px);}
+    .xans-layout-searchheader {top:50px; height: calc(100vh - 50px);}
 	.xans-layout-searchheader.yesBanner {top:90px; height: calc(100% - 90px);}
     .xans-layout-searchheader .title { margin:50px 0 29px; display:block; font-size:30px; text-align:center; }
 	.xans-layout-searchheader fieldset .btnDelete {display:block;}

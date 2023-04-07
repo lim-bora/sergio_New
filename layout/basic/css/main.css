@@ -27,6 +27,7 @@
 /* 배너매니저 반응형처리 */
 .pc_main01{display:block!important;}
 .mo_main01{display:none!important;}
+.mo_main01 img {width: 100%;}
 
 /* 하프카테고리배너 */
 .half_Cate{margin-top: 10px;}
