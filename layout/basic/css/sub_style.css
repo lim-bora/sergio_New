@@ -204,8 +204,10 @@
 .xans-member-join .agreeAll h3 {margin:0 0 24px;padding:0 0 16px;color:#000000;border-bottom:1px solid #000000;}
 .xans-member-join .agreeAll label {font-weight:500;color:#000000; line-height: 16px;}
 .xans-member-join label.check {color:#000;}
-.xans-member-join .additional {margin:24px 0 0; display: flex; flex-direction: column; gap: 24px;}
+.xans-member-join .additional {margin:16px 0 0; display: flex; flex-direction: column; gap: 16px;}
 .xans-member-join .additional li {font-size:14px;}
+.xans-member-join .additional label.check {color: #606060;}
+.xans-member-join label[for="sMarketingAgreeAllChecked"] {font-weight: 500;}
 .xans-member-join .ec-base-chk {margin:0 8px 0 0;}
 .xans-member-join .ec-base-button.gBottom {display:flex;margin-top:40px;}
 .xans-member-join .ec-base-button.gBottom button,

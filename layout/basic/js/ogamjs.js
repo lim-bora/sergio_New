@@ -126,6 +126,9 @@ $(function () {
                 case 'GREEN' :
                     $(this).prepend('<span class="colorchip green"></span>');
                     break
+                case 'MINT' :
+                    $(this).prepend('<span class="colorchip mint"></span>');
+                    break
             }
         }
     })

@@ -91,6 +91,7 @@
 .colorchip.beige{ background-color: #EAD8B6}
 .colorchip.ivory{ background-color: #F9EBD2}
 .colorchip.white{ border: 1px solid #CCCCCC;box-sizing: border-box}
+.colorchip.mint{background-color: #75EAC7;}
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
