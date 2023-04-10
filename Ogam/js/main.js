@@ -110,3 +110,41 @@ $(document).ready(function() {
         }
     });
 })
+
+$(document).ready(function() {
+    /* 탑배너 스와이프 */
+    var topSwiper = new Swiper(".topSwiper", {
+        slidesPerView : 1,
+        loop: true,
+        watchOverflow : true,
+        loopAdditionalSlides : 1,
+        // autoplay : {
+        //     delay : 5000,  //5초
+        //     disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+        // },
+    });
+
+    /*띠배너 네비겹침현상 방지/닫기버튼 이벤트*/
+        let body = $('body');
+        let topNav = $('.top_nav');
+        let topBanner = $('.topBannerBox');
+        let navCloseBtn = $('.btnBox').find('.btnClose');
+        let close = $(document).find('.top_nav_box').find('.btnClose');
+
+        topNav.click(function(e){
+            if(body.hasClass('activeAside')===true){
+                topBanner.css('display','none')
+                console.log('dd')
+            }else{
+                topBanner.css('display','block')
+            }
+        });
+        close.click(function(){
+            topBanner.css('display','block')
+        });
+        navCloseBtn.click(function(){
+            topBanner.css('display','none')
+        });
+
+
+})

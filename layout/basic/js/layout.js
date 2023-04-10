@@ -527,32 +527,3 @@ $(document).ready(function(){
 	}
 });
 
-$(document).ready(function(){
-	//띠배너 네비겹침현상 방지/닫기버튼 이벤트
-	let body = $('body');
-	let navBtn = $('#top_nav_box').find('.top_nav');
-	let navCloseBtn = $('#top_nav_box').find('.btnClose');
-	let close = $(document).find('.topBannerBox').find('.btnClose');
-	let thisUrl = $('.topBanner a').attr('href');
-	console.log(thisUrl)
-
-	$('.thisUrl').attr("href",thisUrl)
-	$( window ).resize( function() {
-		$('.thisUrl').attr("href",thisUrl)
-	} );
-	navBtn.click(function(){
-		if(body.hasClass('activeAside')===true){
-			$('.topBannerBox').css('display','none')
-		}else{
-			$('.topBannerBox').css('display','block')
-		}
-	});
-	navCloseBtn.click(function(){
-			$('.topBannerBox').css('display','block')
-	});
-	close.click(function(){
-		$('.topBannerBox').css('display','none')
-		console.log('ddd')
-	});
-
-});

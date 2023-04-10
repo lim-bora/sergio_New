@@ -1,38 +1,22 @@
-.topBannerBox{position: relative; z-index: 12;}
-.topBannerBox > div{ height: 100%;}
-.topBannerBox span.btnBox{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%); max-width: 1440px;display: flex;width: 100%; height: auto;padding: 5px 0;}
-.topBannerBox span.btnBox > a {width: 100%; }
-.topBannerBox span.btnBox img{width: 24px;height: 24px;float: right;cursor: pointer;z-index: 10;}
-.topBannerBox.close{display: none;transition: 0.3s;}
+.topBannerBox{position: relative; z-index: 12;background-color: #000;}
+.topBannerBox > div{ height: 40px;}
+.topBannerBox .topBanner .topB > a{font-weight: 700;text-align: center;font-size: 16px;line-height: 37px;color: #fff;position: relative;display: block;}
+.topBannerBox .topBanner .btnBox{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%); max-width: 1440px;width: 100%;height: 100%;display: flex;}
+.topBannerBox .topBanner .btnBox > a{width: 100%;height: 100%;}
+.topBannerBox .topBanner .btnClose{width: 24px;height: 24px;float: right;cursor: pointer; margin-top: 6px;}
+
 
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
     .topBannerBox{height: 40px;}
-    .topBannerBox a img{object-fit: cover;height: 100%;}
+    .topBannerBox .topBanner .topB > a{font-size: 13px;line-height: 37px;}
+
     .topBannerBox span{width: 92%!important;}
 
     body.searchExpand .topBannerBox {display: none !important;}
 }
 
-
-
-
-
-
-/*.topBannerBox{position: relative; z-index: 12;}*/
-/*.topBannerBox > div{ height: 100%;}*/
-/*.topBannerBox span.btnClose{    position: absolute;*/
-/*    top: 50%;*/
-/*    right: 0;*/
-/*    transform: translateY(-50%);*/
-/*    max-width: 50px;*/
-/*    display: block;*/
-/*    width: 80%;*/
-/*    height: auto;*/
-/*    padding: 5px 0;}*/
-/*.topBannerBox span.btnClose img{width: 24px;height: 24px;float: right;cursor: pointer;z-index: 10;}*/
-/*.topBannerBox.close{display: none;transition: 0.3s;}*/
 
 
 /*!********************* Mobile / Tablet *********************!*/
