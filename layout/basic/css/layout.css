@@ -98,7 +98,7 @@ a:hover {text-decoration:none;}
 #header .inner .top_nav_box .top_category .sub_cate01 li a,
 #header .inner .top_nav_box .top_category .sub-category li a {font-size:16px;color:#000;line-height:18px;font-weight:500;display:block;white-space:nowrap;}
 #header .inner .top_nav_box .top_category .sub_cate02 li {margin-top: 24px;}
-#header .inner .top_nav_box .top_category .sub_cate02 li a {font-size: 14px; line-height: 20px; font-weight: 400; }
+#header .inner .top_nav_box .top_category .sub_cate02 li a {font-size: 14px; line-height: 20px; font-weight: 400; color: #606060;}
 #header .inner .top_nav_box .top_category .sub_cate02 li a:hover {color: #000A55;}
 #header .inner .top_nav_box .top_mypage {display:flex;flex-shrink:0;gap:20px;}
 #header .inner .top_nav_box .top_mypage a {position:relative; line-height:1;color:#1a1a1a;padding:0;border:0;display:flex;align-items:center;}
