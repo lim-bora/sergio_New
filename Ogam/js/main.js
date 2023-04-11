@@ -26,26 +26,6 @@ $(function() {
     seconA.text('MEN');
 });
 
-$(function() {
-    //사이드섹션 슬라이드 스와이프
-    $(".sideSectionSwiper ul").children().addClass("swiper-slide");
-    var swiper = new Swiper(".sideSectionSwiper", {
-        // loop: true,
-        slidesPerView: 1.1,
-        spaceBetween: 10,
-        watchOverflow : true,
-        resistance : false,
-        // autoplay: {
-        //     delay: 3000,
-        //     disableOnInteraction: false,
-        // },
-    });
-
-    //텍스트
-    $('.sideSectionSwiper .swiper-wrapper a span').eq(0).text('GIVEAWAY : WIN THE ST');/*첫번째 텍스트*/
-    $('.sideSectionSwiper .swiper-wrapper a span').eq(1).text('SPRING/SUMMER ‘23 LOOKBOOK');/*두번째 텍스트*/
-
-});
 
 $(function() {
     /**메인배너 텍스트*/
@@ -96,31 +76,13 @@ $(function() {
 
 });
 
-$(document).ready(function() {
-    //인스타클릭시 PC 새창열림 /M 현윈도우에서 창열림
-    if (window.innerWidth > 1024) {  // 다바이스 크기가 1024이하일때
-        $(".instagramST .insta a").attr({"target" : "_blank"})
-    }else{
-        $(".instagramST .insta a").attr({"target" : "_self"})
-    }
 
-    let flag = (window.innerWidth < 1024) ? 'a' : 'b';
-    let flag_chk;
-    let flag_start = 0;
-    $(window).resize(function(){
-        flag_chk = (window.innerWidth < 1024) ? 'a' : 'b';
-        if(flag !== flag_chk && flag_start == 0){
-            flag_start ++;
-            location.reload();
-        }
-    });
-})
 
 $(document).ready(function() {
     /* 탑배너 스와이프 */
     var topSwiper = new Swiper(".topSwiper", {
         slidesPerView : 1,
-        loop: true,
+        loop: false,
         watchOverflow : true,
         loopAdditionalSlides : 1,
         // autoplay : {

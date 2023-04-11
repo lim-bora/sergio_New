@@ -71,6 +71,12 @@
     line-height: 30px;
     font-style: normal;
 }
+.new_member .new_M .new_M_num h5{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 8px;
+}
 .new_member .new_M ul{
     margin-top: 8px;
 }
@@ -250,6 +256,9 @@
     .new_member .new_M .new_M_num p{
         font-size: 22px;
     }
+    .new_member .new_M .new_M_num h5{
+        font-size: 16px;
+    }
     .new_member .new_M li{
         font-size: 16px;
     }
@@ -293,6 +302,11 @@
         margin-top: 8px;
         font-size: 18px;
         line-height: 24px;
+    }
+    .new_member .new_M .new_M_num h5{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
     }
     .new_member .new_M li{
         font-size: 14px;

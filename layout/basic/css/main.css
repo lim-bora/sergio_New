@@ -3,6 +3,7 @@
 /* 메인 */
 #contents {width:100% !important;max-width:100% !important;}
 #container #contents .xans-layout-mobileaction {display:none !important;}
+.footer_margin{display: none;}
 
 /* 메인 타이틀 */
 .main01{position: relative;}
@@ -39,7 +40,7 @@
 .half_Cate .half span.cateTxt{position: absolute;bottom:32px; left:50%; transform: translateX(-50%); color: #fff;font-size: 28px;line-height: 30px;font-weight: 400;}
 
 /* 중간 풀배너01 */
-.full_landingBanner{margin-top: 10px;margin-bottom: 187px;}
+.full_landingBanner{margin-top: 10px;}
 .full_landingBanner .txtSection{max-width: 1440px; margin: 0 auto; width: 100%;padding: 64px 0;text-align: center}
 .full_landingBanner .txtSection h2{font-weight: 500;font-size: 34px;color: #000000;line-height: 44px;}
 .full_landingBanner .txtSection span{display:block; margin: 16px 0 32px; font-weight: 400;font-size: 16px;line-height: 26px;color: #747474;}
@@ -247,7 +248,7 @@
 	.half_Cate .half{flex-direction: column;}
 
 	/* 중간 풀배너01 */
-	.full_landingBanner .txtSection{width: 92%;padding: 32px 0;margin-bottom: 160px;}
+	.full_landingBanner .txtSection{width: 92%;padding: 32px 0;}
 	.full_landingBanner .txtSection h2{font-size: 22px;line-height: 32px;}
 	.full_landingBanner .txtSection span{margin: 16px 0;font-size: 14px;line-height: 20px;}
 	.full_landingBanner .txtSection a.landingBtn{width: 160px;height: 36px;line-height: 35px;font-size: 12px;}
