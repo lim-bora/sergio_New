@@ -7,7 +7,7 @@
 #heritageMain .txtBox p {color: #fff;}
 #heritageMain .txtBox .title h3 {color: #fff; font-size: 46px; line-height: 60px; font-weight: 700;}
 #heritageMain .txtBox .title .line{width: 1px; height: 46px; background-color: #FFFFFF;}
-#heritageMain > div .txtBox p{font-size: 20px; line-height:26px; margin-top: 24px; font-weight: 500; white-space: nowrap;}
+#heritageMain > div .txtBox p{font-size: 18px; line-height:26px; margin-top: 24px; white-space: nowrap;}
 #heritageMain > div > img {width: 100%;}
 #heritageMain .txtBox .title {display: flex; align-items: center; justify-content:center; gap: 32px;}
 
@@ -16,35 +16,38 @@
 .halfSection .half02 > div {position: relative;}
 .halfSection .txtVert {bottom:171px; right: 0;}
 .halfSection .txtBox {position: absolute; background: #FFF;}
-.halfSection .txtBox p {font-size: 20px; line-height: 30px; font-weight: 500;}
+.halfSection .txtBox p {font-size: 20px; line-height: 30px;}
 
 .bgSection {font-size: 0; position: relative;}
 .bgSection > img {width: 100%;}
 .bgSection .txtBox{ position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); text-align: center;}
-.bgSection .txtBox p {color: #FFF; font-size: 20px; line-height: 30px; font-weight: 500; white-space: nowrap;}
+.bgSection .txtBox p {color: #FFF; font-size: 20px; line-height: 30px; white-space: nowrap;}
 .bgSection > span { bottom: 189px; right:-18px; }
 
 .gridSection {background-color: #000; font-size: 0; padding: 126px 0 114px 0; position: relative;}
-.gridSection .txtBoxW {position:absolute; padding: 16px 32px; background-color: #FFF;  z-index: 1; top: 80px;}
-.gridSection .txtBoxW p {font-size: 20px; line-height: 30px; font-weight: 500; }
+.gridSection .txtBoxW {position:absolute; padding: 24px 32px; background-color: #FFF;  z-index: 1;}
+.gridSection .txtBoxW p {font-size: 20px; line-height: 30px;}
 .gridSection .txtVert {left:-34px; bottom:229px; }
 .gridSection > ul {display: flex; gap: 8px; padding-left: 7%;}
 .gridSection > ul li {flex: 1;}
 .gridSection > ul li img {width: 100%;}
 .gridSection .txtBox {color: #fff; margin-top: 24px;}
-.gridSection .txtBox .name {font-size: 20px; line-height: 22px; font-weight: 700;}
+.gridSection .txtBox .name {display:flex; align-items:center; gap:8px; font-size: 20px; line-height: 22px; font-weight: 700;}
 .gridSection .txtBox .name span {font-size: 16px; line-height: 22px; font-weight: 500;}
+.gridSection .txtBox .line {height: 14px; width: 1px; background-color: #FFF;}
 .gridSection .txtBox p {font-size: 14px; line-height: 20px; font-weight: 400; margin-top: 8px;}
 
 .lastSection {position: relative; font-size: 0;}
 .lastSection > img {width: 100%;}
-.lastSection .txtArea {position: absolute; top: 0; right: 0; width: 50%; height: 100%;background: rgba(0,0,0,0.85)}
-.lastSection .txtArea p { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);font-size: 20px; line-height: 30px; font-weight: 500; white-space:nowrap; color: #FFF; text-align: center;}
+.lastSection .txtArea {position: absolute; top: 0; right: 0; width: 50%; height: 100%;}
+.lastSection .txtArea p { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);font-size: 20px; line-height: 30px; white-space:nowrap; color: #FFF; text-align: center;}
 .lastSection .txtVert { bottom:204px; right: -33px; }
 
 @media all and (min-width:1025px) {
-    .halfSection .txtBox { bottom: 4vw; left: 37%; padding: 16px 32px;}
+    .halfSection .txtBox { bottom: 4vw; left: 37%; padding: 24px 32px;}
     .halfSection .half02 > div {padding: 111px 120px;}
+
+    .gridSection .txtBoxW {top: 80px; left: 3.33%;}
 }
 
 @media all and (max-width:1024px) {
@@ -54,11 +57,11 @@
     #heritageMain > div {height: 100%;}
     #heritageMain > div > img {content: url("/web/upload/free_design/heritage_main_MO.jpg"); height: 100%; object-fit: cover;}
     #heritageMain .txtBox {width: auto;}
-    #heritageMain .txtBox .title {flex-wrap: wrap; gap: 8px;}
+    #heritageMain .txtBox .title {flex-wrap: wrap; gap: 8px; width: 270px; justify-content: flex-end;}
     #heritageMain .txtBox .title > img {width:100%; height: 48px;}
     #heritageMain .txtBox .title .line {height: 22px; margin-right: 8px;}
     #heritageMain .txtBox .title h3 {font-size: 24px; line-height: 26px;}
-    #heritageMain > div .txtBox p {font-size: 14px; line-height: 20px; }
+    #heritageMain > div .txtBox p {font-size: 14px; line-height: 18px; }
 
     .halfSection {flex-direction: column;}
     .halfSection .half01 img {width: 100%;}
@@ -68,20 +71,30 @@
     .halfSection .txtVert {bottom: 83px; right: -26px;}
 
     .bgSection {height: 520px;}
-    .bgSection > img {height: 100%; object-fit: cover;}
-    .bgSection .txtBox p {font-size:14px; line-height:24px; text-align: left;}
+    .bgSection > img {height: 100%; object-fit: cover; content: url("/web/upload/free_design/ht_background_MO.jpg")}
+    .bgSection .txtBox p {font-size:14px; line-height:20px; text-align: left;}
     .bgSection > span {bottom: 88px; right: -38px;}
 
-    .gridSection {padding: 108px 0 64px; }
-    .gridSection .txtBoxW {top: 32px; right: 0;}
+    .gridSection {padding: 68px 0 64px; }
+    .gridSection .txtBoxW {top: 32px; right: 0; padding: 16px;}
     .gridSection .txtBoxW p {font-size: 14px; line-height: 20px;}
     .gridSection > ul {flex-direction: column; gap: 64px; padding: 0;}
     .gridSection > ul li:nth-child(odd) {padding-right: 12%;}
     .gridSection > ul li:nth-child(odd) .txtBox {padding-left: 16px;}
     .gridSection > ul li:nth-child(even) {padding-left: 12%;}
+    .gridSection > ul li:nth-child(2) {position: relative;}
+    .gridSection > ul li:first-child img {content: url("/web/upload/free_design/grid-4-MO.jpg");}
+    .gridSection > ul li:nth-child(2) img {content: url("/web/upload/free_design/grid-1-MO.jpg");}
+    .gridSection > ul li:nth-child(3) img {content: url("/web/upload/free_design/grid-2-MO.jpg");}
+    .gridSection > ul li:nth-child(4) img {content: url("/web/upload/free_design/grid-3-MO.jpg");}
     .gridSection .txtBox .name {font-size: 16px; line-height: 18px;}
     .gridSection .txtBox .name span {font-size: 13px; line-height: 16px;}
     .gridSection .txtBox p {font-size: 13px;}
+    .gridSection .txtVert {left: -51px; bottom: 159px;}
 
     .lastSection {height: 520px;}
+    .lastSection > img {content: url("/web/upload/free_design/last_bg_MO.jpg"); height: 100%; object-fit: cover;}
+    .lastSection .txtArea {width: 100%;}
+    .lastSection .txtArea p {text-align: left; font-size: 14px; line-height: 20px;}
+    .lastSection .txtVert {right:-50px;bottom: 99px;}
 }
