@@ -9,12 +9,24 @@
     .project3 .prdListW .ec-base-product .prdList .prdList__item,
     .project3 .prdListW .ec-base-product .prdList .icon {margin: 0;}
     .project3 .ec-base-product .prdList .icon__box {display: none;}
-    .project3 .prdListW .ec-base-product .prdList {margin: 0; display: flex; gap: 4.2vw;}
-    .project3 .section2 .ec-base-product .prdList {flex-direction: column;}
+    .project3 .prdListW .ec-base-product .prdList {
+        margin: 0;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 4.2vw;
+    }
+    .project3 .section2 .ec-base-product .prdList {
+        -webkit-box-orient: vertical;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;}
     .project3 .prdListW .ec-base-product .prdList > li { width: auto; margin: 0;}
     .project3 .prdListW .ec-base-product .prdList .description {padding: 0 16px; margin: 16px 0 0 0;}
     .project3 .prdListW .ec-base-product .prdList .description .name a span,
     .project3 .prdListW .ec-base-product .prdList .spec span {color: #FFF !important;}
+    .project3 .prdListW .ec-base-product .prdList .thumbnail img {width: auto;}
 
     .project3 .section1 {width: 100%;}
     .project3 .section1 img {width: 100%;}
@@ -71,8 +83,17 @@
         .project3 .section3 p {font-size: 14px; line-height: 24px; left: 5%; top: 57%;}
     }
     @media all and (max-width:767px) {
-        .project3 .prdListW .ec-base-product .prdList {flex-direction: row; gap: 10px;}
-        .project3 .prdListW .ec-base-product .prdList > li {flex: 1;}
+        .project3 .prdListW .ec-base-product .prdList {
+            -webkit-box-orient: horizontal;
+            -moz-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            gap: 10px;}
+        .project3 .prdListW .ec-base-product .prdList > li {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;}
+        .project3 .prdListW .ec-base-product .prdList .thumbnail img {height: auto;}
 
         .project3 .section1 .main_img {height: 610px;}
         .project3 .section1 img {height: 100%; object-fit: cover;}

@@ -92,7 +92,7 @@
 .xans-product-detail .xans-product-option .ec-product-radio .ec-product-soldout { color:#d7d7d7; }
 .xans-product-detail .xans-product-option .ec-base-qty input[type=text].single-quantity-input { width:45px; }
 .xans-product-detail .xans-product-option tr.optionName{display: flex; flex-direction: column;}
-.xans-product-detail .xans-product-option tr.optionName th{font-size: 14px; font-family: "Acumin Pro";font-weight: 500;}
+.xans-product-detail .xans-product-option tr.optionName th{font-size: 14px; font-family: "Acumin Pro", sans-serif;font-weight: 600;}
 .xans-product-detail .xans-product-option tr.optionName select{border: 1px solid #000;border-radius: 2px;height: 56px;font-size: 14px;}
 
 .xans-product-detail .eventArea h3 { padding:0 0 0 9px; border-top:1px solid #e8e8e8; border-bottom:1px solid #e8e8e8; font-size:12px; line-height:39px; }
@@ -114,7 +114,7 @@
 
 /*.xans-product-detail .productSet { margin:16px 0 0; }*/
 .xans-product-detail .productSet > .title { position:relative; padding:24px 0 16px; box-sizing:border-box; }
-.xans-product-detail .productSet > .title h3 { font-size:14px; font-weight: 500;font-family: "Acumin Pro";}
+.xans-product-detail .productSet > .title h3 { font-size:14px; font-weight: 600;font-family: "Acumin Pro", sans-serif;}
 .xans-product-detail .productSet .product > li { position:relative; margin:-1px 0 0; }
 .xans-product-detail .productSet .product > li.soldout::after{content:''; display:block; background: url(/web/upload/free_design/soldOutImg.png) no-repeat;width: 100%;height: 100%;position: absolute;top: 0;left: 0;background-size: 70px 70px;pointer-events: none;}
 .xans-product-detail .productSet .thumbnail {  z-index:1; width:70px; }
@@ -167,7 +167,7 @@
 #totalProducts table { margin:0; }
 #totalProducts table .left { text-align:left; }
 #totalProducts table .center { text-align:center; }
-#totalProducts table .right {font-weight:400; text-align:center;font-size: 14px;font-family: 'Acumin Pro';}
+#totalProducts table .right {font-weight:400; text-align:center;font-size: 14px;font-family: 'Acumin Pro', sans-serif;}
 #totalProducts table .right strong { font-weight:100; }
 #totalProducts thead th { height:0; padding:0; font-size:0; line-height:0; }
 #totalProducts tbody th { vertical-align:middle; }
@@ -432,7 +432,7 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 
 	.xans-product-detail .imgArea .listImg ul { margin:0 -6px; }
     .xans-product-detail .imgArea .listImg li { display:inline-block; width:80px; margin:0 6px; font-size:12px; line-height:14px; vertical-align:top; float: left;padding-bottom: 0px;}
-    .xans-product-detail .imgArea .listImg li img { max-width:100%; cursor:pointer; height: 100%;}
+    .xans-product-detail .imgArea .listImg li img { max-width:100%; cursor:pointer;}
     .xans-product-detail .imgArea .listImg button { position:absolute; top:0; width:30px; height:94px; font-size:0; line-height:0; color:transparent; border:1px solid #e3e3e3; box-sizing:border-box; }
     .xans-product-detail .imgArea .listImg .icon { border-color:#6d6d6d; }
     .xans-product-detail .imgArea .listImg .prev { left:0; background-position:0 0;display: none!important; }
