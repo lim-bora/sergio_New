@@ -71,7 +71,8 @@
     .halfSection .txtVert {bottom: 83px; right: -26px;}
 
     .bgSection {height: 520px;}
-    .bgSection > img {height: 100%; object-fit: cover; content: url("/web/upload/free_design/ht_background_MO.jpg")}
+    .bgSection > img {height: 100%; object-fit: cover; content: url("/web/upload/free_design/ht_background_MO.jpg");
+                        object-position: right;}
     .bgSection .txtBox p {font-size:14px; line-height:20px; text-align: left;}
     .bgSection > span {bottom: 88px; right: -38px;}
 
