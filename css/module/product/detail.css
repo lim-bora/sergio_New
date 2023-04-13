@@ -8,7 +8,7 @@
 .xans-product-detail .headingArea .icon img { margin:0 4px 0 0; vertical-align:middle; }
 .xans-product-detail .headingArea .actionWish{position: absolute;top: 2px;right: 0;border: 0;padding: 0;height: 0;}
 .xans-product-detail .headingArea .actionWish img{width: 17.42px;}
-.xans-product-detail .detailArea > div{max-width: 836px;}
+.xans-product-detail .detailArea > div{max-width: 852px;}
 
 /* imgArea */
 .xans-product-detail .imgArea .prdImg .thumbnail { display:block; position:relative; max-width:100%; }
@@ -406,26 +406,28 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 @media all and (min-width:1025px) {
     .xans-product-detail { padding:100px 0 0 0; }
     .xans-product-detail .detailArea { font-size:0; line-height:0; display: flex; gap: 80px; flex-direction: row;}
-	.xans-product-detail .detailArea .infoArea .infoBox.fix{position: fixed;max-width: 524px;}
-	.xans-product-detail .detailArea .infoArea .infoBox.sticky{position: sticky;top: 100px;}
-    .xans-product-detail .imgArea { flex:1.6;  }
+	/*.xans-product-detail .detailArea .infoArea .infoBox.fix{position: fixed;max-width: 524px;}*/
+	/*.xans-product-detail .detailArea .infoArea .infoBox.sticky{position: sticky;top: 100px;}*/
+    .xans-product-detail .imgArea { flex:auto;  }
     .xans-product-detail .imgArea .prdImg { width:100%; margin:0 auto; }
     .xans-product-detail .imgArea .prdImg img { width:100%; }
     .xans-product-detail .imgArea .listImg { position:relative; width:100%; height:94px; margin:0px 0 0; padding:0 40px; box-sizing:border-box; }
-    .xans-product-detail .imgArea .listImg .inner { position:relative;  width:100%; height:94px; }
+    .xans-product-detail .imgArea .listImg .inner { position:relative;  width:100%; height:94px; overflow: hidden;overflow-y: scroll;}
+	.xans-product-detail .imgArea .RW .listImg .inner .list{margin-right: 21px;}
 	.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar {
-		width: 8px;  /* 스크롤바의 너비 */
+		width: 1px;  /* 스크롤바의 너비 */
 	}
 	.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar-thumb {
-		width: 4px;
-		height: 240px; /* 스크롤바의 길이 */
-		background: #AEAEAE; /* 스크롤바의 색상 */
+		width: 1px;
+		height: 240px;
+		background: #000;
 		border-radius: 10px;
 		background-clip: padding-box;
-		border: 2px solid transparent;
+		/*border-left: 15px solid transparent;*/
+		/*border-right: 15px solid transparent;*/
 	}
 	.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar-track {
-		background: transparent;  /*스크롤바 뒷 배경 색상*/
+		background-color: #ccc; /*스크롤바 뒷 배경 색상*/
 
 	}
 

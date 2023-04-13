@@ -220,25 +220,25 @@ $(document).ready(function(){
     }
 });
 
-$(document).ready(function(){
-        let fixScroll = 0;
-        $(window).scroll(function(event){
-            let scroll = $(this).scrollTop();
-            let imgHeight = $('.xans-product-image').height();
-            let heightMin = imgHeight - 920;
-
-            if (scroll >= 114 && scroll <= heightMin){
-                $('#wrap').css('overflow','unset');
-                $(".infoBox").addClass("fix");
-                $(".infoBox").addClass("sticky");
-            }
-            else {
-                $(".infoBox").removeClass("fix");
-                // $(".infoBox").removeClass("sticky");
-            }
-            fixScroll = scroll;
-        });
-});
+// $(document).ready(function(){
+//         let fixScroll = 0;
+//         $(window).scroll(function(event){
+//             let scroll = $(this).scrollTop();
+//             let imgHeight = $('.xans-product-image').height();
+//             let heightMin = imgHeight - 920;
+//
+//             if (scroll >= 114 && scroll <= heightMin){
+//                 $('#wrap').css('overflow','unset');
+//                 $(".infoBox").addClass("fix");
+//                 $(".infoBox").addClass("sticky");
+//             }
+//             else {
+//                 $(".infoBox").removeClass("fix");
+//                 // $(".infoBox").removeClass("sticky");
+//             }
+//             fixScroll = scroll;
+//         });
+// });
 
 $(document).ready(function(){
     //추가구성상품 품절표시
