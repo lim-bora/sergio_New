@@ -169,6 +169,7 @@ body.activeAside #header .top_nav {display: none !important;}
 #footer .inner .bt_util ul li:not(:last-child)::after {content: "";position: absolute;right:-12px;top:5px;width: 1px;height: 9px;background-color: #000;}
 #footer .inner .bt_util ul li:first-child {background:none;padding:0;margin:0;}
 #footer .inner .bt_util ul li a {display:block;font-size:11px;font-weight:400;color:#000;line-height:18px;white-space:nowrap;}
+#footer .inner .bt_util ul li:first-child a {font-size: 12px; font-weight: 600;}
 #footer .inner .bt_util ul li a strong {font-weight:500;color:#1a1a1a;}
 
 /* 하단 전화번호 */
@@ -291,6 +292,7 @@ body.activeAside #header .top_nav {display: none !important;}
 	#footer .inner .bt_util ul li {background:none}
 	#footer .inner .bt_util ul li:not(:last-child)::after {top: 2px;}
 	#footer .inner .bt_util ul li a {font-size:10px; line-height: 11px;}
+	#footer .inner .bt_util ul li:first-child a {font-size: 11px; line-height: 12px;}
 	#footer .inner .bt_wrap {display:flex;flex-direction:column;justify-content:flex-start;margin-bottom:0;}
 	#footer .inner .bt_cscenter {order:2;margin:40px 0 0 0;}
 	#footer .inner .bt_cscenter .title {margin-bottom:10px;font-size:16px;}
