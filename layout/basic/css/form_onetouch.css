@@ -225,6 +225,16 @@ select::-ms-expand {display:none;}
 #mCafe24Order .segment .ec-base-table tbody tr:first-child td{padding-bottom: 0!important;}
 #ec-shippingInfo-newAddress #btn_search_rzipcode{font-size: 12px; border-color: #000 !important; border-radius: 2px;}
 
+#mCafe24Order .ec-paymethod-input-detail {padding: 0 !important;}
+#mCafe24Order .ec-paymethod-input-detail #payment_input_tcash {border: none !important; background-color: #FFF !important;}
+#mCafe24Order #allat_account_nm {height: 48px !important;}
+#mCafe24Order .ec-paymethod-input-detail #payment_input_tcash.ec-base-table.typeWrite {padding: 0 !important;}
+#mCafe24Order .ec-paymethod-input-detail #payment_input_tcash.ec-base-table.typeWrite td,
+#mCafe24Order .ec-paymethod-input-detail #payment_input_tcash.ec-base-table.typeWrite th {border: none !important;}
+#mCafe24Order .ec-paymethod-input-detail #payment_input_tcash.ec-base-table.typeWrite tr {display: flex !important; flex-direction: column !important;}
+#mCafe24Order .ec-paymethod-input-detail #payment_input_tcash.ec-base-table.typeWrite colgroup col:first-child {width: 100% !important;}
+#mCafe24Order .ec-paymethod-input-detail #payment_input_tcash.ec-base-table.typeWrite colgroup col:nth-child(2) {display: none !important;}
+
 @media all and (max-width:1024px) {
     .containerOrder{padding-top: 40px;}
     #mCafe24Order{margin: 0 auto!important;}

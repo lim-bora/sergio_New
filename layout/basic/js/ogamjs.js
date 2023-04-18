@@ -79,7 +79,6 @@ $(function () {
     });
 
     // 쇼핑큐레이션 : 컬러칩
-    //쇼핑큐레이션
     $('.xans-product-searchfilterlist .xans-product-filterform li').each(function () {
         for(let i=0; i< $(this).length; i++){
             let filterTxt =  $(this).find('button').text();
@@ -137,7 +136,6 @@ $(function () {
     // 통합검색 : 판매가 스타일 조정
     let searchSalePrice = $('.xans-search-result .prdList .spec > li[data-name="할인판매가"]');
     if(searchSalePrice.length > 0) {
-        console.log("hi");
         searchSalePrice.parent().find('li[data-name="판매가"] > span').addClass('active');
     }
 

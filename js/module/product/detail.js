@@ -18,7 +18,6 @@ function removePagingArea(oTarget)
 }
 
 $(function() {
-
     $('#actionCartClone, #actionWishClone, #actionBuyClone, #actionWishSoldoutClone').off().on('click', function() {
         try {
             var id = $(this).attr('id').replace(/Clone/g, '');
