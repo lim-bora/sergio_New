@@ -63,3 +63,12 @@ function selBasketDel(id) {
     $('[id="'+id+'"]').prop('checked', true);
     Basket.deleteBasket();
 }
+
+// 회원등급마일리지 '원'표기 히든
+$(function() {
+    let memberMileage = $("#total_member_mileage_price_id");
+    let sliceTxt = memberMileage.text();
+    console.log(sliceTxt)
+    let replaceTxt = sliceTxt.replaceAll('원', '')
+    memberMileage.text(replaceTxt)
+});
