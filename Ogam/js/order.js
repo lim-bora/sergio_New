@@ -147,7 +147,6 @@ function comma(str){
         console.log(err);
         return str;
     }
-    ;
 }
 
 // $(function() {
@@ -156,3 +155,20 @@ function comma(str){
 //     console.log(totalTxt)
 //     $('#btn_payment').prepend(totalTxt );
 // });
+
+$(function() {
+    var target = document.getElementById('payment_total_order_sale_price_view');
+
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            $('.pay_price').text($('#payment_total_order_sale_price_view').text())
+        });
+    });
+    var config = {
+        childList: true,
+    };
+    observer.observe(target, config);
+});
+
+
+
