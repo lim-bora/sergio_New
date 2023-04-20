@@ -11,7 +11,7 @@
 <div class="myshopArea">
     <div class="pc_margin_myshop">
         <h4 class="subtitleH4" style="padding-top: 40px;border-bottom: 1px solid #000;">미가용 마일리지 내역</h4>
-    <div module="Myshop_mileageUnavailPackage">
+        <div module="Myshop_mileageUnavailPackage">
     <!--@css(/css/module/myshop/mileageUnavailPackage.css)-->
 <!--        <div class="titleArea titleArea&#45;&#45;myshop" module="myshop_head">-->
 <!--            <h2>{$mileage_name}</h2>-->
@@ -107,26 +107,26 @@
             <p class="ec-base-prdEmpty {$display_unavail_none|display}"><!--@import(/svg/icon-empty.html)--->{$mileage_name} 내역이 없습니다.</p>
         </div>
     </div>
+        <div module="myshop_unavailPaging" class="ec-base-paginate typeList">
+            <!--a href="{$first_url}" class="first">첫 페이지</a-->
+            <a href="{$prev_url}">이전 페이지</a>
+            <ol>
+                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+            </ol>
+            <a href="{$next_url}">다음 페이지</a>
+            <!--a href="{$last_url}" class="last">마지막 페이지</a-->
+        </div>
     </div>
 
-    <div module="myshop_unavailPaging" class="ec-base-paginate typeList">
-        <!--a href="{$first_url}" class="first">첫 페이지</a-->
-        <a href="{$prev_url}">이전 페이지</a>
-        <ol>
-            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
-            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
-            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
-            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
-            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
-            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
-            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
-            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
-            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
-            <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
-        </ol>
-        <a href="{$next_url}">다음 페이지</a>
-        <!--a href="{$last_url}" class="last">마지막 페이지</a-->
-    </div>
 
     <!--div class="ec-base-help" module="myshop_head">
         <h3>{$mileage_name} 안내</h3>
@@ -138,6 +138,5 @@
             </ul>
         </div>
     </div-->
-    </div>
     <!--@import(/myshop/myshop_main.html)-->
-</div>
+    </div>

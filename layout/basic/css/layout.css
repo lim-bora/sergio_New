@@ -312,6 +312,8 @@ body.activeAside #header .top_nav {display: none !important;}
 	#footer .inner .bt_wrap2 .bt_sns a {margin:0 8px 0 0;font-size:0;display:block;}
 	#footer .inner .bt_wrap2 .bt_sns a:first-child {margin-left:-10px;}
 
+	#footer .inner .bt_info form {margin-top: 16px;}
+
 	/* 상품 더보기 */
 	.main_image_text_gallery_more .main_image_text_gallery_more_btn,
 	.more .btnMore {background-color:#fff;display:inline-block;min-width:auto;padding:13px 40px;border:1px solid #dadada;text-align:center;transition:all 400ms;font-size:16px;color:#1a1a1a;}
@@ -365,6 +367,8 @@ body.activeAside #header .top_nav {display: none !important;}
     .RTB { display:none !important; }
     .RTMI { display:none !important; }
     .RTMB { display:none !important; }
+
+	#footer .inner .bt_wrap .bt_info {display: flex;}
 }
 
 /********************* PC *********************/

@@ -38,7 +38,11 @@
 						Copyright © {$mall_name}. All Rights Reserved.
 					</div><!-- //bt_copyright -->
 			  </div><!-- //bt_info_list -->
+				<form name="shop_check" method="post" action="http://admin.kcp.co.kr/Modules/escrow/kcp_pop.jsp" class="display_pc_only">
+					<input type="hidden" name="site_cd" value="AIZEC" /><a href="#none" onclick="javascript:go_check()"><img src="/web/upload/105x154.gif" border="0" style="height: 110px;"/></a>
+				</form>
 			</div><!-- //bt_info -->
+
 
 			<div class="bt_util" data-ez-group="shortcut">
 				<div data-ez-role="title" style="display:none;">바로가기</div>
@@ -105,6 +109,17 @@
 
     </div><!-- //inner -->
 </footer>
+<script type="text/javascript" language="JavaScript">
+	function go_check()
+	{
+		var status  = "width=500 height=450 menubar=no,scrollbars=no,resizable=no,status=no";
+		var obj     = window.open('', 'kcp_pop', status);
+		document.shop_check.method = "post";
+		document.shop_check.target = "kcp_pop";
+		document.shop_check.action = "http://admin.kcp.co.kr/Modules/escrow/kcp_pop.jsp";
+		document.shop_check.submit();
+	}
+</script>
 
 <!--@import(/layout/store_popup.html)-->
 
