@@ -14,6 +14,11 @@
     <!--@js(/layout/basic/js/common.js)-->
     <!--@js(/js/module/order/ec_orderform/orders.js)-->
     <!--@js(/Ogam/js/order.js)-->
+
+    <style>
+        .topBannerBox{visibility: hidden;}/*주문서페이지 탑배너 미노출처리*/
+        #couponLayer{z-index: 9999999!important;}
+    </style>
 </head>
 <body id="userStyle">
     <!-- [상단영역] -->
@@ -40,8 +45,6 @@
         <!-- [추가정보입력] 추가입력, 기타문의사항 -->
         <!--@import(/order/ec_orderform/additionalInput.html)-->
 
-        <!-- [결제정보] -->
-        <!--@import(/order/ec_orderform/payment.html)-->
 
         <!-- [사은품] -->
         <div id="{$gift_orderform_id}">
@@ -54,6 +57,9 @@
 
         <!-- [결제수단] -->
         <!--@import(/order/ec_orderform/paymethod.html)-->
+
+        <!-- [결제정보] -->
+        <!--@import(/order/ec_orderform/payment.html)-->
 
         <!-- [결제 프로모션 안내] : 추후오픈예정으로 히든처라 20230407 -->
         <div class="cardPromotion" style="display: none;">
@@ -73,6 +79,7 @@
         <!--@import(/order/ec_orderform/agreement.html)-->
 
         <div class="ec-base-button gFull" id="orderFixItem">
+            <span id="ec-shop-confirm_payment_total_order_sale_price_view" class="displaynone"></span>
             <button type="button" class="btnSubmit" id="{$btn_payment_id}">
                 {$total_order_price_front_head}<span id="{$total_order_price_front_id}">{$total_order_price_front}</span>{$total_order_price_front_tail} <span class="{$subscription_hide_display|display}">결제하기</span><span class="{$subscription_show_display|display}">정기배송 신청하기</span>
             </button>

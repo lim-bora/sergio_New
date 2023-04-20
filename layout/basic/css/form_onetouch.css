@@ -109,7 +109,7 @@ select::-ms-expand {display:none;}
 #mCafe24Order .txtRed{color: #000!important;}
 #ec-jigsaw-area-payment .discountView{display: none!important;}
 
-#ec-jigsaw-area-discount #ec-shop-orderfom-total-benefit-view-id, #ec-jigsaw-title-discount{display: none!important;}
+#ec-jigsaw-area-discount #ec-shop-orderfom-total-benefit-view-id{display: none!important;}
 #mileage_use_area, .mCouponSelect, .mCouponModify{padding: 10px 0px 0!important;}
 #mileage_use_area .displayblock{display: flex; flex-direction: column;text-align: left;}
 #input_mile{height: 48px!important;width: calc(100% - 95px)!important;}
