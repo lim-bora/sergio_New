@@ -4,6 +4,7 @@ $(function(){
     $('#ec-jigsaw-title-orderProduct').text('주문내역');
     $('#ec-jigsaw-title-shippingInfo h2').text('배송정보');
     $('#ec-jigsaw-title-payment h2').text('결제예정금액');
+    $('#ec-jigsaw-title-discount h2').text('할인적용');
 
     //주문서페이지 헤더 스타일 추가
     if (window.location.pathname == '/order/orderform.html'){
@@ -148,3 +149,10 @@ function comma(str){
     }
     ;
 }
+
+// $(function() {
+//     let totalPrice = $('#payment_total_order_sale_price_view');
+//     let totalTxt = totalPrice.text();
+//     console.log(totalTxt)
+//     $('#btn_payment').prepend(totalTxt );
+// });
