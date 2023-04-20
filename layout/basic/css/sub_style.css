@@ -600,6 +600,8 @@ div.ec-base-help ul {margin:0;}
 }
 
 @media screen and (max-width:1024px) {
+	.mCafe24Post.gMobile {margin-top: 50px; min-height: calc(100% - 50px) !important;}
+
 	/* 상품진열 퀵바아이콘 */
 	.ec-base-product .prdList .thumbnail .likeButton {display:none;}
 
