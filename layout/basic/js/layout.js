@@ -79,10 +79,10 @@ function handleNav() {
 
 function searchLayer() {
     var btnSearchs = document.querySelectorAll('.eSearch');
-    var btnClose = document.querySelector('.xans-layout-searchheader  .btnClose');
+    var btnClose = document.querySelector('.xans-layout-searchheader .btnClose');
     btnSearchs.forEach( function(btnSearch) {
-        btnSearch.addEventListener('click', function(){
-            document.body.classList.add('searchExpand');
+		btnSearch.addEventListener('click', function(){
+			document.body.classList.add('searchExpand');
 			document.body.classList.remove('activeAside');
             var input = document.querySelector('#keyword');
             //input.focus();
