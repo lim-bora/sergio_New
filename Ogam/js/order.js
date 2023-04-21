@@ -168,6 +168,12 @@ $(function() {
         childList: true,
     };
     observer.observe(target, config);
+
+    $('#paySubmint').click(function (){
+        // EC$('#btn_payment').trigger('click');
+        CAFE24.SHOP_FRONT_ORDERFORM_FORM.proc.doPayment();
+    })
+
 });
 
 
