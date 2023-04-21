@@ -66,6 +66,10 @@ $(function(){
     //결제수단 텍스트
     $('.ec-paymethod-newArea > label').empty();
     $('.ec-paymethod-newArea > label').append('<span class="payTitle">결제수단 선택</span>');
+
+    //결제예정금액 적립금텍스트 변경
+    $('#ec-shop-payment_used_mileage_area').find('.discountName').text('마일리지');
+
 });
 
 
