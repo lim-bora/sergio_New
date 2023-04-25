@@ -26,21 +26,21 @@
 
 .gridSection {background-color: #000; font-size: 0; padding: 126px 0 114px 0; position: relative;}
 .gridSection .txtBoxW {position:absolute; padding: 24px 32px; background-color: #FFF;  z-index: 1;}
-.gridSection .txtBoxW p {font-size: 20px; line-height: 30px;}
+.gridSection .txtBoxW p {font-size: 20px; line-height: 1.5;}
 .gridSection .txtVert {left:-34px; bottom:229px; }
 .gridSection > ul {display: flex; gap: 8px; padding-left: 7%;}
 .gridSection > ul li {flex: 1;}
 .gridSection > ul li img {width: 100%;}
 .gridSection .txtBox {color: #fff; margin-top: 24px;}
-.gridSection .txtBox .name {display:flex; align-items:center; gap:8px; font-size: 20px; line-height: 22px; font-weight: 700;}
+.gridSection .txtBox .name {display:flex; flex-wrap:wrap; align-items:center; gap:8px; font-size: 20px; line-height: 22px; font-weight: 700;}
 .gridSection .txtBox .name span {font-size: 16px; line-height: 22px; font-weight: 500;}
 .gridSection .txtBox .line {height: 14px; width: 1px; background-color: #FFF;}
 .gridSection .txtBox p {font-size: 14px; line-height: 20px; font-weight: 400; margin-top: 8px;}
 
-.lastSection {position: relative; font-size: 0;}
+.lastSection {position: relative;}
 .lastSection > img {width: 100%;}
 .lastSection .txtArea {position: absolute; top: 0; right: 0; width: 50%; height: 100%;}
-.lastSection .txtArea p { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);font-size: 20px; line-height: 30px; white-space:nowrap; color: #FFF; text-align: center;}
+.lastSection .txtArea p { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);font-size: 1.25em; line-height: 1.5; white-space:nowrap; color: #FFF; text-align: center;}
 .lastSection .txtVert { bottom:204px; right: -33px; }
 
 @media all and (min-width:1025px) {
@@ -84,10 +84,10 @@
     .gridSection > ul li:nth-child(odd) .txtBox {padding-left: 16px;}
     .gridSection > ul li:nth-child(even) {padding-left: 12%;}
     .gridSection > ul li:nth-child(2) {position: relative;}
-    .gridSection > ul li:first-child img {content: url("/web/upload/free_design/grid-4-MO.jpg");}
-    .gridSection > ul li:nth-child(2) img {content: url("/web/upload/free_design/grid-1-MO.jpg");}
-    .gridSection > ul li:nth-child(3) img {content: url("/web/upload/free_design/grid-2-MO.jpg");}
-    .gridSection > ul li:nth-child(4) img {content: url("/web/upload/free_design/grid-3-MO.jpg");}
+    .gridSection > ul li:first-child img {content: url("/web/upload/free_design/JohnMcenroe_MO.png");}
+    .gridSection > ul li:nth-child(2) img {content: url("/web/upload/free_design/GabrielaSabatini_MO.png");}
+    .gridSection > ul li:nth-child(3) img {content: url("/web/upload/free_design/PeteSampras_MO.png");}
+    .gridSection > ul li:nth-child(4) img {content: url("/web/upload/free_design/GoranIvanisevic_MO.png");}
     .gridSection .txtBox .name {font-size: 16px; line-height: 18px;}
     .gridSection .txtBox .name span {font-size: 13px; line-height: 16px;}
     .gridSection .txtBox p {font-size: 13px;}

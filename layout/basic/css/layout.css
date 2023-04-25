@@ -226,7 +226,7 @@ body.activeAside #header .top_nav {display: none !important;}
 
 /********************* Tablet *********************/
 @media all and (max-width:1024px) {
-	body.searchExpand #header .btnClose  {display: block !important; height: 20px;}
+	body.searchExpand #header .top_mypage .btnClose  {display: block !important; height: 20px;}
 	body.searchExpand #header .top_nav {display: none !important;}
 
 	.xans-layout-searchheader { position:fixed; }
