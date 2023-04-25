@@ -1,7 +1,21 @@
 <!--@layout(/layout/basic/popup.html)-->
 <!--@css(/css/module/myshop/receiverUpdate.css)-->
+<style>
+    .ec-base-table.typeWrite .ec-address .btnBasic{height: 40px;padding: 15px 19px;}
+    .ec-base-layer textarea{width: 100%;}
+    .ec-base-table.typeWrite tr{display: block;}
+    .ec-base-table.typeWrite th{display: block;padding: 6px 15px 0;border-bottom: 0;text-align: left;background-color: transparent;}
+    .ec-base-table.typeWrite td{display: block;padding: 2px 15px 10px;border-bottom: 0;}
+    .ec-base-table.typeWrite td input[type="text"], .ec-base-table.typeWrite td input[type="password"], .ec-base-table.typeWrite td select{width: 100%;}
+    .ec-base-table.typeWrite .formMultiple{padding-top: 10px;}
+    .ec-base-table.typeWrite td input[type="text"], .ec-base-table.typeWrite td input[type="password"], .ec-base-table.typeWrite td select{    width: 100%;}
+    .ec-base-table.typeWrite .formGroup{display: flex;flex-flow: wrap;box-sizing: border-box;align-items: center;    padding-left: 10px;}
+    .ec-base-table.typeWrite .formGroup input[type="text"], .ec-base-table.typeWrite .formGroup input[type="password"], .ec-base-table.typeWrite .formGroup select{flex: 1!important;}
+    #r_addr1, #r_addr2{width: 100%;}
+    /*.ec-base-table.typeWrite td input[type="text"], .ec-base-table.typeWrite td input[type="password"], .ec-base-table.typeWrite td select{width: 100% !important;}*/
 
-<div class="ec-base-layer" module="myshop_OrderReceiverUpdate">
+</style>
+<div class="ec-base-layer" module="myshop_OrderReceiverUpdate" style="z-index: 0!important" style="visibility: hidden;">
     <!--
         $isRuleBasedAddrForm = T
     -->
@@ -144,3 +158,9 @@
         <button id="{$receiver_update_submit_id}" type="button" class="btnSubmitFix sizeM">변경하기</button>
     </div>
 </div>
+
+<script>
+    $(window).on('load', function() {
+        $('.ec-base-layer').css('visibility','visible');
+    });
+</script>
