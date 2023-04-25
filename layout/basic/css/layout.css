@@ -210,6 +210,8 @@ body.activeAside #header .top_nav {display: none !important;}
 #footer .inner .bt_wrap2 .bt_sns a {margin-left:8px;font-size:0;display:block;}
 #footer .inner .bt_wrap2 .bt_sns a:last-child {padding-right:0;}
 
+#footer .inner .bt_info form a{font-size: 11px !important; color:#000 !important; text-decoration: underline;}
+
 /* 상품 더보기 */
 .main_image_text_gallery_more,
 .more {text-align:center;margin:0 auto;position:relative;width:100%;}
@@ -312,7 +314,7 @@ body.activeAside #header .top_nav {display: none !important;}
 	#footer .inner .bt_wrap2 .bt_sns a {margin:0 8px 0 0;font-size:0;display:block;}
 	#footer .inner .bt_wrap2 .bt_sns a:first-child {margin-left:-10px;}
 
-	#footer .inner .bt_info form {margin-top: 16px;}
+	#footer .inner .bt_info form a{font-size: 10px !important;}
 
 	/* 상품 더보기 */
 	.main_image_text_gallery_more .main_image_text_gallery_more_btn,

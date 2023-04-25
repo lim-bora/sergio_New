@@ -10,19 +10,18 @@
 
 /* 쿠폰 정보 레이어 */
 .xans-myshop-couponlist ul { padding:6px 13px; text-align:left; line-height:19px; }
-.xans-myshop-couponlist ul li { display:flex; line-height:22px; }
+.xans-myshop-couponlist ul li { display:flex; line-height:22px; color: #888; font-size: 12px;}
 /*.xans-myshop-couponlist ul li:before { content:"-"; display:inline-block; margin:0 3px 0 0; }*/
 .xans-myshop-couponlist ul li.gButton { align-items:center; }
 .xans-myshop-couponlist ul li strong { width:100px; font-weight:normal; color: #888;font-size: 12px;}
-.xans-myshop-couponlist ul li .content { flex:1; }
 
 .xans-myshop-couponlist .title { overflow:hidden; margin:40px 0 10px 10px; }
 .xans-myshop-couponlist .title h3 { float:left; color:#353535; font-size:12px; }
 .xans-myshop-couponlist .title p { float:right; color:#757575; }
 
 .xans-myshop-couponlist .ec-base-table table td { border-bottom:0;  padding: 16px 0px 16px 5px; text-align: left;}
-.xans-myshop-couponlist .ec-base-table table td.center{text-align: center;padding: 30px 0;}
-.xans-myshop-couponlist .ec-base-table table td span.content{display: block; color: #888;font-size: 12px;}
+.xans-myshop-couponlist .ec-base-table table td.center{text-align: center;padding: 30px 0; cursor: pointer;}
+.xans-myshop-couponlist .ec-base-table table td > span.content{display: block; color: #888;font-size: 12px;}
 .xans-myshop-couponlist .ec-base-table table .selected td { border-top:0; }
 
 /********************* Mobile / Tablet *********************/

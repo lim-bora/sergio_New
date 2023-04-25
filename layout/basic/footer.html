@@ -34,13 +34,13 @@
 				  <div data-ez-item="company_regno"><span data-ez-role="field">사업자 등록번호 : </span> <span data-ez-role="value">{$company_regno}</span></div>
 				  <div data-ez-item="network_regno"><span data-ez-role="field">통신판매업 신고번호 : </span> <span data-ez-role="value">{$network_regno} {$biz_no_link}</span></div>
 				  <div data-ez-item="cpo_name"><span data-ez-role="field">개인정보보호책임자 : </span> <span data-ez-role="value">{$cpo_name}</span></div>
+					<form name="shop_check" method="post" action="http://admin.kcp.co.kr/Modules/escrow/kcp_pop.jsp" style="width: 100%;">
+						<input type="hidden" name="site_cd" value="AIZEC" /><a href="#none" onclick="javascript:go_check()">KCP 안전구매서비스 기업</a>
+					</form>
 					<div class="bt_copyright">
 						Copyright © {$mall_name}. All Rights Reserved.
 					</div><!-- //bt_copyright -->
 			  </div><!-- //bt_info_list -->
-				<form name="shop_check" method="post" action="http://admin.kcp.co.kr/Modules/escrow/kcp_pop.jsp" class="display_pc_only">
-					<input type="hidden" name="site_cd" value="AIZEC" /><a href="#none" onclick="javascript:go_check()"><img src="/web/upload/105x154.gif" border="0" style="height: 110px;"/></a>
-				</form>
 			</div><!-- //bt_info -->
 
 

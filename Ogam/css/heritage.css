@@ -40,7 +40,7 @@
 .lastSection {position: relative;}
 .lastSection > img {width: 100%;}
 .lastSection .txtArea {position: absolute; top: 0; right: 0; width: 50%; height: 100%;}
-.lastSection .txtArea p { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);font-size: 1.25em; line-height: 1.5; white-space:nowrap; color: #FFF; text-align: center;}
+.lastSection .txtArea p { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);font-size: 20px; line-height: 30px; white-space:nowrap; color: #FFF; text-align: center;}
 .lastSection .txtVert { bottom:204px; right: -33px; }
 
 @media all and (min-width:1025px) {
