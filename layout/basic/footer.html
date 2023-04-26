@@ -34,7 +34,7 @@
 				  <div data-ez-item="company_regno"><span data-ez-role="field">사업자 등록번호 : </span> <span data-ez-role="value">{$company_regno}</span></div>
 				  <div data-ez-item="network_regno"><span data-ez-role="field">통신판매업 신고번호 : </span> <span data-ez-role="value">{$network_regno} {$biz_no_link}</span></div>
 				  <div data-ez-item="cpo_name"><span data-ez-role="field">개인정보보호책임자 : </span> <span data-ez-role="value">{$cpo_name}</span></div>
-					<form name="shop_check" method="post" action="http://admin.kcp.co.kr/Modules/escrow/kcp_pop.jsp" style="width: 100%;">
+					<form name="shop_check" method="post" action="http://admin.kcp.co.kr/Modules/escrow/kcp_pop.jsp?site_cd=AIZEC" style="width: 100%;">
 						<input type="hidden" name="site_cd" value="AIZEC" /><a href="#none" onclick="javascript:go_check()">KCP 안전구매서비스 기업</a>
 					</form>
 					<div class="bt_copyright">
@@ -116,7 +116,7 @@
 		var obj     = window.open('', 'kcp_pop', status);
 		document.shop_check.method = "post";
 		document.shop_check.target = "kcp_pop";
-		document.shop_check.action = "http://admin.kcp.co.kr/Modules/escrow/kcp_pop.jsp";
+		document.shop_check.action = "http://admin.kcp.co.kr/Modules/escrow/kcp_pop.jsp?site_cd=AIZEC";
 		document.shop_check.submit();
 	}
 </script>
