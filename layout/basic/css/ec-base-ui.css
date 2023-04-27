@@ -142,6 +142,7 @@ span.noBorder input { border:none !important; width:auto !important; height:auto
 
 /* ec-base-radio */
 .ec-base-radio.typeDelivery .ec-base-label{display:block;}
+#cs_shipfee_paymethod .ec-base-radio.typeDelivery .ec-base-label:first-child {opacity: 0; height: 0;}
 
 /* ec-base-qty */
 .ec-base-qty { position:relative; display:inline-block; width:80px; padding:0 20px; vertical-align:top; box-sizing:border-box; height: 32px;}
