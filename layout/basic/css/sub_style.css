@@ -849,9 +849,9 @@ div.ec-base-help ul {margin:0;}
 	.myshop_recommender .invite ul {margin:10px 0 0;font-size:13px;}
 
 	/* 장바구니 */
-	.xans-order-basketpackage .ec-base-prdInfo .thumbnail {width:80px;height:auto;border:0;}
+	.xans-order-basketpackage .ec-base-prdInfo .thumbnail {width:120px;height:auto;border:0;}
 	/*.xans-order-basketpackage .ec-base-prdInfo .description .prdName img {height:20px;}*/
-	.xans-order-basketpackage .ec-base-prdInfo .optionGroup {margin:35px 0 0 0;}
+	.xans-order-basketpackage .ec-base-prdInfo .optionGroup {margin:12px 0 0 0;}
 	.xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity {padding:0;}
 	.xans-order-basketpackage .ec-base-prdInfo.gCheck .sumPrice {margin:0 0 24px 0;}
 	.xans-order-basketpackage .ec-base-prdInfo .buttonGroup {padding:0;margin:0;}
