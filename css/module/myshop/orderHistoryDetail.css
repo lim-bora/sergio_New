@@ -56,8 +56,8 @@
 .csDetail .prdInfo ul > li > strong { display:block; color:#353535; }
 .csDetail .csArea { margin:0 0 20px; }
 
-.xans-myshop-orderhistorydetail .ec-base-fold.theme1.gBottomLine{padding-top:32px; margin-bottm: 32px;border-top: 1px solid #EAEAEA;}
-.xans-myshop-orderhistorydetail .ec-base-fold.theme1.gBottomLine > .title{border-bottom: 0;}
+.xans-myshop-orderhistorydetail .ec-base-fold.theme1.gBottomLine{padding-top:32px; margin-bottom: 32px;border-top: 1px solid #EAEAEA;}
+.xans-myshop-orderhistorydetail .ec-base-fold.theme1.gBottomLine > .title{border-bottom: 0; pointer-events: none;}
 .xans-myshop-orderhistorydetail .ec-base-fold.theme1.gBottomLine > .title h3{font-size: 14px; font-weight: normal;padding: 0 0 20px;}
 .xans-myshop-orderhistorydetail .ec-base-fold.theme1 > .title:after{display: none;}
 .xans-myshop-orderhistorydetail .ec-base-table th { border-bottom:none; background-color:#fff; padding: 0px 0px 16px;color: #747474;}
