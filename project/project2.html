@@ -3,7 +3,44 @@
 <!--@js(/Ogam/js/project.js)-->
 
 <style>
-    .introBanner{display: none !important;} /* 작업 중 임시해제 */
+    .project2 .ec-base-product .prdList .thumbnail .icon {display: none;}
+    .project2 .ec-base-product,
+    .project2 .ec-base-product .prdList .prdList__item,
+    .project2 .ec-base-product .prdList,
+    .project2 .ec-base-product .prdList > li {margin: 0;}
+
+    .project2 .swiper {position: relative; overflow: hidden;}
+    .project2 .swiper-pagination-bullet-active {background: rgba(0,0,0,0.2);}
+    .project2 .swiper-pagination-bullet {background: rgba(0,0,0,0.6); width: 20px; height: 1px;}
+
+    .project2 .main_section {font-size:0;}
+    .project2 .main_section .main_image {width: 100%; position: relative;}
+    .project2 .main_section .main_image img:first-child {width: 100%;}
+    .project2 .main_section .main-gif {position: absolute; top:50%; left: 11.7%; width: 33.3%; transform: translateY(-50%);}
+    .project2 .main_section .main_txt {position: relative; padding: 132px 0; font-size: 28px; line-height: 40px; text-align: center;}
+    .project2 .main_section .main-type {position: absolute; z-index: 2; left:0; bottom: -57px; width: 100%; padding: 0 10px;}
+
+    .project2 .section2 {padding: 0 0 120px; display: flex;}
+    .project2 .section2 .section2_img {width: 45%; font-size: 0;}
+    .project2 .section2 .section2_img img {width: 100%;}
+    .project2 .section2 .og_product_here {width: 55%; padding: 0 14.8%; box-sizing: border-box; display: flex; align-items: center;}
+    .project2 .section2 .og_product_here .ec-base-product .prdList li {width: 100% !important;}
+
+    .project2 .section3 .section3_img {font-size: 0;}
+    .project2 .section3 .section3_img img {width: 100%;}
+    .project2 .section3 .section3_txt {display: flex; justify-content: flex-end; padding: 52px 74px; gap: 78px;}
+    .project2 .section3 .section3_txt p {font-size: 18px; line-height: 24px;}
+    .project2 .section3 .section3_txt p.cate {font-weight: 700; color: #D22B2B;}
+    .project2 .section3 .section3_txt p.name {font-weight: 500; color: #000; margin: 6px 0;}
+    .project2 .section3 .section3_txt p.desc {color: #777;}
+
+    .project2 .section4 {background-image: url("/project/img/section4_bg.png"); height: 83.8vw;}
+    .project2 .section4 .section4_txt {font-size: 28px; line-height: 40px; padding: 120px 0 126px; text-align: center;}
+    .project2 .section4 .section4_wrap {display: flex;}
+    .project2 .section4 .section4_wrap .og_product_here {width: 59%; padding: 0 13.7%;  box-sizing: border-box; display: flex; align-items: center;}
+    .project2 .section4 .section4_wrap .section4_img {width: 41%; }
+
+    .project2 .section5 img {width: 100%;}
 
 </style>
 
@@ -12,42 +49,89 @@
 
         <!--@css(/css/module/product/project_package.css)-->
 
-        <div class="path" module="project_head">
-            <span>현재 위치</span>
-            <ol>
-                <li><a href="/">홈</a></li>
-                <li title="현재 위치">기획전</li>
-            </ol>
-        </div>
+<!--        <div class="path" module="project_head">-->
+<!--            <span>현재 위치</span>-->
+<!--            <ol>-->
+<!--                <li><a href="/">홈</a></li>-->
+<!--                <li title="현재 위치">기획전</li>-->
+<!--            </ol>-->
+<!--        </div>-->
 
-        <div class="section title" module="product_headcategory">
-            <h2>{$title_text_or_image}</h2>
-        </div>
-
-
-        <div module="product_headcategory" class="product_top_image">{$top_image_tag}</div>
+<!--        <div class="section title" module="product_headcategory">-->
+<!--            <h2>{$title_text_or_image}</h2>-->
+<!--        </div>-->
 
 
+<!--        <div module="product_headcategory" class="product_top_image">{$top_image_tag}</div>-->
+        <section class="main_section">
+            <div class="main_image">
+                <img src="/project/img/monte-main.png" alt="Monte-Carlo">
+                <img src="/project/img/monte-gif.gif" alt="Monte-Carlo-gif" class="main-gif">
+                <img src="/project/img/ST_type_2.svg" alt="sergio tacchini" class="main-type">
+            </div>
+            <div class="main_txt">
+                Sergio Tacchini는 지중해 연안의 모나코 공국의 몬테카를로 컨트리 클럽에서<br>
+                개최되는 Monte-Carlo Master 를 자랑스럽게 후원해 왔습니다.
+            </div>
+        </section>
 
-        <section id="og_menuCate_1">
-            <div class="og_title_here"></div>
+
+        <section id="og_menuCate_1" class="section2">
+            <div class="section2_img">
+                <img src="/project/img/monte-section2.png" alt="아레쪼">
+            </div>
             <div class="og_product_here">
 
             </div>
         </section>
 
-        <section id="og_menuCate_2">
-            <div class="og_title_here"></div>
-            <div class="og_product_here">
 
+        <section class="section3">
+            <div class="section3_img">
+                <img src="/project/img/monte-section3.jpg" alt="사바티니">
+            </div>
+            <div class="section3_txt">
+                <div class="pj_prdInfo">
+                    <p class="cate">DRESS</p>
+                    <p class="name">사바티니 플리츠 오픈카라 스웨터 드레스</p>
+                    <p class="desc">슬림한 상의와 플리츠 스커트 조합의<br>
+                        니트 원피스로 코트룩과 데일리룩으로 연출
+                    </p>
+                </div>
+                <div class="pj_prdInfo">
+                    <p class="cate">SHOES</p>
+                    <p class="name">타키니 코트 클라시코</p>
+                    <p class="desc">세르지오 타키니의 심볼 LOGO '라파챠(La faccia)'를<br>
+                        활용한 클래식 코트화입니다.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section id="og_menuCate_3">
-            <div class="og_title_here"></div>
-            <div class="og_product_here">
 
+        <section id="og_menuCate_2" class="section4">
+            <div class="section4_txt">
+                아름다운 지중해 해변과 고급스러운 리조트 분위기에서 나오는 세련되면서도<br>
+                여유로운 매력이 Sergio Tacchini에 녹아들어 독보적인 느낌을 자아냅니다.
             </div>
+            <div class="section4_wrap">
+                <div class="og_product_here">
+
+                </div>
+                <div class="section4_img">
+                    <img src="/project/img/monte-sec4.png" alt="다마린도">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section5">
+            <img src="/project/img/monte-full.jpg" alt="monte">
+        </section>
+
+
+        <section class="section6">
+
         </section>
 
 
@@ -68,9 +152,9 @@
                 -->
                 <h3><span id="{$cate_id}"></span>{$category_name}</h3>
 
-                <div module="project_productlist" class="ec-base-product">
-                    <ul class="prdList grid4">
-                        <li id="anchorBoxId_{$product_no}">
+                <div module="project_productlist" class="ec-base-product swiper project2Swiper">
+                    <ul class="prdList grid4 swiper-wrapper">
+                        <li id="anchorBoxId_{$product_no}" class="swiper-slide">
                             <div class="prdList__item">
                                 <div class="thumbnail">
                                     <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" loading="lazy"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
@@ -96,7 +180,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li id="anchorBoxId_{$product_no}">
+                        <li id="anchorBoxId_{$product_no}" class="swiper-slide">
                             <div class="prdList__item">
                                 <div class="thumbnail">
                                     <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" loading="lazy"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
@@ -123,6 +207,9 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>

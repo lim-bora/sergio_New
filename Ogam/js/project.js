@@ -68,6 +68,36 @@ window.addEventListener('DOMContentLoaded', (event) => {
         },
     });
 
+    const swiper_p2_2 = new Swiper(".section2 .project2Swiper", {
+        slidesPerView: 1,
+        loop: true,
+        watchOverflow : true,
+        resistance : false,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    const swiper_p2_4 = new Swiper(".section4 .project2Swiper", {
+        slidesPerView: 1,
+        loop: true,
+        watchOverflow : true,
+        resistance : false,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
 });
 
 
