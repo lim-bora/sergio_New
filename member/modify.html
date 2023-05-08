@@ -187,6 +187,14 @@
                 <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />국적</th>
                 <td>{$form.citizenship}</td>
             </tr>
+            <tr class="{$display_is_sex|display}">
+                <th scope="row">성별<img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_sex|display}" alt="필수" /></th>
+                <td>{$form.is_sex}</td>
+            </tr>
+            <tr class="{$display_birthday|display}">
+                <th scope="row">생년월일<img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_is_birthday|display}" alt="필수" /></th>
+                <td class="formGroup date"><div>{$form.birth_year} <span>년</span> </div><div>{$form.birth_month} <span>월</span></div><div> {$form.birth_day} <span>일</span></div> <span class="gFlow {$display_calendar_type|display}">{$form.is_solar_calendar}</span></td>
+            </tr>
             <tr class="{$display_addr|display}">
                 <th scope="row">주소<img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" /></th>
                 <td class="formMultiple">{$form.address}</td>
@@ -261,14 +269,6 @@
             <tr class="{$display_nick|display}">
                 <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_nick_name_flag|display}" alt="필수" />별명</th>
                 <td>{$form.nick_name} <span class="txtInfo">(한글2~10자/영문 대소문자4~20자/숫자 혼용가능)</span></td>
-            </tr>
-            <tr class="{$display_is_sex|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_sex|display}" alt="필수" />성별</th>
-                <td>{$form.is_sex}</td>
-            </tr>
-            <tr class="{$display_birthday|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_is_birthday|display}" alt="필수" />생년월일</th>
-                <td class="formGroup date"><div>{$form.birth_year} <span>년</span> </div><div>{$form.birth_month} <span>월</span></div><div> {$form.birth_day} <span>일</span></div> <span class="gFlow {$display_calendar_type|display}">{$form.is_solar_calendar}</span></td>
             </tr>
             <tr class="{$display_marry|display}">
                 <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_is_wedding_anniversary|display}" alt="필수" />결혼기념일</th>
