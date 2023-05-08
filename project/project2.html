@@ -9,11 +9,13 @@
     .project2 .ec-base-product .prdList,
     .project2 .ec-base-product .prdList > li {margin: 0;}
 
-    .project2 .swiper {position: relative; overflow: hidden;}
     .project2 .swiper-pagination-bullet-active {background: rgba(0,0,0,0.2);}
     .project2 .swiper-pagination-bullet {background: rgba(0,0,0,0.6); width: 20px; height: 1px;}
+    .project2 .swiper-button-next {background-image: url("/project/img/swiper_next.png"); width: 12px; height: 27.9px; background-size: contain;}
+    .project2 .swiper-button-prev {background-image: url("/project/img/swiper_prev.png");  width: 12px; height: 27.9px; background-size: contain;}
 
     .project2 .main_section {font-size:0;}
+    .project2 .main_section .monte-txt {position: absolute; width: 31vw; right: 7.8vw; top:19.5vw; }
     .project2 .main_section .main_image {width: 100%; position: relative;}
     .project2 .main_section .main_image img:first-child {width: 100%;}
     .project2 .main_section .main-gif {position: absolute; top:50%; left: 11.7%; width: 33.3%; transform: translateY(-50%);}
@@ -23,24 +25,46 @@
     .project2 .section2 {padding: 0 0 120px; display: flex;}
     .project2 .section2 .section2_img {width: 45%; font-size: 0;}
     .project2 .section2 .section2_img img {width: 100%;}
-    .project2 .section2 .og_product_here {width: 55%; padding: 0 14.8%; box-sizing: border-box; display: flex; align-items: center;}
+    .project2 .section2 .section2_swiper {width: 55%; padding: 0 14.8%; box-sizing: border-box; display: flex; align-items: center; position: relative;}
+    .project2 .section2 .og_product_here {overflow: hidden;}
     .project2 .section2 .og_product_here .ec-base-product .prdList li {width: 100% !important;}
+    .project2 .section2 .og_product_here .swiper-button-next {right: 8.93vw;}
+    .project2 .section2 .og_product_here .swiper-button-prev {left: 7.91vw;}
+    .project2 .og_product_here .swiper-container-horizontal>.swiper-pagination-bullets {bottom: 6.15vw;}
 
     .project2 .section3 .section3_img {font-size: 0;}
     .project2 .section3 .section3_img img {width: 100%;}
     .project2 .section3 .section3_txt {display: flex; justify-content: flex-end; padding: 52px 74px; gap: 78px;}
-    .project2 .section3 .section3_txt p {font-size: 18px; line-height: 24px;}
-    .project2 .section3 .section3_txt p.cate {font-weight: 700; color: #D22B2B;}
-    .project2 .section3 .section3_txt p.name {font-weight: 500; color: #000; margin: 6px 0;}
-    .project2 .section3 .section3_txt p.desc {color: #777;}
+    .project2 .pj_prdInfo p {font-size: 18px; line-height: 24px;}
+    .project2 .pj_prdInfo p.cate {font-weight: 700; color: #D22B2B;}
+    .project2 .pj_prdInfo p.name {font-weight: 500; color: #000; margin: 6px 0;}
+    .project2 .pj_prdInfo p.desc {color: #777;}
 
     .project2 .section4 {background-image: url("/project/img/section4_bg.png"); height: 83.8vw;}
-    .project2 .section4 .section4_txt {font-size: 28px; line-height: 40px; padding: 120px 0 126px; text-align: center;}
+    .project2 .section4 .section4_txt {font-size: 28px; line-height: 40px; padding: 6.2vw 0; text-align: center;}
     .project2 .section4 .section4_wrap {display: flex;}
-    .project2 .section4 .section4_wrap .og_product_here {width: 59%; padding: 0 13.7%;  box-sizing: border-box; display: flex; align-items: center;}
+    .project2 .section4 .section4_wrap .section4_swiper {width: 59%; padding: 0 13.7%;  box-sizing: border-box; display: flex; align-items: center; position: relative;}
+    .project2 .section4 .section4_wrap .og_product_here {overflow: hidden;}
     .project2 .section4 .section4_wrap .section4_img {width: 41%; }
+    .project2 .section4 .section4_wrap .section4_img img {width: 100%;}
+    .project2 .section4 .og_product_here .swiper-button-next {right: 7.91vw;}
+    .project2 .section4 .og_product_here .swiper-button-prev {left: 8.93vw;}
 
+    .project2 .section5 {font-size: 0;}
     .project2 .section5 img {width: 100%;}
+
+    .project2 .section6 {font-size: 0; padding: 120px 0 0;}
+    .project2 .section6 .section6_img {position: relative; height: 87.8vw;}
+    .project2 .section6 .section6_img img {position: absolute; width: 47.55vw;}
+    .project2 .section6 .section6_img img:last-child {right: 0; top:13.8vw;}
+    .project2 .section6 .section6_wrap {display: flex; justify-content: center;}
+    .project2 .section6 .section6_wrap .section6_txt {padding: 9.17vw 5.2vw;}
+    .project2 .section6 .section6_wrap img {width: 47.55vw;}
+    .project2 .section6 .pj_prdInfo:not(:last-child) {padding: 0 0 30px;}
+
+    @media screen and (max-width: 1024px) {
+
+    }
 
 </style>
 
@@ -65,7 +89,8 @@
 <!--        <div module="product_headcategory" class="product_top_image">{$top_image_tag}</div>-->
         <section class="main_section">
             <div class="main_image">
-                <img src="/project/img/monte-main.png" alt="Monte-Carlo">
+                <img src="/project/img/monte-main.jpg" alt="Monte-Carlo">
+                <img src="/project/img/MONTE-CARLO.svg" alt="Monte-Carlo-txt" class="monte-txt">
                 <img src="/project/img/monte-gif.gif" alt="Monte-Carlo-gif" class="main-gif">
                 <img src="/project/img/ST_type_2.svg" alt="sergio tacchini" class="main-type">
             </div>
@@ -80,8 +105,9 @@
             <div class="section2_img">
                 <img src="/project/img/monte-section2.png" alt="아레쪼">
             </div>
-            <div class="og_product_here">
-
+            <div class="section2_swiper">
+                <div class="og_product_here">
+                </div>
             </div>
         </section>
 
@@ -115,11 +141,12 @@
                 여유로운 매력이 Sergio Tacchini에 녹아들어 독보적인 느낌을 자아냅니다.
             </div>
             <div class="section4_wrap">
-                <div class="og_product_here">
-
+                <div class="section4_swiper">
+                    <div class="og_product_here">
+                    </div>
                 </div>
                 <div class="section4_img">
-                    <img src="/project/img/monte-sec4.png" alt="다마린도">
+                    <img src="/project/img/monte-sec4.jpg" alt="다마린도">
                 </div>
             </div>
         </section>
@@ -131,7 +158,32 @@
 
 
         <section class="section6">
-
+            <div class="section6_img">
+                <img src="/project/img/monte_5-1.jpg" alt="MC 스태프">
+                <img src="/project/img/monte_5-2.png" alt="다마린도">
+            </div>
+            <div class="section6_wrap">
+                <img src="/project/img/monte_5-3.png" alt="오스쿠로">
+                <div class="section6_txt">
+                    <div class="pj_prdInfo">
+                        <p class="cate">DRESS</p>
+                        <p class="name">다마린도 풀집 반팔 드레스</p>
+                        <p class="desc">고급스러운 데일리룩으로 연출</p>
+                    </div>
+                    <div class="pj_prdInfo">
+                        <p class="cate">SOCKS</p>
+                        <p class="name">MC 스태프 중목 양말</p>
+                        <p class="desc">로고와 민트컬러 포인트 제품</p>
+                    </div>
+                    <div class="pj_prdInfo">
+                        <p class="cate">DRESS</p>
+                        <p class="name">오스쿠로 라글란 배색 라운드넥 티셔츠</p>
+                        <p class="desc">여성 온코트 G.O.A.T 오스쿠로 폴리 라글란배색<br>
+                            라운드넥 반팔 드레스
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
