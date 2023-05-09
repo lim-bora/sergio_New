@@ -614,7 +614,7 @@ div.ec-base-help ul {margin:0;}
 	.ec-base-product .prdList .spec {gap: 6px;}
 	.ec-base-product .prdList .spec .discountRate {font-weight: 700; display: inline-block; margin-left: 6px;}
 	.ec-base-product .prdList .spec > li[data-name="판매가"] > span.active { font-size: 12px !important; line-height: 14px;}
-	.ec-base-product ul.grid3 > li {width:100%;box-sizing:border-box;}
+	.ec-base-product ul.grid3 > li {width:50%;box-sizing:border-box;}
 	.ec-base-product ul.grid3 > li:last-child {margin-bottom:35px;}
 	.ec-base-product ul.grid3 > li:after {display:block;content:"";clear:both;}
 

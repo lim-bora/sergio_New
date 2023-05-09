@@ -8,13 +8,16 @@
     .project2 .ec-base-product .prdList .prdList__item,
     .project2 .ec-base-product .prdList,
     .project2 .ec-base-product .prdList > li {margin: 0;}
-    .project2 .ec-base-product .prdList .description {margin: 30px 0 0; text-align: center;}
-    .project2 .ec-base-product .prdList .spec {margin-top: 10px; justify-content: center;}
+    .project2 .prd_slide_section .ec-base-product .prdList .description {margin: 30px 0 0; text-align: center;}
+    .project2 .prd_slide_section .ec-base-product .prdList .spec {margin-top: 10px; justify-content: center;}
+    .project2 .prd_slide_section .ec-base-product .prdList .spec li:not(:last-child) {display: none;}
+    .project2 .prd_slide_section .ec-base-product .prdList .description .name a span {font-size: 24px !important;; line-height: 34px !important;}
+    .project2 .prd_slide_section .ec-base-product .prdList .description li span {font-size: 24px !important;; line-height: 34px !important; color: #777 !important; font-weight: 400 !important; word-break: keep-all;}
 
     .project2 .swiper-pagination-bullet-active {background: rgba(0,0,0,0.2);}
     .project2 .swiper-pagination-bullet {background: rgba(0,0,0,0.6); width: 20px; height: 1px;}
-    .project2 .swiper-button-next {background-image: url("/project/img/swiper_next.png"); width: 12px; height: 27.9px; background-size: contain;}
-    .project2 .swiper-button-prev {background-image: url("/project/img/swiper_prev.png");  width: 12px; height: 27.9px; background-size: contain;}
+    .project2 .swiper-button-next {background-image: url("/project/img/swiper_next.svg"); width: 12px; height: 27.9px; background-size: contain;}
+    .project2 .swiper-button-prev {background-image: url("/project/img/swiper_prev.svg");  width: 12px; height: 27.9px; background-size: contain;}
 
     .project2 .main_section {font-size:0;}
     .project2 .main_section .monte-txt {position: absolute; width: 31vw; right: 7.8vw; top:19.5vw; }
@@ -22,7 +25,7 @@
     .project2 .main_section .main_image img:first-child {width: 100%;}
     .project2 .main_section .main-gif {position: absolute; top:50%; left: 11.7%; width: 33.3%; transform: translateY(-50%);}
     .project2 .main_section .main_txt {position: relative; padding: 132px 0; font-size: 28px; line-height: 40px; text-align: center;}
-    .project2 .main_section .main-type {position: absolute; z-index: 2; left:0; bottom: -57px; width: 100%; padding: 0 10px;}
+    .project2 .main_section .main-type {position: absolute; z-index: 2; left:0; bottom: -4px; width: 100%; padding: 0 10px;}
 
     .project2 .section2 {padding: 0 0 120px; display: flex;}
     .project2 .section2 .section2_img {width: 45%; font-size: 0;}
@@ -32,7 +35,7 @@
     .project2 .section2 .og_product_here .ec-base-product .prdList li {width: 100% !important;}
     .project2 .section2 .og_product_here .swiper-button-next {right: 8.93vw;}
     .project2 .section2 .og_product_here .swiper-button-prev {left: 7.91vw;}
-    .project2 .section2 .og_product_here .swiper-container-horizontal>.swiper-pagination-bullets {bottom: 6.15vw;}
+    .project2 .section2 .og_product_here .swiper-container-horizontal>.swiper-pagination-bullets {bottom: 4vw;}
 
     .project2 .section3 .section3_img {font-size: 0; position: relative;}
     .project2 .section3 .section3_img > img {width: 100%;}
@@ -53,22 +56,41 @@
     .project2 .section4 .section4_wrap .section4_img img {width: 100%;}
     .project2 .section4 .og_product_here .swiper-button-next {right: 7.91vw;}
     .project2 .section4 .og_product_here .swiper-button-prev {left: 8.93vw;}
-    .project2 .section4 .og_product_here .swiper-container-horizontal>.swiper-pagination-bullets {bottom: 6.15%;}
+    .project2 .section4 .og_product_here .swiper-container-horizontal>.swiper-pagination-bullets {bottom: 3%;}
 
     .project2 .section5 {font-size: 0;}
-    .project2 .section5 img {width: 100%;}
+    .project2 .section5 > img {width: 100%;}
 
     .project2 .section6 {font-size: 0; padding: 120px 0 0;}
     .project2 .section6 .section6_img {position: relative; height: 87.8vw;}
-    .project2 .section6 .section6_img img {position: absolute; width: 47.55vw;}
-    .project2 .section6 .section6_img .section6_img1::before {content: ""; width: 42px; height: 42px; background-image: url("/project/img/plus_button.png"); position: absolute; bottom: 0;}
+    .project2 .section6 .section6_img > img {position: absolute; width: 47.55vw;}
+    .project2 .section6 .section6_img a.link1 {position: absolute; top: 52.8vw; left: 26%; z-index: 2;}
+    .project2 .section6 .section6_img a.link2 {position: absolute; bottom: 21.5vw; right: 25.3%; z-index: 2;}
     .project2 .section6 .section6_img .section6_img2 {right: 0; top:13.8vw;}
-    .project2 .section6 .section6_wrap {display: flex; justify-content: center;}
+    .project2 .section6 .section6_wrap {display: flex; justify-content: center; position: relative;}
     .project2 .section6 .section6_wrap .section6_txt {padding: 9.17vw 5.2vw;}
-    .project2 .section6 .section6_wrap img {width: 47.55vw;}
+    .project2 .section6 .section6_wrap > img {width: 47.55vw;}
+    .project2 .section6 .section6_wrap a.link3 {position: absolute; top: 36.7vw; left: 35%; z-index: 2;transform: translateX(-35%);}
     .project2 .section6 .pj_prdInfo {padding: 0 0 30px;}
 
+    .project2 .prd_section {max-width: 1440px;padding: 52px 20px; margin: 0 auto;}
+    .project2 .prd_section .ec-base-product .prdList {display: block !important;}
+    .project2 .prd_section .ec-base-product .prdList .prdList__item {margin-right: 8px;}
+    .project2 .prd_section .og_title_here {margin-bottom: 24px;}
+    .project2 .prd_section .ec-base-product .prdList .description {margin-bottom: 60px;}
+    .project2 .prd_section h3 {font-size: 20px; line-height: 22px; font-weight: 500;}
+    .project2 .prd_section .swiper-button-next,
+    .project2 .prd_section .swiper-button-prev,
+    .project2 .prd_section .swiper-pagination {display: none;}
+    .project2 .prd_section .ec-base-product .prdList .spec li:not(:first-child) {display: none;}
+    .project2 .prd_section .ec-base-product .prdList .description .name a span {font-size: 16px !important; line-height: 18px !important;}
+
     @media screen and (max-width: 1024px) {
+        .project2 a img {width: 32px;}
+
+        .project2 .prd_slide_section .ec-base-product .prdList .description .name a span {font-size: 16px !important; line-height: 20px !important; font-weight: 400 !important;}
+        .project2 .prd_slide_section .ec-base-product .prdList .description li span {font-size: 14px !important; line-height: 20px !important;}
+
         .project2 .main_section .main_txt {padding: 48px 0; font-size: 14px; line-height: 22px;}
         .project2 .pj_prdInfo p {font-size: 14px; line-height: 24px;}
         .project2 .pj_prdInfo p.name {margin: 4px 0 2px; }
@@ -80,7 +102,6 @@
         .project2 .swiper-button-next,
         .project2 .swiper-button-prev {width: 8px; height: 16px;}
 
-
         .project2 .main_section .main_image {height: 636px;}
         .project2 .main_section .main_image img:first-child {height: 100%; object-fit: cover;}
         .project2 .main_section .main-gif {left: 50%; transform: translate(-50%, -50%); width: 69.3vw; max-width: 370px;}
@@ -89,12 +110,14 @@
 
         .project2 .section2 {flex-direction: column; padding: 0;}
         .project2 .section2 .section2_img {width: 100%;}
-        .project2 .section2 .section2_swiper {padding: 48px 64px 80px; width: 100%;}
+        .project2 .section2 .section2_swiper {padding: 48px 64px; margin-bottom: 32px; width: 100%;}
         .project2 .section2 .og_product_here .swiper-button-next {right: 28px;}
         .project2 .section2 .og_product_here .swiper-button-prev {left: 28px;}
 
         .project2 .section3 .section3_img {height: 600px;}
         .project2 .section3 .section3_img > img { height: 100%; object-fit: cover;}
+        .project2 .section3 .section3_img > a.link1 {top: 250px; left: 39.5%;}
+        .project2 .section3 .section3_img > a.link2 {bottom: 76px; left: 33%;}
         .project2 .section3 .section3_txt {flex-direction: column; padding: 48px 16px; gap: 32px;}
         .project2 .section3 .section3_txt .pj_prdInfo:first-child {padding-bottom: 32px; border-bottom: 1px solid #E0E0E0;}
 
@@ -102,21 +125,25 @@
         .project2 .section4 .section4_wrap .section4_img,
         .project2 .section4 .section4_wrap .section4_swiper {width: 100%;}
         .project2 .section4 .section4_wrap {flex-direction: column-reverse;}
-        .project2 .section4 .section4_wrap .section4_swiper {padding: 48px 64px 80px;}
+        .project2 .section4 .section4_wrap .section4_swiper {padding: 48px 64px; margin-bottom: 32px;}
         .project2 .section4 .section4_txt {padding: 48px 0 0;}
         .project2 .section4 .og_product_here .swiper-button-next {right: 24px;}
         .project2 .section4 .og_product_here .swiper-button-prev {left: 24px;}
 
         .project2 .section6 {padding: 24px 0 0;}
         .project2 .section6 .section6_img {height: auto;}
-        .project2 .section6 .section6_img img {position: relative; width: 100%;}
-        .project2 .section6 .section6_img img:first-child {padding-right: 60px;}
+        .project2 .section6 .section6_img > img {position: relative; width: 100%;}
+        .project2 .section6 .section6_img > img:first-child {padding-right: 60px;}
         .project2 .section6 .section6_img .section6_img2 {padding-left: 60px; top: 0;}
+        .project2 .section6 .section6_img a.link1 {top: 93.6vw; left: 44%;}
+        .project2 .section6 .section6_img a.link2 {bottom: 59.7vw; right: 41.9%;}
+        .project2 .section6 .section6_wrap a.link3 {top:74.4vw; left: 50%; transform: translateX(-50%);}
         .project2 .section6 .section6_wrap {flex-direction: column;}
-        .project2 .section6 .section6_wrap img {width: 100%;}
+        .project2 .section6 .section6_wrap > img {width: 100%;}
         .project2 .section6 .pj_prdInfo {padding: 24px 20px;}
 
-
+        .project2 .prd_section {padding: 32px 20px;}
+        .project2 .prd_section .ec-base-product .prdList .description {margin-bottom: 32px;}
     }
 
 
@@ -146,7 +173,7 @@
                 <img src="/project/img/monte-main.jpg" alt="Monte-Carlo">
                 <img src="/project/img/MONTE-CARLO.svg" alt="Monte-Carlo-txt" class="monte-txt">
                 <img src="/project/img/monte-gif.gif" alt="Monte-Carlo-gif" class="main-gif">
-                <img src="/project/img/ST_type_2.svg" alt="sergio tacchini" class="main-type">
+                <img src="/project/img/ST_logo_monte.svg" alt="sergio tacchini" class="main-type">
             </div>
             <div class="main_txt">
                 Sergio Tacchini는 지중해 연안의 모나코 공국의<br class="display_tablet_only"> 몬테카를로 컨트리 클럽에서<br class="display_pc_only">
@@ -155,7 +182,7 @@
         </section>
 
 
-        <section id="og_menuCate_1" class="section2">
+        <section id="og_menuCate_1" class="section2 prd_slide_section">
             <div class="section2_img">
                 <img src="/project/img/monte-section2.png" alt="아레쪼">
             </div>
@@ -169,8 +196,8 @@
         <section class="section3">
             <div class="section3_img">
                 <img src="/project/img/monte-section3.jpg" alt="사바티니">
-                <a href="/product/%EC%82%AC%EB%B0%94%ED%8B%B0%EB%8B%88-%ED%94%8C%EB%A6%AC%EC%B8%A0-%EC%98%A4%ED%94%88%EC%B9%B4%EB%9D%BC-%EB%B0%98%ED%8C%94-%EC%8A%A4%EC%9B%A8%ED%84%B0-%EB%93%9C%EB%A0%88%EC%8A%A4/314/category/49/display/1/" class="link1"><img src="/project/img/plus_button.png" alt="plus"></a>
-                <a href="#" class="link2"><img src="/project/img/plus_button.png" alt="plus"></a>
+                <a href="/product/%EC%82%AC%EB%B0%94%ED%8B%B0%EB%8B%88-%ED%94%8C%EB%A6%AC%EC%B8%A0-%EC%98%A4%ED%94%88%EC%B9%B4%EB%9D%BC-%EB%B0%98%ED%8C%94-%EC%8A%A4%EC%9B%A8%ED%84%B0-%EB%93%9C%EB%A0%88%EC%8A%A4/314/category/49/display/1/" class="link1"><img src="/project/img/plus_button.svg" alt="plus"></a>
+                <a href="#" class="link2"><img src="/project/img/plus_button.svg" alt="plus"></a>
             </div>
             <div class="section3_txt">
                 <div class="pj_prdInfo">
@@ -191,7 +218,7 @@
         </section>
 
 
-        <section id="og_menuCate_2" class="section4">
+        <section id="og_menuCate_2" class="section4 prd_slide_section">
             <div class="section4_txt display_tablet_up">
                 아름다운 지중해 해변과 고급스러운 리조트 분위기에서 나오는 세련되면서도<br>
                 여유로운 매력이 Sergio Tacchini에 녹아들어 독보적인 느낌을 자아냅니다.
@@ -221,20 +248,23 @@
         <section class="section6">
             <div class="section6_img">
                 <img src="/project/img/monte_5-1.jpg" alt="MC 스태프" class="section6_img1">
+                <a href="/product/mc-%EC%8A%A4%ED%83%9C%ED%94%84-%EC%A4%91%EB%AA%A9-%EC%96%91%EB%A7%90/27/category/58/display/1/" class="link1"><img src="/project/img/plus_button.svg" alt="plus"></a>
                 <div class="pj_prdInfo display_mobile_only">
-                    <p class="cate">DRESS</p>
-                    <p class="name">다마린도 풀집 반팔 드레스</p>
-                    <p class="desc">고급스러운 데일리룩으로 연출</p>
-                </div>
-                <img src="/project/img/monte_5-2.png" alt="다마린도" class="section6_img2">
-                <div class="pj_prdInfo display_mobile_only" style="padding-left: 60px;">
                     <p class="cate">SOCKS</p>
                     <p class="name">MC 스태프 중목 양말</p>
                     <p class="desc">로고와 민트컬러 포인트 제품</p>
                 </div>
+                <img src="/project/img/monte_5-2.png" alt="다마린도" class="section6_img2">
+                <a href="/product/%EB%8B%A4%EB%A7%88%EB%A6%B0%EB%8F%84-%EC%A0%80%EC%A7%80%EC%9A%B0%EB%B8%90%EB%AF%B9%EC%8A%A4-%ED%92%80%EC%A7%91-%EB%B0%98%ED%8C%94-%EB%93%9C%EB%A0%88%EC%8A%A4/327/category/32/display/1/" class="link2"><img src="/project/img/plus_button.svg" alt="plus"></a>
+                <div class="pj_prdInfo display_mobile_only" style="padding-left: 60px;">
+                    <p class="cate">DRESS</p>
+                    <p class="name">다마린도 풀집 반팔 드레스</p>
+                    <p class="desc">고급스러운 데일리룩으로 연출</p>
+                </div>
             </div>
             <div class="section6_wrap">
                 <img src="/project/img/monte_5-3.jpg" alt="오스쿠로">
+                <a href="/product/%EC%98%A4%EC%8A%A4%EC%BF%A0%EB%A1%9C-%ED%8F%B4%EB%A6%AC-%EB%9D%BC%EA%B8%80%EB%9E%80-%EB%B0%B0%EC%83%89-%EB%9D%BC%EC%9A%B4%EB%93%9C%EB%84%A5-%EB%B0%98%ED%8C%94-%EB%93%9C%EB%A0%88%EC%8A%A4/251/category/49/display/1/" class="link3"><img src="/project/img/plus_button.svg" alt="plus"></a>
                 <div class="section6_txt display_tablet_up">
                     <div class="pj_prdInfo">
                         <p class="cate">DRESS</p>
@@ -261,6 +291,20 @@
                         라운드넥 반팔 드레스
                     </p>
                 </div>
+            </div>
+        </section>
+
+        <section id="og_menuCate_3" class="section7 prd_section">
+            <div class="og_title_here"></div>
+            <div class="og_product_here">
+
+            </div>
+        </section>
+
+        <section id="og_menuCate_4" class="section8 prd_section">
+            <div class="og_title_here"></div>
+            <div class="og_product_here">
+
             </div>
         </section>
 
