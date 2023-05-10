@@ -1,19 +1,19 @@
 <!--@layout(/layout/basic/layout.html)-->
 <!--@js(/layout/basic/js/main.js)-->
 <!--@js(/Ogam/js/main.js)-->
+<!--@js(/Ogam/js/heritageAlert.js)-->
 <!--@css(/layout/basic/css/main.css)-->
 <!--@css(/Ogam/css/main.css)-->
-<!--@import(/smart-banner/shop1/smart-banner-admin-RES00003.html)--->
-<!--@js(/Ogam/js/heritageAlert.js)-->
+<!--@import(/smart-banner/shop1/smart-banner-admin-RES00008.html)-->
 <div class="mainbanne01" data-ez="module-090a48f-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
 	<div class="pc_main01 main01" df-banner-code="sergio-mainbanner" hidden>
 		<div class="swiper mainSwiper" style="width: 100%;height: 100%;position: relative;overflow: hidden;">
 			<ul class="swiper-wrapper">
 				<a href="{#href}" target="{#target}" class="banner01Img" df-banner-clone>{#item}
 					<div class="txtBox">{#title}
-<!--						<h3 class="mainBannerTxt"></h3>-->
-<!--						<p class="mainBannerSub"></p>-->
-<!--						<span>자세히 보기</span>-->
+						<!--						<h3 class="mainBannerTxt"></h3>-->
+						<!--						<p class="mainBannerSub"></p>-->
+						<!--						<span>자세히 보기</span>-->
 					</div>
 				</a>
 			</ul>
@@ -25,9 +25,9 @@
 			<ul class="swiper-wrapper">
 				<a href="{#href}" target="{#target}" class="banner01Img" df-banner-clone>{#item}
 					<div class="txtBox">{#title}
-<!--						<h3 class="mainBannerTxt"></h3>-->
-<!--						<p class="mainBannerSub"></p>-->
-<!--						<span>자세히 보기</span>-->
+						<!--						<h3 class="mainBannerTxt"></h3>-->
+						<!--						<p class="mainBannerSub"></p>-->
+						<!--						<span>자세히 보기</span>-->
 					</div>
 				</a>
 			</ul>
@@ -42,51 +42,70 @@
 		</div>
 	</div>
 </section>
+
+<!----------------------------------5010update--------------------------------->
+<!--기획전배너 : 랜딩-->
+<section class="sideBanner section_full sideBanner" data-ez="module-0ynqxca-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
+	<div class="pc_main01">
+		<div class="main01" df-banner-code="halfbanner01" hidden>
+			<a href="{#href}" target="{#target}" class="leftImg" df-banner-clone>{#item}
+				<div class="txtarea">{#title}
+					<span>자세히 보기</span>
+				</div>
+			</a>
+		</div>
+		<div class="main01" df-banner-code="halfbanner02" hidden>
+			<a href="{#href}" target="{#target}" class="rightImg" df-banner-clone>{#item}
+				<div class="txtarea" style="order: -1;">{#title}
+					<span>자세히 보기</span>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="mo_main01">
+		<div class="swiper collectionSwiper" df-banner-code="halfbanner01-1" hidden style="width: 100%;height: 100%;position: relative;overflow: hidden;">
+			<ul class="swiper-wrapper">
+				<a href="{#href}" target="{#target}" class="banner01Img swiper-slide" df-banner-clone>{#item}
+					<div class="txtBox">{#title}</div>
+				</a>
+			</ul>
+		</div>
+	</div>
+	<!--div class="mo_main01 main01" df-banner-code="sergio-full-landing-mo" hidden>
+        <a href="{#href}" target="{#target}" class="banner01Img alertHT" df-banner-clone>{#item}</a>
+    </div-->
+</section>
+
+
 <section class="full_landingBanner section_full" data-ez="module-0ynqxca-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
 	<div class="pc_main01 main01" df-banner-code="sergio-full-landing" hidden>
-		<a href="{#href}" target="{#target}" class="banner01Img alertHT" df-banner-clone>{#item}</a>
+		<a href="{#href}" target="{#target}" class="banner01Img alertHT" df-banner-clone>{#item}
+			<div class="txtSection">
+				{#title}
+			</div>
+		</a>
 	</div>
 	<div class="mo_main01 main01" df-banner-code="sergio-full-landing-mo" hidden>
-		<a href="{#href}" target="{#target}" class="banner01Img alertHT" df-banner-clone>{#item}</a>
+		<a href="{#href}" target="{#target}" class="banner01Img alertHT" df-banner-clone>{#item}
+			<div class="txtSection">
+				{#title}
+			</div>
+		</a>
 	</div>
+</section>
+<!----------------------------------5010update--------------------------------->
 
-	<div class="txtSection">
-		<h2 class="pc">SERGIO TACCHINI, THE HERITAGE</h2>
-		<h2 class="mo">SERGIO TACCHINI,<br/>THE HERITAGE</h2>
-		<span class="pc">50년 이상의 역사를 가진 프리미엄 테니스웨어, 세르지오 타키니</span>
-		<span class="mo">50년 이상의 역사를 가진 프리미엄 테니스웨어,<br/>세르지오 타키니</span>
-		<a href="https://fnfst.cafe24.com/layout/basic/heritage.html" class="landingBtn alertHT">자세히 보기</a>
+<!--인스타그램 : 배너매니저-->
+<section class="section_full instagramST" style="position: relative;" data-ez="module-04abrw1-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
+	<h3>ST INSTAGRAM</h3>
+	<div class="instaBox">
+		<div df-banner-code="instagram-st" class="insta" hidden>
+			<a href="{#href}" target="{#target}" df-banner-clone>{#item}</a>
+		</div>
 	</div>
 </section>
 
-<!--슈즈컬렉션 사용X 2023.04.10-->
-<!--<section class="full_landingBanner section_full full02" style="position: relative;" data-ez="module-1g8k0ah-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">-->
-<!--	<div class="pc_main01 main01" df-banner-code="sergio-full-landing02" hidden>-->
-<!--		<a href="{#href}" target="{#target}" class="banner01Img" df-banner-clone>{#item}</a>-->
-<!--	</div>-->
-<!--	<div class="mo_main01 main01" df-banner-code="sergio-full-landing02-mo" hidden>-->
-<!--		<a href="{#href}" target="{#target}" class="banner01Img" df-banner-clone>{#item}</a>-->
-<!--	</div>-->
 
-<!--	<div class="txtSection">-->
-<!--		<h2>SHOES COLLECTION</h2>-->
-<!--		<a href="/project/project3.html?cate_no=79" class="landingBtn">자세히 보기</a>-->
-<!--	</div>-->
-<!--</section>-->
-
-<!--인스타사용X 2023.04.10-->
-<!--<section class="section_full instagramST" style="position: relative;" data-ez="module-04abrw1-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">-->
-<!--	<h3>ST INSTAGRAM</h3>-->
-<!--	<div class="instaBox">-->
-<!--		<div df-banner-code="instagram-st" class="insta" hidden>-->
-<!--			<a href="{#href}" target="{#target}" df-banner-clone>{#item}</a>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--</section>-->
-
-
-
-
-<!--@import(/smart-banner/shop1/smart-banner-admin-RES00002.html)--->
+<!--@import(/smart-banner/shop1/smart-banner-admin-RES00009.html)-->
 <!--@define(cmc_logs)-->
-<!--#ez="1/2"-->
+<!--#ez="1/7"-->

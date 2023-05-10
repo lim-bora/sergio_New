@@ -21,9 +21,9 @@ $(function() {
     let halfA = $('.half_Cate').find('a');
     halfA.append(cateTxt);
     let firstA = $('.half_Cate a:first-child').find('span');
-    firstA.text('WOMEN');
+    firstA.text('KNITWEAR');
     let seconA = $('.half_Cate a:nth-child(2)').find('span');
-    seconA.text('MEN');
+    seconA.text('POLOS');
 });
 
 
@@ -92,26 +92,33 @@ $(document).ready(function() {
     });
 
     /*띠배너 네비겹침현상 방지/닫기버튼 이벤트*/
-        let body = $('body');
-        let topNav = $('.top_nav');
-        let topBanner = $('.topBannerBox');
-        let navCloseBtn = $('.btnBox').find('.btnClose');
-        let close = $(document).find('.top_nav_box').find('.btnClose');
+    let body = $('body');
+    let topNav = $('.top_nav');
+    let topBanner = $('.topBannerBox');
+    let navCloseBtn = $('.btnBox').find('.btnClose');
+    let close = $(document).find('.top_nav_box').find('.btnClose');
 
-        topNav.click(function(e){
-            if(body.hasClass('activeAside')===true){
-                topBanner.css('display','none')
-                console.log('dd')
-            }else{
-                topBanner.css('display','block')
-            }
-        });
-        close.click(function(){
-            topBanner.css('display','block')
-        });
-        navCloseBtn.click(function(){
+    topNav.click(function(e){
+        if(body.hasClass('activeAside')===true){
             topBanner.css('display','none')
-        });
+            console.log('dd')
+        }else{
+            topBanner.css('display','block')
+        }
+    });
+    close.click(function(){
+        topBanner.css('display','block')
+    });
+    navCloseBtn.click(function(){
+        topBanner.css('display','none')
+    });
+})
 
+$(document).ready(function() {
+    //콜렉션 슬라이드 스와이프
+    var swiper = new Swiper(".collectionSwiper", {
+        slidesPerView: 1.23,
+        spaceBetween: 10,
+    });
 
 })
