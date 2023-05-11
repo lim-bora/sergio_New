@@ -1,15 +1,15 @@
 <div module="Myshop_OrderHistoryListitem">
     <!--@css(/css/module/myshop/orderHistoryListItem.css)-->
     <!--
-        $login_url = /member/login.html
-    -->
+$login_url = /member/login.html
+-->
     <h3 class="blind">주문 내역</h3>
     <!--@js(/Ogam/js/myPage.js)-->
     <div class="orderList {$list_display|display}">
         <div class="order">
             <div class="{$display_column|display} order__number">
-				<span class="rentBadge {$rental_display|display}">렌탈</span>
-				<span>{$order_icon}</span>
+                <span class="rentBadge {$rental_display|display}">렌탈</span>
+                <span>{$order_icon}</span>
                 <span class="date" title="주문일자">{$order_date}</span>
                 <span class="number" title="주문번호"><a href="/myshop/order/detail.html{$param_detail}">{$order_id}</a></span>
             </div>
@@ -22,7 +22,9 @@
                     </div>
                     <div class="gRight">
                         <span class="{$invoice_no_display|display}"><a href="#none" class="btnNormal sizeS btnRe" onclick="{$shipping_trace_popup}">배송조회</a></span>
-                        <a href="/board/product/write.html{$param_postscript}" class="btnNormal sizeS btnRe {$postscript_display|display}">구매후기</a>
+                        <!--브이리뷰 스크립트 / 수정할 경우 연락 부탁드립니다 (dev@indentcorp.com)-->
+                        <!--<a href="/board/product/write.html{$param_postscript}" class="btnNormal sizeS btnRe {$postscript_display|display}">구매후기</a>-->
+                        <a href="/myshop/myReview.html" class="btnNormal sizeS btnRe {$postscript_display|display}">구매후기</a>
                         <a href="#none" class="btnNormal sizeS {$withdraw_cancel_display|display}" onclick="{$action_withdraw_cancel}">취소철회</a>
                         <a href="#none" class="btnNormal sizeS {$withdraw_exchange_display|display}" onclick="{$action_withdraw_exchange}">교환철회</a>
                         <a href="#none" class="btnNormal sizeS {$withdraw_return_display|display}" onclick="{$action_withdraw_return}">반품철회</a>
@@ -33,7 +35,7 @@
                     <div class="description">
                         <strong class="prdName" title="상품명">{$product_name_link}</strong>
                         <div class="price">
-                        	<span title="판매가">{$product_price_front_head}<strong class="txtEm">{$product_price_front}</strong>{$product_price_front_tail}<span class="refer {$product_price_ref_display|display}"> {$product_price_back_head}{$product_price_back}{$product_price_back_tail}</span></span>
+                            <span title="판매가">{$product_price_front_head}<strong class="txtEm">{$product_price_front}</strong>{$product_price_front_tail}<span class="refer {$product_price_ref_display|display}"> {$product_price_back_head}{$product_price_back}{$product_price_back_tail}</span></span>
                             <p class="optionGroup {$option_str_display|display}">{$option_str}</p>
                             <span class="qty" title="수량">{$quantity}개</span>
                         </div>
@@ -47,21 +49,21 @@
                         </ul>
                     </div>
                 </div>
-				<div class="payDetail {$total_display|display}">
-					<div class="title"><strong>총 결제금액</strong>
-						<div class="gRight">
-							<strong>{$total_payment_price_front_head}{$total_payment_price_front}{$total_payment_price_front_tail} </strong>
-							<span>{$total_payment_price_back_head}{$total_payment_price_back}{$total_payment_price_back_tail}</span>
-						</div>
-					</div>
-					<div class="contents">
-						상품구매금액 <strong>{$total_product_price}</strong>
-						+ 배송비 <strong>{$total_ship_fee}</strong>
-						<span class="{$total_addsale_summary_display|display}"> - 총 할인금액 <strong>{$total_addsale_price}</strong></span>
-						<span class="{$total_addpay_summary_display|display}"> - 총 부가결제금액 <strong>{$total_addpay_price}</strong></span>
-						<span class="{$total_tax_amount_display|display}"> + 세액 <strong>{$total_tax_amount}</strong></span>
-					</div>
-				</div>
+                <div class="payDetail {$total_display|display}">
+                    <div class="title"><strong>총 결제금액</strong>
+                        <div class="gRight">
+                            <strong>{$total_payment_price_front_head}{$total_payment_price_front}{$total_payment_price_front_tail} </strong>
+                            <span>{$total_payment_price_back_head}{$total_payment_price_back}{$total_payment_price_back_tail}</span>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        상품구매금액 <strong>{$total_product_price}</strong>
+                        + 배송비 <strong>{$total_ship_fee}</strong>
+                        <span class="{$total_addsale_summary_display|display}"> - 총 할인금액 <strong>{$total_addsale_price}</strong></span>
+                        <span class="{$total_addpay_summary_display|display}"> - 총 부가결제금액 <strong>{$total_addpay_price}</strong></span>
+                        <span class="{$total_tax_amount_display|display}"> + 세액 <strong>{$total_tax_amount}</strong></span>
+                    </div>
+                </div>
             </div>
             <div class="ec-base-button gMColumn {$cs_button_display_column|display}">
                 <span class="gRight">
@@ -76,8 +78,8 @@
 
         <div class="order">
             <div class="{$display_column|display} order__number">
-				<span class="rentBadge {$rental_display|display}">렌탈</span>
-				<span>{$order_icon}</span>
+                <span class="rentBadge {$rental_display|display}">렌탈</span>
+                <span>{$order_icon}</span>
                 <span class="date" title="주문일자">{$order_date}</span>
                 <span class="number" title="주문번호"><a href="/myshop/order/detail.html{$param_detail}">{$order_id}</a></span>
             </div>
@@ -90,7 +92,9 @@
                     </div>
                     <div class="gRight">
                         <span class="{$invoice_no_display|display}"><a href="#none" class="btnNormal sizeS btnRe" onclick="{$shipping_trace_popup}">배송조회</a></span>
-                        <a href="/board/product/write.html{$param_postscript}" class="btnNormal sizeS btnRe {$postscript_display|display}">구매후기</a>
+                        <!--브이리뷰 스크립트 / 수정할 경우 연락 부탁드립니다 (dev@indentcorp.com)-->
+                        <!--<a href="/board/product/write.html{$param_postscript}" class="btnNormal sizeS btnRe {$postscript_display|display}">구매후기</a>-->
+                        <a href="/myshop/myReview.html" class="btnNormal sizeS btnRe {$postscript_display|display}">구매후기</a>
                         <a href="#none" class="btnNormal sizeS {$withdraw_cancel_display|display}" onclick="{$action_withdraw_cancel}">취소철회</a>
                         <a href="#none" class="btnNormal sizeS {$withdraw_exchange_display|display}" onclick="{$action_withdraw_exchange}">교환철회</a>
                         <a href="#none" class="btnNormal sizeS {$withdraw_return_display|display}" onclick="{$action_withdraw_return}">반품철회</a>
@@ -101,7 +105,7 @@
                     <div class="description">
                         <strong class="prdName" title="상품명">{$product_name_link}</strong>
                         <div class="price">
-                        	<span title="판매가">{$product_price_front_head}<strong class="txtEm">{$product_price_front}</strong>{$product_price_front_tail}<span class="refer {$product_price_ref_display|display}"> {$product_price_back_head}{$product_price_back}{$product_price_back_tail}</span></span>
+                            <span title="판매가">{$product_price_front_head}<strong class="txtEm">{$product_price_front}</strong>{$product_price_front_tail}<span class="refer {$product_price_ref_display|display}"> {$product_price_back_head}{$product_price_back}{$product_price_back_tail}</span></span>
                             <p class="optionGroup {$option_str_display|display}">{$option_str}</p>
                             <span class="qty" title="수량">{$quantity}개</span>
                         </div>
@@ -115,21 +119,21 @@
                         </ul>
                     </div>
                 </div>
-				<div class="payDetail {$total_display|display}">
-					<div class="title"><strong>총 결제금액</strong>
-						<div class="gRight">
-							<strong>{$total_payment_price_front_head}{$total_payment_price_front}{$total_payment_price_front_tail} </strong>
-							<span>{$total_payment_price_back_head}{$total_payment_price_back}{$total_payment_price_back_tail}</span>
-						</div>
-					</div>
-					<div class="contents">
-						상품구매금액 <strong>{$total_product_price}</strong>
-						+ 배송비 <strong>{$total_ship_fee}</strong>
-						<span class="{$total_addsale_summary_display|display}"> - 총 할인금액 <strong>{$total_addsale_price}</strong></span>
-						<span class="{$total_addpay_summary_display|display}"> - 총 부가결제금액 <strong>{$total_addpay_price}</strong></span>
-						<span class="{$total_tax_amount_display|display}"> + 세액 <strong>{$total_tax_amount}</strong></span>
-					</div>
-				</div>
+                <div class="payDetail {$total_display|display}">
+                    <div class="title"><strong>총 결제금액</strong>
+                        <div class="gRight">
+                            <strong>{$total_payment_price_front_head}{$total_payment_price_front}{$total_payment_price_front_tail} </strong>
+                            <span>{$total_payment_price_back_head}{$total_payment_price_back}{$total_payment_price_back_tail}</span>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        상품구매금액 <strong>{$total_product_price}</strong>
+                        + 배송비 <strong>{$total_ship_fee}</strong>
+                        <span class="{$total_addsale_summary_display|display}"> - 총 할인금액 <strong>{$total_addsale_price}</strong></span>
+                        <span class="{$total_addpay_summary_display|display}"> - 총 부가결제금액 <strong>{$total_addpay_price}</strong></span>
+                        <span class="{$total_tax_amount_display|display}"> + 세액 <strong>{$total_tax_amount}</strong></span>
+                    </div>
+                </div>
             </div>
             <div class="ec-base-button gMColumn {$cs_button_display_column|display}">
                 <span class="gRight">

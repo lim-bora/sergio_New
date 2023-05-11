@@ -138,6 +138,4 @@ jQuery(document).ready(function () {
 	// 	let subCate = $(this).parent().find('.sub_cate01');
 	// 	$(this).append(subCate);
 	// });
-
-
 });

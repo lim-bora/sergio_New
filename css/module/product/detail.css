@@ -693,3 +693,11 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 		max-width: none;
 	}
 }
+
+/* mileage */
+.xans-product-detail .mileage_tooltip{ position:relative; display:inline-block; }
+.xans-product-detail .mileage_tooltip .ec-base-tooltip table thead th { font-weight:bold; }
+.xans-product-detail .mileage_tooltip .button{ border:1px solid #658ECB; color:#658ECB; font-size:11px; display:inline-block; padding:3px 8px; border-radius:2px; }
+.xans-product-detail .mileage_tooltip .mileage_layer { display: block;left: -150px;top: 29px; min-width: 300px; }
+.xans-product-detail .mileage_tooltip .mileage_layer p strong { font-weight: bold; color:#008BCC; }
+.xans-product-detail .mileage_tooltip .ec-base-tooltip table th {padding: 7px 6px 8px 9px;}
