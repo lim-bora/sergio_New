@@ -1,5 +1,22 @@
 .pc{display: block!important;}
 .mo{display: none!important;}
+
+/* 팝업 */
+#popup_1 {
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	background: rgba(0,0,0,0.7) !important;
+}
+#popup_1 > iframe {
+	position: absolute !important;
+	top: 50% !important;
+	left: 50% !important;
+	transform: translate(-50%, -50%) !important;
+}
+
 /* 메인 */
 #contents {width:100% !important;max-width:100% !important;}
 #container #contents .xans-layout-mobileaction {display:none !important;}
