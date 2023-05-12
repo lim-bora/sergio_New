@@ -121,4 +121,14 @@ $(document).ready(function() {
         spaceBetween: 10,
     });
 
+    $('#popup_MO #popup_close_btn').on('click', function () {
+        $('#popup_MO').addClass('displaynone');
+    });
+
 })
+
+window.onload = function () {
+    if($('#popup_1').length === 0) {
+        $('#popup_MO').removeClass('displaynone');
+    }
+}

@@ -1,0 +1,65 @@
+<style type="text/css">
+    a{text-decoration:none; color:white}
+    .pull-right{float:right}
+    .popup_image{
+        width:100%;
+        height:100%;
+        background-color: rgba(0,0,0,0.7);
+        padding: 42%;
+    }
+    .popup_bar{
+        background-color: #000000;
+        color: #000000;
+        height: 25px;
+        padding: 8px 10px 3px 10px;
+        width: 82%;
+    }
+</style>
+
+<div id="popup_image" class="popup_image" style="position: absolute; z-index:10000; -6%; left:-13%; display: none;">
+    <a href="" ><img src="/web/upload/mo_popup.jpg" style="width:100%;height:100%;"/></a>
+    <div class="popup_bar">
+        <a href="javascript:closePopupNotToday()" class="white">오늘그만보기</a>
+        <a class="pull-right white" href="javascript:closeMainPopup();">닫기</a>
+    </div>
+</div>
+
+<script>
+    if(getCookie("notToday")!="Y"){
+        $("#popup_image").show('fade');
+    }
+
+    function closePopupNotToday(){
+        setCookie('notToday','Y', 1);
+        $("#popup_image").hide('fade');
+    }
+    function setCookie(name, value, expiredays) {
+        var today = new Date();
+        today.setDate(today.getDate() + expiredays);
+
+        document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today.toGMTString() + "; domain=example.com";
+    }
+
+    function getCookie(name)
+    {
+        var cName = name + "=";
+        var x = 0;
+        while ( x <= document.cookie.length )
+        {
+            var y = (x+cName.length);
+            if ( document.cookie.substring( x, y ) == cName )
+            {
+                if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+                    endOfCookie = document.cookie.length;
+                return unescape( document.cookie.substring( y, endOfCookie ) );
+            }
+            x = document.cookie.indexOf( " ", x ) + 1;
+            if ( x == 0 )
+                break;
+        }
+        return "";
+    }
+    function closeMainPopup(){
+        $("#popup_image").hide('fade');
+    }
+</script>
