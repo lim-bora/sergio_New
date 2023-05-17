@@ -258,6 +258,13 @@ $(document).ready(function(){
             $e.addClass('soldout');
         }
     });
+
+    // 옵션명 : 사이즈 -> SIZE
+    $('.xans-product-detail .xans-product-option .optionName th').each(function () {
+        let optionName = $(this).text();
+        let replaceTxt = optionName.replaceAll('사이즈','SIZE');
+        $(this).text(replaceTxt);
+    });
 });
 
 
