@@ -7,7 +7,7 @@ window.initMap = function () {
     });
 
     const malls = [
-        { label: "L", name: "롯데월드몰 (4월말 오픈 예정)", lat: 37.5125585, lng: 127.1025353 },
+        { label: "L", name: "롯데월드몰", lat: 37.5125585, lng: 127.1025353 },
     ];
     // const bounds = new google.maps.LatLngBounds();
     const infowindow = new google.maps.InfoWindow();

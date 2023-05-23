@@ -399,7 +399,7 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 	.xans-product-detail .productSet .thumbnail{width: 70px;}
 	.xans-product-detail .productSet .thumbnail img{width: 70px;height: 70px;}
 	.xans-product-detail .productSet .product > li.soldout::after{background-size: 70px 70px;}
-	.xans-product-detail .productSet .product {display: grid;grid-template-columns: repeat(5, 1fr);grid-gap: 8px;}
+	.xans-product-detail .productSet .product {display: grid;grid-template-columns: repeat(5, 1fr);grid-gap: 8px;  overflow-x: scroll;}
 }
 
 /********************* PC *********************/
