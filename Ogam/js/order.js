@@ -153,12 +153,9 @@ function comma(str){
     }
 }
 
-// $(function() {
-//     let totalPrice = $('#payment_total_order_sale_price_view');
-//     let totalTxt = totalPrice.text();
-//     console.log(totalTxt)
-//     $('#btn_payment').prepend(totalTxt );
-// });
+$(function() {
+    $('#ec-shippingInfo-recentAddressList').prepend('<h3>배송지 목록</h3>')
+});
 
 $(function() {
     var target = document.getElementById('payment_total_order_sale_price_view');

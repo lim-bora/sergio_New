@@ -11,7 +11,7 @@
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail{display: none;}
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title:before {content:" = ";line-height:26px;font-size:13px;color:#000;padding:0 5px;font-family:Arial, sans-serif !important;}
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title > strong {margin-right:5px;}
-.xans-myshop-orderhistorylistitem .ec-base-button .gRight a{height: 36px; line-height: 35px; min-width: 84px;border-radius: 2px;}
+.xans-myshop-orderhistorylistitem .ec-base-button .gRight a{height: 36px; line-height: 35px; min-width: 84px;border-radius: 2px;background-color: #000!important;color: #fff!important;}
 [class^='btn'].sizeS.btnRe{width: 84px;height: 36px;font-size: 14px;padding:10px 16px;margin-left: 8px;}
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdFoot{ border-top: 0!important;border-bottom: 0!important; padding: 10px 0 0px!important;}
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdBox{padding: 14px 0 16px;}
