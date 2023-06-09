@@ -150,8 +150,8 @@ select::-ms-expand {display:none;}
 .payTitle{color: #000!important;}
 .helpArea{display: none;}
 #mCafe24Order .receiptWrap{border-bottom: 0!important;}
-#chk_purchase_agreement0[type="checkbox"],#allAgree[type="checkbox"],#mallAgree[type="checkbox"],#personAgree[type="checkbox"],#set_main_address0[type="checkbox"],#save_paymethod[type="checkbox"]{border: 1px solid #E0E0E0!important;border-radius: 2px;width: 16px!important; height: 16px!important;background-image: none!important;margin-top: 4px!important;}
-#chk_purchase_agreement0[type="checkbox"]:checked, #allAgree[type="checkbox"]:checked,#mallAgree[type="checkbox"]:checked,#personAgree[type="checkbox"]:checked,#set_main_address0[type="checkbox"]:checked,#save_paymethod[type="checkbox"]:checked{    background: url(/SkinImg/img/checkbox_on.svg) no-repeat center!important;border: 1px solid #000!important;  background-size: 17px!important;}
+#chk_purchase_agreement0[type="checkbox"],#allAgree[type="checkbox"],#mallAgree[type="checkbox"],#personAgree[type="checkbox"],#set_main_address0[type="checkbox"],#save_paymethod[type="checkbox"],#flagEscrowUse0[type="checkbox"]{border: 1px solid #E0E0E0!important;border-radius: 2px;width: 16px!important; height: 16px!important;background-image: none!important;margin-top: 4px!important;}
+#chk_purchase_agreement0[type="checkbox"]:checked, #allAgree[type="checkbox"]:checked,#mallAgree[type="checkbox"]:checked,#personAgree[type="checkbox"]:checked,#set_main_address0[type="checkbox"]:checked,#save_paymethod[type="checkbox"]:checked,#flagEscrowUse0[type="checkbox"]:checked{    background: url(/SkinImg/img/checkbox_on.svg) no-repeat center!important;border: 1px solid #000!important;  background-size: 17px!important;}
 #ec-jigsaw-area-benefit{display: none!important;}
 #total_order_sale_price_view{display: none!important;}
 #orderFixItem.ec-base-button.gFull [class*="btn"]{background-color: #000!important;font-size: 14px!important;}
@@ -232,9 +232,17 @@ select::-ms-expand {display:none;}
 #mCafe24Order .ec-paymethod-input-detail #payment_input_tcash.ec-base-table.typeWrite td,
 #mCafe24Order .ec-paymethod-input-detail #payment_input_tcash.ec-base-table.typeWrite th {border: none !important;}
 #mCafe24Order .ec-paymethod-input-detail #payment_input_tcash.ec-base-table.typeWrite tr {display: flex !important; flex-direction: column !important;}
+#mCafe24Order .ec-paymethod-input-detail #payment_input_tcash.ec-base-table.typeWrite tr:nth-child(2) th{display: none !important;}
+#mCafe24Order .ec-paymethod-input-detail #payment_input_tcash.ec-base-table.typeWrite tr:nth-child(2) td{padding-top: 8px!important;}
+
 #mCafe24Order .ec-paymethod-input-detail #payment_input_tcash.ec-base-table.typeWrite colgroup col:first-child {width: 100% !important;}
 #mCafe24Order .ec-paymethod-input-detail #payment_input_tcash.ec-base-table.typeWrite colgroup col:nth-child(2) {display: none !important;}
 .pay_price{ margin-right: 5px}
+
+#mCafe24Order .receiptWrap .receiptArea{ background-color: #fff!important; border: none!important;padding: 0 0!important;}
+#mCafe24Order .receiptWrap{    margin: 0 0px 20px!important;}
+#mCafe24Order .receiptWrap .receiptArea .title{padding-top:32px!important;}
+
 
 @media all and (max-width:1024px) {
     .containerOrder{padding-top: 40px;}

@@ -26,13 +26,13 @@ $coupon_download_page = /coupon/coupon_productdetail.html
             <div class="RW">
                 <!--div class="prdImg">
                 <div class="thumbnail">
-                <a href="/product/image_zoom2.html{$zoom_param}" alt="{$product_code}" onclick="window.open(this.href, 'image_zoom2', 'toolbar=no,scrollbars=auto,resizable=yes,width=450,height=693,left=0,top=0', this);return false;">
-                <img src="{$big_img}" alt="{$seo_alt_tag}" class="{$big_img_class} {$img_display|display}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
-                </a>
-                <div id="zoom_wrap"></div>
-                </div>
+                    <a href="/product/image_zoom2.html{$zoom_param}" alt="{$product_code}" onclick="window.open(this.href, 'image_zoom2', 'toolbar=no,scrollbars=auto,resizable=yes,width=450,height=693,left=0,top=0', this);return false;">
+                    <img src="{$big_img}" alt="{$seo_alt_tag}" class="{$big_img_class} {$img_display|display}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
+                    </a>
+                    <div id="zoom_wrap"></div>
+                    </div>
                 </div-->
-
+                <span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
                 <div class="listImg" module="product_addimage">
                     <div class="inner">
                         <ul class="list">
@@ -471,9 +471,9 @@ $use_per_add_option = yes
                 <table border="1">
                     <caption>상품 목록</caption>
                     <colgroup>
-                        <col style="width:auto;">
-                        <col style="width:100px;">
-                        <col style="width:120px;">
+                        <col style="width:50%;">
+                        <col style="width:20%;">
+                        <col style="width:30%;">
                     </colgroup>
                     <thead>
                         <tr>
@@ -582,8 +582,8 @@ $default_option = yes
             </div>
             <div module="product_action" class="ec-base-button gFixed" id="orderFixArea" style="border-top: 1px solid #EAEAEA;">
                 <div class="ec-base-button gColumn {$action_display|display}">
+                    <button type="button" class="btnNormal sizeM actionCart {$basket_display|display}" onclick="{$action_basket}" style="border: 1px solid #000;">장바구니</button>
                     <a href="#none" class="btnSubmit sizeM {$buy_display|display}" onclick="{$action_buy}"><span id="{$btn_buy_mobile_id}">구매하기</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span><span id="{$btn_regular_delivery_id}" class="{$btn_regular_delivery|display}">REGULAR DELIVERY</span></a>
-<!--                    <button type="button" class="btnNormal sizeM actionCart {$basket_display|display}" onclick="{$action_basket}">쇼핑백에 담기</button>-->
                 </div>
                 <div class="ec-base-button gColumn {$action_soldout_display|display}">
                     <button type="button" class="btnSubmit sizeM {$soldout_display|display}" style="background-color: #EAEAEA;font-size: 14px;color: #606060;">품절</button>

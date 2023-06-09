@@ -132,3 +132,14 @@ window.onload = function () {
         $('#popup_MO').removeClass('displaynone');
     }
 }
+
+$(window).resize(function(){ 
+if (window.innerWidth > 1024) {  // 다바이스 크기가 480이상일때 
+
+	$('.topBannerBox .topPc').text('FREE SHIPPING & FREE RETURN | 전 상품 6월 한정 무료배송 & 무료반품')
+} else {
+
+$('.topBannerBox .topPc').text('전 상품 6월 한정 무료배송 & 무료반품')
+}
+
+}).resize(); 

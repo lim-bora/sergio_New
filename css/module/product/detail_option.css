@@ -76,7 +76,7 @@ body { background:none !important; }
 #product_detail_option_layer .xans-product-addoption .txtByte strong { color:#000; }
 #product_detail_option_layer .xans-product-option .value { margin:10px 0 0; color:#868686; word-break:break-all; }
 #product_detail_option_layer .xans-product-option .value .ec-product-value { color:#868686; }
-#product_detail_option_layer .xans-product-option .ec-product-button li { position:relative; overflow:hidden; display:inline-block; margin:0 5px 3px 0; vertical-align:top; border:1px solid #e0e0e0; background:#fff; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+#product_detail_option_layer .xans-product-option .ec-product-button li { position:relative; overflow:hidden; display:inline-block; margin:0 5px 3px 0; vertical-align:top; background:#fff; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 #product_detail_option_layer .xans-product-option .ec-product-button li:last-child { margin-right:0; }
 #product_detail_option_layer .xans-product-option .ec-product-button li a { display:block; min-width:50px; height:50px; text-align:center; text-decoration:none; word-break:break-all; }
 #product_detail_option_layer .xans-product-option .ec-product-button li a span { display:inline-block; padding:9px 5px; line-height: 32px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }

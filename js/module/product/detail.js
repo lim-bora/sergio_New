@@ -265,6 +265,7 @@ $(document).ready(function(){
         let replaceTxt = optionName.replaceAll('사이즈','SIZE');
         $(this).text(replaceTxt);
     });
+
 });
 
 
@@ -285,3 +286,24 @@ $('.detailToggle ul li.d_size').on('click',function() {
     sizeSpec.css('display','block');
 });
 
+$(window).resize(function(){
+    if (window.innerWidth < 1024) {  // 다바이스 크기가 480이상일때
+
+        $('#totalProducts colgroup').find('col').eq(0).css('width','65%');
+        $('#totalProducts colgroup').find('col').eq(1).css('width','25%');
+        $('#totalProducts colgroup').find('col').eq(2).css('width','10%');
+
+        $('#totalProducts table .center .option_box_del').attr({ src: ".//img.echosting.cafe24.com/skin/skin/product/ico_product_delete.svg" });
+
+    } else {
+
+        // $('#totalProducts colgroup').find('col').eq(0).css('width','auto');
+        // $('#totalProducts colgroup').find('col').eq(1).css('width','100px');
+        // $('#totalProducts colgroup').find('col').eq(2).css('width','120px');
+
+    }
+
+}).resize();
+// $(document).ready(function(){
+//     $('#totalProducts colgroup').find('col').eq(0).css('width','70%');
+// });
