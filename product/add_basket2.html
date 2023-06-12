@@ -14,10 +14,10 @@
                         </div>
                         <div class="info">
                             <p class="name">{$product_name_link}</p>
-                            <p class="option">{$option_str}</p>
                             <ul>
-                                <li>{$quantity}개</li>
                                 <li class="price">{$purchase_price}</li>
+                                <li>QTY : {$quantity}</li>
+                                <p class="option">{$option_str}</p>
                                 <li class="{$purchase_price_ref_display|display}"><strong>{$purchase_price_ref}</strong></li>
                                 <li class="{$discount_price_display|display}"><strong class="txtWarn">-{$discount_price}</strong></li>
                                 <li class="{$discount_price_ref_display|display}"><strong class="txtWarn">{$discount_price_ref}</strong></li>
@@ -33,10 +33,10 @@
                         </div>
                         <div class="info">
                             <p class="name">{$product_name_link}</p>
-                            <p class="option">{$option_str}</p>
                             <ul>
-                                <li>{$quantity}개</li>
                                 <li class="price">{$purchase_price}</li>
+                                <li>QTY : {$quantity}</li>
+                                <p class="option">{$option_str}</p>
                                 <li class="{$purchase_price_ref_display|display}"><strong>{$purchase_price_ref}</strong></li>
                                 <li class="{$discount_price_display|display}"><strong class="txtWarn">-{$discount_price}</strong></li>
                                 <li class="{$discount_price_ref_display|display}"><strong class="txtWarn">{$discount_price_ref}</strong></li>
@@ -47,18 +47,18 @@
                 </li>
             </ul>
 
-            <div module="Order_LayerBasketPaging" class="ec-base-paginate typeList">
-                <a href="#none" {$param_before}>이전 페이지</a>
-                <ol>
-                    <li><a href="#none" {$param} class="{$param_class}">{$no}</a></li>
-                    <li><a href="#none" {$param} class="{$param_class}">{$no}</a></li>
-                </ol>
-                <a href="#none" {$param_next}>다음 페이지</a>
-            </div>
+<!--            <div module="Order_LayerBasketPaging" class="ec-base-paginate typeList">-->
+<!--                <a href="#none" {$param_before}>이전 페이지</a>-->
+<!--                <ol>-->
+<!--                    <li><a href="#none" {$param} class="{$param_class}">{$no}</a></li>-->
+<!--                    <li><a href="#none" {$param} class="{$param_class}">{$no}</a></li>-->
+<!--                </ol>-->
+<!--                <a href="#none" {$param_next}>다음 페이지</a>-->
+<!--            </div>-->
         </div>
         <div class="ec-base-button gColumn">
-            <a href="/order/basket.html{$basket_param}" class="btnNormal sizeM">쇼핑백으로 이동</a>
-            <a href="#none" class="btnSubmit sizeM" onclick="Basket.orderLayerAll(this)" link-order="/order/orderform.html?basket_type=all_buy" link-login="/member/login.html">바로 구매</a>
+            <a href="/order/basket.html{$basket_param}" class="btnNormal sizeM">장바구니로 이동</a>
+            <a href="#none" class="btnSubmit sizeM" onclick="Basket.orderLayerAll(this)" link-order="/order/orderform.html?basket_type=all_buy" link-login="/member/login.html">계속 쇼핑하기</a>
         </div>
         <a class="btnClose" onclick="$('#confirmLayer').remove();">닫기</a>
     </div>    

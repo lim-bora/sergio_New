@@ -1,4 +1,4 @@
-.xans-myshop-asyncbankbook ul { display:flex; flex-wrap:wrap; justify-content:space-around; }
+.xans-myshop-asyncbankbook ul { display:flex; flex-wrap:nowrap; justify-content:space-around; }
 .xans-myshop-asyncbankbook li { position:relative; text-align:center; vertical-align:top; box-sizing:border-box; }
 .xans-myshop-asyncbankbook a:hover { text-decoration:none; }
 /*.xans-myshop-asyncbankbook li:not(:last-child):after { content:""; display:inline-block; position:absolute; right:0; width:1px; background:#e5e5e5; vertical-align:middle; }*/
@@ -24,6 +24,7 @@
     .xans-myshop-asyncbankbook .thumb { width:30px; height:30px; margin:0 auto 10px; }
     .xans-myshop-asyncbankbook .data { font-family: 'Acumin Pro';display:block; font-size:20px; line-height:22px; font-weight:700; }
     .xans-myshop-asyncbankbook .title { margin:8px 0 0; font-size:12px; }
+    .xans-myshop-asyncbankbook ul{padding: 0 16px;}
 }
 
 /********************* PC *********************/
