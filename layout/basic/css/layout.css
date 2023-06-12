@@ -23,6 +23,10 @@ a:hover {text-decoration:none;}
 .dimmed_for_header:not(.fixed) {pointer-events: none; z-index: -999; background: none;}
 
 .prdList .spec > li[data-name="기획전_상품설명"] {display: none;}
+::selection {
+	background-color: #000A55;
+	color: #FFF;
+}
 
 #ui-datepicker-div{display: none;}
 /* 최상단 배너 */

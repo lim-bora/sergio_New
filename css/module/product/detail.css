@@ -360,7 +360,7 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
-	.xans-product-detail .imgArea .prdImg .prdIcon {left: 0; background-size: auto 30px;}
+	.xans-product-detail .imgArea .prdImg .prdIcon {top:20px; left: 0; background-size: auto 30px;}
 	.xans-product-detail .detailArea { flex-direction: column;}
     .xans-product-detail .imgArea { margin:0 0 28px; }
     .xans-product-detail .imgArea .prdImg img { width:100%; }
