@@ -104,6 +104,7 @@ body { background:none !important; }
 #totalProducts table .center a{
     background: url(//img.echosting.cafe24.com/skin/skin/product/ico_product_delete.svg) no-repeat 0 0;
     background-size: 10px;
+    background-position-y: 2px;
 }
 #totalProducts table .center img{opacity: 0;}
 
