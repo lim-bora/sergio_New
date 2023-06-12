@@ -9,10 +9,11 @@
 .xans-product-detail .headingArea .actionWish{position: absolute;top: 2px;right: 0;border: 0;padding: 0;height: 0;}
 .xans-product-detail .headingArea .actionWish img{width: 17.42px;}
 .xans-product-detail .detailArea > div{max-width: 852px;}
+.xans-product-detail .detailArea .RW .prdIcon {position: absolute; width: 87px; height: 36px; top: 20px; left: -10px; background-size: auto 36px; z-index: 1;}
 
 /* imgArea */
 .xans-product-detail .imgArea .prdImg .thumbnail { display:block; position:relative; max-width:100%; }
-.xans-product-detail .imgArea .prdImg .prdIcon { position:absolute; top:0; left:0; width:100%; height:100%; background-repeat:no-repeat; }
+.xans-product-detail .imgArea .prdImg .prdIcon { position:absolute; width:100%; height:100%; background-repeat:no-repeat; background-size: auto 36px;}
 .xans-product-detail .imgArea .prdImg img { cursor:pointer; }
 .xans-product-detail .imgArea .color { overflow:hidden; width:346px; margin:5px auto; }
 .xans-product-detail .imgArea .chips { float:left; width:28px; height:18px; margin:0 3px 3px 0; border:1px solid #e3e3e3; font-size:0; line-height:0; }
@@ -359,6 +360,7 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
+	.xans-product-detail .imgArea .prdImg .prdIcon {left: 0; background-size: auto 30px;}
 	.xans-product-detail .detailArea { flex-direction: column;}
     .xans-product-detail .imgArea { margin:0 0 28px; }
     .xans-product-detail .imgArea .prdImg img { width:100%; }
