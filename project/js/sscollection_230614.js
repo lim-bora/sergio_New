@@ -18,7 +18,7 @@ $(window).resize(function(){
     } else { //m 클릭시 block, 다른버튼 클릭시 전꺼 none
 
         $btn.click(function(e){
-            e.preventDefault();
+            // e.preventDefault();
             $btn.find('span').hide();
             $(this).find('span').show();
         });
