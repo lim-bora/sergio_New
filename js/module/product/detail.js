@@ -284,6 +284,7 @@ $('.detailToggle ul li.d_size').on('click',function() {
     $('.detailToggle ul li.d_size > div > span').append(sizeSpec);
 
     sizeSpec.css('display','block');
+    sizeSpec.append('<span class="sizeNt">※ 위 표는 상품의 실측 사이즈이며, 케어라벨에 표기된 치수는 권장 신체 사이즈로 서로 정보가 다를 수 있습니다.</span>')
 });
 
 $(window).resize(function(){

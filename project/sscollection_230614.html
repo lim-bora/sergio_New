@@ -1,0 +1,294 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/Ogam/css/project.css)-->
+<!--@js(/Ogam/js/project.js)-->
+<!--@js(/project/js/sscollection_230614.js)-->
+<style>
+    @font-face {
+        font-family: 'Thesignature';
+        font-style: normal;
+        font-weight: 400;
+        src: url(/web/upload/project/230614/Thesignature.otf) format('otf'),
+        url(/web/upload/project/230614/Thesignature.ttf) format('truetype');
+    }
+
+    .pc{display: block;}
+    .mo{display: none;}
+    .footer_margin{margin-top: 0;}
+    #container{height: auto; min-height: auto;}
+/*.plus.nv{background-image: url("/web/upload/project/230614/plus.png");width: 24px;height: 24px; background-size: 100%;background-repeat: no-repeat; }*/
+    .btn{width: 24px;height: 24px;position: absolute;}
+    .btn img{z-index: 99;position: inherit;}
+    .btn span{ display: none;width: max-content; font-weight: 400;line-height: 20px;font-size: 14px;color: #FFFFFF;position: absolute;    word-break: keep-all;}
+
+    .main_section{position: relative;}
+    .main_section .main_txt{position: absolute;bottom: 100px; left: 50%; transform: translateX(-50%);}
+    .main_section .main_txt span{color: #fff;font-family: 'Noto Sans KR';font-weight: 400;font-size: 18px;line-height: 30px;letter-spacing: 0.2em;display: block;text-align: center;padding-top: 40px;}
+
+
+    .section2{padding: 128px 0 160px;max-width: 1439px;margin: 0 auto;}
+    .section2 h2{font-family:Thesignature, sans-serif;text-align: center;font-weight: 400;font-size: 150px;line-height: 150px;color: #000000;}
+    .section2 > span{color: #000;font-family: 'Noto Sans KR';font-weight: 400;font-size: 18px;line-height: 32px;letter-spacing: 0.2em;display: block;text-align: center;padding-bottom: 128px;}
+    .section2 ul{display: flex;flex-direction: row;gap: 10px;}
+    .section2 ul li{position: relative;}
+    .section2 ul li a{display: block;}
+    .section2 ul li:nth-child(1) .btn.b1{  bottom: 64.9%;right: 17.4%;}
+    .section2 ul li:nth-child(1) .btn.b2{ bottom: 26%;right: 18.3%;}
+    .section2 ul li:nth-child(2) .btn{ bottom: 58%;left: 48%;}
+    .section2 ul li:nth-child(3) .btn.b1{ bottom: 19%;left: 36%;}
+    .section2 ul li:nth-child(3) .btn.b2{bottom: 19%;left: 61%;}
+
+    .section3{width: 100vw; padding-bottom: 672px;}
+    .section3 .sec03{position: relative;}
+    .section3 .sec03 > img{ width: 100%;}
+    .section3 .sec03 .centerimg{position: absolute;  top: 230px;left: 50%; transform: translateX(-50%);}
+
+    .section3 .sec03 .centerimg .btn.b1{ top: 21%;right: 33.5%;}
+    .section3 .sec03 .centerimg .btn.b2{bottom: 45%;left: 51%;}
+    .section3 .sec03 .centerimg .btn.b3{ bottom: 64%;left: 36.4%;}
+    .section3 .sec03 .centerimg .btn.b4{ bottom: 46%;left: 25%;}
+    .section3 .sec03 .centerimg .btn.b5{ bottom: 7%;left: 33.4%;}
+    .section3 .sec03 .centerimg .btn.b6{ bottom: 8%;left: 73%;}
+    .section3 .sec03.mo{position: relative;}
+    .section3 .sec03.mo .btn.b7{ bottom: 65%;left: 49%;}
+    .section3 .sec03.mo .btn.b8{ bottom: 43%;left: 63%;}
+    .section3 .sec03.mo .btn.b9{ bottom: 55%;left: 24%;}
+    .section3 .sec03.mo .btn.b10{ bottom: 40%;left: 29%;}
+    .section3 .sec03.mo .btn.b11{ bottom: 16%;left: 32%;}
+    .section3 .sec03.mo .btn.b12{ bottom: 15%;left: 60%;}
+
+
+    .section4{width: 100vw;}
+    .section4 img{width: 100%;}
+
+    .section5{padding: 160px 0 160px 13%;}
+    .section5 ul{display: flex;flex-direction: row;gap: 10px; }
+    .section5 ul li{position: relative;}
+    .section5 ul li:nth-child(1) .btn.b1{ bottom: 62%;left: 49%;}
+    .section5 ul li:nth-child(1) .btn.b2{bottom: 18%;left: 31%;}
+
+    .section6{padding: 0px 0 160px;position: relative; transform: scale(0.9);}
+    .section6 .swiper-wrapper{align-items: center;right: 100px;}
+    .section6 .swiper-slide{transform: rotate(0) !important;transition: all 1s;}
+    .section6 .swiper-slide:not(.swiper-slide-active){ transform: scale(0.9)!important;}
+    .section6 .swiper-slide.swiper-slide-active{ transform: scale(1.2)!important; padding: 0 4%;}
+
+    .section6 .swiper-slide:not(.swiper-slide-active){}
+    .section6 .swiper-slide.swiper-slide-active{}
+
+    .section7{position: relative;}
+    .section7 img{width: 100%;}
+    .section7 .main_txt{position: absolute;top:50%;left: 50%; transform: translate(-50%,-50%);text-align: center;}
+    .section7 .main_txt span{color: #fff;font-family: 'Noto Sans KR';font-weight: 700;font-size: 24px;line-height: 34px;letter-spacing: 0.2em;display: block;text-align: center;padding-top: 40px;}
+    .section7 .main_txt a{color: #fff;font-size: 18px;line-height: 40px;font-weight: 500;letter-spacing: 0.2em;position: relative;text-align: center;}
+    .section7 .main_txt a:before{content: '';display: block;width: 100%; height: 1px; background-color: #fff;position: absolute;bottom: -4px;left: 0;}
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev{ background-image: url("/web/upload/project/230614/right.png");right: 48px;}
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next{ background-image: url("/web/upload/project/230614/left.png");left: 48px;}
+    .swiper-button-next, .swiper-button-prev{width: 48px;height: 48px;background-size: 48px 48px; transform: translateY(-50%);top: 46%;}
+
+
+    .section2 ul li:nth-child(1) .btn.b1 span{ top: -14px;right: 26px;}
+    .section2 ul li:nth-child(1) .btn.b2 span{ top: -14px;right: 26px;}
+    .section2 ul li:nth-child(2) .btn span{ top: -30px;left: 27px;}
+    .section2 ul li:nth-child(3) .btn.b1 span{ top: 25px;right: 16px;}
+    .section2 ul li:nth-child(3) .btn.b2 span{ top: 17px;left: 23px;}
+    .section3 .sec03 .centerimg .btn.b1 span{ top: -14px;left: 25px;}
+    .section3 .sec03 .centerimg .btn.b2 span{ top: -18px;right: 26px;}
+    .section3 .sec03 .centerimg .btn.b3 span{ top: -32px;left: -143px;}
+    .section3 .sec03 .centerimg .btn.b4 span{ top: 14px;right: 28px;}
+    .section3 .sec03 .centerimg .btn.b5 span{ top: 14px;right: 23px;}
+    .section3 .sec03 .centerimg .btn.b6 span{ top: 14px;left: 26px;}
+    .section5 ul li:nth-child(1) .btn.b1 span{ top: 18px;left: 26px;}
+    .section5 ul li:nth-child(1) .btn.b2 span{top: 18px;left: 26px;}
+
+
+
+    @media screen and (max-width: 1024px) {
+        .pc{display: none;}
+        .mo{display: block;}
+        #container #contents{width: 100%;}
+        .btn{width: 20px;height: 20px;position: absolute;}
+        .btn span{color: #000000;font-weight: 400;font-size: 12px;line-height: 20px;z-index: 10;}
+        .btn span:before{content: '';display: block;background: rgba(255, 255, 255, 0.6);border: 1px solid rgba(255, 255, 255, 0.4);backdrop-filter: blur(2px);padding: 8px 16px;position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);z-index: -1;width: 100%;
+            height: 100%;}
+        .main_section .main_txt{bottom: 50%; transform: translate(-50%,-50%);width: 66%;}
+        .main_section .main_txt span{font-size: 14px;line-height: 24px;padding-top: 24px;letter-spacing: 0.15em;}
+
+        .section2{padding: 54px 0 48px;}
+        .section2 h2{font-size: 60px;line-height: 50px;}
+        .section2 > span{font-size: 14px;line-height: 24px;letter-spacing: 0.15em;padding-bottom: 48px;}
+        .section2 ul{flex-direction: column;gap: 48px;}
+        .section2 ul li:nth-child(1) .btn.b1{  bottom: 51%;right: 54%;}
+        .section2 ul li:nth-child(1) .btn.b2{  bottom: 26%;right: 12%;}
+        .section2 ul li:nth-child(3) .btn.b1{ bottom: 20%;left: 36%;}
+        .section2 ul li:nth-child(3) .btn.b2{bottom: 15%;left: 55%;}
+
+
+        .section3{width: 100vw; padding-bottom: 0px;}
+
+        .section5{padding: 48px 0;}
+        .section5 ul{flex-direction: column;gap: 48px; }
+
+        .section6{padding: 0px 0 48px;transform: scale(1);}
+        .section6 .swiper-wrapper{ right: 0px;}
+        .section6 .swiper-slide.swiper-slide-active{padding: 0;transform: scale(1.05)!important;}
+
+        .section7 .main_txt{width: 66%;top:46%;}
+        .section7 .main_txt span{font-size: 14px;line-height: 24px;padding-top: 24px;letter-spacing: 0.15em;}
+        .section7 .main_txt a{font-size: 14px;line-height: 24px;letter-spacing: 0.15em;position: relative;text-align: center;}
+
+
+
+
+        .section2 ul li:nth-child(1) .btn.b1 span{ top: 16px;right: 23px;}
+        .section2 ul li:nth-child(1) .btn.b2 span{ top: 16px;right: 23px;}
+        .section2 ul li:nth-child(2) .btn span{ top: 16px;left: 23px;}
+        .section2 ul li:nth-child(3) .btn.b1 span{ top: 18px;right: 20px;}
+        .section2 ul li:nth-child(3) .btn.b2 span{ top: 16px;left: 20px;}
+        .section3 .sec03.mo .btn.b7 span{ top: 16px;right: 20px;}
+        .section3 .sec03.mo .btn.b8 span{ top: 16px;left: 20px;}
+        .section3 .sec03.mo .btn.b9 span{ top: 16px;left: 20px;}
+        .section3 .sec03.mo .btn.b10 span{ top: 16px;right: 23px;}
+        .section3 .sec03.mo .btn.b11 span{ top: 16px;right: 23px;}
+        .section3 .sec03.mo .btn.b12 span{ top: 16px;left: 23px;}
+        .section5 ul li:nth-child(1) .btn.b1 span{ top: 16px;left: 20px;}
+        .section5 ul li:nth-child(1) .btn.b2 span{top: 16px;left: 20px;}
+    }
+
+    @media screen and (max-width: 767px) {
+        .swiper-button-next, .swiper-container-rtl .swiper-button-prev{ right: 16px;}
+        .swiper-button-prev, .swiper-container-rtl .swiper-button-next{ left: 16px;}
+        .swiper-button-next, .swiper-button-prev{width: 40px;height: 40px;background-size: 40px 40px; top: 50%;}
+    }
+</style>
+
+
+<div class="projectSS">
+<!--    <div module="Project_Package" class="section">-->
+
+        <!--@css(/css/module/product/project_package.css)--->
+
+        <section class="main_section">
+            <div class="main_image"><img src="/web/upload/project/230614/pc_bg.jpg" alt="Monte-Carlo" class="pc"><img src="/web/upload/project/230614/m_bg.jpg" alt="Monte-Carlo" class="mo"></div>
+            <div class="main_txt">
+                <img src="/web/upload/project/230614/logo.svg" alt="sergio tacchini" class="main-type"><span>몬테카를로의 이국적인 도심 속<br/>프리미엄하고 여유로운 순간의 기록</span>
+            </div>
+        </section>
+
+        <section class="section2">
+            <h2>Summer collection</h2>
+            <span>당신의 프리미엄 라이프 스타일의<br/>시작을 함께하세요.</span>
+                <ul>
+                    <li><img src="/web/upload/project/230614/sec02_011.jpg">
+                        <a class="btn b1" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_nb.svg"></a>
+                        <a class="btn b2" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_nb.svg"></a>
+                    </li>
+                    <li><img src="/web/upload/project/230614/sec02_02.jpg">
+                        <a class="btn" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_nb.svg"></a>
+                    </li>
+                    <li><img src="/web/upload/project/230614/sec02_033.jpg">
+                        <a class="btn b1" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_nb.svg"></a>
+                        <a class="btn b2" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_nb.svg"></a>
+                    </li>
+                </ul>
+        </section>
+
+        <section class="section3">
+            <div class="sec03 pc"><img src="/web/upload/project/230614/sec03_bg_pc.jpg" alt="">
+                <div class="centerimg"><img src="/web/upload/project/230614/sec03_01.jpg" alt="" class="pc">
+                    <a class="btn b1" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_nb.svg"></a>
+                    <a class="btn b2" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_nb.svg"></a>
+                    <a class="btn b3" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_wb.svg"></a>
+                    <a class="btn b4" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_wb.svg"></a>
+                    <a class="btn b5" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_nb.svg"></a>
+                    <a class="btn b6" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_wb.svg"></a>
+                </div>
+            </div>
+            <div class="sec03 mo"><img src="/web/upload/project/230614/sec03_bg_m.jpg" alt="">
+                <a class="btn b7" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_nb.svg"></a>
+                <a class="btn b8" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_nb.svg"></a>
+                <a class="btn b9" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_wb.svg"></a>
+                <a class="btn b10" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_wb.svg"></a>
+                <a class="btn b11" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_nb.svg"></a>
+                <a class="btn b12" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_wb.svg"></a>
+            </div>
+        </section>
+
+        <section class="section4"><img src="/web/upload/project/230614/sec04_bg_pc.jpg" alt="" class="pc"><img src="/web/upload/project/230614/sec04_bg_m.jpg" alt="" class="mo"></section>
+
+        <section class="section5">
+            <ul>
+                <li><img src="/web/upload/project/230614/sec05_01.jpg">
+                    <a class="btn b1" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_nb.svg"></a>
+                    <a class="btn b2" href="javascript:void(0);"><img src="/web/upload/project/230614/plus_wb.svg"></a>
+                </li>
+                <li><img src="/web/upload/project/230614/sec05_02.jpg"></li>
+            </ul>
+        </section>
+
+        <section class="section6 swiper ssSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="https://www.sergiotacchini.co.kr/product/%ED%94%84%EB%A1%9C-sp-%EC%9B%8C%EB%93%9C%EB%A7%88%ED%81%AC-%EB%B8%8C%EB%9D%BC%ED%83%91/291/category/52/display/1/" target="_blank"><img src="/web/upload/project/230614/pd02.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="https://www.sergiotacchini.co.kr/product/%ED%81%B4%EB%9E%98%EC%8B%9D-cp-%ED%94%8C%EB%A6%AC%EC%B8%A0-%EC%8A%A4%EC%BB%A4%ED%8A%B8/194/category/50/display/1/" target="_blank"><img src="/web/upload/project/230614/pd06.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="https://www.sergiotacchini.co.kr/product/%EB%AA%A8%EB%85%B8%EA%B7%B8%EB%9E%A8-%ED%85%8C%EB%A6%AC-%EB%B8%8C%EC%9D%B4%EB%84%A5-%EC%8A%AC%EB%A6%AC%EB%B8%8C%EB%A6%AC%EC%8A%A4-%EB%93%9C%EB%A0%88%EC%8A%A4/350/category/49/display/1/" target="_blank"><img src="/web/upload/project/230614/pd03.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="https://www.sergiotacchini.co.kr/product/%ED%94%84%EB%A0%88%ED%94%BC-%ED%81%AC%EB%A3%A8-%ED%95%98%EC%9D%B4-%EC%82%AD%EC%8A%A4/408/category/58/display/1/" target="_blank"><img src="/web/upload/project/230614/pd13.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="https://www.sergiotacchini.co.kr/product/tacchini-1966-court/386/category/54/display/1/" target="_blank"><img src="/web/upload/project/230614/pd12.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="https://www.sergiotacchini.co.kr/product/%EB%AA%A8%EB%85%B8%EA%B7%B8%EB%9E%A8-%EC%9E%90%EC%B9%B4%EB%93%9C-%EC%97%A0%EB%B3%B4%EC%8A%A4%EB%93%9C-%ED%81%AC%EB%A1%AD-%ED%8F%B4%EB%A1%9C%EC%85%94%EC%B8%A0/337/category/47/display/1/" target="_blank"><img src="/web/upload/project/230614/pd04.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="https://www.sergiotacchini.co.kr/product/%ED%81%AC%EB%A3%A8-%EC%9A%B0%EB%B8%90-%EC%8A%A4%EC%BB%A4%ED%8A%B8/224/category/50/display/1/" target="_blank"><img src="/web/upload/project/230614/pd08.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="https://www.sergiotacchini.co.kr/product/%ED%91%84-%EC%9A%B0%EB%B8%90-%ED%95%98%ED%94%84%EC%A7%91-%EA%B8%B4%ED%8C%94-%EC%95%84%EB%85%B8%EB%9D%BD/94/category/36/display/1/" target="_blank"><img src="/web/upload/project/230614/pd10.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="https://www.sergiotacchini.co.kr/product/%ED%91%84-%EC%9A%B0%EB%B8%90-%EC%88%8F%ED%8C%AC%EC%B8%A0/104/category/51/display/1/" target="_blank"><img src="/web/upload/project/230614/pd09.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="https://www.sergiotacchini.co.kr/product/tacchini-1966-court/389/category/54/display/1/" target="_blank"><img src="/web/upload/project/230614/pd11.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="https://www.sergiotacchini.co.kr/product/%ED%81%B4%EB%9E%98%EC%8B%9D-cp-%EB%B0%98%ED%8C%94-%ED%8F%B4%EB%A1%9C%EC%85%94%EC%B8%A0/47/category/47/display/1/" target="_blank"><img src="/web/upload/project/230614/pd05.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="https://www.sergiotacchini.co.kr/product/%ED%81%B4%EB%9E%98%EC%8B%9D-cp-%ED%94%8C%EB%A6%AC%EC%B8%A0-%EC%8A%A4%EC%BB%A4%ED%8A%B8/324/category/50/display/1/" target="_blank"><img src="/web/upload/project/230614/pd07.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="https://www.sergiotacchini.co.kr/product/mc-%EC%8A%A4%ED%83%9C%ED%94%84-%EC%A4%91%EB%AA%A9-%EC%96%91%EB%A7%90/27/category/58/display/1/" target="_blank"><img src="/web/upload/project/230614/pd01.jpg" alt=""></a></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+        </section>
+
+        <section class="section7">
+            <div class="main_image"><img src="/web/upload/project/230614/spc06_bg_pc.jpg" alt="Monte-Carlo" class="pc"><img src="/web/upload/project/230614/sec06_bg_m.jpg" alt="Monte-Carlo" class="mo"></div>
+            <div class="main_txt">
+                <img src="/web/upload/project/230614/logo.svg" alt="sergio tacchini" class="main-type"><span>2023 S/S COLLECTION</span><a href="https://www.sergiotacchini.co.kr/category/23SS/29/" target="_blank">지금 쇼핑하기</a>
+            </div>
+        </section>
+
+
+<!--    </div>-->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".ssSwiper", {
+        effect: "coverflow",
+        slidesPerView: 2,
+        spaceBetween: 16,
+        speed : 1000,
+        coverflow: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows : true,
+        },
+        centeredSlides: true,
+        grabCursor: true,
+        loop : true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 0,
+            },
+        },
+
+    });
+
+
+</script>

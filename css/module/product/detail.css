@@ -80,8 +80,8 @@
 .xans-product-detail .xans-product-option .ec-product-button.ec-product-preview li a span { overflow:hidden; line-height:0; font-size:0; padding:0; text-indent:120%; white-space:nowrap; }
 .xans-product-detail .xans-product-option .ec-product-button.ec-product-preview .ec-product-soldout span,
 .xans-product-detail .xans-product-option .ec-product-button.ec-product-preview .ec-product-disabled span { position:absolute; left:0; top:0; z-index:1; }
-.xans-product-detail .xans-product-option .ec-product-button .ec-product-soldout a span { display:inline-block; width:100%; height:100%; cursor:not-allowed; color:#ccc; }
-.xans-product-detail .xans-product-option .ec-product-button .ec-product-soldout a span:before { content:""; display:block; position:absolute; top:0; left:50%; width:100px; height:1px; margin:11px 0px 0 -50px; background:#888888; -webkit-transform: rotate(0deg); -transform: rotate(0deg-); }
+.xans-product-detail .xans-product-option .ec-product-button .ec-product-soldout a span { display:inline-block; width:100%; height:100%; cursor:not-allowed; color:#d7d7d7; cursor: none; }
+.xans-product-detail .xans-product-option .ec-product-button .ec-product-soldout a span:before { content:""; display:block; position:absolute; top:0; left:50%; width:100px; height:1px; margin:11px 0px 0 -50px; background:#d7d7d7; -webkit-transform: rotate(0deg); -transform: rotate(0deg-); }
 .xans-product-detail .xans-product-option .ec-product-button .ec-product-disabled a { cursor:default; }
 .xans-product-detail .xans-product-option .ec-product-button .ec-product-disabled a span { display:inline-block; width:100%; height:100%; color:#a9a9a9; }
 .xans-product-detail .xans-product-option .ec-product-button .ec-product-disabled a span:before { content:""; display:block; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.25); }
@@ -327,6 +327,8 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 .detailToggle .cafe24-sizespec-box thead tr th{text-align: center;}
 .detailToggle table{    table-layout: auto!important;}
 .detailToggle .cafe24-sizespec-box h2{display: none;}
+.sizeNt{ padding: 16px 5px 0!important;font-size: 12px;line-height: 18px!important;}
+
 /*고시정보*/
 .detailToggle .cafe24-info-box{font-size: 12px;    line-height: 18px;}
 .detailToggle .cafe24-info-box p{padding: 0px 0 8px;line-height: 18px;}
