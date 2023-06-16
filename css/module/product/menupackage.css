@@ -32,14 +32,14 @@ div.noProduct.active { width: 100%; text-align: center; padding: 80px 0 0;}
 .xans-product-menupackage .subCategory li.selected a { color:#008bcc; }
 .xans-product-menupackage .menuCategory .button.selected { z-index:11; }
 .xans-product-menupackage .menuCategory .button.selected .subCategory { display:block; }
-.xans-product-normalmenu .sort select { height: 17px;}
+.xans-product-normalmenu .sort select { height: 20px;}
 
 .xans-product-normalmenu {padding: 0 !important;}
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
     .xans-product-normalmenu .function {position: relative;}
-    /*.xans-product-normalmenu .sort {position: absolute; right: 0; bottom:32px;}*/
+    .xans-product-normalmenu .sort {position: absolute; right: 0; bottom:56px;}
 }
 
 /********************* Mobile / Tablet *********************/

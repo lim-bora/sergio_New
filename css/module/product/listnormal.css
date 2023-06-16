@@ -28,7 +28,7 @@
 /********************* PC *********************/
 @media all and (min-width:1025px) {
     .xans-product-normalmenu { margin:50px 0 0; padding:40px 0 0; }
-	.xans-product-normalmenu .function { padding-top: 30px; }
+	.xans-product-normalmenu .function { padding: 23px 0; }
 }
 
 
