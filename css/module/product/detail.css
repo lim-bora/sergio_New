@@ -13,7 +13,7 @@
 
 /* imgArea */
 .xans-product-detail .imgArea .prdImg .thumbnail { display:block; position:relative; max-width:100%; }
-.xans-product-detail .imgArea .prdImg .prdIcon { position:absolute; width:100%; height:100%; background-repeat:no-repeat; background-size: auto 36px;}
+.xans-product-detail .imgArea .prdImg .prdIcon { position:absolute; width:100%; height:100%; background-repeat:no-repeat; background-size: auto 36px; }
 .xans-product-detail .imgArea .prdImg img { cursor:pointer; }
 .xans-product-detail .imgArea .color { overflow:hidden; width:346px; margin:5px auto; }
 .xans-product-detail .imgArea .chips { float:left; width:28px; height:18px; margin:0 3px 3px 0; border:1px solid #e3e3e3; font-size:0; line-height:0; }
