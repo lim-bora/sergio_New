@@ -1,8 +1,8 @@
 .xans-product-normalmenu { border-top:1px solid #e0e0e0; }
-.xans-product-normalmenu .function { text-align:right; line-height:38px; }
+.xans-product-normalmenu .function { text-align:right;}
 .xans-product-normalmenu .function .btnCompare { display:inline-block; padding:0 12px; border-left:1px solid #d7d5d5; }
 .xans-product-normalmenu .function .btnCompare:hover { text-decoration:none; }
-.xans-product-normalmenu .prdCount { float:left; color:#7d7d7d; }
+.xans-product-normalmenu .prdCount { float:left; color:#000; }
 .xans-product-normalmenu .prdCount strong { margin-left:8px; }
 .xans-product-normalmenu fieldset { margin:20px 0 0; padding:10px 16px; text-align:right; background:#fbf9fa; }
 
@@ -15,6 +15,8 @@
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
     .xans-product-normalmenu { margin:40px 0 0; }
+	.xans-product-normalmenu .function {text-align: left; }
+	.xans-product-normalmenu .prdCount { padding-top:32px; }
 }
 
 /********************* Tablet *********************/
@@ -26,6 +28,7 @@
 /********************* PC *********************/
 @media all and (min-width:1025px) {
     .xans-product-normalmenu { margin:50px 0 0; padding:40px 0 0; }
+	.xans-product-normalmenu .function { padding-top: 30px; }
 }
 
 
