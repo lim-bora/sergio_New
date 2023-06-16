@@ -147,7 +147,7 @@ select::-ms-expand {display:none;}
 #mCafe24Order .payMethod > li > input, .ec-paymethod-recentArea{display: none!important;}
 #mCafe24Order .payMethod > li .inner{opacity: 1!important;height: auto!important;}
 #mCafe24Order .payMethod > li > label{    padding: 0 0 16px 0!important;}
-.payTitle{color: #000!important;}
+.payTitle{color: #000!important; font-size: 15px;font-weight: 500;}
 .helpArea{display: none;}
 #mCafe24Order .receiptWrap{border-bottom: 0!important;}
 #chk_purchase_agreement0[type="checkbox"],#allAgree[type="checkbox"],#mallAgree[type="checkbox"],#personAgree[type="checkbox"],#set_main_address0[type="checkbox"],#save_paymethod[type="checkbox"],#flagEscrowUse0[type="checkbox"]{border: 1px solid #E0E0E0!important;border-radius: 2px;width: 16px!important; height: 16px!important;background-image: none!important;margin-top: 4px!important;}
@@ -261,6 +261,7 @@ select::-ms-expand {display:none;}
     .cardPromotion ul li {padding: 0 0 6px;}
     .cardPromotion ul p {padding-top: 2px;}
     .cardPromotion ul li p{padding: 2px 0 0; display: block;}
+    #mCafe24Order .ec-cashreceipt-textAndForm .ec-cashreceipt-formArea .inputArea{    align-items: center!important;}
 }
 @media all and (max-width:767px) {
     #mCafe24Order{width: 98%!important;margin: 0 auto!important;}
