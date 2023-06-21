@@ -120,13 +120,12 @@ span.noBorder input { border:none !important; width:auto !important; height:auto
 .ec-base-chk { display:inline-block; position:relative; margin:0 8px 0 0; vertical-align:top; cursor:pointer; }
 
 /* path */
-.path { overflow:hidden; padding-bottom: 16px;}
+.path { overflow:hidden; padding-bottom: 18px; padding-top: 52px;}
 .path span { overflow:hidden; position:absolute; width:0; height:0; white-space:nowrap; text-indent:100%; }
-.path ol { float:right; }
 .path li { display:inline-block; }
-.path li:not(:first-child):before {     content: '';display: inline-block;width: 6px;height: 6px;margin-left: 5px; margin-right: 8px;border-top: 0.1rem solid #888;border-right: 0.1rem solid #888;transform: rotate(45deg); }
+.path li:not(:first-child):before {     content: '';display: inline-block;width: 6px;height: 6px;margin-left: 5px; margin-right: 8px;border-top: 0.1rem solid #000;border-right: 0.1rem solid #000;transform: rotate(45deg); }
 .path li:first-child { background:none; }
-.path li a { font-size:12px; line-height: 14px; color:#AEAEAE; text-decoration:none; }
+.path li a { font-size:14px; line-height: 20px; color:#000; text-decoration:none; }
 .path li:last-child a,
 .path li strong,
 .path li strong a { color:#000; }
@@ -182,7 +181,8 @@ span.noBorder input { border:none !important; width:auto !important; height:auto
     	.titleArea--middle h2 { display:inline-block; color:var(--font-color-heading); font-size:16px; }
     .titleArea .desc { font-size:12px; color:#6d6d6d; }
     /* path */
-    .path { margin:0; opacity:0; overflow:hidden; width:1px; height:1px; font-size:1px; line-height:1px; white-space:nowrap; color:transparent; text-indent:150%; }
+    .path {padding-top: 40px;}
+    .path li a {font-size: 13px;}
     .ec-base-step li:not(:last-child):after { margin:-2px 15px 0; }
 
 }
@@ -192,7 +192,6 @@ span.noBorder input { border:none !important; width:auto !important; height:auto
     .gInnerMargin { margin:0 24px; }
     .titleArea { margin:40px 24px 30px; }
     .titleArea--middle { margin:0; }
-    .path { margin:0 24px; }
 }
 
 /********************* PC *********************/
