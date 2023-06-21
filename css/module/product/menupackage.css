@@ -39,7 +39,7 @@ div.noProduct.active { width: 100%; text-align: center; padding: 80px 0 0;}
 /********************* PC *********************/
 @media all and (min-width:1025px) {
     .xans-product-normalmenu .function {position: relative;}
-    .xans-product-normalmenu .sort {position: absolute; right: 0; bottom:56px;}
+    .xans-product-normalmenu .sort {position: absolute; right: 0; bottom:42px;}
 }
 
 /********************* Mobile / Tablet *********************/

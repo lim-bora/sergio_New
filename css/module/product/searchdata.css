@@ -339,7 +339,7 @@
 
 
 @media screen and (min-width:1025px) {
-  #searchContent {display: flex !important; align-items: center; gap:30px; position: relative; height: 40px; margin-top: 46px; padding-right: 110px;}
+  #searchContent {display: flex !important; align-items: center; gap:30px; position: relative; height: 40px; padding-right: 110px;}
   #searchContent tr td { position: absolute; top: 40px; left:0; width: 100%; padding: 40px 0; background-color: #FFF; z-index: 2;}
   #searchContent tr .button li { margin-right: 80px; word-break:break-all; word-wrap:break-word; vertical-align:top; }
   #searchContent tr .button li:hover button {color: #888888;}

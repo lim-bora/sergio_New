@@ -28,7 +28,6 @@
 /********************* PC *********************/
 @media all and (min-width:1025px) {
     .xans-product-normalmenu { margin:50px 0 0; padding:40px 0 0; }
-	.xans-product-normalmenu .function { padding: 23px 0; }
 }
 
 
@@ -45,7 +44,8 @@
 .listpage_title.ez-align-center {text-align:center;}
 .listpage_title.ez-align-right {text-align:right;}
 #shoppQbtn {margin-top:40px;}
-.xans-product-headcategory.titleArea.section {margin:0 auto;padding:45px 0 40px;}
+.xans-product-headcategory.titleArea.section {margin:0 auto;padding:0 0 16px; text-align: left;}
+.xans-product-headcategory.titleArea.section h2 {font-size: 40px; line-height: 1.5; font-weight: bold;}
 
 /* 상품분류 추천상품 */
 .xans-product-listrecommend {padding:0;margin:0 auto !important;}
@@ -65,9 +65,10 @@
 	.product_top_image {width:100%;}
 	.listpage_title {margin-bottom:15px;font-size:16px;}
 	.listpage_title span {font-size:11px;}
-	.xans-product-headcategory.titleArea.section {border-bottom:1px solid #e8e8e8;margin:0 0 20px;padding:20px 0;}
+	.xans-product-headcategory.titleArea.section {padding:20px 0;}
+	.xans-product-headcategory.titleArea.section h2 {font-size: 30px;}
 
-	/* 상품분류 추천상품 */
+		/* 상품분류 추천상품 */
 	.xans-product-listrecommend {width:100%;padding:0 0 50px;}
 
 	/* 상품분류 신상품 */

@@ -932,9 +932,6 @@ div.ec-base-help ul {margin:0;}
 	.xans-board-inquiryform select {margin-left:0 !important;}
 	.xans-board-inquiryform .titleArea--middle {background:#fff;padding:27px 0 0;}
 
-	/* 페이지경로 */
-	.path {margin:0;padding:0;}
-
 	/* 기획전 페이지 */
 	.xans-project-list h3 span {position:absolute;top:-80px !important;}
 }

@@ -1,6 +1,19 @@
 <!--@layout(/layout/basic/layout.html)-->
 <!--@js(/js/module/product/menucategory.js)-->
 <!--@css(/css/module/product/menupackage.css)-->
+<div class="section path" module="product_headcategory" data-ez-module="product-head-breadcrumb/1">
+	<span>현재 위치</span>
+	<ol>
+		<li class="{$disp_cate_1|display}"><a href="{$link_product_list_1}">{$name_1}</a></li>
+		<li class="{$disp_cate_2|display}"><a href="{$link_product_list_2}">{$name_2}</a></li>
+		<li class="{$disp_cate_3|display}"><a href="{$link_product_list_3}">{$name_3}</a></li>
+		<li class="{$disp_cate_4|display}"><strong><a href="{$link_product_list_4}">{$name_4}</a></strong></li>
+	</ol>
+</div>
+<div class="section titleArea" module="product_headcategory" data-ez-module="product-list-head-title/1">
+	<h2>{$title_text_or_image}<span module="product_normalmenu" style="font-size:14px; padding-left: 6px !important; font-weight:400;">({$total_count})</span></h2>
+	<span class="likeButton {$disp_likecate_class}"><button type="button">{$disp_likecate_icon}<strong>{$disp_likecate_count}</strong></button></span>
+</div>
 <div class="section ec-base-tab typeMenu displaynone" data-ez-module="product-list-subcategory/1" data-ez="contents-10u3xme-1">
 	<div class="display_tablet_only">
 		<ul class="menuCategory menu">
@@ -142,7 +155,7 @@
 				$compare_page = /product/compare.html
 			-->
 			<div class="function"><!--id="{$listmenu_position}" : 정렬시 상품목록 최상단으로 이동 되도록 시켜주는 기능 제어-->
-				<p class="prdCount">총 {$total_count}개의 상품</p>
+<!--				<p class="prdCount">총 {$total_count}개의 상품</p>-->
 				<div class="sort">
 					<div class="filterBtn display_tablet_only">필터<!--@import(/svg/icon-arrow.svg)--></div>
 					<select id="selArray" name="selArray" module="product_Orderby">
