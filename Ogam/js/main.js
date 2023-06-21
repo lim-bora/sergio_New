@@ -103,7 +103,9 @@ $(function() {
     //iconic polos
     $(".iconicSwiper ul").children().addClass("swiper-slide");
     var swiper = new Swiper(".iconicSwiper", {
-        loop: true,   //배너이미지 2개이상일경우 true로 변경해야 바 생김
+        loop: true,
+        centeredSlides : true,
+        initialSlide: 1,
         watchOverflow : true,
         resistance : false,
         pagination: {
@@ -113,3 +115,8 @@ $(function() {
     });
 
 });
+//top_mypage하위자식중 .eLogout이 없으면
+//top_mypage하위자식중 .eLogout이 있으면
+// $('.eMyshop').click(function(){
+//
+// });

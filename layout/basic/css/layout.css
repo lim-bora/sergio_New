@@ -114,6 +114,9 @@ a:hover {text-decoration:none;}
 #header .inner .top_nav_box .top_mypage a.xans-layout-orderbasketcount .count {position:absolute;top:-2px;right:-5px;color:#000;line-height:1;font-size:10px;}
 #header.fixed {position:fixed;top:0;left:0;right:0;z-index:1001;margin:0 auto;border-bottom:1px solid #EAEAEA !important;}
 
+/*#header .inner .top_nav_box .top_mypage*/
+
+
 #header .btnClose {display: none !important;}
 body.activeAside, body.searchExpand, body.ofHidden {overflow: hidden;}
 body.activeAside #header .btnClose {display: block !important; height: 20px;}
