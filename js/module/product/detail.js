@@ -305,6 +305,3 @@ $(window).resize(function(){
     }
 
 }).resize();
-// $(document).ready(function(){
-//     $('#totalProducts colgroup').find('col').eq(0).css('width','70%');
-// });

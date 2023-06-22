@@ -527,3 +527,26 @@ $(document).ready(function(){
 	}
 });
 
+
+$(document).ready(function(){
+	let scrollWidth = $('.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar');
+	let deviceWidth = window.devicePixelRatio;
+	if(deviceWidth < 1){
+		console.log('djgklsdjgklsdjkggklsd');
+		$('.xans-product-detail .imgArea .listImg .inner').addClass('zoom-minus')
+	}else{
+		$('.xans-product-detail .imgArea .listImg .inner').removeClass('zoom-minus')
+	}
+	console.log('ddd');
+});
+
+$(window).resize(function(){
+	let scrollWidth = $('.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar');
+	let deviceWidth = window.devicePixelRatio;
+	if(deviceWidth < 1){
+		$('.xans-product-detail .imgArea .listImg .inner').addClass('zoom-minus')
+	}else{
+		$('.xans-product-detail .imgArea .listImg .inner').removeClass('zoom-minus')
+	}
+	console.log('ddd');
+});

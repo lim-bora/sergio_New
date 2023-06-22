@@ -427,6 +427,7 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 	.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar {
 		width: 1px;  /* 스크롤바의 너비 */
 	}
+	.xans-product-detail .imgArea .listImg .inner.zoom-minus::-webkit-scrollbar{width: 2px;}
 	.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar-thumb {
 		width: 1px;
 		height: 240px;
