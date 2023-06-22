@@ -57,6 +57,7 @@
 .xans-product-detail .infoArea td.fileInfo li img { vertical-align:bottom; }
 .xans-product-detail .delv_price_B strong { font-weight:normal; }
 .xans-product-detail .btnTooltip { display:inline-block; z-index:10; vertical-align:middle; }
+.xans-product-detail #totalProducts table {border-collapse: separate; border-spacing: 0 10px; padding-bottom: 10px;}
 /* option */
 .xans-product-detail .xans-product-option { display:block; }
 .xans-product-detail .xans-product-option th { display:block; vertical-align:top; }
@@ -230,7 +231,7 @@
 #totalProducts tr.add_product > td > table tr:first-child th,
 #totalProducts tr.add_product > td > table tr:first-child td { border-top:0; }
 #totalProducts tr.add_product .product { padding:0; }
-#totalPrice { display:flex; justify-content:space-between; font-size:15px; border-top:1px solid #eaeaea; vertical-align:middle; background:#fff;margin-top: 32px; }
+#totalPrice { display:flex; justify-content:space-between; font-size:15px; border-top:1px solid #eaeaea; vertical-align:middle; background:#fff; }
 #totalPrice .title { font-weight:600;font-size: 14px; }
 #totalPrice .qty { color:#747474; font-weight:400;}
 #totalPrice .total { color:#747474; font-size:13px; }
@@ -513,7 +514,7 @@ span.arrow.rotateUp{transform: rotate(315deg)}
 .xans-product-detail .xans-product-option tr,
 .xans-product-detail .xans-product-option td {display:revert;width:100%;}
 .xans-product-detail .xans-product-option tr:first-child td,
-.xans-product-detail .xans-product-option .xans-product-fileoption td {padding:10px 0;}
+.xans-product-detail .xans-product-option .xans-product-fileoption td {padding:10px 0 0;}
 .xans-product-detail .xans-product-option tr:first-child th {padding-top:0px!important;}
 .xans-product-detail .xans-product-option td .xans-product-addoption th,
 .xans-product-detail .xans-product-option td .xans-product-fileoption th {padding-top:0 !important;}
