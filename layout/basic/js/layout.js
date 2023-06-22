@@ -527,26 +527,49 @@ $(document).ready(function(){
 	}
 });
 
-
+// PDP 스크롤 오류
 $(document).ready(function(){
-	let scrollWidth = $('.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar');
-	let deviceWidth = window.devicePixelRatio;
-	if(deviceWidth < 1){
-		console.log('djgklsdjgklsdjkggklsd');
-		$('.xans-product-detail .imgArea .listImg .inner').addClass('zoom-minus')
+	if((navigator.vendor).indexOf('Apple') > -1){	// 사파리 환경
+		let zoom = (( window.outerWidth - 10 ) / window.innerWidth);
+		if(zoom < 1){
+			$('.xans-product-detail .imgArea .listImg .inner').addClass('zoom-minus').removeClass('zoom-plus');
+		}else{
+			if(zoom > 0.99 && zoom < 1.1){
+				$('.xans-product-detail .imgArea .listImg .inner').removeClass('zoom-minus zoom-plus');
+			}else{
+				$('.xans-product-detail .imgArea .listImg .inner').removeClass('zoom-minus').addClass('zoom-plus');
+			}
+		}
 	}else{
-		$('.xans-product-detail .imgArea .listImg .inner').removeClass('zoom-minus')
+		let scrollWidth = $('.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar');
+		let deviceWidth = window.devicePixelRatio;
+		if(deviceWidth < 1){
+			$('.xans-product-detail .imgArea .listImg .inner').addClass('zoom-minus');
+		}else{
+			$('.xans-product-detail .imgArea .listImg .inner').removeClass('zoom-minus');
+		}
 	}
-	console.log('ddd');
 });
 
 $(window).resize(function(){
-	let scrollWidth = $('.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar');
-	let deviceWidth = window.devicePixelRatio;
-	if(deviceWidth < 1){
-		$('.xans-product-detail .imgArea .listImg .inner').addClass('zoom-minus')
-	}else{
-		$('.xans-product-detail .imgArea .listImg .inner').removeClass('zoom-minus')
+	if((navigator.vendor).indexOf('Apple') > -1){
+		let zoom = (( window.outerWidth - 10 ) / window.innerWidth);
+		if(zoom < 1){
+			$('.xans-product-detail .imgArea .listImg .inner').addClass('zoom-minus').removeClass('zoom-plus');
+		}else{
+			if(zoom > 0.99 && zoom < 1.1){
+				$('.xans-product-detail .imgArea .listImg .inner').removeClass('zoom-minus zoom-plus');
+			}else{
+				$('.xans-product-detail .imgArea .listImg .inner').removeClass('zoom-minus').addClass('zoom-plus');
+			}
+		}
+	} else{
+		let scrollWidth = $('.xans-product-detail .imgArea .listImg .inner::-webkit-scrollbar');
+		let deviceWidth = window.devicePixelRatio;
+		if(deviceWidth < 1){
+			$('.xans-product-detail .imgArea .listImg .inner').addClass('zoom-minus');
+		}else{
+			$('.xans-product-detail .imgArea .listImg .inner').removeClass('zoom-minus');
+		}
 	}
-	console.log('ddd');
 });
