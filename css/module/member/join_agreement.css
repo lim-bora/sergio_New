@@ -4,11 +4,11 @@
 .xans-member-join .title h3 { font-size:16px; font-weight:normal; }
 .xans-member-join label { display:none; }
 .xans-member-join label.check { display:inline-block; font-size: 14px; line-height: 16px;}
-.xans-member-join .contents { overflow:hidden; overflow-y:auto; height:auto; max-height: 232px; margin:16px 0 0; padding:16px; color:#888888; font-size:12px; line-height:20px; border:1px solid #EAEAEA; box-sizing:border-box; }
+.xans-member-join .contents { overflow:hidden; overflow-y:auto; height:auto; max-height: 232px; margin:16px 0 ; padding:16px; color:#888888; font-size:12px; line-height:20px; border:1px solid #EAEAEA; box-sizing:border-box; }
 .xans-member-join .contents p { margin:0 0 20px; }
 .xans-member-join .ec-base-chk { margin-top:3px; }
 .xans-member-join .agreeAll h3 {font-size:14px; line-height: 16px; font-weight: 500; text-align: center; }
-.xans-member-join .agreeAll label { display:inline-block; width: calc(100% - 41px); }
+.xans-member-join .agreeAll label { display:inline-block;}
 .xans-member-join .additional li { display:flex; margin-right:40px; }
 .xans-member-join label + label { margin-left:0; }
 .xans-member-join input[type="checkbox"] {width: 16px; height: 16px; background-size: 16px 16px; border-radius: 2px;}
