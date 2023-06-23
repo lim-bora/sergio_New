@@ -28,9 +28,9 @@
 .xans-member-edit .layerLeave select,
 .xans-member-edit .layerLeave textarea { width:100%; box-sizing:border-box; }
 
-.xans-member-edit .agreeArea { margin-top:50px; }
+.xans-member-edit .agreeArea { margin-top:32px; }
 .xans-member-edit .agreeArea + .agreeArea { margin:30px 0 0; }
-.xans-member-edit .agreeArea .title h3 { font-size:16px; font-weight:normal; }
+.xans-member-edit .agreeArea .title h3 { font-size:14px; font-weight:normal; }
 .xans-member-edit .agreeArea label { display:none; }
 .xans-member-edit .agreeArea label + label { margin-left:5px; }
 .xans-member-edit .agreeArea label.check { display:inline-block; }

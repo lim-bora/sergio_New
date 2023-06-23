@@ -11,6 +11,7 @@ $(function () {
     $("input#user_passwd_confirm").attr("placeholder", "비밀번호를 입력해 주세요.");
     $("input#bank_account_owner").attr("placeholder", "예금주를 입력해 주세요.");
     $("input#bank_account_no").attr("placeholder", "계좌번호를 입력해 주세요.");
+    $("input#reco_id").attr("placeholder", "추천인 ID를 입력 해 주세요.");
 
     // 아이디찾기 페이지 휴대폰번호 인증 우선 체크
     let isClicked = true;

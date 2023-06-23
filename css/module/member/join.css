@@ -27,7 +27,7 @@
 .xans-member-join .ec-base-table.typeWrite td input[type="password"],
 .xans-member-join .ec-base-table.typeWrite td select {width: 100%; height: 48px; font-size: 14px;}
 .xans-member-join .ec-base-table td div.txtInfo {color: #747474; font-size: 12px; line-height: 14px; font-weight: 400; margin-top: 8px;}
-.xans-member-join .ec-base-table .txtInfo {color: #747474; }
+.xans-member-join .ec-base-table .txtInfo:not(.error) {color: #747474; }
 .xans-member-join .ec-base-table ul.txtInfo li {line-height: 18px; }
 .xans-member-join .ec-base-table.typeWrite td.formGroup {display: flex; flex-wrap: wrap; font-size: 0; padding-right: 0;}
 .xans-member-join #phone1, .xans-member-join #phone2, .xans-member-join #phone3,
