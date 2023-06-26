@@ -163,20 +163,19 @@ $(function(){
 			e.preventDefault();
 		}
     });
-    $('#aside .sub_cate01 > li > a.view').on('click', function(e) {
-        if (!$(this).parent('li').hasClass('noChild')){
-            $(this).parent().addClass('selected');
-            e.preventDefault();
-            if($(this).parent().hasClass('selected')){
-                $(this).unbind();
-                $('#aside .menuBack').show();
+    $('#aside .sub_cate01 > li > a.view').on('click', function(e) { // 2뎁스 카테고리 클릭 시
+        if (!$(this).parent('li').hasClass('noChild') && !$(this).parent().hasClass('selected')){ // 하위 카테고리(3뎁스)가 있는 메뉴만
+            $(this).parent().addClass('selected');  // li에 selectd 클래스 추가
+            e.preventDefault(); // 링크 이동 x
+            if($(this).parent().hasClass('selected')){  // 이미 selectd 클래스가 있을 경우
+                $('#aside .menuBack').show();   // 뒤로가기 보이게
             }
         }
     });
 
-    $('#aside .menuBack').on('click', function() {
-        $(this).hide();
-        $('.sub_cate01 li').removeClass('selected');
+    $('#aside .menuBack').on('click', function() {  // 뒤로가기 클릭 시
+        $(this).hide(); // 뒤로가기 아이콘 숨김
+        $('.sub_cate01 li').removeClass('selected');    // 3뎁스 카테고리 숨김
     });
 
 	/* 슬라이드 고객센터 토글 */
