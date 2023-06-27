@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Thesignature';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/web/upload/project/230614/Thesignature.otf) format('otf'),
+    url(/web/upload/project/230614/Thesignature.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Acumin-Pro-ExtraLight-Italic';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/web/upload/project/230614/Acumin-Pro-ExtraLight-Italic.otf) format('otf'),
+    url(/web/upload/project/230614/Acumin-Pro-ExtraLight-Italic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Acumin Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/web/upload/project/230614/Acumin-RPro.otf) format('otf'),
+    url(/web/upload/project/230614/Acumin-RPro.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Acumin Pro Italic';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/web/upload/project/230614/Acumin-ItPro.otf) format('otf'),
+    url(/web/upload/project/230614/Acumin-ItPro.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Acumin-Pro-Light';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/web/upload/project/230614/Acumin-Pro-Light.otf) format('otf'),
+    url(/web/upload/project/230614/Acumin-Pro-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Acumin-Pro-Light-Italic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/web/upload/project/230614/Acumin-Pro-Light-Italic.otf) format('otf'),
+    url(/web/upload/project/230614/Acumin-Pro-Light-Italic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Acumin-Pro-Thin';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/web/upload/project/230614/Acumin-Pro-Thin.otf) format('otf'),
+    url(/web/upload/project/230614/Acumin-Pro-Thin.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Acumin-Pro-Thin-Italic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/web/upload/project/230614/Acumin-Pro-Thin-Italic.otf) format('otf'),
+    url(/web/upload/project/230614/Acumin-Pro-Thin-Italic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Acumin-BdPro';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/web/upload/project/230614/Acumin-BdPro.otf) format('otf'),
+    url(/web/upload/project/230614/Acumin-BdPro.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Thin';
+    font-style: normal;
+    font-weight: 100;
+    src: url(/web/upload/project/230614/NotoSansKR-Thin.otf) format('otf'),
+    url(/web/upload/project/230614/NotoSansKR-Thin.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NotoSansKR-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/web/upload/project/230614/NotoSansKR-Regular.otf) format('otf'),
+    url(/web/upload/project/230614/NotoSansKR-Regular.ttf) format('truetype');
+}
