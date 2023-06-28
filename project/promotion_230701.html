@@ -1,0 +1,37 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@js(/Ogam/js/jquery.rwdImageMaps.min.js)-->
+
+<style>
+    #freepc{display: block; font-size: 0;}
+    #freemo{display: none; font-size: 0;}
+    img{width: 100%;}
+    /********************* Tablet *********************/
+    @media all and (max-width:1024px) {
+        #freepc{display: none;}
+        #freemo{display: block;}
+    }
+</style>
+
+<script>
+    window.addEventListener('DOMContentLoaded',function(){
+        $('#container #contents').css('width', '100%');
+        $('img[usemap]').rwdImageMaps();
+        $('.footer_margin').hide();
+    })
+</script>
+
+<!-- PC -->
+<div id="freepc">
+    <img src="/web/upload/project/230701/DESIGN.png" usemap="#freepc">
+    <map name="freepc">
+        <area target="_blank" alt="agreement" title="agreement" href="https://sergiotacchini.co.kr/member/agreement.html" coords="1523,4292,2324,4479" shape="rect">
+    </map>
+</div>
+
+<!-- MO -->
+<div id="freemo">
+    <img src="/web/upload/project/230701/DESIGN_MO.png" usemap="#freemo">
+    <map name="freemo">
+        <area target="_blank" alt="agreement" title="agreement" href="https://sergiotacchini.co.kr/member/agreement.html" coords="118,3639,635,3750" shape="rect">
+    </map>
+</div>
