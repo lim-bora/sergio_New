@@ -5,39 +5,39 @@
         <div class="closeFilter"><!--@import(/svg/icon-x.svg)--></div>
     </div>
 
-        <div data-ez-module="product-list-subcategory/1" data-ez="contents-10u3xme-1" class="cateFilter">
-            <p class="cateTitle">CATEGORY<!--@import(/svg/icon-arrow.svg)--></p>
-            <ul class="menuCategory menu">
-                <li module="product_displaysubcategory" style="display:{$display};" class="{$selected}">
-                    <a href="{$link_product_list_sub}" class="button">{$category_name}
-                        <span class="count {$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
-                    <ul module="product_children">
-                        <li class="{$selected}">
-                            <a href="{$link_product_list_sub}">{$category_name}
-                                <span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
-                            <div class="button">
-                                {$children_icon}
-                                <ul module="product_children" class="subCategory">
-                                    <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>
-                                    <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="{$selected}">
-                            <a href="{$link_product_list_sub}">{$category_name}
-                                <span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
-                            <div class="button">
-                                {$children_icon}
-                                <ul module="product_children" class="subCategory">
-                                    <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>
-                                    <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+<!--        <div data-ez-module="product-list-subcategory/1" data-ez="contents-10u3xme-1" class="cateFilter">-->
+<!--            <p class="cateTitle">CATEGORY&lt;!&ndash;@import(/svg/icon-arrow.svg)&ndash;&gt;</p>-->
+<!--            <ul class="menuCategory menu">-->
+<!--                <li module="product_displaysubcategory" style="display:{$display};" class="{$selected}">-->
+<!--                    <a href="{$link_product_list_sub}" class="button">{$category_name}-->
+<!--                        <span class="count {$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>-->
+<!--                    <ul module="product_children">-->
+<!--                        <li class="{$selected}">-->
+<!--                            <a href="{$link_product_list_sub}">{$category_name}-->
+<!--                                <span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>-->
+<!--                            <div class="button">-->
+<!--                                {$children_icon}-->
+<!--                                <ul module="product_children" class="subCategory">-->
+<!--                                    <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>-->
+<!--                                    <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="{$selected}">-->
+<!--                            <a href="{$link_product_list_sub}">{$category_name}-->
+<!--                                <span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>-->
+<!--                            <div class="button">-->
+<!--                                {$children_icon}-->
+<!--                                <ul module="product_children" class="subCategory">-->
+<!--                                    <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>-->
+<!--                                    <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
         <form class="searchCondition" id="{$searchdata_form}" name method="get">
             <input type="hidden" name="keyword" id="{$searchdata_keyword_hidden}">
             <div class="searchArea" id="ec-searchdata-area">
