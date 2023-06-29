@@ -1,5 +1,7 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-
+    document.querySelectorAll('html').forEach(function(element) {
+        element.innerHTML = element.innerHTML.replace(/&nbsp;/gi,'');
+    });
 
     let $catgoryItem = $('[id^="og_menuCategory_item_cate_"]');
 
