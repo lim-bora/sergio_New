@@ -18,7 +18,7 @@ $(function() {
 
 
 $(function() {
-
+    //배너 아이프레임일 경우 css 추가
     let pcMaintxt = $('.pc_main01 .mainBannerTxt');
     let moMaintxt = $('.mo_main01 .mainBannerTxt');
     let pcSubtxt = $('.pc_main01 .mainBannerSub');
@@ -88,8 +88,9 @@ window.onload = function () {
     }
 }
 
+//띠배너 텍스트 pc/mo 다르게 넣을경우(다르지않으면 주석처리해주세요.)
 $(window).resize(function(){
-    if (window.innerWidth > 1024) {  // 다바이스 크기가 480이상일때
+    if (window.innerWidth > 1024) {
 
         $('.topBannerBox .topPc').text('FREE SHIPPING & FREE RETURN | 전 상품 6월 한정 무료배송 & 무료반품')
     } else {
@@ -100,7 +101,7 @@ $(window).resize(function(){
 }).resize();
 
 $(function() {
-    //iconic polos
+    //main iconic polos
     $(".iconicSwiper ul").children().addClass("swiper-slide");
     var swiper = new Swiper(".iconicSwiper", {
         loop: true,
@@ -115,8 +116,3 @@ $(function() {
     });
 
 });
-//top_mypage하위자식중 .eLogout이 없으면
-//top_mypage하위자식중 .eLogout이 있으면
-// $('.eMyshop').click(function(){
-//
-// });

@@ -2,9 +2,12 @@
 <!--@css(/Ogam/css/project.css)-->
 <!--@css(/Ogam/css/font.css)-->
 <!--@js(/Ogam/js/project.js)-->
-<!--@js(/project/js/sscollection_230614.js)--->
+<!--@js(/Ogam/js/parallax.js)--->
+<!--@js(/project/js/tennis_hangout_230701.js)-->
+<!--@js(/Ogam/js/jquery.rwdImageMaps.min.js)-->
 <head>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
 </head>
 
 <style>
@@ -16,32 +19,42 @@
 
     /***CONTENTS***/
     .main_section{position: relative;}
+    .main_section.parallax{
+        position: fixed;
+        top: 0; left: 0;
+        z-index: 1;
+        background-attachment: fixed;
+    }
 
-    .section2{margin: 0 auto;position: relative;background-image: url(/web/upload/project/230701/sec02bg_pc.jpg); background-size: cover; background-repeat: no-repeat;width: 100vw; height: 48vw;padding: 119px 0 106px;}
+    .section2{margin: 0 auto;position: relative;background-image: url(/web/upload/project/230701/sec02bg_pc.jpg); background-size: cover; background-repeat: no-repeat;width: 100vw;background-attachment: fixed;z-index: 5;}
     /*.section2 .bg{position: relative;}*/
-    .section2 .content{width: 86%; float: right;}
+    .section2 .content{width: 86%; float: right;padding: 119px 0 106px;}
     .section2 .content .imgBox{display: flex;flex-direction: row;flex-wrap: nowrap;}
     /*.section2 .content .imgBox img{flex: 1;width: 33.33%;}*/
     .section2 .content .textBox{padding-top: 76px;}
     .section2 .content .textBox p{font-size: 22px;font-weight: 400;line-height: 30px;}
     .section2 .content .textBox a{font-size: 22px;font-weight:500;line-height: 30px;margin-top: 22px;display: flex;align-items: end;}
     .section2 .content .textBox a img{margin-left: 14px;width: 68px;}
+    .section2 .content .imgBox a{overflow: hidden;}
+    .section2 .content .imgBox a img.zoomOn{transform: scale(1.05);transition: all 0.8s;}
 
-    .section4{margin: 0 auto;position: relative;background-image: url(/web/upload/project/230701/sec04_bg_pc.jpg); background-size: 100%; background-repeat: no-repeat;width: 100vw; height: 90vw;padding: 119px 0 150px;}
+    .section3{z-index: 5;}
+
+    .section4{margin: 0 auto;position: relative;background-image: url(/web/upload/project/230701/sec04_bg_pc.jpg); background-size: cover; background-repeat: no-repeat;width: 100vw;z-index: 5;}
     .section4 .bg{position: relative;}
-    .section4 .content{position: absolute;top: 0;left: 0; width: 100%; height: 100%; }
-    .section4 .content .textBox{text-align: center;margin-top: 116px;padding-bottom: 109px;}
+    .section4 .content{width: 100%; padding: 119px 0 150px;}
+    .section4 .content .textBox{text-align: center;padding-bottom: 109px;}
     .section4 .content .textBox p{font-size: 22px;font-weight:400;line-height: 32px;}
     .section4 .content .imgBox{width: 80%;margin: 0 auto;height: 83vw;position: relative;}
     .section4 .content .imgBox img{width: 100%;}
     .section4 .content .imgBox .img01{ display: flex;align-items: flex-start;position: absolute;top: 0;left: 40px; width: 50%;justify-content: flex-start;}
     .section4 .content .imgBox .img02{ display: flex;align-items: flex-end;position: absolute;bottom: 0;right: 40px;width: 50%;justify-content: flex-end;}
+    .section5{z-index: 5;}
+
     @media screen and (max-width: 1600px) {
-        .section2 {    height: 46vw;background-size: cover;}
         .section2 .content{ width: 82%;}
     }
     @media screen and (max-width: 1500px) {
-        .section2 {    height: 50vw;    background-size: cover;}
         .section2 .content{ width: 80%;}
         /*.section2 .content .textBox{padding-bottom: 106px;}*/
 
@@ -66,14 +79,21 @@
 
         .section2{background-image: url(/web/upload/project/230701/sec02bg_mo.jpg); }
         /*.section2 .bg img{width: 100%;}*/
-        .section2 .content{     margin-top: 18%;}
+        .section2 .content{ padding: 80px 0 40px;}
         .section2 .content .imgBox{    flex-direction: column;}
         .section2 .content .imgBox img{width: 100%;}
         .section2 .content .textBox{  padding-top: 12%;}
+        .section2 .content .textBox p{font-size: 14px;line-height: 24px;}
 
-        .section4{background-image: url(/web/upload/project/230701/sec04_bg_mo.jpg);}
+        .section4{background-image: url(/web/upload/project/230701/sec04_bg_mo.jpg);      background-size: 100% 3225px;}
+        .section4 .content{    padding: 64px 0;}
         .section4 .content .imgBox{width: 100%; height: calc(100% - 400px);}
-        .section4 .content .imgBox .img01, .section4 .content .imgBox .img02{    width: 100%;right: 0;left: 0;}
+        .section4 .content .imgBox .img01, .section4 .content .imgBox .img02{width: 100%;position: relative;left:0;right: 0;}
+        .section4 .content .imgBox .img02{bottom: 50px;}
+        .section4 .content .imgBox .img01 img, .section4 .content .imgBox .img02 img{width: 88%;}
+        .section4 .content .textBox{padding-bottom: 64px;}
+        .section4 .content .textBox p{font-size: 14px;line-height: 24px;}
+        .section2 .content .textBox a{font-size: 14px;line-height: 24px;    align-items: center;}
     }
 </style>
 
@@ -81,22 +101,42 @@
     <div class="main_image"><img src="/web/upload/project/230701/ten_bg_pc.jpg" alt="Tennis-Hangout" class="pc"><img src="/web/upload/project/230701/ten_bg_mo.jpg" alt="Tennis -angout" class="mo"></div>
 </section>
 
-<section class="section2">
+<section class="section2 parallax-window" data-parallax="scroll">
 <!--    <div class="bg"><img src="/web/upload/project/230701/sec02bg_pc.jpg" alt="sec02bg" class="pc"><img src="/web/upload/project/230701/sec02bg_mo.jpg" alt="sec02bg" class="mo"></div>-->
     <div class="content">
         <div class="imgBox">
-            <a href=""><img src="/web/upload/project/230701/sec02_01.jpg" alt="sec02_01"></a>
-            <a href=""><img src="/web/upload/project/230701/sec02_02.jpg" alt="sec02_02"></a>
-            <a href=""><img src="/web/upload/project/230701/sec02_03.jpg" alt="sec02_03"></a>
+            <a href="https://www.sergiotacchini.co.kr/category/%ED%8B%B0%EC%85%94%EC%B8%A0/37/" target="_blank"><img src="/web/upload/project/230701/sec02_01.jpg" alt="sec02_01"></a>
+            <a href="https://www.sergiotacchini.co.kr/category/%EC%8A%A4%EC%BB%A4%ED%8A%B8/50/" target="_blank"><img src="/web/upload/project/230701/sec02_02.jpg" alt="sec02_02"></a>
+            <a href="https://www.sergiotacchini.co.kr/category/%EB%9D%BC%EC%9D%B4%ED%94%84%EC%8A%A4%ED%83%80%EC%9D%BC/54/" target="_blank"><img src="/web/upload/project/230701/sec02_03.jpg" alt="sec02_03"></a>
         </div>
         <div class="textBox">
-            <p>여름 테니스를 더욱 풍성하고 멋진 경험으로 만들어줄 세르지오 타키니 테니스 웨어 컬렉션</p>
-            <a href="#">전체보기<img src="/web/upload/project/230701/arrow.png"></a>
+            <p class="pc">여름 테니스를 더욱 풍성하고 멋진 경험으로 만들어줄 세르지오 타키니 테니스 웨어 컬렉션</p>
+            <p class="mo">여름 테니스를 더욱 풍성하고 멋진 경험으로<br/>만들어줄 세르지오 타키니 테니스 웨어 컬렉션</p>
+            <a href="https://sergiotacchini.co.kr/category/%EC%8B%A0%EC%83%81%ED%92%88/42/" target="_blank">전체보기<img src="/web/upload/project/230701/arrow.png"></a>
         </div>
     </div>
 </section>
 
-<section class="section3" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-out-cubic" data-aos-duration="1000"><img src="/web/upload/project/230701/sec03bg_pc.jpg" alt="sec03bg" class="pc"><img src="/web/upload/project/230701/sec03bg_mo.jpg" alt="sec03bg" class="mo"></section>
+<section class="section3" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+    <div><img src="/web/upload/project/230701/sec03bg_pc.jpg" alt="sec03bg" class="pc" usemap="#sec03bg-pc"><map name="sec03bg-pc">
+            <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%EB%AA%A8%EB%85%B8%EA%B7%B8%EB%9E%A8-%ED%85%8C%EB%A6%AC-%EB%B9%85%EB%A1%9C%EA%B3%A0-%EB%9D%BC%EC%9A%B4%EB%93%9C%EB%84%A5-%EB%B0%98%ED%8C%94-%ED%8B%B0%EC%85%94%EC%B8%A0/41/category/37/display/1/" coords="1180,458,1228,507" shape="rect">
+            <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%ED%81%B4%EB%9E%98%EC%8B%9D-cp-%EB%B0%98%ED%8C%94-%ED%8F%B4%EB%A1%9C%EC%85%94%EC%B8%A0/71/category/47/display/1/" coords="1908,486,1956,535" shape="rect">
+            <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%ED%81%AC%EB%A3%A8-%EC%9A%B0%EB%B8%90-%EC%8A%A4%EC%BB%A4%ED%8A%B8/224/category/50/display/1/" coords="1284,899,1332,950" shape="rect">
+            <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%ED%81%B4%EB%9E%98%EC%8B%9D-cp-%EC%88%8F%ED%8C%AC%EC%B8%A0/124/category/24/display/1/" coords="1943,899,1986,947" shape="rect">
+            <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/tacchini-court-classico/347/category/54/display/1/" coords="869,1568,923,1622" shape="rect">
+            <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/tacchini-court-classico/348/category/54/display/1/" coords="1564,1527,1617,1573" shape="rect">
+        </map>
+    </div>
+    <div><img src="/web/upload/project/230701/sec03bg_mo.jpg" alt="sec03bg" class="mo" usemap="#sec03bg-mo"><map name="sec03bg-mo">
+            <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%EB%AA%A8%EB%85%B8%EA%B7%B8%EB%9E%A8-%ED%85%8C%EB%A6%AC-%EB%B9%85%EB%A1%9C%EA%B3%A0-%EB%9D%BC%EC%9A%B4%EB%93%9C%EB%84%A5-%EB%B0%98%ED%8C%94-%ED%8B%B0%EC%85%94%EC%B8%A0/41/category/37/display/1/" coords="283,427,357,496" shape="rect">
+            <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%ED%81%B4%EB%9E%98%EC%8B%9D-cp-%EB%B0%98%ED%8C%94-%ED%8F%B4%EB%A1%9C%EC%85%94%EC%B8%A0/71/category/47/display/1/" coords="1017,456,1087,529" shape="rect">
+            <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%ED%81%AC%EB%A3%A8-%EC%9A%B0%EB%B8%90-%EC%8A%A4%EC%BB%A4%ED%8A%B8/224/category/50/display/1/" coords="387,868,455,943" shape="rect">
+            <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%ED%81%B4%EB%9E%98%EC%8B%9D-cp-%EC%88%8F%ED%8C%AC%EC%B8%A0/124/category/24/display/1/" coords="991,952,1061,1021" shape="rect">
+            <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/tacchini-court-classico/347/category/54/display/1/" coords="178,1555,251,1622" shape="rect">
+            <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/tacchini-court-classico/348/category/54/display/1/" coords="686,1465,756,1540" shape="rect">
+        </map>
+    </div>
+</section>
 
 <section class="section4">
 <!--    <div class="bg"><img src="/web/upload/project/230701/sec04_bg_pc.jpg" alt="sec04bg" class="pc"><img src="/web/upload/project/230701/sec04_bg_mo.jpg" alt="sec04bg" class="mo"></div>-->
@@ -105,13 +145,27 @@
             <p>여유로운 주말, 느긋한 여름날의 테니스.<br/>가볍고 시원한 아이템들과 함께 하세요.</p>
         </div>
         <div class="imgBox">
-            <div class="img01"><img src="/web/upload/project/230701/sec04_01.jpg" alt="sec02_01" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="300"></div>
-            <div class="img02"><img src="/web/upload/project/230701/sec04_02.jpg" alt="sec02_02" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="500"></div>
+            <div class="img01"><img class="pc" src="/web/upload/project/230701/sec04_01.jpg" alt="sec02_01" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="300" usemap="#sec0401bg-pc"><map name="sec0401bg-pc">
+                    <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/u-%ED%94%8C%EB%9E%98%EA%B7%B8-%EB%B2%84%ED%82%B7%ED%96%87/332/category/57/display/1/" coords="758,197,808,250" shape="rect">
+                    <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%EC%BD%94%EB%84%88%EC%8A%A4-%EC%BB%AC%EB%9F%AC%EB%B8%94%EB%A1%9D-%EB%9D%BC%EC%9A%B4%EB%93%9C%EB%84%A5-%EB%B0%98%ED%8C%94-%ED%81%AC%EB%A1%AD-%ED%8B%B0%EC%85%94%EC%B8%A0/130/category/37/display/1/" coords="197,945,247,993" shape="rect">
+                </map><img class="mo" src="/web/upload/project/230701/sec04_01_mo.jpg" alt="sec02_01" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="300" usemap="#sec0401bg-mo"><map name="sec0401bg-mo">
+                    <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/u-%ED%94%8C%EB%9E%98%EA%B7%B8-%EB%B2%84%ED%82%B7%ED%96%87/332/category/57/display/1/" coords="413,91,462,144" shape="rect">
+                    <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%EC%BD%94%EB%84%88%EC%8A%A4-%EC%BB%AC%EB%9F%AC%EB%B8%94%EB%A1%9D-%EB%9D%BC%EC%9A%B4%EB%93%9C%EB%84%A5-%EB%B0%98%ED%8C%94-%ED%81%AC%EB%A1%AD-%ED%8B%B0%EC%85%94%EC%B8%A0/130/category/37/display/1/" coords="100,486,149,537" shape="rect">
+                </map>
+            </div>
+            <div class="img02"><img class="pc" src="/web/upload/project/230701/sec04_02.jpg" alt="sec02_02" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="500" usemap="#sec0402bg-pc"><map name="sec0402bg-pc">
+                    <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%EC%BD%94%EB%84%88%EC%8A%A4-%ED%8F%B4%EB%A6%AC-%EC%82%AC%EC%9D%B4%EB%93%9C%EB%B0%B0%EC%83%89-%EB%9D%BC%EC%9A%B4%EB%93%9C%EB%84%A5-%EC%8A%AC%EB%A6%AC%EB%B8%8C%EB%A6%AC%EC%8A%A4/128/category/24/display/1/" coords="370,566,420,612" shape="rect">
+                    <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%EC%BD%94%EB%84%88%EC%8A%A4-wband%EB%B0%B0%EC%83%89-%ED%94%8C%EB%A6%AC%EC%B8%A0-%EC%8A%A4%EC%BB%A4%ED%8A%B8/339/category/24/display/1/" coords="721,1027,771,1080" shape="rect">
+                </map><img class="mo" src="/web/upload/project/230701/sec04_02_mo.jpg" alt="sec02_01" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="300" usemap="#sec0402bg-mo"><map name="sec0402bg-mo">
+                    <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%EC%BD%94%EB%84%88%EC%8A%A4-%ED%8F%B4%EB%A6%AC-%EC%82%AC%EC%9D%B4%EB%93%9C%EB%B0%B0%EC%83%89-%EB%9D%BC%EC%9A%B4%EB%93%9C%EB%84%A5-%EC%8A%AC%EB%A6%AC%EB%B8%8C%EB%A6%AC%EC%8A%A4/128/category/24/display/1/" coords="192,312,239,360" shape="rect">
+                    <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%EC%BD%94%EB%84%88%EC%8A%A4-wband%EB%B0%B0%EC%83%89-%ED%94%8C%EB%A6%AC%EC%B8%A0-%EC%8A%A4%EC%BB%A4%ED%8A%B8/339/category/24/display/1/" coords="393,537,440,586" shape="rect">
+                </map>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="section5" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-out-cubic" data-aos-duration="1000"><a href="#"><img src="/web/upload/project/230701/sec05bg_pc.jpg" alt="sec05bg" class="pc"><img src="/web/upload/project/230701/sec05bg_mo.jpg" alt="sec05bg" class="mo"></a></section>
+<section class="section5" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-out-cubic" data-aos-duration="1000"><a href="https://sergiotacchini.co.kr/product/tacchini-1966-court/387/category/54/display/1/" target="_blank"><img src="/web/upload/project/230701/sec05bg_pc.jpg" alt="sec05bg" class="pc"><img src="/web/upload/project/230701/sec05bg_mo.jpg" alt="sec05bg" class="mo"></a></section>
 
 
 
@@ -122,12 +176,21 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
 <script>
-
-    //sec02 img zoomIn
-    // $('.section2 imgBox a').each(function(){
-    //
-    // });
+    //라이브러리
+    //sec02 parallax
+    const panel = document.querySelector(".main_section"); //픽스될화면
+    // const sec02 = document.querySelector(".section2");
+    // gsap.to(sec02, {duration: 2});
+    ScrollTrigger.create({
+        trigger : panel, //기준점 : 자기자신
+        start : "top top", //시작점
+        pin : true,
+        pinSpacing : false
+    });
 
     //sec03 sec04 sec05 fadeUp
         AOS.init();
