@@ -44,6 +44,40 @@
 		box-sizing: border-box !important;
 	}
 }
+/* 스마트팝업 */
+.app-smart-popup {
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	background: rgba(0,0,0,0.7) !important;
+	border: none !important;
+	margin:0 !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.app-smart-popup > div {
+	max-width: 500px;
+	width:100%;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+.app-smart-popup .smart-popup-btns {
+	border-top: none !important;
+}
+.app-smart-popup .smart-popup-btns button {
+	font-size:14px !important;
+	height: 40px !important;
+}
+.app-smart-popup .smart-popup-img img{
+	width: 100% !important;
+}
+.app-smart-popup .smart-popup-btns button.smart-popup-close:first-child {
+	border-left: none !important;
+}
 
 /* 메인 */
 #contents {width:100% !important;max-width:100% !important;}
