@@ -37,13 +37,13 @@ $(document).ready(function() {
     /* 탑배너 스와이프 */
     var topSwiper = new Swiper(".topSwiper", {
         slidesPerView : 1,
-        loop: true,
+        loop: false,
         watchOverflow : true,
         loopAdditionalSlides : 1,
-        autoplay : {
-            delay : 4000,  //5초
-            disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
-        },
+        // autoplay : {
+        //     delay : 4000,  //5초
+        //     disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+        // },
     });
 
     /*띠배너 네비겹침현상 방지/닫기버튼 이벤트*/
