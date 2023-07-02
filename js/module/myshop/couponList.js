@@ -23,7 +23,7 @@
         let $tbody = $(this),
             $period = $tbody.find('.usePeriod .content'),
             period = $period.text(),
-            replacePeriod = period.replaceAll('-', '.');
+            replacePeriod = period.replaceAll('-', '/');
 
         getTime(replacePeriod, $period);
     });

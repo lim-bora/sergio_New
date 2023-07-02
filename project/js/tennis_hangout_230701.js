@@ -20,6 +20,22 @@ $(document).ready(function() {
     })
     $(window).trigger('resize');
 
+
+
+    //sec02 cate 텍스트 추가
+    let $imgBox = $('.section2 .content .imgBox'),
+        cate = $imgBox.find('a');
+        // cateTxt = cate.find('img');
+
+        cate.eq(0).append('<span class="cateTxt">T-SHIRTS</span>');
+        cate.eq(1).append('<span class="cateTxt">SKIRTS</span>');
+        cate.eq(2).append('<span class="cateTxt">SHOES</span>');
+
+
+
+
+
+
 });
 
 function resize(){

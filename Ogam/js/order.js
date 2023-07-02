@@ -126,6 +126,9 @@ $(function() {
 
     console.log(comma(totalComma));
 
+
+    let dd = CAFE24.SHOP_FRONT_ORDERFORM_DATA.mileage.fMemberAvailMileage;
+    console.log(dd)
 });
 
 $(function() {
