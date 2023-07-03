@@ -92,7 +92,7 @@
 }
 @font-face {
     font-family: 'Acumin Condensed Light Italic';
-    font-style: italic;
+    font-style: normal;
     font-weight: 300;
     src: url(/web/upload/project/font/Acumin_Cond/Acumin-Pro-Cond-Light-ltalic.otf) format('opentype');
 }
