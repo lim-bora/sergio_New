@@ -1,5 +1,5 @@
 .topBannerBox{position: relative; z-index: 12;background-color: #000;}
-.topBannerBox > div{ height: 40px;}
+.topBannerBox > div{ height: 40px;transition-timing-function: linear;}
 .topBannerBox .topBanner .topB > a{font-weight: 700;text-align: center;font-size: 16px;line-height: 39px;color: #fff;position: relative;display: block;}
 .topBannerBox .topBanner .btnBox{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%); max-width: 1440px;width: 100%;height: 100%;display: flex;}
 .topBannerBox .topBanner .btnBox > a{width: 100%;height: 100%;}

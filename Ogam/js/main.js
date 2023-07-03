@@ -40,6 +40,7 @@ $(document).ready(function() {
         loop: true,
         watchOverflow : true,
         loopAdditionalSlides : 1,
+        speed : 500,
         autoplay : {
             delay : 4000,  //5초
             disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
