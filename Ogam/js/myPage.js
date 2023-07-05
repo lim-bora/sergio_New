@@ -41,3 +41,25 @@ $(function() {
     // console.log(milegeSlice)
 });
 
+$(function() {
+    //할인 및 부가결제 복원내역 : 적립금 복원 컴마추가
+    let $milBack = $('.xans-myshop-orderhistorydetailrefundnew').find('.milBack'),
+        milBackTxt = $milBack.text(),
+        milBackSlice = milBackTxt.substring(9);
+
+    console.log(milBackSlice)
+
+    $milBack.text(`적립금 복원 : ${comma(milBackSlice)}`)
+
+});
+
+/*******쿠폰혜택 컴마추가*********/
+function comma(str){
+    try {
+        str = String(str);
+        return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+    } catch (err) {
+        console.log(err);
+        return str;
+    }
+}

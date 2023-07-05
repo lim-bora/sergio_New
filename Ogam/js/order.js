@@ -171,10 +171,11 @@ $(function() {
         mutations.forEach(function(mutation) {
             $('.pay_price').text($('#payment_total_order_sale_price_view').text())
         });
+        console.log(mutations)
     });
     var config = {
         childList: true,
-    };
+    };//감지범위
     observer.observe(target, config);
 
     $('#paySubmint').click(function (){
@@ -183,3 +184,4 @@ $(function() {
     })
 
 });
+
