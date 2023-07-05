@@ -150,8 +150,8 @@ select::-ms-expand {display:none;}
 .payTitle{color: #000!important; font-size: 15px;font-weight: 500;}
 .helpArea{display: none;}
 #mCafe24Order .receiptWrap{border-bottom: 0!important;}
-#chk_purchase_agreement0[type="checkbox"],#allAgree[type="checkbox"],#mallAgree[type="checkbox"],#personAgree[type="checkbox"],#set_main_address0[type="checkbox"],#save_paymethod[type="checkbox"],#flagEscrowUse0[type="checkbox"]{border: 1px solid #E0E0E0!important;border-radius: 2px;width: 16px!important; height: 16px!important;background-image: none!important;margin-top: 4px!important;}
-#chk_purchase_agreement0[type="checkbox"]:checked, #allAgree[type="checkbox"]:checked,#mallAgree[type="checkbox"]:checked,#personAgree[type="checkbox"]:checked,#set_main_address0[type="checkbox"]:checked,#save_paymethod[type="checkbox"]:checked,#flagEscrowUse0[type="checkbox"]:checked{    background: url(/SkinImg/img/checkbox_on.svg) no-repeat center!important;border: 1px solid #000!important;  background-size: 17px!important;}
+#flagEscrowIcashUse0[type="checkbox"],#chk_purchase_agreement0[type="checkbox"],#allAgree[type="checkbox"],#mallAgree[type="checkbox"],#personAgree[type="checkbox"],#set_main_address0[type="checkbox"],#save_paymethod[type="checkbox"],#flagEscrowUse0[type="checkbox"]{border: 1px solid #E0E0E0!important;border-radius: 2px;width: 16px!important; height: 16px!important;background-image: none!important;margin-top: 4px!important;}
+#flagEscrowIcashUse0[type="checkbox"]:checked,#chk_purchase_agreement0[type="checkbox"]:checked, #allAgree[type="checkbox"]:checked,#mallAgree[type="checkbox"]:checked,#personAgree[type="checkbox"]:checked,#set_main_address0[type="checkbox"]:checked,#save_paymethod[type="checkbox"]:checked,#flagEscrowUse0[type="checkbox"]:checked{    background: url(/SkinImg/img/checkbox_on.svg) no-repeat center!important;border: 1px solid #000!important;  background-size: 17px!important;}
 #ec-jigsaw-area-benefit{display: none!important;}
 #total_order_sale_price_view{display: none!important;}
 #orderFixItem.ec-base-button.gFull [class*="btn"]{background-color: #000!important;font-size: 14px!important;}
@@ -245,6 +245,13 @@ select::-ms-expand {display:none;}
 
 #mCafe24Order .shippingList{margin-top: 0!important;}
 #ec-shippingInfo-recentAddressList h3{padding-bottom: 20px;font-size: 14px!important;font-weight: 500!important;}
+#payment_input_icash {
+    border: 0!important;
+    background-color: #fff!important;
+    padding-top: 16px!important;
+}
+#payment_input_icash th{display: none;}
+#payment_input_icash td{border-bottom: 0!important;}
 
 
 @media all and (max-width:1024px) {

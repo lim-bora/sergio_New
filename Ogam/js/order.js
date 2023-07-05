@@ -158,6 +158,10 @@ function comma(str){
 
 $(function() {
     $('#ec-shippingInfo-recentAddressList').prepend('<h3>배송지 목록</h3>')
+
+    let icashCol = $('#payment_input_icash colgroup').find('col')
+    icashCol.eq(0).css('width','100%');
+
 });
 
 $(function() {
