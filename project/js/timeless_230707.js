@@ -24,6 +24,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     const time_swiper_mo = new Swiper(".mo_swiper .timeSwiper", {
         slidesPerView: 1.5,
-
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        speed: 800,
     });
 });
