@@ -24,6 +24,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     const time_swiper_mo = new Swiper(".mo_swiper .timeSwiper", {
         slidesPerView: 1.5,
+        loop: true,
+        loopAdditionalSlides : 1,
+        watchOverflow : true,
+        resistance : false,
         autoplay: {
             delay: 2000,
             disableOnInteraction: false,
@@ -31,3 +35,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
         speed: 800,
     });
 });
+
