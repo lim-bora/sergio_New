@@ -61,9 +61,10 @@
 }
 .app-smart-popup > div {
 	max-width: 500px;
-	width:100%;
-	padding: 0 16px;
+	width:100% !important;
 	box-sizing: border-box;
+	padding: 0 16px;
+	background: transparent;
 }
 .app-smart-popup .smart-popup-btns {
 	border-top: none !important;
