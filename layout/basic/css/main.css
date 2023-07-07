@@ -79,6 +79,13 @@
 .app-smart-popup .smart-popup-btns button.smart-popup-close:first-child {
 	border-left: none !important;
 }
+.app-smart-popup-slider-dots {
+	left: 50%;
+	transform: translateX(-50%);
+}
+.app-smart-popup-slider-dots.app-smart-popup-bar li button {
+	height: 2px !important;
+}
 
 /* 메인 */
 #contents {width:100% !important;max-width:100% !important;}
