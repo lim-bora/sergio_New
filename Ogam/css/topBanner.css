@@ -1,6 +1,27 @@
 .topBannerBox{position: relative; z-index: 12;background-color: #000;}
-.topBannerBox > div{ height: 40px;transition-timing-function: linear;}
-.topBannerBox .topBanner .topB > a{font-weight: 700;text-align: center;font-size: 16px;line-height: 39px;color: #fff;position: relative;display: block;}
+.topBannerBox > div{ height: 40px;}
+.topBannerBox .topBanner > a{font-weight: 700;text-align: center;font-size: 16px;color: #fff;position: relative;display: inline-flex;align-items: center;justify-content: center;}
+.topBannerBox .topBanner > a span{
+    width:8px;
+    height: 8px;
+    display: inline-block;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: relative;
+    margin-left: 12px;
+    margin-top: 1px;
+}
+.topBannerBox .topBanner > a span::before{
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
 .topBannerBox .topBanner .btnBox{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%); max-width: 1440px;width: 100%;height: 100%;display: flex;}
 .topBannerBox .topBanner .btnBox > a{width: 100%;height: 100%;}
 .topBannerBox .topBanner .btnClose{width: 24px;height: 24px;float: right;cursor: pointer; margin-top: 6px;}
@@ -10,11 +31,7 @@
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
     .topBannerBox{height: 40px;}
-    .topBannerBox .topBanner .topB > a{font-size: 13px;line-height: 37px;}
-
-    .topBannerBox span{width: 92%!important;}
-
-    body.searchExpand .topBannerBox {display: none !important;}
+    .topBannerBox .topBanner > a{font-size: 13px;}
     
     .topPc{display:none;}
 	.topMo{display:block;}
