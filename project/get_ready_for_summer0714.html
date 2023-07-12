@@ -1,0 +1,398 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/Ogam/css/font.css)-->
+<!--@css(/Ogam/css/project.css)-->
+<!--@js(/Ogam/js/jquery.rwdImageMaps.min.js)-->
+<!--@js(/Ogam/js/project.js)-->
+<!--@js(/project/js/timeless_230707.js)-->
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
+</head>
+
+<style>
+    /* 공통 */
+    .pc {display: flex !important;}
+    .mo,
+    .mo_swiper {display: none !important;}
+    .pc_swiper {display: block !important;}
+    section {position: relative;}
+    h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+    .iconic_section,
+    .classic_section {
+        padding: 140px 37px 0;
+    }
+    .iconic_section h1,
+    .classic_section h1 {
+        font-family: 'Acumin Condensed Light Italic', sans-serif;
+        padding-bottom: 50px;
+    }
+    h1 strong{
+        font-family: 'Acumin Condensed Bold', sans-serif;
+    }
+    .img-area {
+        display: flex;
+        width: 100%;
+        gap: 5px;
+        font-size: 0;
+    }
+    .img-area > div {
+        flex: 1;
+    }
+    .img-area img {
+        width:100%;
+    }
+
+    /* 메인 */
+    .main_section {
+        font-size: 0;
+    }
+    .main_section img {
+        width: 100%;
+    }
+    .main_section .main_txt {
+        position: absolute;
+        bottom: 8vw;
+        width: 100%;
+        max-width: 35vw;
+        text-align: center;
+        color: #FFF;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /* sec02 */
+    .sec02{
+        background-color: #fff;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sec02 ul{
+        max-width: 1640px;
+        display: flex;
+        flex-direction: row;
+        padding: 150px 0;
+        margin: 0 auto;
+    }
+    .sec02 ul li{
+
+    }
+
+
+    /* 상품 영역 */
+    .og_product_here .ec-base-product {
+        margin: 140px 0 0;
+    }
+    .og_product_here .ec-base-product .prdList .spec {
+        font-family: "Noto Sans KR","Acumin Pro",sans-serif !important;
+        font-weight: 700;
+    }
+    .og_product_here .ec-base-product .prdList .prdList__item {
+        margin: 0 2px;
+    }
+    .og_product_here .swiper-button-next,
+    .og_product_here .swiper-button-prev {
+        top: calc(50% - 47px);
+        height: 65px;
+        width: 33px;
+        background-size: 100% 100% !important;
+    }
+    .og_product_here .swiper-button-next {
+        background: url("/web/upload/project/230707/left.svg"), no-repeat;
+        right: 4.5vw;
+    }
+    .og_product_here .swiper-button-prev {
+        background: url("/web/upload/project/230707/right.svg"), no-repeat;
+        left: 4.5vw;
+    }
+
+    @media all and (max-width: 1024px) {
+        /* 공통 */
+        .pc_swiper {display: none !important;}
+        .mo_swiper {display: block !important;}
+        strong {
+            display: block;
+        }
+        .img-area {
+            flex-direction: column;
+            gap: 4px;
+        }
+        /* 메인 */
+        .main_section {
+            /*height: 500px;*/
+            overflow: hidden;
+        }
+        .main_section img {
+            height: 125%;
+            object-fit: cover;
+        }
+        .main_section .main_txt {
+            max-width: 70%;
+            bottom: 68px;
+        }
+        .main_section .main_txt h1 {
+            font-size: 56px;
+            line-height: 1;
+        }
+        .main_section .main_txt p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 8px;
+        }
+
+        /* sec02 */
+        .sec02 ul{
+            flex-direction: column;
+            width: 92%;
+            padding: 60px 0;
+        }
+
+        /* iconic */
+        .iconic_section {
+            padding: 80px 0 0;
+        }
+        .iconic_section h1,
+        .classic_section h1 {
+            font-size: 36px;
+            line-height: 1;
+            padding-bottom: 24px;
+        }
+        .classic_section {
+            padding: 80px 16px 0;
+        }
+
+        .og_product_here .ec-base-product {
+            margin: 80px 0 0;
+        }
+        .og_product_here .swiper-button-next, .og_product_here .swiper-button-prev {
+            display: none;
+        }
+        .mo_swiper .og_product_here {
+            margin-left: 16px;
+            overflow: hidden;
+        }
+        .mo_swiper .og_product_here .ec-base-product .prdList {
+            margin: 0 ;
+        }
+    }
+    @media all and (max-width: 767px) {
+        .pc {display: none !important;}
+        .mo {display: flex !important;}
+    }
+</style>
+
+<div class="getReady_project">
+    <div module="Project_Package" class="section">
+        <!--@css(/css/module/product/project_package.css)-->
+
+        <section class="main_section">
+            <img src="/web/upload/project/230714/mainPC.png" alt="" class="pc">
+            <img src="/web/upload/project/230714/mainM.png" alt="" class="mo">
+            <div class="main_txt">
+                <img src="/web/upload/project/230714/mainTxtPC.png" alt="" class="pc">
+                <img src="/web/upload/project/230714/mainTxtM.png" alt="" class="mo">
+            </div>
+        </section>
+
+        <section class="sec02 parallax-window" data-parallax="scroll">
+                <ul>
+                    <li><img src="/web/upload/project/230714/left.png" alt="" class=""></li>
+                    <li><img src="/web/upload/project/230714/right.png" alt="" class=""></li>
+                </ul>
+        </section>
+
+<!--        <section class="iconic_section">-->
+<!--            <h1>iconic <strong>POLOS & T-SHIRTS</strong></h1>-->
+<!--            <div class="img-area grid2 pc">-->
+<!--                <div>-->
+<!--                    <img src="/web/upload/project/230707/iconic-01.jpg" alt="" usemap="#iconic-1">-->
+<!--                    <map name="iconic-1">-->
+<!--                        <area target="_blank" alt="" title="" href="https://www.sergiotacchini.co.kr/product/m-%EB%8B%A4%EB%A7%88%EB%A6%B0%EB%8F%84-%ED%8F%B4%EB%A6%AC-%EC%BB%AC%EB%9F%AC%EB%B8%94%EB%A1%9D-%EB%B0%98%ED%8C%94-%ED%8F%B4%EB%A1%9C%EC%85%94%EC%B8%A0/270/category/24/display/1/" coords="800,840,26" shape="circle">-->
+<!--                    </map>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <img src="/web/upload/project/230707/iconic-02.jpg" alt="" usemap="#iconic-2">-->
+<!--                    <map name="iconic-2">-->
+<!--                        <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%EC%BD%94%EB%84%88%EC%8A%A4-%ED%8F%B4%EB%A6%AC-%EC%82%AC%EC%9D%B4%EB%93%9C%EB%B0%B0%EC%83%89-%EB%9D%BC%EC%9A%B4%EB%93%9C%EB%84%A5-%EC%8A%AC%EB%A6%AC%EB%B8%8C%EB%A6%AC%EC%8A%A4/128/category/37/display/1/" coords="590,743,23" shape="circle">-->
+<!--                    </map>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="img-area grid2 mo">-->
+<!--                <div>-->
+<!--                    <img src="/web/upload/project/230707/iconic-01-mo.jpg" alt="" usemap="#iconic-1-mo">-->
+<!--                    <map name="iconic-1-mo">-->
+<!--                        <area target="_blank" alt="" title="" href="https://www.sergiotacchini.co.kr/product/m-%EB%8B%A4%EB%A7%88%EB%A6%B0%EB%8F%84-%ED%8F%B4%EB%A6%AC-%EC%BB%AC%EB%9F%AC%EB%B8%94%EB%A1%9D-%EB%B0%98%ED%8C%94-%ED%8F%B4%EB%A1%9C%EC%85%94%EC%B8%A0/270/category/24/display/1/" coords="642,663,35" shape="circle">-->
+<!--                    </map>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <img src="/web/upload/project/230707/iconic-02-mo.jpg" alt="" usemap="#iconic-2-mo">-->
+<!--                    <map name="iconic-2-mo">-->
+<!--                        <area target="_blank" alt="" title="" href="https://sergiotacchini.co.kr/product/w-%EC%BD%94%EB%84%88%EC%8A%A4-%ED%8F%B4%EB%A6%AC-%EC%82%AC%EC%9D%B4%EB%93%9C%EB%B0%B0%EC%83%89-%EB%9D%BC%EC%9A%B4%EB%93%9C%EB%84%A5-%EC%8A%AC%EB%A6%AC%EB%B8%8C%EB%A6%AC%EC%8A%A4/128/category/37/display/1/" coords="489,591,36" shape="circle">-->
+<!--                    </map>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+
+<!--        <section class="classic_section">-->
+<!--            <h1>classic <strong>SKIRTS & SHORTS</strong></h1>-->
+<!--            <div class="img-area grid3 pc">-->
+<!--                <div>-->
+<!--                    <img src="/web/upload/project/230707/classic-01.jpg" alt="" usemap="#classic-01">-->
+<!--                    <map name="classic-01">-->
+<!--                        <area target="_blank" alt="" title="" href="https://www.sergiotacchini.co.kr/product/m-%EB%AA%A8%EB%8D%98-cp-%EC%88%8F%ED%8C%AC%EC%B8%A0/164/category/24/display/1/" coords="372,763,23" shape="circle">-->
+<!--                    </map>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <img src="/web/upload/project/230707/classic-02.jpg" alt="" usemap="#classic-02">-->
+<!--                    <map name="classic-02">-->
+<!--                        <area target="_blank" alt="" title="" href="https://www.sergiotacchini.co.kr/product/w-%EC%BD%94%EB%84%88%EC%8A%A4-wband%EB%B0%B0%EC%83%89-%ED%94%8C%EB%A6%AC%EC%B8%A0-%EC%8A%A4%EC%BB%A4%ED%8A%B8/339/category/50/display/1/" coords="308,1064,27" shape="circle">-->
+<!--                    </map>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <img src="/web/upload/project/230707/classic-03.jpg" alt="" usemap="#classic-03">-->
+<!--                    <map name="classic-03">-->
+<!--                        <area target="_blank" alt="" title="" href="https://www.sergiotacchini.co.kr/product/m-%ED%94%84%EB%A1%9C-%EC%9A%B0%EB%B8%90-%EC%88%8F%ED%8C%AC%EC%B8%A0/87/category/24/display/1/" coords="389,776,23" shape="circle">-->
+<!--                    </map>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="img-area grid3 mo">-->
+<!--                <div>-->
+<!--                    <img src="/web/upload/project/230707/classic-01-mo.jpg" alt="" usemap="#classic-01-mo">-->
+<!--                    <map name="classic-01-mo">-->
+<!--                        <area target="_blank" alt="" title="" href="https://www.sergiotacchini.co.kr/product/m-%EB%AA%A8%EB%8D%98-cp-%EC%88%8F%ED%8C%AC%EC%B8%A0/164/category/24/display/1/" coords="420,856,37" shape="circle">-->
+<!--                    </map>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <img src="/web/upload/project/230707/classic-02-mo.jpg" alt="" usemap="#classic-02-mo">-->
+<!--                    <map name="classic-02-mo">-->
+<!--                        <area target="_blank" alt="" title="" href="https://www.sergiotacchini.co.kr/product/w-%EC%BD%94%EB%84%88%EC%8A%A4-wband%EB%B0%B0%EC%83%89-%ED%94%8C%EB%A6%AC%EC%B8%A0-%EC%8A%A4%EC%BB%A4%ED%8A%B8/339/category/50/display/1/" coords="319,1192,38" shape="circle">-->
+<!--                    </map>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <img src="/web/upload/project/230707/classic-03-mo.jpg" alt="" usemap="#classic-03-mo">-->
+<!--                    <map name="classic-03-mo">-->
+<!--                        <area target="_blank" alt="" title="" href="https://www.sergiotacchini.co.kr/product/m-%ED%94%84%EB%A1%9C-%EC%9A%B0%EB%B8%90-%EC%88%8F%ED%8C%AC%EC%B8%A0/87/category/24/display/1/" coords="438,842,38" shape="circle">-->
+<!--                    </map>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+
+        <section id="og_menuCate_1" class="pc_swiper">
+            <div class="og_product_here"></div>
+        </section>
+
+        <section id="og_menuCate_1" class="mo_swiper">
+            <div class="og_product_here"></div>
+        </section>
+
+
+
+        <!-- 하단 영역 감추고 별도 처리 -->
+        <div class="section ec-base-tab typeMenu displaynone" id="og_menuCategory_list">
+            <ul class="menuCategory menu">
+                <li module="product_projectcategory" style="display:{$display};">
+                    <a href="#{$cate_id}" class="button">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
+                </li>
+            </ul>
+        </div>
+        <div id="og_menuCatgory_list">
+            <div module="project_list" class="displaynone" id="og_menuCategory_item_{$cate_id}">
+                <!--
+                    $basket_result = /product/add_basket.html
+                    $basket_option = /product/basket_option.html
+                -->
+                <h3><span id="{$cate_id}"></span>{$category_name}</h3>
+
+                <div module="project_productlist" class="ec-base-product swiper timeSwiper">
+                    <ul class="prdList grid3 swiper-wrapper">
+                        <li id="anchorBoxId_{$product_no}" class="swiper-slide">
+                            <div class="prdList__item">
+                                <div class="thumbnail">
+                                    <a href="{$link_product_detail}"><img src="{$image_tiny}" id="{$image_tiny_id}" alt="{$seo_alt_tag}" ><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                                    <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button></div>
+                                    <div class="badge"><span></span></div>
+                                    <div class="icon__box">
+                                        <span class="wish">{$list_wish_icon}WISH</span>
+                                        <span class="cart">{$basket_icon}ADD</span>
+                                        <span class="option">{$option_preview_icon}OPTION</span>
+                                    </div>
+                                </div>
+                                <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
+                                    <div class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
+                                    <ul module="project_ListItem" class="spec">
+                                        <li class="{$item_display|display}">
+                                            <strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}
+                                        </li>
+                                        <li class="{$item_display|display}">
+                                            <strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}
+                                        </li>
+                                    </ul>
+                                    <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="anchorBoxId_{$product_no}" class="swiper-slide">
+                            <div class="prdList__item">
+                                <div class="thumbnail">
+                                    <a href="{$link_product_detail}"><img src="{$image_tiny}" id="{$image_tiny_id}" alt="{$seo_alt_tag}" ><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                                    <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button></div>
+                                    <div class="badge"><span></span></div>
+                                    <div class="icon__box">
+                                        <span class="wish">{$list_wish_icon}WISH</span>
+                                        <span class="cart">{$basket_icon}ADD</span>
+                                        <span class="option">{$option_preview_icon}OPTION</span>
+                                    </div>
+                                </div>
+                                <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
+                                    <div class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
+                                    <ul module="project_ListItem" class="spec">
+                                        <li class="{$item_display|display}">
+                                            <strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}
+                                        </li>
+                                        <li class="{$item_display|display}">
+                                            <strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}
+                                        </li>
+                                    </ul>
+                                    <div class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //하단 영역 감추고 별도 처리 -->
+
+
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+<script>
+    // window.addEventListener('DOMContentLoaded',function(){
+    //     $('img[usemap]').rwdImageMaps();
+    // });
+
+    //라이브러리
+    //sec02 parallax
+    const panel = document.querySelector(".main_section"); //픽스될화면
+
+    ScrollTrigger.create({
+        trigger : panel, //기준점 : 자기자신
+        start : "80px top", //시작점
+        pin : true,
+        pinSpacing : false
+    });
+
+    //fadeUp
+    AOS.init();
+</script>
